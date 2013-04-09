@@ -101,7 +101,8 @@ textarea {
 }
 #sidebar ul li {
     font-family: DK Pisang;
-    font-size: ;
+    font-size: 3em;
+    list-style-type: none;
     color: #20CE55;
 }
 
