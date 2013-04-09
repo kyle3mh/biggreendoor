@@ -17,7 +17,7 @@ textarea {
   color: #222;
 }
 
-/* line 22, style.scss */
+/* line 21, style.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
@@ -25,43 +25,43 @@ body {
 }
 
 /* -- Headings -- */
-/* line 30, style.scss */
+/* line 29, style.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   text-align: left;
   margin: 0 0 25px;
 }
 
-/* line 36, style.scss */
+/* line 35, style.scss */
 h1, .h1 {
   font-size: 3em;
   color: #fff;
   font-family: DK Pisang;
 }
 
-/* line 43, style.scss */
+/* line 42, style.scss */
 h2, .h2 {
   font-size: 24px;
   color: #666666;
 }
 
-/* line 47, style.scss */
+/* line 46, style.scss */
 h3, .h3 {
   font-size: 20px;
 }
 
-/* line 51, style.scss */
+/* line 50, style.scss */
 h4, .h4 {
   font-size: 16px;
 }
 
-/* line 54, style.scss */
+/* line 53, style.scss */
 h5, .h5 {
   font-size: 14px;
 }
 
 /* -- Generic Elements -- */
-/* line 61, style.scss */
+/* line 60, style.scss */
 p {
   color: #20CE55;
 }
@@ -71,13 +71,13 @@ p {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 72, style.scss */
+/* line 71, style.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 77, style.scss */
+/* line 76, style.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -86,7 +86,7 @@ p {
 /*
  * A better looking default horizontal rule
  */
-/* line 86, style.scss */
+/* line 85, style.scss */
 hr {
   display: block;
   height: 1px;
@@ -99,7 +99,7 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-/* line 99, style.scss */
+/* line 98, style.scss */
 img {
   vertical-align: middle;
 }
@@ -107,7 +107,7 @@ img {
 /*
  * Remove default fieldset styles.
  */
-/* line 107, style.scss */
+/* line 106, style.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -117,7 +117,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 117, style.scss */
+/* line 116, style.scss */
 textarea {
   resize: vertical;
 }
@@ -125,7 +125,7 @@ textarea {
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-/* line 125, style.scss */
+/* line 124, style.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -139,14 +139,14 @@ textarea {
 /* ==========================================================================
 Standard layout styles
 ========================================================================== */
-/* line 142, style.scss */
+/* line 141, style.scss */
 #logo {
   width: 472px;
   height: 462px;
   background-image: url(/media/logo.png);
 }
 
-/* line 148, style.scss */
+/* line 147, style.scss */
 .sidebar {
   width: 25%;
   height: 100%;
@@ -158,21 +158,21 @@ Standard layout styles
   text-align: center;
 }
 
-/* line 159, style.scss */
+/* line 158, style.scss */
 .sidebar ul {
   margin: 0;
   padding: 0;
   margin-top: 10%;
 }
 
-/* line 165, style.scss */
+/* line 164, style.scss */
 #content {
   display: block;
   background-color: #20CE55;
   height: 10000px;
 }
 
-/* line 171, style.scss */
+/* line 170, style.scss */
 .sidebar img {
   display: block;
   margin-top: 30px;
@@ -180,19 +180,19 @@ Standard layout styles
   margin-right: auto;
 }
 
-/* line 178, style.scss */
+/* line 177, style.scss */
 .sidebar a {
   color: #20CE55;
   text-decoration: none;
 }
 
-/* line 183, style.scss */
+/* line 182, style.scss */
 .sidebar ul li a:hover {
   text-decoration: underline;
   color: #20CE55;
 }
 
-/* line 185, style.scss */
+/* line 184, style.scss */
 .sidebar ul li {
   font-size: 4em;
   list-style-type: none;
@@ -200,22 +200,22 @@ Standard layout styles
   line-height: 1;
 }
 
-/* line 192, style.scss */
+/* line 191, style.scss */
 .sidebar ul li.journalfont {
   font-size: 3.7em;
 }
 
-/* line 198, style.scss */
+/* line 197, style.scss */
 .sidebar ul li.communityfont {
   font-size: 2.8em;
 }
 
-/* line 204, style.scss */
+/* line 203, style.scss */
 .sidebar ul li.contactfont {
   font-size: 3.7em;
 }
 
-/* line 212, style.scss */
+/* line 211, style.scss */
 .sidebar h4 {
   font-size: 1em;
   line-height: 1.5;
@@ -223,7 +223,7 @@ Standard layout styles
   margin: 10%;
 }
 
-/* line 223, style.scss */
+/* line 222, style.scss */
 .sidebar a:hover {
   color: #000;
   text-decoration: underline;
@@ -233,22 +233,22 @@ Standard layout styles
  MIN-WIDTH 1100PX
  ========================================================================== */
 @media only screen and (min-width: 1250px) {
-  /* line 236, style.scss */
+  /* line 235, style.scss */
   .sidebar ul li.journalfont {
     font-size: 5.2em;
   }
 
-  /* line 243, style.scss */
+  /* line 242, style.scss */
   .sidebar ul li.communityfont {
     font-size: 4em;
   }
 
-  /* line 249, style.scss */
+  /* line 248, style.scss */
   .sidebar ul li.contactfont {
     font-size: 5.3em;
   }
 
-  /* line 257, style.scss */
+  /* line 256, style.scss */
   .sidebar h4 {
     font-size: 1.3em;
     line-height: 1.5;
@@ -256,7 +256,7 @@ Standard layout styles
     margin: 10%;
   }
 
-  /* line 268, style.scss */
+  /* line 267, style.scss */
   .sidebar a:hover {
     color: #000;
     text-decoration: underline;
@@ -265,7 +265,7 @@ Standard layout styles
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
-  /* line 282, style.scss */
+  /* line 281, style.scss */
   #content {
     display: block;
     background-color: #20CE55;
@@ -297,23 +297,23 @@ Standard layout styles
 }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
-  /* line 323, style.scss */
+  /* line 322, style.scss */
   .sidebar ul li.journalfont {
     font-size: 5.2em;
   }
 
-  /* line 330, style.scss */
+  /* line 329, style.scss */
   .sidebar ul li.communityfont {
     font-size: 4em;
   }
 
-  /* line 336, style.scss */
+  /* line 335, style.scss */
   .sidebar ul li.contactfont {
     font-size: 5.3em;
   }
 }
 /*FOOTER styles*/
-/* line 344, style.scss */
+/* line 343, style.scss */
 .site-footer {
   display: block;
   float: right;
@@ -325,7 +325,7 @@ Standard layout styles
   position: relative;
 }
 
-/* line 355, style.scss */
+/* line 354, style.scss */
 .footer-container {
   overflow: hidden;
   margin: 0 auto;
@@ -334,39 +334,39 @@ Standard layout styles
   position: relative;
 }
 
-/* line 363, style.scss */
+/* line 362, style.scss */
 .footer-content {
   float: left;
   overflow: hidden;
 }
 
-/* line 368, style.scss */
+/* line 367, style.scss */
 .footer-image {
   float: left;
   padding: 0 7%;
 }
 
-/* line 373, style.scss */
+/* line 372, style.scss */
 .footer-address {
   float: left;
   padding-right: 10%;
 }
-/* line 377, style.scss */
+/* line 376, style.scss */
 .footer-address p {
   margin: 0;
   font-size: 25px;
 }
 
-/* line 383, style.scss */
+/* line 382, style.scss */
 .footer-posts {
   float: left;
 }
-/* line 385, style.scss */
+/* line 384, style.scss */
 .footer-posts ul {
   list-style: none;
 }
 
-/* line 393, style.scss */
+/* line 392, style.scss */
 .sidebar h4 {
   font-size: 1.3em;
   line-height: 1.5;
@@ -374,7 +374,7 @@ Standard layout styles
   margin: 10%;
 }
 
-/* line 404, style.scss */
+/* line 403, style.scss */
 .sidebar a:hover {
   color: #000;
   text-decoration: underline;
@@ -396,7 +396,7 @@ MIN-WIDTH 1200PX
 /*
  * Image replacement
  */
-/* line 440, style.scss */
+/* line 439, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -405,7 +405,7 @@ MIN-WIDTH 1200PX
   *text-indent: -9999px;
 }
 
-/* line 448, style.scss */
+/* line 447, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -416,7 +416,7 @@ MIN-WIDTH 1200PX
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 459, style.scss */
+/* line 458, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -425,7 +425,7 @@ MIN-WIDTH 1200PX
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 468, style.scss */
+/* line 467, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -441,7 +441,7 @@ MIN-WIDTH 1200PX
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 485, style.scss */
+/* line 484, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -455,7 +455,7 @@ MIN-WIDTH 1200PX
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 498, style.scss */
+/* line 497, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -471,7 +471,7 @@ MIN-WIDTH 1200PX
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 515, style.scss */
+/* line 514, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -480,7 +480,7 @@ MIN-WIDTH 1200PX
   /* 2 */
 }
 
-/* line 520, style.scss */
+/* line 519, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -489,7 +489,7 @@ MIN-WIDTH 1200PX
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 529, style.scss */
+/* line 528, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -510,7 +510,7 @@ MIN-WIDTH 1200PX
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 556, style.scss */
+  /* line 555, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -519,18 +519,18 @@ MIN-WIDTH 1200PX
     text-shadow: none !important;
   }
 
-  /* line 564, style.scss */
+  /* line 563, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 568, style.scss */
+  /* line 567, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 572, style.scss */
+  /* line 571, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -538,33 +538,33 @@ MIN-WIDTH 1200PX
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 582, style.scss */
+  /* line 581, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 587, style.scss */
+  /* line 586, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 592, style.scss */
+  /* line 591, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 597, style.scss */
+  /* line 596, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 601, style.scss */
+  /* line 600, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -573,7 +573,7 @@ MIN-WIDTH 1200PX
     margin: 0.5cm;
 }
 
-  /* line 611, style.scss */
+  /* line 610, style.scss */
   p,
   h2,
   h3 {
@@ -581,7 +581,7 @@ MIN-WIDTH 1200PX
     widows: 3;
   }
 
-  /* line 617, style.scss */
+  /* line 616, style.scss */
   h2,
   h3 {
     page-break-after: avoid;
