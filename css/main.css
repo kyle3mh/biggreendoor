@@ -96,6 +96,12 @@ body {
     background-color: #20CE55;
 }
 
+#logo {
+    width:472px;
+    height:462px;
+    background-image:url(/media/logo.png);
+}
+
 #sidebar {
     width: 40%;
     height: 100%;
@@ -109,6 +115,14 @@ body {
     list-style-type: none;
     text-align: center;
     color: #20CE55;
+}
+#sidebar ul {
+    margin-top: 20%;
+}
+#sidebar img {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
 }
 
 
