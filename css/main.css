@@ -52,6 +52,8 @@ hr {
     padding: 0;
 }
 
+a {text-decoration: none;}
+
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
