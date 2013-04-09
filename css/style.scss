@@ -51,6 +51,12 @@ h5, .h5 {
     font-size: 14px; 
 }
 
+/* -- Generic Elements -- */
+
+
+p {
+    color: #20CE55;
+}
 
 
 /*
@@ -188,16 +194,26 @@ textarea {
 .footer-content {
     float: left;
     overflow: hidden;
-        li {
-            display: inline-block;
-            padding-right: 20px;
+}
 
+.footer-image {
+    float: left;
+    padding: 0 60px;
+}
+
+.footer-address {
+    float: left;
+    padding-right: 100px;
+
+        p {
+            margin: 0;
+            font-size: 25px;
         }
 }
 
-
-
-
+.footer-posts {
+    float: left;
+}
 
 
 
