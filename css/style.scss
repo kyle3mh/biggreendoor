@@ -19,7 +19,8 @@ textarea {
 }
 
 body {
-    font-size: 100%;
+    font-size: 1em;
+
     line-height: 1.4;
 }
 
@@ -31,7 +32,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 { 
-    font-size: 30px; 
+    font-size: 3em; 
+    color: #fff;
+    font-family: DK Pisang;
 }
 h2, .h2 { 
     font-size: 24px; 
@@ -120,57 +123,236 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#logo {
+   /* ==========================================================================
+   Standard layout styles
+   ========================================================================== */
+
+
+   #logo {
     width:472px;
     height:462px;
     background-image:url(/media/logo.png);
 }
-#sidebar {
-    width: 30%;
+
+.sidebar {
+    width: 25%;
     height: 100%;
     position: fixed;
     float: left;
     background-color: white;
+    font-family: DK Pisang;
+    color: #20CE55;
+    text-align: center;
 }
-#sidebar ul {
+
+.sidebar ul {
     margin: 0;
     padding:0;
-    margin-top: 20%;
+    margin-top: 10%;
 }
-#sidebar ul li {
-    font-family: DK Pisang;
-    font-size: 3em;
-    list-style-type: none;
-    text-align: center;
-    color: #20CE55;
-}
-#sidebar a {
-    color:#20CE55;
-    text-decoration: none;
-}
-#sidebar a:hover {
-    color:#000;
-}
-#sidebar img {
-    display: block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 #content {
     display:block;
     background-color: #20CE55;
     height:10000px;
 }
 
+.sidebar img {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar a {
+    color:#20CE55;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {text-decoration: underline; color: #20CE55;}
+
+.sidebar ul li {
+    font-size: 4em;
+    list-style-type: none;
+    text-align: center;
+    line-height:1;
+}
+
+.sidebar ul li.journalfont {
+
+    font-size: 3.7em;
+    
+}
+
+.sidebar ul li.communityfont {
+
+    font-size: 2.8em;
+    
+}
+
+.sidebar ul li.contactfont {
+
+    font-size: 3.7em;
+    
+}
+
+
+
+.sidebar h4 {
+ 
+    font-size: 1em;    
+    line-height:1.5;
+    text-align: center;
+    margin: 10%;
+}
 
 
 
 
+.sidebar a:hover {
+    color:#000;
+    text-decoration: underline;
+}
+
+
+  /* ==========================================================================
+   MIN-WIDTH 1100PX
+   ========================================================================== */
+
+
+   @media only screen and (min-width: 1250px) {
+    
+.sidebar ul li.journalfont {
+
+    font-size: 5.2em;
+    
+}
+
+.sidebar ul li.communityfont {
+
+    font-size: 4em;
+    
+}
+
+.sidebar ul li.contactfont {
+
+    font-size: 5.3em;
+    
+}
+
+
+
+.sidebar h4 {
+ 
+    font-size: 1.3em;    
+    line-height:1.5;
+    text-align: center;
+    margin: 10%;
+}
 
 
 
 
+.sidebar a:hover {
+    color:#000;
+    text-decoration: underline;
+}
+
+
+
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+
+
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+.sidebar ul li.journalfont {
+
+    font-size: 5.2em;
+    
+}
+
+.sidebar ul li.communityfont {
+
+    font-size: 4em;
+    
+}
+
+.sidebar ul li.contactfont {
+
+    font-size: 5.3em;
+    
+}
+
+
+
+.sidebar h4 {
+ 
+    font-size: 1.3em;    
+    line-height:1.5;
+    text-align: center;
+    margin: 10%;
+}
+
+
+
+
+.sidebar a:hover {
+    color:#000;
+    text-decoration: underline;
+}
+
+}
+ 
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* Styles */
+}
+ 
+
+
+  /* ==========================================================================
+   MIN-WIDTH 320PX
+   ========================================================================== */
+
+   /* ==========================================================================
+   MIN-WIDTH 1200PX
+   ========================================================================== */
+
+
+  
 
 
 

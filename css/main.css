@@ -119,6 +119,13 @@ textarea {
     text-align: center;
     color: #20CE55;
 }
+
+#sidebar ul li .journal-font{
+   
+    font-size: 3.5em;
+    
+}
+
 #sidebar img {
     display: block;
     margin-top: 30px;
