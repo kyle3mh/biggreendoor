@@ -170,9 +170,11 @@ Standard layout styles
   display: block;
   background-color: #20CE55;
   height: 10000px;
+  float: right;
+  width: 70%;
 }
 
-/* line 170, style.scss */
+/* line 172, style.scss */
 .sidebar img {
   display: block;
   margin-top: 30px;
@@ -180,19 +182,19 @@ Standard layout styles
   margin-right: auto;
 }
 
-/* line 177, style.scss */
+/* line 179, style.scss */
 .sidebar a {
   color: #20CE55;
   text-decoration: none;
 }
 
-/* line 182, style.scss */
+/* line 184, style.scss */
 .sidebar ul li a:hover {
   text-decoration: underline;
   color: #20CE55;
 }
 
-/* line 184, style.scss */
+/* line 186, style.scss */
 .sidebar ul li {
   font-size: 4em;
   list-style-type: none;
@@ -200,22 +202,22 @@ Standard layout styles
   line-height: 1;
 }
 
-/* line 191, style.scss */
+/* line 193, style.scss */
 .sidebar ul li.journalfont {
   font-size: 3.7em;
 }
 
-/* line 197, style.scss */
+/* line 199, style.scss */
 .sidebar ul li.communityfont {
   font-size: 2.8em;
 }
 
-/* line 203, style.scss */
+/* line 205, style.scss */
 .sidebar ul li.contactfont {
   font-size: 3.7em;
 }
 
-/* line 211, style.scss */
+/* line 213, style.scss */
 .sidebar h4 {
   font-size: 1em;
   line-height: 1.5;
@@ -223,7 +225,7 @@ Standard layout styles
   margin: 10%;
 }
 
-/* line 222, style.scss */
+/* line 224, style.scss */
 .sidebar a:hover {
   color: #000;
   text-decoration: underline;
@@ -233,22 +235,22 @@ Standard layout styles
  MIN-WIDTH 1100PX
  ========================================================================== */
 @media only screen and (min-width: 1250px) {
-  /* line 235, style.scss */
+  /* line 237, style.scss */
   .sidebar ul li.journalfont {
     font-size: 5.2em;
   }
 
-  /* line 238, style.scss */
+  /* line 240, style.scss */
   .sidebar ul li.communityfont {
     font-size: 4em;
   }
 
-  /* line 242, style.scss */
+  /* line 244, style.scss */
   .sidebar ul li.contactfont {
     font-size: 5.3em;
   }
 
-  /* line 245, style.scss */
+  /* line 247, style.scss */
   .sidebar h4 {
     font-size: 1.3em;
     line-height: 1.5;
@@ -256,7 +258,7 @@ Standard layout styles
     margin: 10%;
   }
 
-  /* line 251, style.scss */
+  /* line 253, style.scss */
   .sidebar a:hover {
     color: #000;
     text-decoration: underline;
@@ -265,7 +267,7 @@ Standard layout styles
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
-  /* line 263, style.scss */
+  /* line 265, style.scss */
   #content {
     display: block;
     background-color: #20CE55;
@@ -297,23 +299,23 @@ Standard layout styles
 }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
-  /* line 303, style.scss */
+  /* line 305, style.scss */
   .sidebar ul li.journalfont {
     font-size: 5.2em;
   }
 
-  /* line 310, style.scss */
+  /* line 312, style.scss */
   .sidebar ul li.communityfont {
     font-size: 4em;
   }
 
-  /* line 316, style.scss */
+  /* line 318, style.scss */
   .sidebar ul li.contactfont {
     font-size: 5.3em;
   }
 }
 /*FOOTER styles*/
-/* line 324, style.scss */
+/* line 326, style.scss */
 .site-footer {
   display: block;
   float: right;
@@ -325,7 +327,7 @@ Standard layout styles
   position: relative;
 }
 
-/* line 335, style.scss */
+/* line 337, style.scss */
 .footer-container {
   overflow: hidden;
   margin: 0 auto;
@@ -334,39 +336,39 @@ Standard layout styles
   position: relative;
 }
 
-/* line 343, style.scss */
+/* line 345, style.scss */
 .footer-content {
   float: left;
   overflow: hidden;
 }
 
-/* line 348, style.scss */
+/* line 350, style.scss */
 .footer-image {
   float: left;
   padding: 0 7%;
 }
 
-/* line 353, style.scss */
+/* line 355, style.scss */
 .footer-address {
   float: left;
   padding-right: 10%;
 }
-/* line 357, style.scss */
+/* line 359, style.scss */
 .footer-address p {
   margin: 0;
   font-size: 25px;
 }
 
-/* line 363, style.scss */
+/* line 365, style.scss */
 .footer-posts {
   float: left;
 }
-/* line 365, style.scss */
+/* line 367, style.scss */
 .footer-posts ul {
   list-style: none;
 }
 
-/* line 373, style.scss */
+/* line 375, style.scss */
 .sidebar h4 {
   font-size: 1.3em;
   line-height: 1.5;
@@ -374,7 +376,7 @@ Standard layout styles
   margin: 10%;
 }
 
-/* line 384, style.scss */
+/* line 386, style.scss */
 .sidebar a:hover {
   color: #000;
   text-decoration: underline;
@@ -396,7 +398,7 @@ MIN-WIDTH 1200PX
 /*
  * Image replacement
  */
-/* line 420, style.scss */
+/* line 422, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -405,7 +407,7 @@ MIN-WIDTH 1200PX
   *text-indent: -9999px;
 }
 
-/* line 428, style.scss */
+/* line 430, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -416,7 +418,7 @@ MIN-WIDTH 1200PX
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 439, style.scss */
+/* line 441, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -425,7 +427,7 @@ MIN-WIDTH 1200PX
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 448, style.scss */
+/* line 450, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -441,7 +443,7 @@ MIN-WIDTH 1200PX
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 465, style.scss */
+/* line 467, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -455,7 +457,7 @@ MIN-WIDTH 1200PX
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 478, style.scss */
+/* line 480, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -471,7 +473,7 @@ MIN-WIDTH 1200PX
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 495, style.scss */
+/* line 497, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -480,7 +482,7 @@ MIN-WIDTH 1200PX
   /* 2 */
 }
 
-/* line 500, style.scss */
+/* line 502, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -489,7 +491,7 @@ MIN-WIDTH 1200PX
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 509, style.scss */
+/* line 511, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -510,7 +512,7 @@ MIN-WIDTH 1200PX
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 536, style.scss */
+  /* line 538, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -519,18 +521,18 @@ MIN-WIDTH 1200PX
     text-shadow: none !important;
   }
 
-  /* line 544, style.scss */
+  /* line 546, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 548, style.scss */
+  /* line 550, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 552, style.scss */
+  /* line 554, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -538,33 +540,33 @@ MIN-WIDTH 1200PX
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 562, style.scss */
+  /* line 564, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 567, style.scss */
+  /* line 569, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 572, style.scss */
+  /* line 574, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 577, style.scss */
+  /* line 579, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 581, style.scss */
+  /* line 583, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -573,7 +575,7 @@ MIN-WIDTH 1200PX
     margin: 0.5cm;
 }
 
-  /* line 591, style.scss */
+  /* line 593, style.scss */
   p,
   h2,
   h3 {
@@ -581,7 +583,7 @@ MIN-WIDTH 1200PX
     widows: 3;
   }
 
-  /* line 597, style.scss */
+  /* line 599, style.scss */
   h2,
   h3 {
     page-break-after: avoid;
