@@ -260,15 +260,14 @@ textarea {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
 
-#content {
-    display:block;
-    background-color: #20CE55;
-    height:1000px;
-    float: right;
-    position: relative; 
-    width: 70%;
-
-}
+    #content {
+        display:block;
+        background-color: #20CE55;
+        height:1000px;
+        float: right;
+        position: relative; 
+        width: 70%;
+    }
 }
  
 /* Smartphones (landscape) ----------- */
@@ -301,24 +300,24 @@ textarea {
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
 
-.sidebar ul li.journalfont {
+    .sidebar ul li.journalfont {
 
 
-    font-size: 5.2em;
-    
-}
+        font-size: 5.2em;
+        
+    }
 
-.sidebar ul li.communityfont {
+    .sidebar ul li.communityfont {
 
-    font-size: 4em;
-    
-}
+        font-size: 4em;
+        
+    }
 
-.sidebar ul li.contactfont {
+    .sidebar ul li.contactfont {
 
-    font-size: 5.3em;
-    
-}
+        font-size: 5.3em;
+        
+    }
 }
 /*FOOTER styles*/
 
