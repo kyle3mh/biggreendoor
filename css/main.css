@@ -93,8 +93,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
+#sidebar {
+    width: 40%;
+    position: fixed;
+    float: left;
+    background-color: white;
+}
+#sidebar ul li {
+    font-family: DK Pisang;
+    font-size: ;
+    color: #20CE55;
+}
 
 
 
