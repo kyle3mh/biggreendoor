@@ -168,7 +168,36 @@ textarea {
     width: 70%;
 }
 
+/*FOOTER styles*/
 
+.site-footer {
+    display: block;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    width:70%;
+    height:250px;
+    position:relative;
+}
+
+.footer-container {
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 0;
+    top: 7px;
+    position: relative;
+}
+
+.footer-content {
+    float: left;
+    overflow: hidden;
+        li {
+            display: inline-block;
+            padding-right: 20px;
+
+        }
+}
 
 
 
