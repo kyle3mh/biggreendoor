@@ -21,38 +21,40 @@ textarea {
 body {
   font-size: 100%;
   line-height: 1.4;
+  font-family: DK Pisang;
 }
 
 /* -- Headings -- */
-/* line 27, style.scss */
+/* line 28, style.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   text-align: left;
   margin: 0 0 25px;
 }
 
-/* line 33, style.scss */
+/* line 34, style.scss */
 h1, .h1 {
   font-size: 30px;
+  color: #FFFFFF;
 }
 
-/* line 36, style.scss */
+/* line 38, style.scss */
 h2, .h2 {
   font-size: 24px;
   color: #666666;
 }
 
-/* line 40, style.scss */
+/* line 42, style.scss */
 h3, .h3 {
   font-size: 20px;
 }
 
-/* line 44, style.scss */
+/* line 46, style.scss */
 h4, .h4 {
   font-size: 16px;
 }
 
-/* line 47, style.scss */
+/* line 49, style.scss */
 h5, .h5 {
   font-size: 14px;
 }
@@ -62,13 +64,13 @@ h5, .h5 {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 59, style.scss */
+/* line 61, style.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 64, style.scss */
+/* line 66, style.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -77,7 +79,7 @@ h5, .h5 {
 /*
  * A better looking default horizontal rule
  */
-/* line 73, style.scss */
+/* line 75, style.scss */
 hr {
   display: block;
   height: 1px;
@@ -90,7 +92,7 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-/* line 86, style.scss */
+/* line 88, style.scss */
 img {
   vertical-align: middle;
 }
@@ -98,7 +100,7 @@ img {
 /*
  * Remove default fieldset styles.
  */
-/* line 94, style.scss */
+/* line 96, style.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -108,7 +110,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 104, style.scss */
+/* line 106, style.scss */
 textarea {
   resize: vertical;
 }
@@ -116,7 +118,7 @@ textarea {
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-/* line 112, style.scss */
+/* line 114, style.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -127,14 +129,14 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 123, style.scss */
+/* line 125, style.scss */
 #logo {
   width: 472px;
   height: 462px;
-  background-image: url(/media/logo.png);
+  background-image: url(/img/logo.png);
 }
 
-/* line 128, style.scss */
+/* line 130, style.scss */
 #sidebar {
   width: 30%;
   height: 100%;
@@ -143,14 +145,14 @@ textarea {
   background-color: white;
 }
 
-/* line 135, style.scss */
+/* line 137, style.scss */
 #sidebar ul {
   margin: 0;
   padding: 0;
   margin-top: 20%;
 }
 
-/* line 140, style.scss */
+/* line 142, style.scss */
 #sidebar ul li {
   font-family: DK Pisang;
   font-size: 3em;
@@ -159,18 +161,18 @@ textarea {
   color: #20CE55;
 }
 
-/* line 147, style.scss */
+/* line 149, style.scss */
 #sidebar a {
   color: #20CE55;
   text-decoration: none;
 }
 
-/* line 151, style.scss */
+/* line 153, style.scss */
 #sidebar a:hover {
   color: #000;
 }
 
-/* line 154, style.scss */
+/* line 156, style.scss */
 #sidebar img {
   display: block;
   margin-top: 30px;
@@ -178,7 +180,7 @@ textarea {
   margin-right: auto;
 }
 
-/* line 160, style.scss */
+/* line 162, style.scss */
 #content {
   display: block;
   background-color: #20CE55;
@@ -194,7 +196,7 @@ textarea {
 /*
  * Image replacement
  */
-/* line 189, style.scss */
+/* line 191, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -203,7 +205,7 @@ textarea {
   *text-indent: -9999px;
 }
 
-/* line 197, style.scss */
+/* line 199, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -214,7 +216,7 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 208, style.scss */
+/* line 210, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -223,7 +225,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 217, style.scss */
+/* line 219, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -239,7 +241,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 234, style.scss */
+/* line 236, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -253,7 +255,7 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 247, style.scss */
+/* line 249, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -269,7 +271,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 264, style.scss */
+/* line 266, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -278,7 +280,7 @@ textarea {
   /* 2 */
 }
 
-/* line 269, style.scss */
+/* line 271, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -287,7 +289,7 @@ textarea {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 278, style.scss */
+/* line 280, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -308,7 +310,7 @@ textarea {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 305, style.scss */
+  /* line 307, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -317,18 +319,18 @@ textarea {
     text-shadow: none !important;
   }
 
-  /* line 313, style.scss */
+  /* line 315, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 317, style.scss */
+  /* line 319, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 321, style.scss */
+  /* line 323, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -336,33 +338,33 @@ textarea {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 331, style.scss */
+  /* line 333, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 336, style.scss */
+  /* line 338, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 341, style.scss */
+  /* line 343, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 346, style.scss */
+  /* line 348, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 350, style.scss */
+  /* line 352, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -371,7 +373,7 @@ textarea {
     margin: 0.5cm;
 }
 
-  /* line 360, style.scss */
+  /* line 362, style.scss */
   p,
   h2,
   h3 {
@@ -379,7 +381,7 @@ textarea {
     widows: 3;
   }
 
-  /* line 366, style.scss */
+  /* line 368, style.scss */
   h2,
   h3 {
     page-break-after: avoid;

@@ -21,6 +21,7 @@ textarea {
 body {
     font-size: 100%;
     line-height: 1.4;
+    font-family: DK Pisang;
 }
 
 /* -- Headings -- */
@@ -32,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, .h1 { 
     font-size: 30px; 
+    color: #FFFFFF;
 }
 h2, .h2 { 
     font-size: 24px; 
@@ -123,7 +125,7 @@ textarea {
 #logo {
     width:472px;
     height:462px;
-    background-image:url(/media/logo.png);
+    background-image:url(/img/logo.png);
 }
 #sidebar {
     width: 30%;
