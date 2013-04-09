@@ -1,58 +1,593 @@
 /*
-Syntax error: Invalid CSS after "h1, .h1 {": expected "}", was "<<<<<<< HEAD"
-        on line 37 of /Users/tomhowe/Documents/repos/biggreendoor/css/style.scss
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 17, style.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
 
-Backtrace:
-/Users/tomhowe/Documents/repos/biggreendoor/css/style.scss:37
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1129:in `expected'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1061:in `tok!'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:519:in `block'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:512:in `ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:536:in `block_child'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:529:in `block_contents'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:70:in `stylesheet'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:27:in `parse'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:342:in `_to_tree'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-org/jruby/RubyMethod.java:133:in `call'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyKernel.java:1419:in `loop'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Applications/Scout.app/Contents/Resources/bin/compass:12:in `(root)'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"h1, .h1 {\": expected \"}\", was \"<<<<<<< HEAD\"\A         on line 37 of /Users/tomhowe/Documents/repos/biggreendoor/css/style.scss"; }
+/* line 21, style.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: DK Pisang;
+}
+
+/* -- Headings -- */
+/* line 29, style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  text-align: left;
+  margin: 0 0 25px;
+}
+
+/* line 35, style.scss */
+h1, .h1 {
+  font-size: 12em;
+  color: #fff;
+  padding: 5%;
+  padding-top: 10px;
+  font-family: DK Pisang;
+}
+
+/* line 44, style.scss */
+h2, .h2 {
+  font-size: 24px;
+  color: #666666;
+}
+
+/* line 48, style.scss */
+h3, .h3 {
+  font-size: 20px;
+}
+
+/* line 52, style.scss */
+h4, .h4 {
+  font-size: 16px;
+}
+
+/* line 55, style.scss */
+h5, .h5 {
+  font-size: 14px;
+}
+
+/* -- Generic Elements -- */
+/* line 62, style.scss */
+p {
+  color: #20CE55;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 73, style.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 78, style.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 87, style.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 100, style.scss */
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 108, style.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 118, style.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 126, style.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+Standard layout styles
+========================================================================== */
+/* line 143, style.scss */
+#logo {
+  width: 472px;
+  height: 462px;
+  background-image: url(/img/logo.png);
+}
+
+/* line 149, style.scss */
+.sidebar {
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  float: left;
+  background-color: white;
+  font-family: DK Pisang;
+  color: #20CE55;
+  text-align: center;
+}
+
+/* line 160, style.scss */
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 10%;
+}
+
+/* line 166, style.scss */
+#content {
+  display: block;
+  background-color: #20CE55;
+  height: 10000px;
+  float: right;
+  width: 70%;
+}
+
+/* line 174, style.scss */
+.sidebar img {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 181, style.scss */
+.sidebar a {
+  color: #20CE55;
+  text-decoration: none;
+}
+
+/* line 186, style.scss */
+.sidebar ul li a:hover {
+  text-decoration: underline;
+  color: #20CE55;
+}
+
+/* line 188, style.scss */
+.sidebar ul li {
+  font-size: 4em;
+  list-style-type: none;
+  text-align: center;
+  line-height: 1;
+}
+
+/* line 195, style.scss */
+.sidebar ul li.journalfont {
+  font-size: 3.7em;
+}
+
+/* line 201, style.scss */
+.sidebar ul li.communityfont {
+  font-size: 2.8em;
+}
+
+/* line 207, style.scss */
+.sidebar ul li.contactfont {
+  font-size: 3.7em;
+}
+
+/* line 215, style.scss */
+.sidebar h4 {
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+  margin: 10%;
+}
+
+/* line 226, style.scss */
+.sidebar a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+ MIN-WIDTH 1100PX
+ ========================================================================== */
+@media only screen and (min-width: 1250px) {
+  /* line 239, style.scss */
+  .sidebar ul li.journalfont {
+    font-size: 5.2em;
+  }
+
+  /* line 242, style.scss */
+  .sidebar ul li.communityfont {
+    font-size: 4em;
+  }
+
+  /* line 246, style.scss */
+  .sidebar ul li.contactfont {
+    font-size: 5.3em;
+  }
+
+  /* line 249, style.scss */
+  .sidebar h4 {
+    font-size: 1.3em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 10%;
+  }
+
+  /* line 255, style.scss */
+  .sidebar a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  /* line 267, style.scss */
+  #content {
+    display: block;
+    background-color: #20CE55;
+    height: 1000px;
+    float: right;
+    position: relative;
+    width: 70%;
+  }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* line 307, style.scss */
+  .sidebar ul li.journalfont {
+    font-size: 5.2em;
+  }
+
+  /* line 314, style.scss */
+  .sidebar ul li.communityfont {
+    font-size: 4em;
+  }
+
+  /* line 320, style.scss */
+  .sidebar ul li.contactfont {
+    font-size: 5.3em;
+  }
+}
+/*FOOTER styles*/
+/* line 328, style.scss */
+.site-footer {
+  display: block;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  width: 70%;
+  height: 250px;
+  position: relative;
+}
+
+/* line 339, style.scss */
+.footer-container {
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 0;
+  top: 7px;
+  position: relative;
+}
+
+/* line 347, style.scss */
+.footer-content {
+  float: left;
+  overflow: hidden;
+}
+
+/* line 352, style.scss */
+.footer-image {
+  float: left;
+  padding: 0 7%;
+}
+
+/* line 357, style.scss */
+.footer-address {
+  float: left;
+  padding-right: 10%;
+}
+/* line 361, style.scss */
+.footer-address p {
+  margin: 0;
+  font-size: 25px;
+}
+
+/* line 367, style.scss */
+.footer-posts {
+  float: left;
+}
+/* line 369, style.scss */
+.footer-posts ul {
+  list-style: none;
+}
+
+/* line 377, style.scss */
+.sidebar h4 {
+  font-size: 1.3em;
+  line-height: 1.5;
+  text-align: center;
+  margin: 10%;
+}
+
+/* line 388, style.scss */
+.sidebar a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+/* ==========================================================================
+ MIN-WIDTH 320PX
+ ========================================================================== */
+/* ==========================================================================
+MIN-WIDTH 1200PX
+========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 424, style.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 432, style.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 443, style.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 452, style.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 469, style.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 482, style.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 499, style.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 504, style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 513, style.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 540, style.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 548, style.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 552, style.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 556, style.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 566, style.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 571, style.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 576, style.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 581, style.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 585, style.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 595, style.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 601, style.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
