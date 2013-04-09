@@ -129,14 +129,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 125, style.scss */
-#logo {
-  width: 472px;
-  height: 462px;
-  background-image: url(/img/logo.png);
-}
 
-/* line 130, style.scss */
+/* line 123, style.scss */
+
 #sidebar {
   width: 30%;
   height: 100%;
@@ -145,14 +140,13 @@ textarea {
   background-color: white;
 }
 
-/* line 137, style.scss */
 #sidebar ul {
   margin: 0;
   padding: 0;
   margin-top: 20%;
 }
 
-/* line 142, style.scss */
+
 #sidebar ul li {
   font-family: DK Pisang;
   font-size: 3em;
@@ -161,18 +155,15 @@ textarea {
   color: #20CE55;
 }
 
-/* line 149, style.scss */
 #sidebar a {
   color: #20CE55;
   text-decoration: none;
 }
 
-/* line 153, style.scss */
 #sidebar a:hover {
   color: #000;
 }
 
-/* line 156, style.scss */
 #sidebar img {
   display: block;
   margin-top: 30px;
@@ -180,7 +171,6 @@ textarea {
   margin-right: auto;
 }
 
-/* line 162, style.scss */
 #content {
   display: block;
   background-color: #20CE55;
@@ -196,7 +186,11 @@ textarea {
 /*
  * Image replacement
  */
+<<<<<<< HEAD
 /* line 191, style.scss */
+=======
+/* line 184, style.scss */
+>>>>>>> afd
 .ir {
   background-color: transparent;
   border: 0;
@@ -205,7 +199,11 @@ textarea {
   *text-indent: -9999px;
 }
 
+<<<<<<< HEAD
 /* line 199, style.scss */
+=======
+/* line 192, style.scss */
+>>>>>>> afd
 .ir:before {
   content: "";
   display: block;
@@ -216,7 +214,11 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
+<<<<<<< HEAD
 /* line 210, style.scss */
+=======
+/* line 203, style.scss */
+>>>>>>> afd
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -225,7 +227,11 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
+<<<<<<< HEAD
 /* line 219, style.scss */
+=======
+/* line 212, style.scss */
+>>>>>>> afd
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -241,7 +247,11 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
+<<<<<<< HEAD
 /* line 236, style.scss */
+=======
+/* line 229, style.scss */
+>>>>>>> afd
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -255,7 +265,11 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
+<<<<<<< HEAD
 /* line 249, style.scss */
+=======
+/* line 242, style.scss */
+>>>>>>> afd
 .invisible {
   visibility: hidden;
 }
@@ -271,7 +285,11 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
+<<<<<<< HEAD
 /* line 266, style.scss */
+=======
+/* line 259, style.scss */
+>>>>>>> afd
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -280,7 +298,11 @@ textarea {
   /* 2 */
 }
 
+<<<<<<< HEAD
 /* line 271, style.scss */
+=======
+/* line 264, style.scss */
+>>>>>>> afd
 .clearfix:after {
   clear: both;
 }
@@ -289,7 +311,11 @@ textarea {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
+<<<<<<< HEAD
 /* line 280, style.scss */
+=======
+/* line 273, style.scss */
+>>>>>>> afd
 .clearfix {
   *zoom: 1;
 }
@@ -310,7 +336,11 @@ textarea {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
+<<<<<<< HEAD
   /* line 307, style.scss */
+=======
+  /* line 300, style.scss */
+>>>>>>> afd
   * {
     background: transparent !important;
     color: #000 !important;
@@ -319,18 +349,30 @@ textarea {
     text-shadow: none !important;
   }
 
+<<<<<<< HEAD
   /* line 315, style.scss */
+=======
+  /* line 308, style.scss */
+>>>>>>> afd
   a,
   a:visited {
     text-decoration: underline;
   }
 
+<<<<<<< HEAD
   /* line 319, style.scss */
+=======
+  /* line 312, style.scss */
+>>>>>>> afd
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
+<<<<<<< HEAD
   /* line 323, style.scss */
+=======
+  /* line 316, style.scss */
+>>>>>>> afd
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -338,33 +380,53 @@ textarea {
   /*
    * Don't show links for images, or javascript/internal links
    */
+<<<<<<< HEAD
   /* line 333, style.scss */
+=======
+  /* line 326, style.scss */
+>>>>>>> afd
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
+<<<<<<< HEAD
   /* line 338, style.scss */
+=======
+  /* line 331, style.scss */
+>>>>>>> afd
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
+<<<<<<< HEAD
   /* line 343, style.scss */
+=======
+  /* line 336, style.scss */
+>>>>>>> afd
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
+<<<<<<< HEAD
   /* line 348, style.scss */
+=======
+  /* line 341, style.scss */
+>>>>>>> afd
   tr,
   img {
     page-break-inside: avoid;
   }
 
+<<<<<<< HEAD
   /* line 352, style.scss */
+=======
+  /* line 345, style.scss */
+>>>>>>> afd
   img {
     max-width: 100% !important;
   }
@@ -373,7 +435,11 @@ textarea {
     margin: 0.5cm;
 }
 
+<<<<<<< HEAD
   /* line 362, style.scss */
+=======
+  /* line 355, style.scss */
+>>>>>>> afd
   p,
   h2,
   h3 {
@@ -381,7 +447,11 @@ textarea {
     widows: 3;
   }
 
+<<<<<<< HEAD
   /* line 368, style.scss */
+=======
+  /* line 361, style.scss */
+>>>>>>> afd
   h2,
   h3 {
     page-break-after: avoid;
