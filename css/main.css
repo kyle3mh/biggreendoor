@@ -92,9 +92,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    background-color: #20CE55;
+}
 
 #sidebar {
     width: 40%;
+    height: 100%;
     position: fixed;
     float: left;
     background-color: white;
