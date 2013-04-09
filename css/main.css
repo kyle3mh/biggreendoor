@@ -99,11 +99,16 @@ textarea {
     background-image:url(/media/logo.png);
 }
 #sidebar {
-    width: 40%;
+    width: 30%;
     height: 100%;
     position: fixed;
     float: left;
     background-color: white;
+}
+#sidebar ul {
+    margin: 0;
+    padding:0;
+    margin-top: 20%;
 }
 #sidebar ul li {
     font-family: DK Pisang;
@@ -112,13 +117,17 @@ textarea {
     text-align: center;
     color: #20CE55;
 }
-#sidebar ul {
-    margin-top: 20%;
-}
 #sidebar img {
-    text-align: center;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+#content {
+    display:block;
+    background-color: #20CE55;
+    height:10000px;
+}
 
 
 
