@@ -164,7 +164,7 @@ textarea {
 #content {
     display:block;
     background-color: #20CE55;
-    height:10000px;
+    height:1000px;
     float: right;
     position: relative; 
     width: 70%;
@@ -194,6 +194,14 @@ textarea {
 .footer-content {
     float: left;
     overflow: hidden;
+
+        li {
+            display: inline-block;
+            padding-right: 20px;
+            color:#20CE55;
+
+        }
+
 }
 
 .footer-image {
