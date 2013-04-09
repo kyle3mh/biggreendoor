@@ -30,18 +30,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     text-align: left;
-    margin: 0 0 25px;
+    margin: 0 0 25px; 
 }
 
 h1, .h1 { 
-<<<<<<< HEAD
+
     font-size: 3em; 
     color: #fff;
     font-family: DK Pisang;
-=======
-    font-size: 30px; 
-    color: #FFFFFF;
->>>>>>> 5550405743956ae624ccddabd246cc8d958d8831
+
 }
 h2, .h2 { 
     font-size: 24px; 
@@ -136,7 +133,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-<<<<<<< HEAD
+
    /* ==========================================================================
    Standard layout styles
    ========================================================================== */
@@ -150,10 +147,6 @@ textarea {
 
 .sidebar {
     width: 25%;
-=======
-#sidebar {
-    width: 30%;
->>>>>>> 5550405743956ae624ccddabd246cc8d958d8831
     height: 100%;
     position: fixed;
     float: left;
@@ -245,7 +238,7 @@ textarea {
     font-size: 5.2em;
     
 }
-<<<<<<< HEAD
+
 
 .sidebar ul li.communityfont {
 
@@ -278,14 +271,14 @@ textarea {
 }
 
 
-
-
 }
+
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
-=======
+
 #content {
     display:block;
     background-color: #20CE55;
@@ -293,7 +286,8 @@ textarea {
     float: right;
     position: relative; 
     width: 70%;
->>>>>>> 5550405743956ae624ccddabd246cc8d958d8831
+
+}
 }
  
 /* Smartphones (landscape) ----------- */
@@ -328,7 +322,7 @@ textarea {
 
 .sidebar ul li.journalfont {
 
-<<<<<<< HEAD
+
     font-size: 5.2em;
     
 }
@@ -343,7 +337,8 @@ textarea {
 
     font-size: 5.3em;
     
-=======
+}
+}
 /*FOOTER styles*/
 
 .site-footer {
@@ -368,7 +363,6 @@ textarea {
 .footer-content {
     float: left;
     overflow: hidden;
->>>>>>> 5550405743956ae624ccddabd246cc8d958d8831
 }
 
 .footer-image {
@@ -412,7 +406,7 @@ textarea {
     text-decoration: underline;
 }
 
-}
+
  
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
