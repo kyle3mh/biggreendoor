@@ -13,7 +13,8 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" media='screen and (min-width: 601px)' href="css/style.css">
+        <link rel='stylesheet' media='screen and (max-width: 600px)' href='css/mobile.css' />
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -22,21 +23,34 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-
-
         
         <div id='sidebar'>
-            <img width='70%' src='media/logo.png'>
+            <img width='70%' src='img/logo.png'>
             <ul>
-                <li>JOURNAL</li>
-                <li>COMMUNITY</li>
-                <li>CONTACT</li>
-                <li>Yo</li>
+                <li><a href="journal.html">JOURNAL<a></li>              
+                <li><a href='community.html'>COMMUNITY</a></li>
+                <li><a style='text-decoration:underline;' href='contact.html'>CONTACT</a></li>                
             </ul>
         </div>
         <div id='content'>
             <h1 class="h1">How To Find Us</h1>
         </div>
+        <footer class="site-footer">
+            <div class="footer-container">
+                <ul class="footer-content">
+                    <li><img src="img/small_logo.png"></li>
+                    <li><p>Big Green Door Ltd
+                            <br>
+                            15 Hatton Street
+                            <br>
+                            London
+                            <br>
+                            NW8 8PL<p></li>
+                    <li></li>
+                </ul>
+            </div>
+        </footer>
+        
 
 
 
