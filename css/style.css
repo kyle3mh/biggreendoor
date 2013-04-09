@@ -216,33 +216,31 @@ textarea {
   float: left;
   overflow: hidden;
 }
-/* line 198, style.scss */
-.footer-content li {
-  display: inline-block;
-  padding-right: 20px;
-  color: #20CE55;
-}
 
-/* line 207, style.scss */
+/* line 199, style.scss */
 .footer-image {
   float: left;
-  padding: 0 60px;
+  padding: 0 7%;
 }
 
-/* line 212, style.scss */
+/* line 204, style.scss */
 .footer-address {
   float: left;
-  padding-right: 100px;
+  padding-right: 10%;
 }
-/* line 216, style.scss */
+/* line 208, style.scss */
 .footer-address p {
   margin: 0;
   font-size: 25px;
 }
 
-/* line 222, style.scss */
+/* line 214, style.scss */
 .footer-posts {
   float: left;
+}
+/* line 216, style.scss */
+.footer-posts ul {
+  list-style: none;
 }
 
 /* ==========================================================================
@@ -251,7 +249,7 @@ textarea {
 /*
  * Image replacement
  */
-/* line 240, style.scss */
+/* line 238, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -260,7 +258,7 @@ textarea {
   *text-indent: -9999px;
 }
 
-/* line 248, style.scss */
+/* line 246, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -271,7 +269,7 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 259, style.scss */
+/* line 257, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -280,7 +278,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 268, style.scss */
+/* line 266, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -296,7 +294,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 285, style.scss */
+/* line 283, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -310,7 +308,7 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 298, style.scss */
+/* line 296, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -326,7 +324,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 315, style.scss */
+/* line 313, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -335,7 +333,7 @@ textarea {
   /* 2 */
 }
 
-/* line 320, style.scss */
+/* line 318, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -344,7 +342,7 @@ textarea {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 329, style.scss */
+/* line 327, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -365,7 +363,7 @@ textarea {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 356, style.scss */
+  /* line 354, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -374,18 +372,18 @@ textarea {
     text-shadow: none !important;
   }
 
-  /* line 364, style.scss */
+  /* line 362, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 368, style.scss */
+  /* line 366, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 372, style.scss */
+  /* line 370, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -393,33 +391,33 @@ textarea {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 382, style.scss */
+  /* line 380, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 387, style.scss */
+  /* line 385, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 392, style.scss */
+  /* line 390, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 397, style.scss */
+  /* line 395, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 401, style.scss */
+  /* line 399, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -428,7 +426,7 @@ textarea {
     margin: 0.5cm;
 }
 
-  /* line 411, style.scss */
+  /* line 409, style.scss */
   p,
   h2,
   h3 {
@@ -436,7 +434,7 @@ textarea {
     widows: 3;
   }
 
-  /* line 417, style.scss */
+  /* line 415, style.scss */
   h2,
   h3 {
     page-break-after: avoid;

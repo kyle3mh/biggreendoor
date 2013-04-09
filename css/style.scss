@@ -194,24 +194,16 @@ textarea {
 .footer-content {
     float: left;
     overflow: hidden;
-
-        li {
-            display: inline-block;
-            padding-right: 20px;
-            color:#20CE55;
-
-        }
-
 }
 
 .footer-image {
     float: left;
-    padding: 0 60px;
+    padding: 0 7%;
 }
 
 .footer-address {
     float: left;
-    padding-right: 100px;
+    padding-right: 10%;
 
         p {
             margin: 0;
@@ -220,7 +212,13 @@ textarea {
 }
 
 .footer-posts {
-    float: left;
+    float: left;   
+    ul {
+        list-style: none;
+        li {
+
+        }
+    } 
 }
 
 
