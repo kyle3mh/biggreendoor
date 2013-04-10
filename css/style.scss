@@ -252,12 +252,16 @@ textarea {
     display: block;
     background-color: #20CE55;
     width:20%;
+    padding-top:200px;
     height:500px;
     position: fixed;
     right:30px;
 }
 #journal-widget h3,li {
     text-align: center;
+}
+.journal-text {
+    color:#20CE55;
 }
 
   /* ==========================================================================
