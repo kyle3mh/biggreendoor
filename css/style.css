@@ -227,38 +227,98 @@ Standard layout styles
   width: 75%;
 }
 
+<<<<<<< HEAD
 /* line 206, style.scss */
 .inner-content {
   margin: 2%;
   width: auto;
   height: auto;
+=======
+/* COMMUNITY PAGE CLASSES */
+/* line 210, style.scss */
+#title {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* line 214, style.scss */
+#para1, #para2 {
+  color: white;
+  margin: 5%;
+  margin-top: 0;
+}
+
+/* line 219, style.scss */
+.community-table {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 225, style.scss */
+.community-table td {
+  padding: 1.5em;
+}
+
+/* line 228, style.scss */
+.com-table-person {
+  width: 250px;
+  height: 250px;
+  background-image: url(http://fakeimg.pl/250x250/30D755/20CE55/?text=Person&font=lobster);
+}
+
+/* line 233, style.scss */
+.com-table-person:hover {
+  background-image: url(http://fakeimg.pl/250x250/20CE55/30D755/?text=Person&font=lobster);
+>>>>>>> community page
 }
 
 /* ==========================================================================
  MIN-WIDTH 1100PX
  ========================================================================== */
 @media only screen and (min-width: 1250px) {
+<<<<<<< HEAD
   /* line 220, style.scss */
+=======
+  /* line 265, style.scss */
+>>>>>>> community page
   .sidebar ul li.journalfont {
     font-size: 5.2em;
   }
 
+<<<<<<< HEAD
   /* line 223, style.scss */
+=======
+  /* line 268, style.scss */
+>>>>>>> community page
   .sidebar ul li.communityfont {
     font-size: 4em;
   }
 
+<<<<<<< HEAD
   /* line 227, style.scss */
+=======
+  /* line 272, style.scss */
+>>>>>>> community page
   .sidebar ul li.aboutfont {
     font-size: 1.8em;
   }
 
+<<<<<<< HEAD
   /* line 231, style.scss */
+=======
+  /* line 276, style.scss */
+>>>>>>> community page
   .sidebar ul li.contactfont {
     font-size: 5.3em;
   }
 
+<<<<<<< HEAD
   /* line 234, style.scss */
+=======
+  /* line 282, style.scss */
+>>>>>>> community page
   .sidebar h4 {
     font-size: 1.3em;
     line-height: 1.5;
@@ -266,7 +326,11 @@ Standard layout styles
     margin: 10%;
   }
 
+<<<<<<< HEAD
   /* line 240, style.scss */
+=======
+  /* line 288, style.scss */
+>>>>>>> community page
   .sidebar a:hover {
     color: #000;
     text-decoration: underline;
@@ -275,7 +339,11 @@ Standard layout styles
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
+<<<<<<< HEAD
   /* line 252, style.scss */
+=======
+  /* line 300, style.scss */
+>>>>>>> community page
   #content {
     display: block;
     background-color: #20CE55;
@@ -307,28 +375,48 @@ Standard layout styles
 }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
+<<<<<<< HEAD
   /* line 292, style.scss */
+=======
+  /* line 340, style.scss */
+>>>>>>> community page
   .sidebar ul li.journalfont {
     font-size: 5.2em;
   }
 
+<<<<<<< HEAD
   /* line 299, style.scss */
+=======
+  /* line 347, style.scss */
+>>>>>>> community page
   .sidebar ul li.communityfont {
     font-size: 4em;
   }
 
+<<<<<<< HEAD
   /* line 305, style.scss */
+=======
+  /* line 353, style.scss */
+>>>>>>> community page
   .sidebar ul li.aboutfont {
     font-size: 3.8em;
   }
 
+<<<<<<< HEAD
   /* line 309, style.scss */
+=======
+  /* line 357, style.scss */
+>>>>>>> community page
   .sidebar ul li.contactfont {
     font-size: 5.3em;
   }
 }
 /*FOOTER styles*/
+<<<<<<< HEAD
 /* line 317, style.scss */
+=======
+/* line 365, style.scss */
+>>>>>>> community page
 .site-footer {
   display: block;
   float: right;
@@ -340,7 +428,11 @@ Standard layout styles
   position: relative;
 }
 
+<<<<<<< HEAD
 /* line 328, style.scss */
+=======
+/* line 376, style.scss */
+>>>>>>> community page
 .footer-container {
   overflow: hidden;
   margin: 0 auto;
@@ -349,34 +441,58 @@ Standard layout styles
   position: relative;
 }
 
+<<<<<<< HEAD
 /* line 336, style.scss */
+=======
+/* line 384, style.scss */
+>>>>>>> community page
 .footer-content {
   float: left;
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 /* line 341, style.scss */
+=======
+/* line 389, style.scss */
+>>>>>>> community page
 .footer-image {
   float: left;
   padding: 0 7%;
 }
 
+<<<<<<< HEAD
 /* line 346, style.scss */
+=======
+/* line 394, style.scss */
+>>>>>>> community page
 .footer-address {
   float: left;
   padding-right: 10%;
 }
+<<<<<<< HEAD
 /* line 349, style.scss */
+=======
+/* line 398, style.scss */
+>>>>>>> community page
 .footer-address p {
   margin: 0;
   font-size: 25px;
 }
 
+<<<<<<< HEAD
 /* line 355, style.scss */
 .footer-posts {
   float: left;
 }
 /* line 357, style.scss */
+=======
+/* line 404, style.scss */
+.footer-posts {
+  float: left;
+}
+/* line 406, style.scss */
+>>>>>>> community page
 .footer-posts ul {
   list-style: none;
 }
@@ -398,7 +514,11 @@ MIN-WIDTH 1200PX
 /*
  * Image replacement
  */
+<<<<<<< HEAD
 /* line 400, style.scss */
+=======
+/* line 446, style.scss */
+>>>>>>> community page
 .ir {
   background-color: transparent;
   border: 0;
@@ -407,7 +527,11 @@ MIN-WIDTH 1200PX
   *text-indent: -9999px;
 }
 
+<<<<<<< HEAD
 /* line 408, style.scss */
+=======
+/* line 454, style.scss */
+>>>>>>> community page
 .ir:before {
   content: "";
   display: block;
@@ -418,7 +542,11 @@ MIN-WIDTH 1200PX
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
+<<<<<<< HEAD
 /* line 419, style.scss */
+=======
+/* line 465, style.scss */
+>>>>>>> community page
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -427,7 +555,11 @@ MIN-WIDTH 1200PX
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
+<<<<<<< HEAD
 /* line 428, style.scss */
+=======
+/* line 474, style.scss */
+>>>>>>> community page
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -443,7 +575,11 @@ MIN-WIDTH 1200PX
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
+<<<<<<< HEAD
 /* line 445, style.scss */
+=======
+/* line 491, style.scss */
+>>>>>>> community page
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -457,7 +593,11 @@ MIN-WIDTH 1200PX
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
+<<<<<<< HEAD
 /* line 458, style.scss */
+=======
+/* line 504, style.scss */
+>>>>>>> community page
 .invisible {
   visibility: hidden;
 }
@@ -473,7 +613,11 @@ MIN-WIDTH 1200PX
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
+<<<<<<< HEAD
 /* line 475, style.scss */
+=======
+/* line 521, style.scss */
+>>>>>>> community page
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -482,7 +626,11 @@ MIN-WIDTH 1200PX
   /* 2 */
 }
 
+<<<<<<< HEAD
 /* line 480, style.scss */
+=======
+/* line 526, style.scss */
+>>>>>>> community page
 .clearfix:after {
   clear: both;
 }
@@ -491,7 +639,11 @@ MIN-WIDTH 1200PX
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
+<<<<<<< HEAD
 /* line 489, style.scss */
+=======
+/* line 535, style.scss */
+>>>>>>> community page
 .clearfix {
   *zoom: 1;
 }
@@ -512,7 +664,11 @@ MIN-WIDTH 1200PX
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
+<<<<<<< HEAD
   /* line 516, style.scss */
+=======
+  /* line 562, style.scss */
+>>>>>>> community page
   * {
     background: transparent !important;
     color: #000 !important;
@@ -521,18 +677,30 @@ MIN-WIDTH 1200PX
     text-shadow: none !important;
   }
 
+<<<<<<< HEAD
   /* line 524, style.scss */
+=======
+  /* line 570, style.scss */
+>>>>>>> community page
   a,
   a:visited {
     text-decoration: underline;
   }
 
+<<<<<<< HEAD
   /* line 528, style.scss */
+=======
+  /* line 574, style.scss */
+>>>>>>> community page
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
+<<<<<<< HEAD
   /* line 532, style.scss */
+=======
+  /* line 578, style.scss */
+>>>>>>> community page
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -540,33 +708,53 @@ MIN-WIDTH 1200PX
   /*
    * Don't show links for images, or javascript/internal links
    */
+<<<<<<< HEAD
   /* line 542, style.scss */
+=======
+  /* line 588, style.scss */
+>>>>>>> community page
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
+<<<<<<< HEAD
   /* line 547, style.scss */
+=======
+  /* line 593, style.scss */
+>>>>>>> community page
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
+<<<<<<< HEAD
   /* line 552, style.scss */
+=======
+  /* line 598, style.scss */
+>>>>>>> community page
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
+<<<<<<< HEAD
   /* line 557, style.scss */
+=======
+  /* line 603, style.scss */
+>>>>>>> community page
   tr,
   img {
     page-break-inside: avoid;
   }
 
+<<<<<<< HEAD
   /* line 561, style.scss */
+=======
+  /* line 607, style.scss */
+>>>>>>> community page
   img {
     max-width: 100% !important;
   }
@@ -575,7 +763,11 @@ MIN-WIDTH 1200PX
     margin: 0.5cm;
 }
 
+<<<<<<< HEAD
   /* line 571, style.scss */
+=======
+  /* line 617, style.scss */
+>>>>>>> community page
   p,
   h2,
   h3 {
@@ -583,7 +775,11 @@ MIN-WIDTH 1200PX
     widows: 3;
   }
 
+<<<<<<< HEAD
   /* line 577, style.scss */
+=======
+  /* line 623, style.scss */
+>>>>>>> community page
   h2,
   h3 {
     page-break-after: avoid;

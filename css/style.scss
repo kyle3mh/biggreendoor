@@ -203,11 +203,61 @@ textarea {
     width: 75%;
 }
 
+<<<<<<< HEAD
 .inner-content {
     margin: 2%;
     width: auto;
     height: auto;
 }
+=======
+/* COMMUNITY PAGE CLASSES */
+#title {
+    text-align: center;
+    margin-bottom: 0;
+}
+#para1, #para2 {
+    color:white;
+    margin:5%;
+    margin-top: 0;
+}
+.community-table {
+    margin:0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.community-table td {
+    padding:1.5em;
+}
+.com-table-person {
+    width: 250px;
+    height: 250px;
+    background-image: url(http://fakeimg.pl/250x250/30D755/20CE55/?text=Person&font=lobster);
+}
+.com-table-person:hover {
+    background-image: url(http://fakeimg.pl/250x250/20CE55/30D755/?text=Person&font=lobster);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> community page
 
 
   /* ==========================================================================
