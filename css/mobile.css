@@ -5,280 +5,508 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+/* line 17, style.scss */
 html,
 button,
 input,
 select,
 textarea {
-    color: #222;
+  color: #222;
 }
 
-
+/* line 21, style.scss */
 body {
-    font-size: 100%;
-    line-height: 1.4;
-    font-family: DK Pisang;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: DK Pisang;
 }
 
 /* -- Headings -- */
+/* line 29, style.scss */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-    text-align: left;
-    margin: 0 0 25px;
+  font-weight: normal;
+  text-align: left;
+  margin: 0 0 25px;
 }
 
-h1, .h1 { 
-    font-size: 30px; 
-    color: #FFFFFF;
+/* line 35, style.scss */
+h1, .h1 {
+  font-size: 12em;
+  color: #fff;
+  padding: 5%;
+  padding-top: 10px;
+  font-family: DK Pisang;
 }
-h2, .h2 { 
-    font-size: 24px; 
-    color: #666666; 
+
+/* line 46, style.scss */
+h2, .h2 {
+  font-size: 24px;
+  color: #666666;
 }
-h3, .h3 { 
-    font-size: 20px;
-    
+
+/* line 50, style.scss */
+h3, .h3 {
+  font-size: 20px;
 }
+
+/* line 54, style.scss */
 h4, .h4 {
-    font-size: 16px; 
-}
-h5, .h5 { 
-    font-size: 14px; 
+  font-size: 16px;
 }
 
+/* line 57, style.scss */
+h5, .h5 {
+  font-size: 14px;
+}
 
+/* -- Generic Elements -- */
+/* line 64, style.scss */
+p {
+  color: #20CE55;
+}
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-
+/* line 75, style.scss */
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
+/* line 80, style.scss */
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
  * A better looking default horizontal rule
  */
-
+/* line 89, style.scss */
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-
+/* line 102, style.scss */
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
  * Remove default fieldset styles.
  */
-
+/* line 110, style.scss */
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
  * Allow only vertical resizing of textareas.
  */
-
+/* line 120, style.scss */
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-
+/* line 128, style.scss */
 .chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* ==========================================================================
+Standard layout styles
+========================================================================== */
+/* line 145, style.scss */
+#logo {
+  width: 472px;
+  height: 462px;
+  background-image: url(/img/logo.png);
+}
 
-#sidebar {
-    width: 100%;
-    height: 400px;
-    min-width: 320px;
-    background-color: white;
+/* line 151, style.scss */
+.sidebar {
+  width: 100%;
+  
+  background-color: white;
+  font-family: DK Pisang;
+  color: #20CE55;
+  text-align: center;
 }
-#sidebar ul {
-    display: block;
-    text-align: center;
-    clear:both;
-    margin: 0;
-    padding:0;
-    margin-top: 10px;
-}
-#sidebar ul li {
-    padding:10px;
-    display: inline;
-    font-family: DK Pisang;
-    font-size: 2em;
-    list-style-type: none;
-    text-align: center;
-    color: #20CE55;
-}
-#sidebar a {
-    color:#20CE55;
-    text-decoration: none;
-}
-#sidebar a:hover {
-    color:#000;
-}
-#sidebar img {
-    display: block;
-    width:320px;
-    margin-top: 30px;
+.sidebar img {
     margin-left: auto;
     margin-right: auto;
-}
-#content {
-    display:block;
-    background-color: #20CE55;
-    height:10000px;
-    position: relative;
-    width: 100%;
-}
-
-/*FOOTER styles*/
-
-.site-footer {
-    display: block;
     margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #FFFFFF;
-    width:100%;
-    height:250px;
+}
+/* line 160, style.scss */
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 10%;
+}
+/* line 164, style.scss */
+.sidebar ul li {
+  display:inline;
+  font-size: 2em;
+  list-style-type: none;
+  text-align: center;
+  line-height: 1;
+  margin-left: 10px;
 }
 
-.footer-container {
-    overflow: hidden;
-    margin: 0 auto;
-    padding-top: 0;
-    top: 7px;
+/*/* line 169, style.scss */
+/*.sidebar ul li.journalfont {
+/*  font-size: 3.7em;
+/*}
+/* line 170, style.scss */
+/*.sidebar ul li.communityfont {
+/*  font-size: 2.8em;
+/*}
+/* line 171, style.scss */
+/*.sidebar ul li.contactfont {
+/*  font-size: 3.7em;
+/*}
+/* line 172, style.scss */
+/*.sidebar ul li.aboutfont {
+/*  font-size: 2.7em;
+/*} 
+/* line 173, style.scss */
+.sidebar ul li a:hover {
+  text-decoration: underline;
+  color: #20CE55;
+}
+/* line 176, style.scss */
+.sidebar img {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 182, style.scss */
+.sidebar a {
+  color: #20CE55;
+  text-decoration: none;
+}
+/* line 185, style.scss */
+.sidebar a :hover {
+  color: #000;
+  text-decoration: underline;
+}
+/* line 190, style.scss */
+.sidebar h4 {
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+  margin: 10%;
+}
+
+/* line 198, style.scss */
+#content {
+  clear:both;
+  display: block;
+  background-color: #20CE55;
+  height: auto;
+  float: right;
+  width: 100%;
+}
+
+/* line 206, style.scss */
+.inner-content {
+  margin: 2%;
+  width: auto;
+  height: auto;
+}
+
+/* COMMUNITY PAGE CLASSES */
+/* line 213, style.scss */
+#title {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 13em;
+}
+
+/* line 218, style.scss */
+#para1, #para2 {
+  color: white;
+  margin: 5%;
+  margin-top: 0;
+}
+
+/* line 223, style.scss */
+.community-table {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 229, style.scss */
+.community-table td {
+  padding: 1.5em;
+}
+
+/* line 232, style.scss */
+.com-table-person {
+  width: 250px;
+  height: 250px;
+  background-image: url(http://fakeimg.pl/250x250/30D755/20CE55/?text=Person&font=lobster);
+}
+
+/* line 237, style.scss */
+.com-table-person:hover {
+  background-image: url(http://fakeimg.pl/250x250/20CE55/30D755/?text=Person&font=lobster);
+}
+
+/* ==========================================================================
+ MIN-WIDTH 1100PX
+ ========================================================================== */
+@media only screen and (min-width: 1250px) {
+  /* line 248, style.scss */
+  .sidebar ul li.journalfont {
+    font-size: 5.2em;
+  }
+
+  /* line 251, style.scss */
+  .sidebar ul li.communityfont {
+    font-size: 4em;
+  }
+
+  /* line 255, style.scss */
+  .sidebar ul li.aboutfont {
+    font-size: 1.8em;
+  }
+
+  /* line 259, style.scss */
+  .sidebar ul li.contactfont {
+    font-size: 5.3em;
+  }
+
+  /* line 262, style.scss */
+  .sidebar h4 {
+    font-size: 1.3em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 10%;
+  }
+
+  /* line 268, style.scss */
+  .sidebar a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  /* line 280, style.scss */
+  #content {
+    display: block;
+    background-color: #20CE55;
+    height: 1000px;
+    float: right;
     position: relative;
+    width: 70%;
+  }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* line 320, style.scss */
+  .sidebar ul li.journalfont {
+    font-size: 5.2em;
+  }
+
+  /* line 327, style.scss */
+  .sidebar ul li.communityfont {
+    font-size: 4em;
+  }
+
+  /* line 333, style.scss */
+  .sidebar ul li.aboutfont {
+    font-size: 3.8em;
+  }
+
+  /* line 337, style.scss */
+  .sidebar ul li.contactfont {
+    font-size: 5.3em;
+  }
+}
+/*FOOTER styles*/
+/* line 345, style.scss */
+.site-footer {
+  display: block;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  width: 70%;
+  height: 250px;
+  position: relative;
 }
 
+/* line 356, style.scss */
+.footer-container {
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 0;
+  top: 7px;
+  position: relative;
+}
+
+/* line 364, style.scss */
 .footer-content {
-    overflow: hidden;
+  float: left;
+  overflow: hidden;
 }
 
-.footer-content {
-    list-style-type: none;
+/* line 369, style.scss */
+.footer-image {
+  float: left;
+  padding: 0 7%;
 }
 
-.footer-content li {
-    display: inline-block;
-    margin-right: 20px;
-    color:#20CE55;
+/* line 374, style.scss */
+.footer-address {
+  float: left;
+  padding-right: 10%;
+}
+/* line 377, style.scss */
+.footer-address p {
+  margin: 0;
+  font-size: 25px;
 }
 
+/* line 383, style.scss */
+.footer-posts {
+  float: left;
+}
+/* line 385, style.scss */
+.footer-posts ul {
+  list-style: none;
+}
 
-
-
-
-
-
-
-
-
-
+/*CONTACT PAGE STYLES*/
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+/* ==========================================================================
+ MIN-WIDTH 320PX
+ ========================================================================== */
+/* ==========================================================================
+MIN-WIDTH 1200PX
+========================================================================== */
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Image replacement
  */
-
+/* line 428, style.scss */
 .ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
 }
 
+/* line 436, style.scss */
 .ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
 }
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-
+/* line 447, style.scss */
 .hidden {
-    display: none !important;
-    visibility: hidden;
+  display: none !important;
+  visibility: hidden;
 }
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-
+/* line 456, style.scss */
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-
+/* line 473, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
 
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-
+/* line 486, style.scss */
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -292,24 +520,27 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
+/* line 503, style.scss */
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
+/* line 508, style.scss */
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-
+/* line 517, style.scss */
 .clearfix {
-    *zoom: 1;
+  *zoom: 1;
 }
 
 /* ==========================================================================
@@ -317,86 +548,91 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  /* Style adjustments for viewports that meet the condition */
 }
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
-
 @media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+  /* line 544, style.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  /* line 552, style.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  /* line 556, style.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  /* line 560, style.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 570, style.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
+  /* line 575, style.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  /* line 580, style.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
 
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
+  /* line 585, style.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  /* line 589, style.scss */
+  img {
+    max-width: 100% !important;
+  }
 
-    img {
-        max-width: 100% !important;
-    }
+  @page {
+    margin: 0.5cm;
+}
 
-    @page {
-        margin: 0.5cm;
-    }
+  /* line 599, style.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  /* line 605, style.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }

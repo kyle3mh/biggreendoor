@@ -202,6 +202,14 @@ textarea {
     float:right;
     width: 75%;
 }
+#journal-content {
+    display:block;
+    background-color: white;
+    height:auto;
+    float:right;
+    width: 75%;
+    height: 600px;
+}
 
 .inner-content {
     margin: 2%;
@@ -209,6 +217,48 @@ textarea {
     height: 600px;
 }
 
+/* COMMUNITY PAGE CLASSES */
+
+#title {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 13em;
+}
+#para1, #para2 {
+    color:white;
+    margin:5%;
+    margin-top: 0;
+}
+.community-table {
+    margin:0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.community-table td {
+    padding:1.5em;
+}
+.com-table-person {
+    width: 250px;
+    height: 250px;
+    background-image: url(http://fakeimg.pl/250x250/30D755/20CE55/?text=Person&font=lobster);
+}
+.com-table-person:hover {
+    background-image: url(http://fakeimg.pl/250x250/20CE55/30D755/?text=Person&font=lobster);
+}
+
+/* Journal Page Classes */
+#journal-widget {
+    display: block;
+    background-color: #20CE55;
+    width:20%;
+    height:500px;
+    position: fixed;
+    right:30px;
+}
+#journal-widget h3,li {
+    text-align: center;
+}
 
   /* ==========================================================================
    MIN-WIDTH 1100PX
@@ -324,7 +374,19 @@ textarea {
     height:250px;
     position:relative;
 }
-
+.journal-site-footer {
+    display: block;
+    clear:both;
+    float: right;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    background-color: #20CE55;
+    width:75%;
+    height:250px;
+}
+.journal-site-footer p,h3 {
+    color: white;
+}
 .footer-container {
     overflow: hidden;
     margin: 0 auto;
@@ -540,7 +602,7 @@ textarea {
         content: " (" attr(href) ")";
     }
 
-    abbr[title]:after {
+    abbr[title]:after { 
         content: " (" attr(title) ")";
     }
 
@@ -560,7 +622,7 @@ textarea {
         page-break-inside: avoid;
     }
 
-    thead {
+    thead { 
         display: table-header-group; /* h5bp.com/t */
     }
 
