@@ -208,6 +208,7 @@ textarea {
     height:auto;
     float:right;
     width: 75%;
+    height: 600px;
 }
 
 .inner-content {
@@ -244,6 +245,16 @@ textarea {
 }
 .com-table-person:hover {
     background-image: url(http://fakeimg.pl/250x250/20CE55/30D755/?text=Person&font=lobster);
+}
+
+/* Journal Page Classes */
+#journal-widget {
+    display: block;
+    background-color: #20CE55;
+    width:20%;
+    height:500px;
+    position: absolute;
+    right:30px;
 }
 
   /* ==========================================================================
@@ -362,13 +373,13 @@ textarea {
 }
 .journal-site-footer {
     display: block;
+    clear:both;
     float: right;
     padding-top: 20px;
     margin-bottom: 20px;
     background-color: #20CE55;
     width:70%;
     height:250px;
-    position:relative;
 }
 .journal-site-footer p,h3 {
     color: white;
