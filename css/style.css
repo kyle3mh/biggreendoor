@@ -1,9 +1,9 @@
 /*
 Syntax error: Invalid CSS after "}": expected selector or at-rule, was "<<<<<<< HEAD"
-        on line 210 of /Users/tomhowe/Documents/repos/biggreendoor/css/style.scss
+        on line 210 of /Users/Paul/Gits/biggreendoor/css/style.scss
 
 Backtrace:
-/Users/tomhowe/Documents/repos/biggreendoor/css/style.scss:210
+/Users/Paul/Gits/biggreendoor/css/style.scss:210
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1129:in `expected'
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:28:in `parse'
@@ -49,4 +49,4 @@ org/jruby/RubyKernel.java:1419:in `loop'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"}\": expected selector or at-rule, was \"<<<<<<< HEAD\"\A         on line 210 of /Users/tomhowe/Documents/repos/biggreendoor/css/style.scss"; }
+  content: "Syntax error: Invalid CSS after \"}\": expected selector or at-rule, was \"<<<<<<< HEAD\"\A         on line 210 of /Users/Paul/Gits/biggreendoor/css/style.scss"; }
