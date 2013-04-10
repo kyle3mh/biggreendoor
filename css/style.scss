@@ -176,6 +176,7 @@ textarea {
             a:hover {
                 text-decoration: underline; color: #20CE55;
             }
+
         }
     }
     img {
@@ -203,10 +204,11 @@ textarea {
 #content {
     display:block;
     background-color: #20CE55;
-    height:10000px;
+    height:auto;
     float:right;
     width: 75%;
 }
+
 
  h1 { 
 
@@ -217,6 +219,41 @@ textarea {
         }
      
     }
+
+
+.inner-content {
+    margin: 2%;
+    width: auto;
+    height: auto;
+}
+
+/* COMMUNITY PAGE CLASSES */
+#title {
+    text-align: center;
+    margin-bottom: 0;
+}
+#para1, #para2 {
+    color:white;
+    margin:5%;
+    margin-top: 0;
+}
+.community-table {
+    margin:0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.community-table td {
+    padding:1.5em;
+}
+.com-table-person {
+    width: 250px;
+    height: 250px;
+    background-image: url(http://fakeimg.pl/250x250/30D755/20CE55/?text=Person&font=lobster);
+}
+.com-table-person:hover {
+    background-image: url(http://fakeimg.pl/250x250/20CE55/30D755/?text=Person&font=lobster);
+}
 
 
   /* ==========================================================================
@@ -240,9 +277,6 @@ textarea {
     .sidebar ul li.contactfont {
         font-size: 5.3em;
     }
-
-
-
     .sidebar h4 {
         font-size: 1.3em;    
         line-height:1.5;
@@ -365,11 +399,10 @@ textarea {
 .footer-address {
     float: left;
     padding-right: 10%;
-
-        p {
-            margin: 0;
-            font-size: 25px;
-        }
+    p {
+        margin: 0;
+        font-size: 25px;
+    }
 }
 
 .footer-posts {
@@ -381,6 +414,9 @@ textarea {
         }
     } 
 }
+
+/*CONTACT PAGE STYLES*/
+
 
 
 
