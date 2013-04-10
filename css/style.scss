@@ -211,9 +211,11 @@ textarea {
     height:auto;
     float:right;
     width: 75%;
-    height: 600px;
+    height: 900px;
 }
-
+.journal-inner-content h1 {
+    color:#20CE55;
+}
 .inner-content {
     margin: 2%;
     width: auto;
@@ -257,6 +259,7 @@ textarea {
     background-color: #20CE55;
     width:20%;
     height:500px;
+    padding-top:200px;
     position: fixed;
     right:30px;
 }
