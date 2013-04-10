@@ -443,7 +443,6 @@ header {
 .contact-holders{
     float:left;
     margin-bottom: 20px;
-
 }
 
 #map-canvas {
@@ -451,6 +450,15 @@ header {
     margin-bottom: 20px;
 }
 
+.contacts {
+    list-style: none;
+    float: left;
+    width: 215px;
+    height:auto;
+    padding: 0 40px 20px 0;
+    p {
+        font-family: Avenir;}
+}
 
 
 

@@ -467,10 +467,23 @@ header h1.community-header {
   margin-bottom: 20px;
 }
 
-/* line 449, style.scss */
+/* line 448, style.scss */
 #map-canvas {
   float: left;
   margin-bottom: 20px;
+}
+
+/* line 453, style.scss */
+.contacts {
+  list-style: none;
+  float: left;
+  width: 215px;
+  height: auto;
+  padding: 0 40px 20px 0;
+}
+/* line 459, style.scss */
+.contacts p {
+  font-family: Avenir;
 }
 
 /* Large screens ----------- */
@@ -489,7 +502,7 @@ MIN-WIDTH 1200PX
 /*
  * Image replacement
  */
-/* line 487, style.scss */
+/* line 495, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -498,7 +511,7 @@ MIN-WIDTH 1200PX
   *text-indent: -9999px;
 }
 
-/* line 495, style.scss */
+/* line 503, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -509,7 +522,7 @@ MIN-WIDTH 1200PX
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 506, style.scss */
+/* line 514, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -518,7 +531,7 @@ MIN-WIDTH 1200PX
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 515, style.scss */
+/* line 523, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -534,7 +547,7 @@ MIN-WIDTH 1200PX
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 532, style.scss */
+/* line 540, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -548,7 +561,7 @@ MIN-WIDTH 1200PX
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 545, style.scss */
+/* line 553, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -564,7 +577,7 @@ MIN-WIDTH 1200PX
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 562, style.scss */
+/* line 570, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -573,7 +586,7 @@ MIN-WIDTH 1200PX
   /* 2 */
 }
 
-/* line 567, style.scss */
+/* line 575, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -582,7 +595,7 @@ MIN-WIDTH 1200PX
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 576, style.scss */
+/* line 584, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -603,7 +616,7 @@ MIN-WIDTH 1200PX
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 603, style.scss */
+  /* line 611, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -612,18 +625,18 @@ MIN-WIDTH 1200PX
     text-shadow: none !important;
   }
 
-  /* line 611, style.scss */
+  /* line 619, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 615, style.scss */
+  /* line 623, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 619, style.scss */
+  /* line 627, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -631,33 +644,33 @@ MIN-WIDTH 1200PX
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 629, style.scss */
+  /* line 637, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 634, style.scss */
+  /* line 642, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 639, style.scss */
+  /* line 647, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 644, style.scss */
+  /* line 652, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 648, style.scss */
+  /* line 656, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -666,7 +679,7 @@ MIN-WIDTH 1200PX
     margin: 0.5cm;
 }
 
-  /* line 658, style.scss */
+  /* line 666, style.scss */
   p,
   h2,
   h3 {
@@ -674,7 +687,7 @@ MIN-WIDTH 1200PX
     widows: 3;
   }
 
-  /* line 664, style.scss */
+  /* line 672, style.scss */
   h2,
   h3 {
     page-break-after: avoid;
