@@ -191,7 +191,9 @@ textarea {
     }
 }
 
-.com-table-person { width: max-width; height: auto; float: left;}
+.com-table-person { 
+    width: max-width; height: auto; float: left;
+}
 
 #content {
     display:block;
@@ -280,6 +282,11 @@ header {
 #journal-widget h3,li {
     text-align: center;
 
+}
+
+.journal-header {
+    position:relative;
+    right:15%;
 }
 
 /* ==========================================================================
