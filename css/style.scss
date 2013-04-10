@@ -202,6 +202,13 @@ textarea {
     float:right;
     width: 75%;
 }
+#journal-content {
+    display:block;
+    background-color: white;
+    height:auto;
+    float:right;
+    width: 75%;
+}
 
 .inner-content {
     margin: 2%;
@@ -353,7 +360,19 @@ textarea {
     height:250px;
     position:relative;
 }
-
+.journal-site-footer {
+    display: block;
+    float: right;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    background-color: #20CE55;
+    width:70%;
+    height:250px;
+    position:relative;
+}
+.journal-site-footer p,h3 {
+    color: white;
+}
 .footer-container {
     overflow: hidden;
     margin: 0 auto;
