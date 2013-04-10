@@ -166,13 +166,11 @@ textarea {
             list-style-type: none;
             text-align: center;
             line-height:1;
-            .journalfont {font-size: 3.7em;}
-            .communityfont {font-size: 2.8em;}
-            .contactfont {font-size: 3.7em;}
-            .aboutfont {font-size: 2.7em;}
-            a:hover {
-                text-decoration: underline; color: #20CE55;
-            }
+            &.journalfont {font-size: 3.7em;}
+            &.communityfont {font-size: 2.8em;}
+            &.contactfont {font-size: 3.7em;}
+            &.aboutfont {font-size: 2.7em;}
+            a:hover { text-decoration: underline; color: #20CE55;}
         }
     }
     img {
@@ -197,36 +195,19 @@ textarea {
     }
 }
 
-
 #content {
     display:block;
     background-color: #20CE55;
-    height:10000px;
+    height:auto;
     float:right;
     width: 75%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.inner-content {
+    margin: 2%;
+    width: auto;
+    height: auto;
+}
 
 
   /* ==========================================================================
@@ -250,9 +231,6 @@ textarea {
     .sidebar ul li.contactfont {
         font-size: 5.3em;
     }
-
-
-
     .sidebar h4 {
         font-size: 1.3em;    
         line-height:1.5;
@@ -368,11 +346,10 @@ textarea {
 .footer-address {
     float: left;
     padding-right: 10%;
-
-        p {
-            margin: 0;
-            font-size: 25px;
-        }
+    p {
+        margin: 0;
+        font-size: 25px;
+    }
 }
 
 .footer-posts {
@@ -384,6 +361,9 @@ textarea {
         }
     } 
 }
+
+/*CONTACT PAGE STYLES*/
+
 
 
 
