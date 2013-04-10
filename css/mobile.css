@@ -175,6 +175,7 @@ Standard layout styles
   list-style-type: none;
   text-align: center;
   line-height: 1;
+  margin-left: 10px;
 }
 
 /*/* line 169, style.scss */
