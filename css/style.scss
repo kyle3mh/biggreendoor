@@ -57,6 +57,11 @@ h5, .h5 {
 /* -- Generic Elements -- */
 
 
+p {
+    color: #20CE55; 
+}
+
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -206,11 +211,9 @@ textarea {
     height:auto;
     float:right;
     width: 75%;
-    height: 900px;
+    height: 600px;
 }
-.journal-inner-content h1 {
-    color:#20CE55;
-}
+
 .inner-content {
     margin: 2%;
     width: auto;
@@ -254,7 +257,6 @@ textarea {
     background-color: #20CE55;
     width:20%;
     height:500px;
-    padding-top:200px;
     position: fixed;
     right:30px;
 }
