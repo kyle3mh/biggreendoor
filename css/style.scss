@@ -33,27 +33,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 { 
-
-
     font-size: 8em; 
     text-align: center;
     color: #fff;
-    padding: 5%;
-    padding-top:10px;
     font-family: DK Pisang;
-
 }
+
 h2, .h2 { 
     font-size: 24px; 
     color: #666666; 
 }
+
 h3, .h3 { 
     font-size: 20px;
     
 }
+
 h4, .h4 {
     font-size: 16px; 
 }
+
 h5, .h5 { 
     font-size: 14px; 
 }
@@ -62,7 +61,10 @@ h5, .h5 {
 
 
 p {
-    color: #20CE55; 
+    color: #FFF;
+    font-family: Avenir;
+
+    margin: 0 5% 2% 5%; 
 }
 
 
@@ -158,13 +160,44 @@ textarea {
     color: #20CE55;
     text-align: center;
 
-
-}
-
-.sidebar ul {
-    margin: 0;
-    padding:0;
-    margin-top: 10%;
+    ul {
+        margin: 0;
+        padding:0;
+        margin-top: 10%;
+        li {
+            font-size: 4em;
+            list-style-type: none;
+            text-align: center;
+            line-height:1;
+            &.journalfont {font-size: 3.7em;}
+            &.communityfont {font-size: 2.8em;}
+            &.contactfont {font-size: 3.7em;}
+            &.aboutfont {font-size: 2.7em;}
+            a:hover {
+                text-decoration: underline; color: #20CE55;
+            }
+        }
+    }
+    img {
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a {
+        color:#20CE55;
+        text-decoration: none;
+        :hover {
+            color:#000;
+            text-decoration: underline;
+        }
+    }
+    h4 {
+        font-size: 1em;    
+        line-height:1.5;
+        text-align: center;
+        margin: 10%;
+    }
 }
 
 #content {
@@ -175,70 +208,19 @@ textarea {
     width: 75%;
 }
 
-.sidebar img {
-    display: block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
+ h1 { 
 
-.sidebar a {
-    color:#20CE55;
-    text-decoration: none;
-}
-
-.sidebar ul li a:hover {text-decoration: underline; color: #20CE55;}
-
-.sidebar ul li {
-    font-size: 4em;
-    list-style-type: none;
-    text-align: center;
-    line-height:1;
-}
-
-.sidebar ul li.journalfont {
-
-    font-size: 3.7em;
-    
-}
-
-.sidebar ul li.communityfont {
-
-    font-size: 2.8em;
-    
-}
-
-.sidebar ul li.aboutfont {
-        font-size: 2.7em;
+     &.community-header{
+            font-size: 12em;
+            line-height: 0.9;
+            margin-top: 3%; 
+        }
+     
     }
-
-.sidebar ul li.contactfont {
-
-    font-size: 3.7em;
-    
-}
-
-
-
-.sidebar h4 {
- 
-    font-size: 1em;    
-    line-height:1.5;
-    text-align: center;
-    margin: 10%;
-}
-
-
-
-
-.sidebar a:hover {
-    color:#000;
-    text-decoration: underline;
-}
 
 
   /* ==========================================================================
-   MIN-WIDTH 1100PX
+   MIN-WIDTH 1250PX
    ========================================================================== */
 
 
@@ -272,18 +254,14 @@ textarea {
         text-decoration: underline;
     }
 
-    h1, .h1 { 
-
-
-        font-size: 12em; 
-        text-align: center;
-        color: #fff;
-        padding: 5%;
-        padding-top:10px;
-        font-family: DK Pisang;
-
+   h1 { 
+     &.community-header{
+            font-size: 15em;
+            line-height: 0.9;
+            margin-top: 3%; 
         }
-
+     
+    }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -404,21 +382,6 @@ textarea {
     } 
 }
 
-.sidebar h4 {
- 
-    font-size: 1.3em;    
-    line-height:1.5;
-    text-align: center;
-    margin: 10%;
-}
-
-
-
-
-.sidebar a:hover {
-    color:#000;
-    text-decoration: underline;
-}
 
 
  
