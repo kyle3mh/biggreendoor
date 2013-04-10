@@ -151,7 +151,7 @@ Standard layout styles
 /* line 151, style.scss */
 .sidebar {
   width: 100%;
-  height: 500px;
+  
   background-color: white;
   font-family: DK Pisang;
   color: #20CE55;
@@ -226,6 +226,7 @@ Standard layout styles
 
 /* line 198, style.scss */
 #content {
+  clear:both;
   display: block;
   background-color: #20CE55;
   height: auto;
