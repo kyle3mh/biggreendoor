@@ -194,24 +194,24 @@ Standard layout styles
   text-decoration: underline;
   color: #20CE55;
 }
-/* line 182, style.scss */
+/* line 181, style.scss */
 .sidebar img {
   display: block;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 188, style.scss */
+/* line 187, style.scss */
 .sidebar a {
   color: #20CE55;
   text-decoration: none;
 }
-/* line 191, style.scss */
+/* line 190, style.scss */
 .sidebar a :hover {
   color: #000;
   text-decoration: underline;
 }
-/* line 196, style.scss */
+/* line 195, style.scss */
 .sidebar h4 {
   font-size: 1em;
   line-height: 1.5;
@@ -219,93 +219,47 @@ Standard layout styles
   margin: 10%;
 }
 
-/* line 204, style.scss */
+/* line 203, style.scss */
 #content {
   display: block;
   background-color: #20CE55;
-  height: auto;
+  height: 10000px;
   float: right;
   width: 75%;
 }
 
-/* line 215, style.scss */
+/* line 213, style.scss */
 h1.community-header {
   font-size: 12em;
   line-height: 0.9;
   margin-top: 3%;
 }
 
-/* line 224, style.scss */
-.inner-content {
-  margin: 2%;
-  width: auto;
-  height: auto;
-}
-
-/* COMMUNITY PAGE CLASSES */
-/* line 231, style.scss */
-#title {
-  text-align: center;
-  margin-bottom: 0;
-}
-
-/* line 235, style.scss */
-#para1, #para2 {
-  color: white;
-  margin: 5%;
-  margin-top: 0;
-}
-
-/* line 240, style.scss */
-.community-table {
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 246, style.scss */
-.community-table td {
-  padding: 1.5em;
-}
-
-/* line 249, style.scss */
-.com-table-person {
-  width: 250px;
-  height: 250px;
-  background-image: url(http://fakeimg.pl/250x250/30D755/20CE55/?text=Person&font=lobster);
-}
-
-/* line 254, style.scss */
-.com-table-person:hover {
-  background-image: url(http://fakeimg.pl/250x250/20CE55/30D755/?text=Person&font=lobster);
-}
-
 /* ==========================================================================
  MIN-WIDTH 1250PX
  ========================================================================== */
 @media only screen and (min-width: 1250px) {
-  /* line 266, style.scss */
+  /* line 229, style.scss */
   .sidebar ul li.journalfont {
     font-size: 5.2em;
   }
 
-  /* line 269, style.scss */
+  /* line 232, style.scss */
   .sidebar ul li.communityfont {
     font-size: 4em;
   }
 
-  /* line 273, style.scss */
+  /* line 236, style.scss */
   .sidebar ul li.aboutfont {
     font-size: 1.8em;
   }
 
-  /* line 277, style.scss */
+  /* line 240, style.scss */
   .sidebar ul li.contactfont {
     font-size: 5.3em;
   }
 
-  /* line 280, style.scss */
+  /* line 246, style.scss */
   .sidebar h4 {
     font-size: 1.3em;
     line-height: 1.5;
@@ -313,13 +267,13 @@ h1.community-header {
     margin: 10%;
   }
 
-  /* line 286, style.scss */
+  /* line 252, style.scss */
   .sidebar a:hover {
     color: #000;
     text-decoration: underline;
   }
 
-  /* line 292, style.scss */
+  /* line 258, style.scss */
   h1.community-header {
     font-size: 15em;
     line-height: 0.9;
@@ -329,7 +283,7 @@ h1.community-header {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
-  /* line 305, style.scss */
+  /* line 271, style.scss */
   #content {
     display: block;
     background-color: #20CE55;
@@ -361,28 +315,28 @@ h1.community-header {
 }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
-  /* line 345, style.scss */
+  /* line 311, style.scss */
   .sidebar ul li.journalfont {
     font-size: 5.2em;
   }
 
-  /* line 352, style.scss */
+  /* line 318, style.scss */
   .sidebar ul li.communityfont {
     font-size: 4em;
   }
 
-  /* line 358, style.scss */
+  /* line 324, style.scss */
   .sidebar ul li.aboutfont {
     font-size: 3.8em;
   }
 
-  /* line 362, style.scss */
+  /* line 328, style.scss */
   .sidebar ul li.contactfont {
     font-size: 5.3em;
   }
 }
 /*FOOTER styles*/
-/* line 370, style.scss */
+/* line 336, style.scss */
 .site-footer {
   display: block;
   float: right;
@@ -394,7 +348,7 @@ h1.community-header {
   position: relative;
 }
 
-/* line 381, style.scss */
+/* line 347, style.scss */
 .footer-container {
   overflow: hidden;
   margin: 0 auto;
@@ -403,39 +357,38 @@ h1.community-header {
   position: relative;
 }
 
-/* line 389, style.scss */
+/* line 355, style.scss */
 .footer-content {
   float: left;
   overflow: hidden;
 }
 
-/* line 394, style.scss */
+/* line 360, style.scss */
 .footer-image {
   float: left;
   padding: 0 7%;
 }
 
-/* line 399, style.scss */
+/* line 365, style.scss */
 .footer-address {
   float: left;
   padding-right: 10%;
 }
-/* line 402, style.scss */
+/* line 369, style.scss */
 .footer-address p {
   margin: 0;
   font-size: 25px;
 }
 
-/* line 408, style.scss */
+/* line 375, style.scss */
 .footer-posts {
   float: left;
 }
-/* line 410, style.scss */
+/* line 377, style.scss */
 .footer-posts ul {
   list-style: none;
 }
 
-/*CONTACT PAGE STYLES*/
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   /* Styles */
@@ -452,7 +405,7 @@ MIN-WIDTH 1200PX
 /*
  * Image replacement
  */
-/* line 453, style.scss */
+/* line 417, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -461,7 +414,7 @@ MIN-WIDTH 1200PX
   *text-indent: -9999px;
 }
 
-/* line 461, style.scss */
+/* line 425, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -472,7 +425,7 @@ MIN-WIDTH 1200PX
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 472, style.scss */
+/* line 436, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -481,7 +434,7 @@ MIN-WIDTH 1200PX
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 481, style.scss */
+/* line 445, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -497,7 +450,7 @@ MIN-WIDTH 1200PX
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 498, style.scss */
+/* line 462, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -511,7 +464,7 @@ MIN-WIDTH 1200PX
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 511, style.scss */
+/* line 475, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -527,7 +480,7 @@ MIN-WIDTH 1200PX
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 528, style.scss */
+/* line 492, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -536,7 +489,7 @@ MIN-WIDTH 1200PX
   /* 2 */
 }
 
-/* line 533, style.scss */
+/* line 497, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -545,7 +498,7 @@ MIN-WIDTH 1200PX
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 542, style.scss */
+/* line 506, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -566,7 +519,7 @@ MIN-WIDTH 1200PX
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 569, style.scss */
+  /* line 533, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -575,18 +528,18 @@ MIN-WIDTH 1200PX
     text-shadow: none !important;
   }
 
-  /* line 577, style.scss */
+  /* line 541, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 581, style.scss */
+  /* line 545, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 585, style.scss */
+  /* line 549, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -594,33 +547,33 @@ MIN-WIDTH 1200PX
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 595, style.scss */
+  /* line 559, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 600, style.scss */
+  /* line 564, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 605, style.scss */
+  /* line 569, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 610, style.scss */
+  /* line 574, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 614, style.scss */
+  /* line 578, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -629,7 +582,7 @@ MIN-WIDTH 1200PX
     margin: 0.5cm;
 }
 
-  /* line 624, style.scss */
+  /* line 588, style.scss */
   p,
   h2,
   h3 {
@@ -637,7 +590,7 @@ MIN-WIDTH 1200PX
     widows: 3;
   }
 
-  /* line 630, style.scss */
+  /* line 594, style.scss */
   h2,
   h3 {
     page-break-after: avoid;
