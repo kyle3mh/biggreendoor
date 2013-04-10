@@ -191,7 +191,12 @@ textarea {
     }
 }
 
-.com-table-person { width: max-width; height: auto; float: left;}
+.com-table-person { 
+    width: max-width; 
+    height: auto; 
+    float: left;
+    margin:2%;
+}
 
 #content {
     display:block;
