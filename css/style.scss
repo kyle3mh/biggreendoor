@@ -206,7 +206,7 @@ textarea {
 .inner-content {
     margin: 2%;
     width: auto;
-    height: auto;
+    height: 600px;
 }
 
 
@@ -320,7 +320,7 @@ textarea {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #FFFFFF;
-    width:70%;
+    width:75%;
     height:250px;
     position:relative;
 }
@@ -363,6 +363,17 @@ textarea {
 }
 
 /*CONTACT PAGE STYLES*/
+
+.contact-holders{
+    float:left;
+    margin-bottom: 20px;
+
+}
+
+#map-canvas {
+    float: left;
+    margin-bottom: 20px;
+}
 
 
 
