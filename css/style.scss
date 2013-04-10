@@ -20,7 +20,6 @@ textarea {
 
 body {
     font-size: 1em;
-
     line-height: 1.4;
     font-family: DK Pisang;
 }
@@ -58,14 +57,6 @@ h5, .h5 {
 }
 
 /* -- Generic Elements -- */
-
-
-p {
-    color: #FFF;
-    font-family: Avenir;
-
-    margin: 0 5% 2% 5%; 
-}
 
 
 /*
@@ -194,29 +185,41 @@ textarea {
     }
     h4 {
         font-size: 1em;    
-        line-height:1.5;
+        line-height:1;
         text-align: center;
-        margin: 10%;
+        margin: 3%;
     }
 }
 
 #content {
-    display:block;
-    background-color: #20CE55;
-    height:10000px;
-    float:right;
-    width: 75%;
+        display:block;
+        background-color: #20CE55;
+        height:10000px;
+        float:right;
+        width: 75%;
+
+        p {
+            color: #FFF;
+            font-family: Avenir;
+            margin: 0 6% 2% 6%; 
+        }
+
 }
 
- h1 { 
 
-     &.community-header{
-            font-size: 12em;
-            line-height: 0.9;
-            margin-top: 3%; 
+
+header {
+    margin: 0 1% 0;
+        h1 {
+            &.community-header{
+                font-size: 0em;
+                line-height: 0.9;
+                margin-top: 3%; 
+             }
+
         }
-     
-    }
+}
+
 
 
   /* ==========================================================================
@@ -226,29 +229,7 @@ textarea {
 
 @media only screen and (min-width: 1250px) {
     
-    .sidebar ul li.journalfont {
-        font-size: 5.2em;
-    }
-    .sidebar ul li.communityfont {
-        font-size: 4em;
-    }
 
-     .sidebar ul li.aboutfont {
-        font-size: 1.8em;
-    }
-
-    .sidebar ul li.contactfont {
-        font-size: 5.3em;
-    }
-
-
-
-    .sidebar h4 {
-        font-size: 1.3em;    
-        line-height:1.5;
-        text-align: center;
-        margin: 10%;
-    }
     .sidebar a:hover {
         color:#000;
         text-decoration: underline;

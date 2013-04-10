@@ -16,6 +16,7 @@
         <link rel="stylesheet" media='screen and (min-width: 601px)' href="css/style.css">
         <link rel='stylesheet' media='screen and (max-width: 600px)' href='css/mobile.css' />
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -33,11 +34,15 @@
                 <li class="aboutfont"><a href="about.html">ABOUT BGD</a></li>
                 <li class="contactfont"><a href="contact.html">CONTACT</a></li>
             </ul>
-            <h4>“THE DOOR” - MIROSLAV HOLUB</h4>
+            <h4 id="poem-link">“THE DOOR” - MIROSLAV HOLUB</h4>
         </div>
         <div id='content'>
 
-            <h1 class="community-header">COMMUNITY</h1>
+            <header>
+                  
+                <h1 class="community-header">COMMUNITY</h1>
+                 
+            </header>
            
             <p>The BIG GREEN DOOR working community is a diverse group of people with a combined wealth of experience, youthful vitality and specialist knowledge. Most of the team are BIG GREEN DOOR to the core, but from time to time our Associates need time and space to pursue other interests or simply catch up on their lives. We see this as something positive, enriching the community and adding to the vibrancy of the their work.</p>
 
@@ -75,6 +80,18 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+                        <script src="js/jquery.fittext.js"></script>
+                <script type="text/javascript">
+                   
+                    $(".community-header").fitText(0.39);
+                    $(".journalfont").fitText(0.4);
+                    $(".communityfont").fitText(0.52);
+                    $(".aboutfont").fitText(0.55);
+                    $(".contactfont").fitText(0.39);
+                    $("#poem-link").fitText(1.5);
+                    
+                </script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
