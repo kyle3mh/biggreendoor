@@ -382,6 +382,7 @@ textarea {
     height:250px;
     position:relative;
 }
+
 .journal-site-footer {
     display: block;
     clear:both;
@@ -406,6 +407,7 @@ textarea {
 .footer-content {
     float: left;
     overflow: hidden;
+
 }
 
 .footer-image {
@@ -430,6 +432,9 @@ textarea {
 
         }
     } 
+}
+.footer-posts h3 {
+     color:#20CE55;
 }
 
 /*CONTACT PAGE STYLES*/
