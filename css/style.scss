@@ -35,8 +35,8 @@ h1, h2, h3, h4, h5, h6 {
 h1, .h1 { 
 
 
-    font-size: 12em; 
-
+    font-size: 8em; 
+    text-align: center;
     color: #fff;
     padding: 5%;
     padding-top:10px;
@@ -158,7 +158,7 @@ textarea {
     color: #20CE55;
     text-align: center;
 
-    
+
 }
 
 .sidebar ul {
@@ -271,9 +271,20 @@ textarea {
         color:#000;
         text-decoration: underline;
     }
+
+    h1, .h1 { 
+
+
+        font-size: 12em; 
+        text-align: center;
+        color: #fff;
+        padding: 5%;
+        padding-top:10px;
+        font-family: DK Pisang;
+
+        }
+
 }
-
-
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
