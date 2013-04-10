@@ -20,6 +20,7 @@ textarea {
 
 body {
     font-size: 1em;
+
     line-height: 1.4;
     font-family: DK Pisang;
 }
@@ -32,31 +33,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 { 
-    font-size: 8em; 
-    text-align: center;
-    color: #fff;
-    font-family: DK Pisang;
-}
 
+
+    font-size: 12em; 
+
+    color: #fff;
+    padding: 5%;
+    padding-top:10px;
+    font-family: DK Pisang;
+
+}
 h2, .h2 { 
     font-size: 24px; 
     color: #666666; 
 }
-
 h3, .h3 { 
     font-size: 20px;
     
 }
-
 h4, .h4 {
     font-size: 16px; 
 }
-
 h5, .h5 { 
     font-size: 14px; 
 }
 
 /* -- Generic Elements -- */
+
+
+p {
+    color: #20CE55; 
+}
 
 
 /*
@@ -150,7 +157,6 @@ textarea {
     font-family: DK Pisang;
     color: #20CE55;
     text-align: center;
-
     ul {
         margin: 0;
         padding:0;
@@ -164,9 +170,7 @@ textarea {
             &.communityfont {font-size: 2.8em;}
             &.contactfont {font-size: 3.7em;}
             &.aboutfont {font-size: 2.7em;}
-            a:hover {
-                text-decoration: underline; color: #20CE55;
-            }
+            a:hover { text-decoration: underline; color: #20CE55;}
         }
     }
     img {
@@ -185,30 +189,36 @@ textarea {
     }
     h4 {
         font-size: 1em;    
-        line-height:1;
+        line-height:1.5;
         text-align: center;
-        margin: 3%;
+        margin: 10%;
     }
 }
 
 #content {
-        display:block;
-        background-color: #20CE55;
-        height:10000px;
-        float:right;
-        width: 75%;
-
-        p {
-            color: #FFF;
-            font-family: Avenir;
-            margin: 0 6% 2% 6%; 
-        }
-
+    display:block;
+    background-color: #20CE55;
+    height:auto;
+    float:right;
+    width: 75%;
+}
+#journal-content {
+    display:block;
+    background-color: white;
+    height:auto;
+    float:right;
+    width: 75%;
+    height: 600px;
 }
 
+.inner-content {
+    margin: 2%;
+    width: auto;
+    height: 600px;
+}
 
-<<<<<<< HEAD
-=======
+/* COMMUNITY PAGE CLASSES */
+
 #title {
     text-align: center;
     margin-bottom: 0;
@@ -236,48 +246,54 @@ textarea {
 .com-table-person:hover {
     background-image: url(http://fakeimg.pl/250x250/20CE55/30D755/?text=Person&font=lobster);
 }
-#people {
+
+/* Journal Page Classes */
+#journal-widget {
     display: block;
     background-color: #20CE55;
+    width:20%;
+    height:500px;
+    position: fixed;
+    right:30px;
 }
->>>>>>> 31382f32bbc75a750e25942ced2a372e92afe3fc
-
-header {
-    margin: 0 1% 0;
-        h1 {
-            &.community-header{
-                font-size: 0em;
-                line-height: 0.9;
-                margin-top: 3%; 
-             }
-
-        }
+#journal-widget h3,li {
+    text-align: center;
 }
-
-
 
   /* ==========================================================================
-   MIN-WIDTH 1250PX
+   MIN-WIDTH 1100PX
    ========================================================================== */
 
 
 @media only screen and (min-width: 1250px) {
     
+    .sidebar ul li.journalfont {
+        font-size: 5.2em;
+    }
+    .sidebar ul li.communityfont {
+        font-size: 4em;
+    }
 
+     .sidebar ul li.aboutfont {
+        font-size: 1.8em;
+    }
+
+    .sidebar ul li.contactfont {
+        font-size: 5.3em;
+    }
+    .sidebar h4 {
+        font-size: 1.3em;    
+        line-height:1.5;
+        text-align: center;
+        margin: 10%;
+    }
     .sidebar a:hover {
         color:#000;
         text-decoration: underline;
     }
-
-   h1 { 
-     &.community-header{
-            font-size: 15em;
-            line-height: 0.9;
-            margin-top: 3%; 
-        }
-     
-    }
 }
+
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -354,13 +370,10 @@ header {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #FFFFFF;
-    width:70%;
+    width:75%;
     height:250px;
     position:relative;
 }
-
-<<<<<<< HEAD
-=======
 .journal-site-footer {
     display: block;
     clear:both;
@@ -374,7 +387,6 @@ header {
 .journal-site-footer p,h3 {
     color: white;
 }
->>>>>>> 31382f32bbc75a750e25942ced2a372e92afe3fc
 .footer-container {
     overflow: hidden;
     margin: 0 auto;
@@ -386,7 +398,6 @@ header {
 .footer-content {
     float: left;
     overflow: hidden;
-
 }
 
 .footer-image {
@@ -397,11 +408,10 @@ header {
 .footer-address {
     float: left;
     padding-right: 10%;
-
-        p {
-            margin: 0;
-            font-size: 25px;
-        }
+    p {
+        margin: 0;
+        font-size: 25px;
+    }
 }
 
 .footer-posts {
@@ -413,9 +423,20 @@ header {
         }
     } 
 }
-.footer-posts h3 {
-     color:#20CE55;
+
+/*CONTACT PAGE STYLES*/
+
+.contact-holders{
+    float:left;
+    margin-bottom: 20px;
+
 }
+
+#map-canvas {
+    float: left;
+    margin-bottom: 20px;
+}
+
 
 
 
@@ -581,7 +602,7 @@ header {
         content: " (" attr(href) ")";
     }
 
-    abbr[title]:after {
+    abbr[title]:after { 
         content: " (" attr(title) ")";
     }
 
@@ -601,7 +622,7 @@ header {
         page-break-inside: avoid;
     }
 
-    thead {
+    thead { 
         display: table-header-group; /* h5bp.com/t */
     }
 
