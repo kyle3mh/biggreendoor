@@ -211,7 +211,7 @@ textarea {
     height:auto;
     float:right;
     width: 75%;
-    height: 600px;
+    height:900px;
 }
 
 .inner-content {
@@ -257,11 +257,10 @@ textarea {
     background-color: #20CE55;
     width:20%;
     height:500px;
+    padding-top: 200px;
     position: fixed;
     right:30px;
 }
-
-
 
 header {
     margin: 0 1% 0;
@@ -277,6 +276,11 @@ header {
 #journal-widget h3,li {
     text-align: center;
 
+}
+
+.journal-header {
+    color: #20CE55;
+    margin-right:200px;
 }
 
 /* ==========================================================================
