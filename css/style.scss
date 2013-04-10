@@ -191,7 +191,12 @@ textarea {
     }
 }
 
-.com-table-person { width: max-width; height: auto; float: left;}
+.com-table-person { 
+    width: max-width; 
+    height: auto; 
+    float: left;
+    margin:2%;
+}
 
 #content {
     display:block;
@@ -211,11 +216,9 @@ textarea {
     height:auto;
     float:right;
     width: 75%;
-    height: 900px;
+    height:900px;
 }
-.journal-inner-content h1 {
-    color:#20CE55;
-}
+
 .inner-content {
     margin: 2%;
     width: auto;
@@ -259,12 +262,10 @@ textarea {
     background-color: #20CE55;
     width:20%;
     height:500px;
-    padding-top:200px;
+    padding-top: 200px;
     position: fixed;
     right:30px;
 }
-
-
 
 header {
     margin: 0 1% 0;
@@ -280,6 +281,11 @@ header {
 #journal-widget h3,li {
     text-align: center;
 
+}
+
+.journal-header {
+    color: #20CE55;
+    margin-right:200px;
 }
 
 /* ==========================================================================
@@ -651,7 +657,7 @@ header {
     tr,
     img {
         page-break-inside: avoid;
-    }
+    } 
 
     img {
         max-width: 100% !important;
