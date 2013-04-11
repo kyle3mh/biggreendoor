@@ -16,11 +16,11 @@ input,
 select,
 textarea {
     color: #222;
+    background-color: #20CE55;
 }
 
 body {
-    font-size: 1em;
-
+    font-size: 1em;    
     line-height: 1.4;
     font-family: DK Pisang;
 }
@@ -162,10 +162,10 @@ textarea {
             list-style-type: none;
             text-align: center;
             line-height:1;
-            /*&.journalfont {font-size: 3.7em;}
-            &.communityfont {font-size: 2.8em;}
-            &.contactfont {font-size: 3.7em;}
-            &.aboutfont {font-size: 2.7em;}*/
+            &.journalfont {font-size: 60px;}
+            &.communityfont {font-size: 70px;}
+            &.contactfont {font-size: 80px;}
+            &.aboutfont {font-size: 60px;}
             a:hover { text-decoration: underline; color: #20CE55;}
         }
     }
@@ -192,10 +192,10 @@ textarea {
 }
 
 .com-table-person { 
-    width: max-width; 
+    width: 30%; 
     height: auto; 
     float: left;
-    margin:2%;
+
 }
 
 #content {
@@ -222,13 +222,176 @@ textarea {
 .inner-content {
     margin: 4%;
     width: auto;
-    height: 600px;
+    height: auto;
+    &.contact {
+    height: 600px;}
 }
 
 /* COMMUNITY PAGE CLASSES */
 
 
 
+/* ABOUT PAGE CLASSES */
+
+.seperator{
+    width: 100%;
+        img { width: 100%; height:auto;}
+}
+
+.col-container {
+    width:100%;
+    .col1 {
+        width: 52%;
+        float: left;
+        padding-left:3%;
+    
+    }
+    
+    .col2 {
+        width: 42%;
+        float: left;
+        padding-right:3%;
+    
+    }
+}
+
+.col-container-2 {
+    width:100%;
+    .col1-2 {
+        width: 42%;
+        float: left;
+        padding-left:3%;
+    
+    }
+    
+    .col2-2 {
+        width: 52%;
+        float: left;
+        padding-right:3%;
+        text-align:right;
+    
+    }
+}
+
+.about-slanted-text-right-col{
+    font-size:2em;
+    text-align: right;
+    /* Safari */
+    -webkit-transform: rotate(5deg);
+     
+    /* Firefox */
+    -moz-transform: rotate(5deg);
+     
+    /* IE */
+    -ms-transform: rotate(5deg);
+     
+    /* Opera */
+    -o-transform: rotate(5deg);
+     
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.about-slanted-text-left-col{
+    &.first{
+        font-size: 3.1em;
+
+        -webkit-transform: rotate(1deg);
+ 
+         /* Firefox */
+        -moz-transform: rotate(1deg);
+         
+         /* IE */
+         -ms-transform: rotate(1deg);
+         
+         /* Opera */
+         -o-transform: rotate(1deg);
+         
+         /* Internet Explorer */
+         filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    }
+
+    &.second{
+        font-size: 3.7em;
+
+       -webkit-transform: rotate(-1deg);
+    
+        /* Firefox */
+       -moz-transform: rotate(-1deg);
+        
+        /* IE */
+        -ms-transform: rotate(-1deg);
+        
+        /* Opera */
+        -o-transform: rotate(-1deg);
+        
+        /* Internet Explorer */
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    }
+
+    &.third{
+        font-size: 3.8em;
+
+       -webkit-transform: rotate(1deg);
+    
+        /* Firefox */
+       -moz-transform: rotate(1deg);
+        
+        /* IE */
+        -ms-transform: rotate(1deg);
+        
+        /* Opera */
+        -o-transform: rotate(1deg);
+        
+        /* Internet Explorer */
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    }
+
+}
+
+.about-slanted-text-right-col-centered {
+    font-size: 4em;
+    text-align: center;
+    line-height:1;
+    -webkit-transform: rotate(1deg);
+    
+    /* Firefox */
+    -moz-transform: rotate(1deg);
+        
+    /* IE */
+    -ms-transform: rotate(1deg);
+        
+    /* Opera */
+    -o-transform: rotate(1deg);
+        
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.col-container-3 {
+    width:100%;
+    .col1-3 {
+        width: 52%;
+        float: left;
+        padding-left:3%;
+    
+    }
+    
+    .col2-3 {
+        width: 42%;
+        float: left;
+        padding-right:3%;
+        text-align:right;
+    
+    }
+}
+
+p {
+    &.center-paragraph {padding-left:3%; ;}
+}
 /* Journal PAGE CLASSES */
 
 
@@ -374,13 +537,7 @@ header {
 /* Styles */
 }
  
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-    .sidebar ul li.journalfont {font-size: 5.2em;}
-    .sidebar ul li.communityfont {font-size: 4em;}
-    .sidebar ul li.aboutfont {font-size: 3.8em;}
-    .sidebar ul li.contactfont {font-size: 5.3em;}
-}
+
 
 /*FOOTER styles*/
 
