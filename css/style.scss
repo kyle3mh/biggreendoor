@@ -275,14 +275,21 @@ header {
     margin: 0 0 0;
         h1 {
         &.community-header{
-            font-size: 0em;
+            font-size: 10em;
             line-height: 0.9;
             margin-top: 3%; 
         }
         &.contact-header{
-            font-size: 0em;
+            font-size: 10em;
             line-height: 0.9;
             margin-top: 0; 
+        }
+        &.index-header{
+            font-size: 49px;
+            line-height: 1.2;
+            margin-top: 35%;
+            text-align: left;
+            text-transform: uppercase; 
         }
     }
 }
@@ -314,6 +321,12 @@ header {
             font-size: 15em;
             line-height: 0.9;
             margin-top: 3%; 
+        }
+        &.index-header{
+            font-size: 12px;
+            line-height: 0.9;
+            margin-top: 3%;
+            text-align: left; 
         }
     }
 }
