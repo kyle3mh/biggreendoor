@@ -392,6 +392,17 @@ textarea {
 p {
     &.center-paragraph {padding-left:3%; ;}
 }
+
+.how-header, .what-header,  {
+    line-height: 0.9;
+    margin-top: 3%; /* determines spacing of headers*/
+}
+
+.who-header {
+    line-height: 0.9;
+    margin-top: 3%; /* determines spacing of headers*/
+}
+
 /* Journal PAGE CLASSES */
 
 
