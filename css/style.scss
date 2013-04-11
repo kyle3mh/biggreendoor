@@ -220,7 +220,7 @@ textarea {
 }
 
 .inner-content {
-    margin: 5%;
+    margin: 4%;
     width: auto;
     height: 600px;
 }
@@ -289,7 +289,6 @@ header {
 
 #journal-widget h3,li {
     text-align: center;
-
 }
 
 .journal-header {
@@ -310,13 +309,12 @@ header {
         text-decoration: underline;
     }
 
-   h1 { 
-     &.community-header{
+    h1 { 
+        &.community-header{
             font-size: 15em;
             line-height: 0.9;
             margin-top: 3%; 
         }
-     
     }
 }
 
@@ -365,30 +363,12 @@ header {
  
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
-
-    .sidebar ul li.journalfont {
-
-
-        font-size: 5.2em;
-        
-    }
-
-    .sidebar ul li.communityfont {
-
-        font-size: 4em;
-        
-    }
-
-     .sidebar ul li.aboutfont {
-        font-size: 3.8em;
-    }
-
-    .sidebar ul li.contactfont {
-
-        font-size: 5.3em;
-        
-    }
+    .sidebar ul li.journalfont {font-size: 5.2em;}
+    .sidebar ul li.communityfont {font-size: 4em;}
+    .sidebar ul li.aboutfont {font-size: 3.8em;}
+    .sidebar ul li.contactfont {font-size: 5.3em;}
 }
+
 /*FOOTER styles*/
 
 .site-footer {
@@ -400,6 +380,9 @@ header {
     width:75%;
     height:250px;
     position:relative;
+}
+.site-footer h3,p {
+    color: #20CE55;
 }
 
 .journal-site-footer {
@@ -471,8 +454,7 @@ header {
     width: 215px;
     height:auto;
     padding: 0 40px 20px 0;
-    p {
-        font-family: Avenir;}
+    p {font-family: Avenir;}
 }
 
 
