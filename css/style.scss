@@ -216,7 +216,7 @@ textarea {
     height:auto;
     float:right;
     width: 75%;
-    height:900px;
+    height:auto;
 }
 
 .inner-content {
@@ -438,6 +438,21 @@ p {
 }
 
 /* Journal Page Classes */
+
+.left-col{
+width: 66%;
+float: left;
+}
+
+.navi ul.pages{
+margin: 0; padding: 0;
+}
+
+.navi ul.pages li{
+display: inline;
+margin: 5px;
+}
+
 #journal-widget {
     display: block;
     background-color: #20CE55;
@@ -445,6 +460,7 @@ p {
     height:500px;
     padding-top: 200px;
     position: relative;
+    float: right;
     right:30px;
 }
 
