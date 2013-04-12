@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 { 
-    font-size: 8em; 
+    font-size: 5em; 
     text-align: center;
     color: #fff;
     font-family: DK Pisang;
@@ -117,6 +117,19 @@ textarea {
     resize: vertical;
 }
 
+/*
+ * MOBILE HIDE AND SHOW
+ */
+
+
+ .mobile-only {
+    display: none;
+ }
+
+ .screen-only{
+    display:block;
+ }
+
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
@@ -187,7 +200,7 @@ textarea {
         font-size: 1em;    
         line-height:1.5;
         text-align: center;
-        margin: 10%;
+        margin: 5%;
     }
 }
 
@@ -400,7 +413,7 @@ p {
 }
 
 .client-list {
-    img {width: 100%; height: auto;}
+    img {width: 100%; height: auto; margin-bottom: 3%;}
 }
 
 /* Journal PAGE CLASSES */
@@ -492,7 +505,6 @@ header {
         &.index-header{
             font-size: 49px; 
             line-height: 1.2;
-           
             text-align: left;
             text-transform: uppercase; 
         }
@@ -639,7 +651,7 @@ header {
 
 @media screen and (min-width: 1400px) {
     p{  
-    font-size: 1.2em;
+    font-size: 1.1em;
     }
     h1{
         &.index-header{margin-top:34.5%;}
