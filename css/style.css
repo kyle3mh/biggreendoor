@@ -279,13 +279,13 @@ Standard layout styles
 }
 /* line 242, style.scss */
 .col-container .col1 {
-  width: 52%;
+  width: 47%;
   float: left;
   padding-left: 3%;
 }
 /* line 249, style.scss */
 .col-container .col2 {
-  width: 42%;
+  width: 47%;
   float: left;
   padding-right: 3%;
 }
