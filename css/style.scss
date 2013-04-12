@@ -380,7 +380,7 @@ textarea {
         width: 42%;
         float: left;
         padding-right:3%;
-        text-align:right;
+        text-align:right; 
     
     }
 }
@@ -389,7 +389,7 @@ p {
     &.center-paragraph {padding-left:3%; ;}
 }
 
-.how-header, .what-header,  {
+.how-header, .what-header, .work-header {
     line-height: 0.9;
     margin-top: 3%; /* determines spacing of headers*/
 }
@@ -397,6 +397,10 @@ p {
 .who-header {
     line-height: 0.9;
     margin-top: 3%; /* determines spacing of headers*/
+}
+
+.client-list {
+    img {width: 100%; height: auto;}
 }
 
 /* Journal PAGE CLASSES */
@@ -488,7 +492,7 @@ header {
         &.index-header{
             font-size: 49px; 
             line-height: 1.2;
-            margin-top: 35%;
+           
             text-align: left;
             text-transform: uppercase; 
         }
@@ -589,25 +593,38 @@ header {
     float: left;
     width: 215px;
     height:auto;
-    padding: 0 40px 20px 0;
+    padding: 0 40px 20px 0; 
     p {font-family: Avenir;}
 }
 
 
 /* ==========================================================================
-   MIN-WIDTH 1250PX
+   MEDIA QUERIES
    ========================================================================== */
 
-   @media screen and (min-width: 650px) and (max-width:1099px) {
+
+
+@media screen and (min-width: 650px) and (max-width:1099px) {
     p{  
-    font-size: 0.7em;
+    font-size: 0.8em;
+    }
+
+    h1{
+        &.index-header{margin-top:44%;}
+    }
+    .sidebar { 
+        ul {padding-top:20%;}
     }
 }
 
 
 @media screen and (min-width: 1100px) {
     p{  
-    font-size: 0.9em;
+    font-size: 1em;
+    color:#000;
+    }
+    h1{
+        &.index-header{margin-top:35%;}
     }
 }
 
@@ -615,11 +632,27 @@ header {
     p{  
     font-size: 1em;
     }
+    h1{
+        &.index-header{margin-top:35%;}
+    }
 }
 
 @media screen and (min-width: 1400px) {
     p{  
-    font-size: 1.1em;
+    font-size: 1.2em;
+    }
+    h1{
+        &.index-header{margin-top:34.5%;}
+    }
+
+}
+
+@media screen and (min-width: 1680px) {
+    p{  
+    font-size: 1.5em;
+    }
+    h1{
+        &.index-header{margin-top:33.9%;}
     }
 }
 
