@@ -222,7 +222,10 @@ textarea {
 .inner-content {
     margin: 4%;
     width: auto;
-    height: 600px;
+    height: auto;
+    &.contact {
+        height: 600px;
+    }
 }
 
 /* COMMUNITY PAGE CLASSES */

@@ -72,10 +72,9 @@
                     infowindow.open(map,marker);
                 });
             }
-        google.maps.event.addDomListener(window, 'load', initialize);
         </script>
     </head>
-    <body>
+    <body onload="initialize()">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -93,7 +92,7 @@
             <h4>“THE DOOR” - MIROSLAV HOLUB</h4>
         </div>
         <div id="content">
-            <div class="inner-content">
+            <div class="inner-content contact">
 
                 <header> <h1 class="contact-header">How To Find Us</h1></header>
 
