@@ -396,7 +396,7 @@ p {
     &.center-paragraph {padding-left:3%; ;}
 }
 
-.how-header, .what-header,  {
+.how-header, .what-header, .work-header {
     line-height: 0.9;
     margin-top: 3%; /* determines spacing of headers*/
 }
@@ -404,6 +404,10 @@ p {
 .who-header {
     line-height: 0.9;
     margin-top: 3%; /* determines spacing of headers*/
+}
+
+.client-list {
+    img {width: 100%; height: auto;}
 }
 
 /* Journal PAGE CLASSES */
