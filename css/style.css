@@ -516,36 +516,34 @@ header h1.index-header {
   display: block;
   float: right;
   margin-top: 20px;
-  margin-bottom: 20px;
   background-color: #FFFFFF;
   width: 75%;
   height: 250px;
   position: relative;
 }
 
-/* line 495, style.scss */
+/* line 494, style.scss */
 .site-footer h3, p {
   color: #20CE55;
 }
 
-/* line 499, style.scss */
+/* line 498, style.scss */
 .journal-site-footer {
   display: block;
   clear: both;
   float: right;
   padding-top: 20px;
-  margin-bottom: 20px;
   background-color: #20CE55;
   width: 75%;
   height: 250px;
 }
 
-/* line 509, style.scss */
+/* line 507, style.scss */
 .journal-site-footer p, h3 {
-  color: white;
+  color: #FFFFFF;
 }
 
-/* line 513, style.scss */
+/* line 511, style.scss */
 .footer-container {
   overflow: hidden;
   margin: 0 auto;
@@ -554,52 +552,52 @@ header h1.index-header {
   position: relative;
 }
 
-/* line 521, style.scss */
+/* line 519, style.scss */
 .footer-content {
   float: left;
   overflow: hidden;
 }
 
-/* line 526, style.scss */
+/* line 524, style.scss */
 .footer-image {
   float: left;
   padding: 0 7%;
 }
 
-/* line 531, style.scss */
+/* line 529, style.scss */
 .footer-address {
   float: left;
   padding-right: 10%;
 }
-/* line 534, style.scss */
+/* line 532, style.scss */
 .footer-address p {
   margin: 0;
   font-size: 25px;
 }
 
-/* line 540, style.scss */
+/* line 538, style.scss */
 .footer-posts {
   float: left;
 }
-/* line 542, style.scss */
+/* line 540, style.scss */
 .footer-posts ul {
   list-style: none;
 }
 
 /*CONTACT PAGE STYLES*/
-/* line 552, style.scss */
+/* line 550, style.scss */
 .contact-holders {
   float: left;
   margin-bottom: 20px;
 }
 
-/* line 557, style.scss */
+/* line 555, style.scss */
 #map-canvas {
   float: left;
   margin-bottom: 20px;
 }
 
-/* line 562, style.scss */
+/* line 560, style.scss */
 .contacts {
   list-style: none;
   float: left;
@@ -607,7 +605,7 @@ header h1.index-header {
   height: auto;
   padding: 0 40px 20px 0;
 }
-/* line 568, style.scss */
+/* line 566, style.scss */
 .contacts p {
   font-family: Avenir;
 }
@@ -616,19 +614,19 @@ header h1.index-header {
    MIN-WIDTH 1250PX
    ========================================================================== */
 @media only screen and (min-width: 1250px) {
-  /* line 580, style.scss */
+  /* line 578, style.scss */
   .sidebar a:hover {
     color: #000;
     text-decoration: underline;
   }
 
-  /* line 586, style.scss */
+  /* line 584, style.scss */
   h1.community-header {
     font-size: 15em;
     line-height: 0.9;
     margin-top: 3%;
   }
-  /* line 591, style.scss */
+  /* line 589, style.scss */
   h1.index-header {
     font-size: 12px;
     line-height: 0.9;
@@ -654,7 +652,7 @@ header h1.index-header {
 /*
  * Image replacement
  */
-/* line 623, style.scss */
+/* line 621, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -663,7 +661,7 @@ header h1.index-header {
   *text-indent: -9999px;
 }
 
-/* line 631, style.scss */
+/* line 629, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -674,7 +672,7 @@ header h1.index-header {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 642, style.scss */
+/* line 640, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -683,7 +681,7 @@ header h1.index-header {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 651, style.scss */
+/* line 649, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -699,7 +697,7 @@ header h1.index-header {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 668, style.scss */
+/* line 666, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -713,7 +711,7 @@ header h1.index-header {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 681, style.scss */
+/* line 679, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -729,7 +727,7 @@ header h1.index-header {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 698, style.scss */
+/* line 696, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -738,7 +736,7 @@ header h1.index-header {
   /* 2 */
 }
 
-/* line 703, style.scss */
+/* line 701, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -747,7 +745,7 @@ header h1.index-header {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 712, style.scss */
+/* line 710, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -768,7 +766,7 @@ header h1.index-header {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 739, style.scss */
+  /* line 737, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -777,18 +775,18 @@ header h1.index-header {
     text-shadow: none !important;
   }
 
-  /* line 747, style.scss */
+  /* line 745, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 751, style.scss */
+  /* line 749, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 755, style.scss */
+  /* line 753, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -796,33 +794,33 @@ header h1.index-header {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 765, style.scss */
+  /* line 763, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 770, style.scss */
+  /* line 768, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 775, style.scss */
+  /* line 773, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 780, style.scss */
+  /* line 778, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 784, style.scss */
+  /* line 782, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -831,7 +829,7 @@ header h1.index-header {
     margin: 0.5cm;
 }
 
-  /* line 794, style.scss */
+  /* line 792, style.scss */
   p,
   h2,
   h3 {
@@ -839,7 +837,7 @@ header h1.index-header {
     widows: 3;
   }
 
-  /* line 800, style.scss */
+  /* line 798, style.scss */
   h2,
   h3 {
     page-break-after: avoid;
