@@ -632,38 +632,29 @@ header h1.index-header {
 /* ==========================================================================
    MIN-WIDTH 1250PX
    ========================================================================== */
-@media only screen and (min-width: 1250px) {
-  /* line 594, style.scss */
-  .sidebar a:hover {
-    color: #000;
-    text-decoration: underline;
-  }
-
-  /* line 600, style.scss */
-  h1.community-header {
-    font-size: 15em;
-    line-height: 0.9;
-    margin-top: 3%;
-  }
-  /* line 605, style.scss */
-  h1.index-header {
-    font-size: 12px;
-    line-height: 0.9;
-    margin-top: 3%;
-    text-align: left;
+@media screen and (min-width: 650px) and (max-width: 1099px) {
+  /* line 591, style.scss */
+  p {
+    font-size: 0.7em;
   }
 }
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */
+@media screen and (min-width: 1100px) {
+  /* line 598, style.scss */
+  p {
+    font-size: 0.9em;
+  }
 }
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */
+@media screen and (min-width: 1280px) {
+  /* line 604, style.scss */
+  p {
+    font-size: 1em;
+  }
 }
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  /* Styles */
+@media screen and (min-width: 1400px) {
+  /* line 610, style.scss */
+  p {
+    font-size: 1.1em;
+  }
 }
 /* ==========================================================================
    Helper classes
@@ -671,7 +662,7 @@ header h1.index-header {
 /*
  * Image replacement
  */
-/* line 637, style.scss */
+/* line 626, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -680,7 +671,7 @@ header h1.index-header {
   *text-indent: -9999px;
 }
 
-/* line 645, style.scss */
+/* line 634, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -691,7 +682,7 @@ header h1.index-header {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 656, style.scss */
+/* line 645, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -700,7 +691,7 @@ header h1.index-header {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 665, style.scss */
+/* line 654, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -716,7 +707,7 @@ header h1.index-header {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 682, style.scss */
+/* line 671, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -730,7 +721,7 @@ header h1.index-header {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 695, style.scss */
+/* line 684, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -746,7 +737,7 @@ header h1.index-header {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 712, style.scss */
+/* line 701, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -755,7 +746,7 @@ header h1.index-header {
   /* 2 */
 }
 
-/* line 717, style.scss */
+/* line 706, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -764,7 +755,7 @@ header h1.index-header {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 726, style.scss */
+/* line 715, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -785,7 +776,7 @@ header h1.index-header {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 753, style.scss */
+  /* line 742, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -794,18 +785,18 @@ header h1.index-header {
     text-shadow: none !important;
   }
 
-  /* line 761, style.scss */
+  /* line 750, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 765, style.scss */
+  /* line 754, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 769, style.scss */
+  /* line 758, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -813,33 +804,33 @@ header h1.index-header {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 779, style.scss */
+  /* line 768, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 784, style.scss */
+  /* line 773, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 789, style.scss */
+  /* line 778, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 794, style.scss */
+  /* line 783, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 798, style.scss */
+  /* line 787, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -848,7 +839,7 @@ header h1.index-header {
     margin: 0.5cm;
 }
 
-  /* line 808, style.scss */
+  /* line 797, style.scss */
   p,
   h2,
   h3 {
@@ -856,7 +847,7 @@ header h1.index-header {
     widows: 3;
   }
 
-  /* line 814, style.scss */
+  /* line 803, style.scss */
   h2,
   h3 {
     page-break-after: avoid;
