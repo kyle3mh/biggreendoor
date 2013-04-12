@@ -568,12 +568,19 @@ header {
 
 
 /* ==========================================================================
-   MIN-WIDTH 1250PX
+   MEDIA QUERIES
    ========================================================================== */
 
    @media screen and (min-width: 650px) and (max-width:1099px) {
     p{  
     font-size: 0.7em;
+    }
+
+    h1{
+        &.index-header{color: #000; padding-top:10%;}
+    }
+    .sidebar { 
+        ul {padding-top:20%;}
     }
 }
 
