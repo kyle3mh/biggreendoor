@@ -191,13 +191,6 @@ textarea {
     }
 }
 
-.com-table-person { 
-    width: 30%; 
-    height: auto; 
-    float: left;
-
-}
-
 #content {
     display:block;
     background-color: #20CE55;
@@ -220,8 +213,22 @@ textarea {
 }
 
 /* COMMUNITY PAGE CLASSES */
+.com-table-person {
+    width:25%;
+    height:200px;
+    margin:3.12%;
+    background-color: red;
+    display:block;
+    float:left;
+}
+.people-grid {
+    margin-left:30px;
+}
 
-
+#people {
+    width:100%;
+    height:100%;
+}
 
 /* ABOUT PAGE CLASSES */
 
@@ -421,17 +428,6 @@ p {
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-}
-.community-table td {
-    padding:1.5em;
-}
-.com-table-person {
-    width: 250px;
-    height: 250px;
-    background-image: url(http://fakeimg.pl/250x250/30D755/20CE55/?text=Person&font=lobster);
-}
-.com-table-person:hover {
-    background-image: url(http://fakeimg.pl/250x250/20CE55/30D755/?text=Person&font=lobster);
 }
 
 /* Journal Page Classes */
