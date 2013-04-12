@@ -16,11 +16,11 @@ input,
 select,
 textarea {
     color: #222;
+    background-color: #20CE55;
 }
 
 body {
-    font-size: 1em;
-
+    font-size: 1em;    
     line-height: 1.4;
     font-family: DK Pisang;
 }
@@ -162,10 +162,10 @@ textarea {
             list-style-type: none;
             text-align: center;
             line-height:1;
-            /*&.journalfont {font-size: 3.7em;}
-            &.communityfont {font-size: 2.8em;}
-            &.contactfont {font-size: 3.7em;}
-            &.aboutfont {font-size: 2.7em;}*/
+            &.journalfont {font-size: 60px;}
+            &.communityfont {font-size: 70px;}
+            &.contactfont {font-size: 80px;}
+            &.aboutfont {font-size: 60px;}
             a:hover { text-decoration: underline; color: #20CE55;}
         }
     }
@@ -192,10 +192,10 @@ textarea {
 }
 
 .com-table-person { 
-    width: max-width; 
+    width: 30%; 
     height: auto; 
     float: left;
-    margin:2%;
+
 }
 
 #content {
@@ -223,14 +223,188 @@ textarea {
     margin: 4%;
     width: auto;
     height: auto;
-    &.contact {
-        height: 600px;
-    }
+    &.contact {height: 600px;}
 }
 
 /* COMMUNITY PAGE CLASSES */
 
 
+
+/* ABOUT PAGE CLASSES */
+
+.seperator{
+    width: 100%;
+        img { width: 100%; height:auto;}
+}
+
+.col-container {
+    width:100%;
+    .col1 {
+        width: 52%;
+        float: left;
+        padding-left:3%;
+    
+    }
+    
+    .col2 {
+        width: 42%;
+        float: left;
+        padding-right:3%;
+    
+    }
+}
+
+.col-container-2 {
+    width:100%;
+    .col1-2 {
+        width: 42%;
+        float: left;
+        padding-left:3%;
+    
+    }
+    
+    .col2-2 {
+        width: 52%;
+        float: left;
+        padding-right:3%;
+        text-align:right;
+    
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+.about-slanted-text-right-col{
+    font-size:2em;
+    text-align: right;
+    /* Safari */
+    -webkit-transform: rotate(5deg);
+     
+    /* Firefox */
+    -moz-transform: rotate(5deg);
+     
+    /* IE */
+    -ms-transform: rotate(5deg);
+     
+    /* Opera */
+    -o-transform: rotate(5deg);
+     
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.about-slanted-text-left-col{
+    &.first{
+        font-size: 3.1em;
+
+        -webkit-transform: rotate(1deg);
+ 
+         /* Firefox */
+        -moz-transform: rotate(1deg);
+         
+         /* IE */
+         -ms-transform: rotate(1deg);
+         
+         /* Opera */
+         -o-transform: rotate(1deg);
+         
+         /* Internet Explorer */
+         filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    }
+
+    &.second{
+        font-size: 3.7em;
+
+       -webkit-transform: rotate(-1deg);
+    
+        /* Firefox */
+       -moz-transform: rotate(-1deg);
+        
+        /* IE */
+        -ms-transform: rotate(-1deg);
+        
+        /* Opera */
+        -o-transform: rotate(-1deg);
+        
+        /* Internet Explorer */
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    }
+
+    &.third{
+        font-size: 3.8em;
+
+       -webkit-transform: rotate(1deg);
+    
+        /* Firefox */
+       -moz-transform: rotate(1deg);
+        
+        /* IE */
+        -ms-transform: rotate(1deg);
+        
+        /* Opera */
+        -o-transform: rotate(1deg);
+        
+        /* Internet Explorer */
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    }
+
+}
+
+.about-slanted-text-right-col-centered {
+    font-size: 4em;
+    text-align: center;
+    line-height:1;
+    -webkit-transform: rotate(1deg);
+    
+    /* Firefox */
+    -moz-transform: rotate(1deg);
+        
+    /* IE */
+    -ms-transform: rotate(1deg);
+        
+    /* Opera */
+    -o-transform: rotate(1deg);
+        
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.col-container-3 {
+    width:100%;
+    .col1-3 {
+        width: 52%;
+        float: left;
+        padding-left:3%;
+    
+    }
+    
+    .col2-3 {
+        width: 42%;
+        float: left;
+        padding-right:3%;
+        text-align:right;
+    
+    }
+}
+
+p {
+    &.center-paragraph {padding-left:3%; ;}
+}
+
+.how-header, .what-header,  {
+    line-height: 0.9;
+    margin-top: 3%; /* determines spacing of headers*/
+}
+
+.who-header {
+    line-height: 0.9;
+    margin-top: 3%; /* determines spacing of headers*/
+}
 
 /* Journal PAGE CLASSES */
 
@@ -288,7 +462,7 @@ header {
             margin-top: 0; 
         }
         &.index-header{
-            font-size: 49px;
+            font-size: 49px; 
             line-height: 1.2;
             margin-top: 35%;
             text-align: left;
@@ -297,92 +471,13 @@ header {
     }
 }
 
-#journal-widget h3,li {
+#journal-widget h3,li { 
     text-align: center;
 }
 
 .journal-header {
-    color: #20CE55;
+    color: #20CE55; 
     margin-right:200px;
-}
-
-/* ==========================================================================
-   MIN-WIDTH 1250PX
-   ========================================================================== */
-
-
-@media only screen and (min-width: 1250px) {
-    
-
-    .sidebar a:hover {
-        color:#000;
-        text-decoration: underline;
-    }
-
-    h1 { 
-        &.community-header{
-            font-size: 15em;
-            line-height: 0.9;
-            margin-top: 3%; 
-        }
-        &.index-header{
-            font-size: 12px;
-            line-height: 0.9;
-            margin-top: 3%;
-            text-align: left; 
-        }
-    }
-}
-
-
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
-
-    #content {
-        display:block;
-        background-color: #20CE55;
-        height:1000px;
-        float: right;
-        position: relative; 
-        width: 70%;
-    }
-}
- 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-/* Styles */
-}
- 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-/* Styles */
-}
- 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-
-
-}
- 
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
-}
- 
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
-}
- 
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-    .sidebar ul li.journalfont {font-size: 5.2em;}
-    .sidebar ul li.communityfont {font-size: 4em;}
-    .sidebar ul li.aboutfont {font-size: 3.8em;}
-    .sidebar ul li.contactfont {font-size: 5.3em;}
 }
 
 /*FOOTER styles*/
@@ -474,29 +569,49 @@ header {
 }
 
 
+/* ==========================================================================
+   MIN-WIDTH 1250PX
+   ========================================================================== */
 
+
+@media only screen and (min-width: 1250px) {
+    
+
+    .sidebar a:hover {
+        color:#000;
+        text-decoration: underline;
+    }
+
+    h1 { 
+        &.community-header{
+            font-size: 15em;
+            line-height: 0.9;
+            margin-top: 3%; 
+        }
+        &.index-header{
+            font-size: 12px;
+            line-height: 0.9;
+            margin-top: 3%;
+            text-align: left; 
+        }
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
  
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
 /* Styles */
 }
  
-
-
-  /* ==========================================================================
-   MIN-WIDTH 320PX
-   ========================================================================== */
-
-   /* ==========================================================================
-   MIN-WIDTH 1200PX
-   ========================================================================== */
-
-
-  
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
