@@ -267,7 +267,7 @@ Standard layout styles
     margin: 3.33%;
   }
 }
-@media screen and (min-width: 1001px) and (max-width: 1400px) {
+@media screen and (min-width: 1001px) and (max-width: 1600px) {
   /* line 232, style.scss */
   .com-table-person {
     width: 25%;
@@ -275,7 +275,7 @@ Standard layout styles
     margin: 3.12%;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1601px) {
   /* line 239, style.scss */
   .com-table-person {
     width: 18%;

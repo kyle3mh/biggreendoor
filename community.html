@@ -85,7 +85,7 @@
         <script type='text/javascript'>
         window.addEventListener("resize", function(e) {
           var elements = document.getElementsByClassName("com-table-person");
-          for (var i = 0; i < elements.length; i++) {
+          for (var i = elements.length; i > 0; i--) {
             elements[i].style.height = elements[i].offsetWidth + "px";
           }
         },false);
