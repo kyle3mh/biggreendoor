@@ -234,73 +234,67 @@ Standard layout styles
   width: 75%;
 }
 /* line 207, style.scss */
+#content.journal {
+  background-color: #FFFFFF;
+}
+/* line 208, style.scss */
 #content p {
   color: #FFF;
   font-family: Avenir;
   margin: 0 0 2% 0;
 }
 
-/* line 213, style.scss */
-#journal-content {
-  display: block;
-  background-color: white;
-  height: auto;
-  float: right;
-  width: 75%;
-  height: auto;
-}
-
-/* line 222, style.scss */
+/* line 215, style.scss */
 .inner-content {
   margin: 4%;
   width: auto;
   height: auto;
 }
-/* line 226, style.scss */
+/* line 219, style.scss */
 .inner-content.contact {
   height: 600px;
 }
 
 /* COMMUNITY PAGE CLASSES */
 /* ABOUT PAGE CLASSES */
-/* line 235, style.scss */
+/* line 228, style.scss */
 .seperator {
   width: 100%;
 }
-/* line 237, style.scss */
+/* line 230, style.scss */
 .seperator img {
   width: 100%;
   height: auto;
 }
 
-/* line 240, style.scss */
+/* line 233, style.scss */
 .col-container {
   width: 100%;
 }
-/* line 242, style.scss */
+/* line 235, style.scss */
 .col-container .col1 {
   width: 47%;
   float: left;
   padding-left: 3%;
 }
-/* line 249, style.scss */
+/* line 242, style.scss */
 .col-container .col2 {
   width: 47%;
   float: left;
   padding-right: 3%;
 }
 
-/* line 257, style.scss */
+/* line 250, style.scss */
 .col-container-2 {
   width: 100%;
 }
-/* line 259, style.scss */
+/* line 252, style.scss */
 .col-container-2 .col1-2 {
   width: 42%;
   float: left;
   padding-left: 3%;
 }
-/* line 266, style.scss */
+/* line 259, style.scss */
 .col-container-2 .col2-2 {
   width: 52%;
   float: left;
@@ -308,12 +302,12 @@ Standard layout styles
   text-align: right;
 }
 
-/* line 275, style.scss */
+/* line 268, style.scss */
 .clear {
   clear: both;
 }
 
-/* line 279, style.scss */
+/* line 272, style.scss */
 .about-slanted-text-right-col {
   font-size: 2em;
   text-align: right;
@@ -329,7 +323,7 @@ Standard layout styles
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-/* line 299, style.scss */
+/* line 292, style.scss */
 .about-slanted-text-left-col.first {
   font-size: 3.1em;
   -webkit-transform: rotate(1deg);
@@ -342,7 +336,7 @@ Standard layout styles
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
-/* line 318, style.scss */
+/* line 311, style.scss */
 .about-slanted-text-left-col.second {
   font-size: 3.7em;
   -webkit-transform: rotate(-1deg);
@@ -355,7 +349,7 @@ Standard layout styles
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
-/* line 337, style.scss */
+/* line 330, style.scss */
 .about-slanted-text-left-col.third {
   font-size: 3.8em;
   -webkit-transform: rotate(1deg);
@@ -369,7 +363,7 @@ Standard layout styles
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-/* line 358, style.scss */
+/* line 351, style.scss */
 .about-slanted-text-right-col-centered {
   font-size: 4em;
   text-align: center;
@@ -385,17 +379,17 @@ Standard layout styles
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-/* line 377, style.scss */
+/* line 370, style.scss */
 .col-container-3 {
   width: 100%;
 }
-/* line 379, style.scss */
+/* line 372, style.scss */
 .col-container-3 .col1-3 {
   width: 52%;
   float: left;
   padding-left: 3%;
 }
-/* line 386, style.scss */
+/* line 379, style.scss */
 .col-container-3 .col2-3 {
   width: 42%;
   float: left;
@@ -403,19 +397,19 @@ Standard layout styles
   text-align: right;
 }
 
-/* line 396, style.scss */
+/* line 389, style.scss */
 p.center-paragraph {
   padding-left: 3%;
 }
 
-/* line 399, style.scss */
+/* line 392, style.scss */
 .how-header, .what-header {
   line-height: 0.9;
   margin-top: 3%;
   /* determines spacing of headers*/
 }
 
-/* line 404, style.scss */
+/* line 397, style.scss */
 .who-header {
   line-height: 0.9;
   margin-top: 3%;
@@ -423,21 +417,21 @@ p.center-paragraph {
 }
 
 /* Journal PAGE CLASSES */
-/* line 412, style.scss */
+/* line 405, style.scss */
 #title {
   text-align: center;
   margin-bottom: 0;
   font-size: 13em;
 }
 
-/* line 417, style.scss */
+/* line 410, style.scss */
 #para1, #para2 {
   color: white;
   margin: 5%;
   margin-top: 0;
 }
 
-/* line 422, style.scss */
+/* line 415, style.scss */
 .community-table {
   margin: 0;
   padding: 0;
@@ -445,71 +439,92 @@ p.center-paragraph {
   margin-right: auto;
 }
 
-/* line 428, style.scss */
+/* line 421, style.scss */
 .community-table td {
   padding: 1.5em;
 }
 
-/* line 431, style.scss */
+/* line 424, style.scss */
 .com-table-person {
   width: 250px;
   height: 250px;
   background-image: url(http://fakeimg.pl/250x250/30D755/20CE55/?text=Person&font=lobster);
 }
 
-/* line 436, style.scss */
+/* line 429, style.scss */
 .com-table-person:hover {
   background-image: url(http://fakeimg.pl/250x250/20CE55/30D755/?text=Person&font=lobster);
 }
 
 /* Journal Page Classes */
-/* line 442, style.scss */
+/* line 435, style.scss */
 .left-col {
-  width: 66%;
   float: left;
+  margin: 3%;
+  width: 68%;
 }
 
-/* line 447, style.scss */
+/* line 440, style.scss */
+.navi {
+  text-align: center;
+}
+
+/* line 443, style.scss */
 .navi ul.pages {
   margin: 0;
   padding: 0;
 }
 
-/* line 451, style.scss */
+/* line 447, style.scss */
 .navi ul.pages li {
   display: inline;
   margin: 5px;
 }
 
-/* line 456, style.scss */
-#journal-widget {
-  display: block;
-  background-color: #20CE55;
-  width: 20%;
-  height: 500px;
-  padding-top: 200px;
-  position: relative;
-  float: right;
-  right: 30px;
+/* line 452, style.scss */
+.post-title {
+  color: #20CE55;
+  margin: 10px 0 0;
 }
 
-/* line 467, style.scss */
+/* line 457, style.scss */
+.post {
+  color: #808080;
+}
+/* line 459, style.scss */
+.post p {
+  color: #808080 !important;
+}
+
+/* line 464, style.scss */
+#journal-widget {
+  background-color: #20CE55;
+  display: block;
+  float: left;
+  height: 500px;
+  left: 0;
+  padding-top: 200px;
+  position: relative;
+  width: 23%;
+}
+
+/* line 475, style.scss */
 header {
   margin: 0 0 0;
 }
-/* line 470, style.scss */
+/* line 478, style.scss */
 header h1.community-header {
   font-size: 10em;
   line-height: 0.9;
   margin-top: 3%;
 }
-/* line 475, style.scss */
+/* line 483, style.scss */
 header h1.contact-header {
   font-size: 10em;
   line-height: 0.9;
   margin-top: 0;
 }
-/* line 480, style.scss */
+/* line 488, style.scss */
 header h1.index-header {
   font-size: 49px;
   line-height: 1.2;
@@ -517,36 +532,37 @@ header h1.index-header {
   text-align: left;
   text-transform: uppercase;
 }
+/* line 495, style.scss */
+header h1.journal-header {
+  font-size: 10em;
+  line-height: 0.9;
+  margin-top: 0;
+  color: #20CE55;
+}
 
-/* line 490, style.scss */
+/* line 504, style.scss */
 #journal-widget h3, li {
   text-align: center;
 }
 
-/* line 494, style.scss */
-.journal-header {
-  color: #20CE55;
-  margin-right: 200px;
-}
-
 /*FOOTER styles*/
-/* line 501, style.scss */
+/* line 512, style.scss */
 .site-footer {
   display: block;
   float: right;
-  margin-top: 20px;
+  padding-top: 20px;
   background-color: #FFFFFF;
   width: 75%;
   height: 250px;
   position: relative;
 }
 
-/* line 510, style.scss */
+/* line 521, style.scss */
 .site-footer h3, p {
   color: #20CE55;
 }
 
-/* line 514, style.scss */
+/* line 525, style.scss */
 .journal-site-footer {
   display: block;
   clear: both;
@@ -557,12 +573,12 @@ header h1.index-header {
   height: 250px;
 }
 
-/* line 523, style.scss */
+/* line 534, style.scss */
 .journal-site-footer p, h3 {
   color: #FFFFFF;
 }
 
-/* line 527, style.scss */
+/* line 538, style.scss */
 .footer-container {
   overflow: hidden;
   margin: 0 auto;
@@ -571,52 +587,52 @@ header h1.index-header {
   position: relative;
 }
 
-/* line 535, style.scss */
+/* line 546, style.scss */
 .footer-content {
   float: left;
   overflow: hidden;
 }
 
-/* line 540, style.scss */
+/* line 551, style.scss */
 .footer-image {
   float: left;
   padding: 0 7%;
 }
 
-/* line 545, style.scss */
+/* line 556, style.scss */
 .footer-address {
   float: left;
   padding-right: 10%;
 }
-/* line 548, style.scss */
+/* line 559, style.scss */
 .footer-address p {
   margin: 0;
   font-size: 25px;
 }
 
-/* line 554, style.scss */
+/* line 565, style.scss */
 .footer-posts {
   float: left;
 }
-/* line 556, style.scss */
+/* line 567, style.scss */
 .footer-posts ul {
   list-style: none;
 }
 
 /*CONTACT PAGE STYLES*/
-/* line 566, style.scss */
-.contact-holder {
+/* line 577, style.scss */
+.img-holder {
   float: left;
   margin-bottom: 20px;
 }
 
-/* line 571, style.scss */
+/* line 582, style.scss */
 #map-canvas {
   float: left;
   margin-bottom: 20px;
 }
 
-/* line 576, style.scss */
+/* line 587, style.scss */
 .contacts {
   list-style: none;
   float: left;
@@ -624,7 +640,7 @@ header h1.index-header {
   height: auto;
   padding: 0 40px 20px 0;
 }
-/* line 582, style.scss */
+/* line 593, style.scss */
 .contacts p {
   font-family: Avenir;
 }
@@ -633,25 +649,25 @@ header h1.index-header {
    MIN-WIDTH 1250PX
    ========================================================================== */
 @media screen and (min-width: 650px) and (max-width: 1099px) {
-  /* line 591, style.scss */
+  /* line 602, style.scss */
   p {
     font-size: 0.7em;
   }
 }
 @media screen and (min-width: 1100px) {
-  /* line 598, style.scss */
+  /* line 609, style.scss */
   p {
     font-size: 0.9em;
   }
 }
 @media screen and (min-width: 1280px) {
-  /* line 604, style.scss */
+  /* line 615, style.scss */
   p {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 610, style.scss */
+  /* line 621, style.scss */
   p {
     font-size: 1.1em;
   }
@@ -662,7 +678,7 @@ header h1.index-header {
 /*
  * Image replacement
  */
-/* line 626, style.scss */
+/* line 637, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -671,7 +687,7 @@ header h1.index-header {
   *text-indent: -9999px;
 }
 
-/* line 634, style.scss */
+/* line 645, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -682,7 +698,7 @@ header h1.index-header {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 645, style.scss */
+/* line 656, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -691,7 +707,7 @@ header h1.index-header {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 654, style.scss */
+/* line 665, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -707,7 +723,7 @@ header h1.index-header {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 671, style.scss */
+/* line 682, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -721,7 +737,7 @@ header h1.index-header {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 684, style.scss */
+/* line 695, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -737,7 +753,7 @@ header h1.index-header {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 701, style.scss */
+/* line 712, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -746,7 +762,7 @@ header h1.index-header {
   /* 2 */
 }
 
-/* line 706, style.scss */
+/* line 717, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -755,7 +771,7 @@ header h1.index-header {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 715, style.scss */
+/* line 726, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -776,7 +792,7 @@ header h1.index-header {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 742, style.scss */
+  /* line 753, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -785,18 +801,18 @@ header h1.index-header {
     text-shadow: none !important;
   }
 
-  /* line 750, style.scss */
+  /* line 761, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 754, style.scss */
+  /* line 765, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 758, style.scss */
+  /* line 769, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -804,33 +820,33 @@ header h1.index-header {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 768, style.scss */
+  /* line 779, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 773, style.scss */
+  /* line 784, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 778, style.scss */
+  /* line 789, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 783, style.scss */
+  /* line 794, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 787, style.scss */
+  /* line 798, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -839,7 +855,7 @@ header h1.index-header {
     margin: 0.5cm;
 }
 
-  /* line 797, style.scss */
+  /* line 808, style.scss */
   p,
   h2,
   h3 {
@@ -847,7 +863,7 @@ header h1.index-header {
     widows: 3;
   }
 
-  /* line 803, style.scss */
+  /* line 814, style.scss */
   h2,
   h3 {
     page-break-after: avoid;

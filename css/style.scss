@@ -204,19 +204,12 @@ textarea {
     height:auto;
     float:right;
     width: 75%;
+    &.journal {background-color: #FFFFFF}
     p {
         color: #FFF;
         font-family: Avenir;
         margin: 0 0 2% 0; 
     }
-}
-#journal-content {
-    display:block;
-    background-color: white;
-    height:auto;
-    float:right;
-    width: 75%;
-    height:auto;
 }
 
 .inner-content {
@@ -439,11 +432,14 @@ p {
 
 /* Journal Page Classes */
 
-.left-col{
-width: 66%;
-float: left;
+.left-col {
+    float: left;
+    margin: 3%;
+    width: 68%;
 }
-
+.navi {
+    text-align: center;
+}
 .navi ul.pages{
 margin: 0; padding: 0;
 }
@@ -453,15 +449,27 @@ display: inline;
 margin: 5px;
 }
 
+.post-title {
+    color: #20CE55;
+    margin: 10px 0 0;
+}
+
+.post {
+    color: #808080;
+    p {
+        color: #808080 !important;
+    }
+}
+
 #journal-widget {
-    display: block;
     background-color: #20CE55;
-    width:20%;
-    height:500px;
+    display: block;
+    float: left;
+    height: 500px;
+    left: 0;
     padding-top: 200px;
     position: relative;
-    float: right;
-    right:30px;
+    width: 23%;
 }
 
 header {
@@ -484,6 +492,12 @@ header {
             text-align: left;
             text-transform: uppercase; 
         }
+        &.journal-header{
+            font-size: 10em;
+            line-height: 0.9;
+            margin-top: 0; 
+            color: #20CE55;
+        }
     }
 }
 
@@ -491,17 +505,14 @@ header {
     text-align: center;
 }
 
-.journal-header {
-    color: #20CE55; 
-    margin-right:200px;
-}
+
 
 /*FOOTER styles*/
 
 .site-footer {
     display: block;
     float: right;
-    margin-top: 20px;
+    padding-top: 20px;
     background-color: #FFFFFF;
     width:75%;
     height:250px;
@@ -563,7 +574,7 @@ header {
 
 /*CONTACT PAGE STYLES*/
 
-.contact-holder{
+.img-holder{
     float:left;
     margin-bottom: 20px;
 }
