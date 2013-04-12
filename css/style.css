@@ -470,7 +470,7 @@ p.center-paragraph {
   width: 20%;
   height: 500px;
   padding-top: 200px;
-  position: fixed;
+  position: relative;
   right: 30px;
 }
 
@@ -586,7 +586,7 @@ header h1.index-header {
 
 /*CONTACT PAGE STYLES*/
 /* line 550, style.scss */
-.contact-holders {
+.contact-holder {
   float: left;
   margin-bottom: 20px;
 }

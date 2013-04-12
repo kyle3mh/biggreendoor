@@ -444,7 +444,7 @@ p {
     width:20%;
     height:500px;
     padding-top: 200px;
-    position: fixed;
+    position: relative;
     right:30px;
 }
 
@@ -547,7 +547,7 @@ header {
 
 /*CONTACT PAGE STYLES*/
 
-.contact-holders{
+.contact-holder{
     float:left;
     margin-bottom: 20px;
 }
