@@ -273,6 +273,10 @@ textarea {
     }
 }
 
+.clear {
+    clear: both;
+}
+
 .about-slanted-text-right-col{
     font-size:2em;
     text-align: right;
@@ -477,79 +481,6 @@ header {
     margin-right:200px;
 }
 
-/* ==========================================================================
-   MIN-WIDTH 1250PX
-   ========================================================================== */
-
-
-@media only screen and (min-width: 1250px) {
-    
-
-    .sidebar a:hover {
-        color:#000;
-        text-decoration: underline;
-    }
-
-    h1 { 
-        &.community-header{
-            font-size: 15em;
-            line-height: 0.9;
-            margin-top: 3%; 
-        }
-        &.index-header{
-            font-size: 12px;
-            line-height: 0.9;
-            margin-top: 3%;
-            text-align: left; 
-        }
-    }
-}
-
-
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
-
-    #content {
-        display:block;
-        background-color: #20CE55;
-        height:1000px;
-        float: right;
-        position: relative; 
-        width: 70%;
-    }
-}
- 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-/* Styles */
-}
- 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-/* Styles */
-}
- 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-
-
-}
- 
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
-}
- 
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
-}
- 
-
-
 /*FOOTER styles*/
 
 .site-footer {
@@ -639,29 +570,49 @@ header {
 }
 
 
+/* ==========================================================================
+   MIN-WIDTH 1250PX
+   ========================================================================== */
 
+
+@media only screen and (min-width: 1250px) {
+    
+
+    .sidebar a:hover {
+        color:#000;
+        text-decoration: underline;
+    }
+
+    h1 { 
+        &.community-header{
+            font-size: 15em;
+            line-height: 0.9;
+            margin-top: 3%; 
+        }
+        &.index-header{
+            font-size: 12px;
+            line-height: 0.9;
+            margin-top: 3%;
+            text-align: left; 
+        }
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
  
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
 /* Styles */
 }
  
-
-
-  /* ==========================================================================
-   MIN-WIDTH 320PX
-   ========================================================================== */
-
-   /* ==========================================================================
-   MIN-WIDTH 1200PX
-   ========================================================================== */
-
-
-  
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
