@@ -23,6 +23,14 @@
 
 }
 
+//@font-face {
+//        font-family: "Avenir";
+//        src: url('../fonts/Avenir.ttc');
+//        font-weight: normal;
+//    font-style: normal;
+//    }
+
+
 html,
 button,
 input,
@@ -641,24 +649,66 @@ header {
 
 /*CONTACT PAGE STYLES*/
 
-.img-holder{
+.top-image{
     float:left;
     margin-bottom: 20px;
 }
 
-#map-canvas {
-    float: left;
+.middle-image{
+    float:left;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    width: 49%;
+    &.right {
+        margin-right: 0;
+    }
+}
+
+.bottom-image{
+    float:left;
     margin-bottom: 20px;
 }
 
-.contacts {
+.maps {
+    float:left;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    width: 49%;
+    height:50%;
+    padding-bottom: 220px;
+
+    &.right {
+        margin-right: 0;
+    }
+    .contacts {
     list-style: none;
     float: left;
     width: 215px;
     height:auto;
     padding: 0 40px 20px 0; 
-    p {font-family: Avenir;}
+    p {
+        font-family: Avenir;
+        a {
+            color: #FFFFFF;
+            text-decoration:none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
+}
+#left-map-canvas {
+    float: left;
+    margin-bottom: 20px;
+}
+
+#right-map-canvas {
+    float: left;
+    margin-bottom: 20px;
+}
+
+
 
 
 /* ==========================================================================
