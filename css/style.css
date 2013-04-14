@@ -229,7 +229,7 @@ Standard layout styles
 }
 /* line 228, style.scss */
 .sidebar ul li a:hover {
-  text-decoration: underline;
+  opacity: 0.8;
   color: #20CE55;
 }
 /* line 231, style.scss */
@@ -247,7 +247,7 @@ Standard layout styles
 /* line 240, style.scss */
 .sidebar a :hover {
   color: #000;
-  text-decoration: underline;
+  opacity: 0.8;
 }
 /* line 245, style.scss */
 .sidebar h4 {
@@ -702,7 +702,7 @@ header h1.journal-header {
 }
 /* line 719, style.scss */
 .maps .contacts p a:hover {
-  text-decoration: underline;
+  opacity: 0.8;
 }
 
 /* line 726, style.scss */

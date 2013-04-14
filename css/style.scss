@@ -225,7 +225,7 @@ textarea {
             &.communityfont {font-size: 70px;}
             &.contactfont {font-size: 80px;}
             &.aboutfont {font-size: 60px;}
-            a:hover { text-decoration: underline; color: #20CE55;}
+            a:hover { opacity: 0.8; color: #20CE55;}
         }
     }
     img {
@@ -239,7 +239,7 @@ textarea {
         text-decoration: none;
         :hover {
             color:#000;
-            text-decoration: underline;
+            opacity: 0.8;;
         }
     }
     h4 {
@@ -717,7 +717,7 @@ header {
             color: #FFFFFF;
             text-decoration:none;
             &:hover {
-                text-decoration: underline;
+                opacity: 0.8;
             }
         }
     }
