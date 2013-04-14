@@ -281,27 +281,6 @@ Standard layout styles
   float: left;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1000px) {
-  /* line 251, style.scss */
-  .com-table-person {
-    width: 40%;
-    margin: 3.33%;
-  }
-}
-@media screen and (min-width: 1001px) and (max-width: 1600px) {
-  /* line 257, style.scss */
-  .com-table-person {
-    width: 25%;
-    margin: 3.12%;
-  }
-}
-@media screen and (min-width: 1601px) {
-  /* line 263, style.scss */
-  .com-table-person {
-    width: 18%;
-    margin: 2.8%;
-  }
-}
 /* line 272, style.scss */
 #people {
   width: 100%;
@@ -320,46 +299,11 @@ Standard layout styles
 }
 
 /* line 284, style.scss */
-.col-container {
-  width: 100%;
-}
-/* line 286, style.scss */
-.col-container .col1 {
-  width: 47%;
-  float: left;
-  padding-left: 3%;
-}
-/* line 293, style.scss */
-.col-container .col2 {
-  width: 47%;
-  float: left;
-  padding-right: 3%;
-}
-
-/* line 301, style.scss */
-.col-container-2 {
-  width: 100%;
-}
-/* line 303, style.scss */
-.col-container-2 .col1-2 {
-  width: 42%;
-  float: left;
-  padding-left: 3%;
-}
-/* line 310, style.scss */
-.col-container-2 .col2-2 {
-  width: 52%;
-  float: left;
-  padding-right: 3%;
-  text-align: right;
-}
-
-/* line 319, style.scss */
 .clear {
   clear: both;
 }
 
-/* line 323, style.scss */
+/* line 288, style.scss */
 .about-slanted-text-right-col {
   font-size: 2em;
   text-align: right;
@@ -375,7 +319,7 @@ Standard layout styles
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-/* line 343, style.scss */
+/* line 308, style.scss */
 .about-slanted-text-left-col.first {
   font-size: 3.1em;
   -webkit-transform: rotate(1deg);
@@ -388,7 +332,7 @@ Standard layout styles
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
-/* line 362, style.scss */
+/* line 327, style.scss */
 .about-slanted-text-left-col.second {
   font-size: 3.7em;
   -webkit-transform: rotate(-1deg);
@@ -401,7 +345,7 @@ Standard layout styles
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
-/* line 381, style.scss */
+/* line 346, style.scss */
 .about-slanted-text-left-col.third {
   font-size: 3.8em;
   -webkit-transform: rotate(1deg);
@@ -415,7 +359,7 @@ Standard layout styles
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-/* line 402, style.scss */
+/* line 367, style.scss */
 .about-slanted-text-right-col-centered {
   font-size: 4em;
   text-align: center;
@@ -431,17 +375,17 @@ Standard layout styles
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-/* line 421, style.scss */
+/* line 386, style.scss */
 .col-container-3 {
   width: 100%;
 }
-/* line 423, style.scss */
+/* line 388, style.scss */
 .col-container-3 .col1-3 {
   width: 52%;
   float: left;
   padding-left: 3%;
 }
-/* line 430, style.scss */
+/* line 395, style.scss */
 .col-container-3 .col2-3 {
   width: 42%;
   float: left;
@@ -449,26 +393,19 @@ Standard layout styles
   text-align: right;
 }
 
-/* line 440, style.scss */
+/* line 405, style.scss */
 p.center-paragraph {
   padding-left: 3%;
 }
 
-/* line 443, style.scss */
+/* line 408, style.scss */
 .how-header, .what-header, .work-header {
   line-height: 0.9;
   margin-top: 3%;
   /* determines spacing of headers*/
 }
 
-/* line 448, style.scss */
-.who-header {
-  line-height: 0.9;
-  margin-top: 3%;
-  /* determines spacing of headers*/
-}
-
-/* line 454, style.scss */
+/* line 415, style.scss */
 .client-list img {
   width: 100%;
   height: auto;
@@ -476,21 +413,21 @@ p.center-paragraph {
 }
 
 /* Journal PAGE CLASSES */
-/* line 460, style.scss */
+/* line 421, style.scss */
 #title {
   text-align: center;
   margin-bottom: 0;
   font-size: 13em;
 }
 
-/* line 465, style.scss */
+/* line 426, style.scss */
 #para1, #para2 {
   color: white;
   margin: 5%;
   margin-top: 0;
 }
 
-/* line 470, style.scss */
+/* line 431, style.scss */
 .community-table {
   margin: 0;
   padding: 0;
@@ -499,46 +436,46 @@ p.center-paragraph {
 }
 
 /* Journal Page Classes */
-/* line 479, style.scss */
+/* line 440, style.scss */
 .left-col {
   float: left;
   margin: 3%;
   width: 68%;
 }
 
-/* line 484, style.scss */
+/* line 445, style.scss */
 .navi {
   text-align: center;
 }
 
-/* line 487, style.scss */
+/* line 448, style.scss */
 .navi ul.pages {
   margin: 0;
   padding: 0;
 }
 
-/* line 491, style.scss */
+/* line 452, style.scss */
 .navi ul.pages li {
   display: inline;
   margin: 5px;
 }
 
-/* line 496, style.scss */
+/* line 457, style.scss */
 .post-title {
   color: #20CE55;
   margin: 10px 0 0;
 }
 
-/* line 501, style.scss */
+/* line 462, style.scss */
 .post {
   color: #808080;
 }
-/* line 503, style.scss */
+/* line 464, style.scss */
 .post p {
   color: #808080 !important;
 }
 
-/* line 508, style.scss */
+/* line 469, style.scss */
 #journal-widget {
   background-color: #20CE55;
   display: block;
@@ -550,30 +487,30 @@ p.center-paragraph {
   width: 23%;
 }
 
-/* line 519, style.scss */
+/* line 480, style.scss */
 header {
   margin: 0 0 0;
 }
-/* line 522, style.scss */
+/* line 483, style.scss */
 header h1.community-header {
   font-size: 10em;
   line-height: 0.9;
   margin-top: 3%;
 }
-/* line 527, style.scss */
+/* line 488, style.scss */
 header h1.contact-header {
   font-size: 10em;
   line-height: 0.9;
   margin-top: 0;
 }
-/* line 532, style.scss */
+/* line 493, style.scss */
 header h1.index-header {
   font-size: 49px;
   line-height: 1.2;
   text-align: left;
   text-transform: uppercase;
 }
-/* line 538, style.scss */
+/* line 499, style.scss */
 header h1.journal-header {
   font-size: 10em;
   line-height: 0.9;
@@ -581,13 +518,13 @@ header h1.journal-header {
   color: #20CE55;
 }
 
-/* line 547, style.scss */
+/* line 508, style.scss */
 #journal-widget h3, li {
   text-align: center;
 }
 
 /*FOOTER styles*/
-/* line 555, style.scss */
+/* line 516, style.scss */
 .site-footer {
   display: block;
   float: right;
@@ -598,12 +535,12 @@ header h1.journal-header {
   position: relative;
 }
 
-/* line 564, style.scss */
+/* line 525, style.scss */
 .site-footer h3, p {
   color: #20CE55;
 }
 
-/* line 568, style.scss */
+/* line 529, style.scss */
 .journal-site-footer {
   display: block;
   clear: both;
@@ -614,12 +551,12 @@ header h1.journal-header {
   height: 250px;
 }
 
-/* line 577, style.scss */
+/* line 538, style.scss */
 .journal-site-footer p, h3 {
   color: #FFFFFF;
 }
 
-/* line 581, style.scss */
+/* line 542, style.scss */
 .footer-container {
   overflow: hidden;
   margin: 0 auto;
@@ -628,52 +565,52 @@ header h1.journal-header {
   position: relative;
 }
 
-/* line 589, style.scss */
+/* line 550, style.scss */
 .footer-content {
   float: left;
   overflow: hidden;
 }
 
-/* line 594, style.scss */
+/* line 555, style.scss */
 .footer-image {
   float: left;
   padding: 0 7%;
 }
 
-/* line 599, style.scss */
+/* line 560, style.scss */
 .footer-address {
   float: left;
   padding-right: 10%;
 }
-/* line 602, style.scss */
+/* line 563, style.scss */
 .footer-address p {
   margin: 0;
   font-size: 25px;
 }
 
-/* line 608, style.scss */
+/* line 569, style.scss */
 .footer-posts {
   float: left;
 }
-/* line 610, style.scss */
+/* line 571, style.scss */
 .footer-posts ul {
   list-style: none;
 }
 
 /*CONTACT PAGE STYLES*/
-/* line 620, style.scss */
+/* line 581, style.scss */
 .img-holder {
   float: left;
   margin-bottom: 20px;
 }
 
-/* line 625, style.scss */
+/* line 586, style.scss */
 #map-canvas {
   float: left;
   margin-bottom: 20px;
 }
 
-/* line 630, style.scss */
+/* line 591, style.scss */
 .contacts {
   list-style: none;
   float: left;
@@ -681,7 +618,7 @@ header h1.journal-header {
   height: auto;
   padding: 0 40px 20px 0;
 }
-/* line 636, style.scss */
+/* line 597, style.scss */
 .contacts p {
   font-family: Avenir;
 }
@@ -689,74 +626,933 @@ header h1.journal-header {
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
-@media screen and (min-width: 650px) and (max-width: 1099px) {
-  /* line 647, style.scss */
+@media screen and (min-width: 100px) and (max-width: 599px) {
+  /* line 608, style.scss */
   p {
     font-size: 0.8em;
   }
 
-  /* line 652, style.scss */
+  /* line 613, style.scss */
   h1.index-header {
     margin-top: 44%;
   }
 
-  /* line 655, style.scss */
+  /* line 616, style.scss */
   .sidebar ul {
     padding-top: 20%;
   }
+
+  /* line 618, style.scss */
+  .col-container {
+    width: 100%;
+  }
+  /* line 620, style.scss */
+  .col-container .col1 {
+    width: 100%;
+    float: none;
+    padding-left: 3%;
+  }
+  /* line 627, style.scss */
+  .col-container .col2 {
+    width: 100%;
+    float: none;
+    padding-right: 3%;
+  }
+
+  /* line 636, style.scss */
+  .screen-only {
+    display: none;
+  }
+
+  /* line 641, style.scss */
+  .mobile-only {
+    display: block;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 648, style.scss */
+  p {
+    font-size: 0.9em;
+    color: #20CE55;
+  }
+
+  /* line 653, style.scss */
+  h1.index-header {
+    margin-top: 37%;
+  }
+
+  /* line 655, style.scss */
+  .col-container {
+    width: 100%;
+    height: 260px;
+  }
+  /* line 658, style.scss */
+  .col-container .col1 {
+    float: left;
+    width: 10%;
+    padding-left: 3%;
+    font-size: 1em;
+  }
+  /* line 667, style.scss */
+  .col-container .col2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+  }
+  /* line 674, style.scss */
+  .col-container .col3 {
+    width: 39%;
+    float: left;
+    padding-right: 3%;
+  }
+
+  /* line 682, style.scss */
+  .col-container-2 {
+    width: 100%;
+    height: 280px;
+  }
+  /* line 685, style.scss */
+  .col-container-2 .col1-2 {
+    width: 34%;
+    float: left;
+    padding-left: 3%;
+  }
+  /* line 692, style.scss */
+  .col-container-2 .col2-2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    text-align: right;
+  }
+  /* line 699, style.scss */
+  .col-container-2 .col2-3 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+
+  /* line 706, style.scss */
+  .col-container3 {
+    width: 100%;
+    height: 350px;
+  }
+  /* line 710, style.scss */
+  .col-container3 .col13 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 717, style.scss */
+  .col-container3 .col23 {
+    width: 58%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+  }
+  /* line 723, style.scss */
+  .col-container3 .col23 .bullet-margin {
+    margin-top: 5px;
+  }
+  /* line 728, style.scss */
+  .col-container3 .col33 {
+    width: 24%;
+    float: left;
+    padding-right: 3%;
+  }
+
+  /* line 737, style.scss */
+  .who-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -90px;
+    margin-top: 72px;
+    font-size: 2.7em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 761, style.scss */
+  .do-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 2em;
+    text-align: left;
+    position: absolute;
+    /* determines spacing of headers*/
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 785, style.scss */
+  .how-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -110px;
+    margin-top: 110px;
+    font-size: 3.3em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 811, style.scss */
+  p.padded-p {
+    padding-top: 5%;
+  }
 }
 @media screen and (min-width: 1100px) {
-  /* line 661, style.scss */
+  /* line 819, style.scss */
   p {
     font-size: 1em;
     color: #20CE55;
   }
 
-  /* line 666, style.scss */
+  /* line 824, style.scss */
   h1.index-header {
     margin-top: 35%;
   }
-}
-@media screen and (min-width: 1280px) {
-  /* line 671, style.scss */
-  p {
+
+  /* line 826, style.scss */
+  .col-container {
+    width: 100%;
+    height: 280px;
+  }
+  /* line 829, style.scss */
+  .col-container .col1 {
+    float: left;
+    width: 10%;
+    padding-left: 3%;
+    font-size: 1em;
+  }
+  /* line 838, style.scss */
+  .col-container .col2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+  }
+  /* line 845, style.scss */
+  .col-container .col3 {
+    width: 39%;
+    float: left;
+    padding-right: 3%;
+  }
+
+  /* line 853, style.scss */
+  .col-container-2 {
+    width: 100%;
+    height: 300px;
+  }
+  /* line 856, style.scss */
+  .col-container-2 .col1-2 {
+    width: 34%;
+    float: left;
+    padding-left: 3%;
+  }
+  /* line 863, style.scss */
+  .col-container-2 .col2-2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    text-align: right;
+  }
+  /* line 870, style.scss */
+  .col-container-2 .col2-3 {
+    width: 10%;
+    float: left;
     font-size: 1em;
   }
 
-  /* line 675, style.scss */
-  h1.index-header {
-    margin-top: 35%;
+  /* line 877, style.scss */
+  .col-container3 {
+    width: 100%;
+    height: 330px;
+  }
+  /* line 881, style.scss */
+  .col-container3 .col13 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 888, style.scss */
+  .col-container3 .col23 {
+    width: 58%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+  }
+  /* line 894, style.scss */
+  .col-container3 .col23 .bullet-margin {
+    margin-top: 5px;
+  }
+  /* line 899, style.scss */
+  .col-container3 .col33 {
+    width: 24%;
+    float: left;
+    padding-right: 3%;
+  }
+
+  /* line 908, style.scss */
+  .who-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -90px;
+    margin-top: 80px;
+    font-size: 2.7em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 932, style.scss */
+  .do-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 2em;
+    text-align: left;
+    position: absolute;
+    /* determines spacing of headers*/
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 956, style.scss */
+  .how-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -110px;
+    margin-top: 110px;
+    font-size: 3.3em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 982, style.scss */
+  p.padded-p {
+    padding-top: 5%;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 680, style.scss */
+  /* line 988, style.scss */
+  p {
+    font-size: 1.2em;
+  }
+
+  /* line 992, style.scss */
+  h1.index-header {
+    margin-top: 34.5%;
+  }
+
+  /* line 994, style.scss */
+  .col-container {
+    width: 100%;
+    height: 300px;
+  }
+  /* line 998, style.scss */
+  .col-container .col1 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1005, style.scss */
+  .col-container .col2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+  }
+  /* line 1013, style.scss */
+  .col-container .col3 {
+    width: 39%;
+    float: left;
+    padding-right: 3%;
+  }
+
+  /* line 1021, style.scss */
+  .col-container-2 {
+    width: 100%;
+    height: 320px;
+  }
+  /* line 1024, style.scss */
+  .col-container-2 .col1-2 {
+    width: 34%;
+    float: left;
+    padding-left: 3%;
+  }
+  /* line 1031, style.scss */
+  .col-container-2 .col2-2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    text-align: right;
+  }
+  /* line 1038, style.scss */
+  .col-container-2 .col2-3 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+
+  /* line 1045, style.scss */
+  .col-container3 {
+    width: 100%;
+    height: 400px;
+  }
+  /* line 1049, style.scss */
+  .col-container3 .col13 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1056, style.scss */
+  .col-container3 .col23 {
+    width: 58%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 1062, style.scss */
+  .col-container3 .col23 .bullet-margin {
+    margin-top: 5px;
+  }
+  /* line 1067, style.scss */
+  .col-container3 .col33 {
+    width: 24%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 1077, style.scss */
+  .who-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -130px;
+    margin-top: 100px;
+    font-size: 3.7em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1101, style.scss */
+  .do-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 2em;
+    text-align: left;
+    position: absolute;
+    /* determines spacing of headers*/
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1125, style.scss */
+  .how-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -120px;
+    margin-top: 127px;
+    font-size: 4.1em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1151, style.scss */
+  p.padded-p {
+    padding-top: 5%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  /* line 1158, style.scss */
   p {
     font-size: 1.1em;
   }
 
-  /* line 684, style.scss */
+  /* line 1162, style.scss */
+  h1.index-header {
+    margin-top: 35%;
+  }
+
+  /* line 1164, style.scss */
+  .col-container {
+    width: 100%;
+    height: 300px;
+  }
+  /* line 1168, style.scss */
+  .col-container .col1 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1175, style.scss */
+  .col-container .col2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 1183, style.scss */
+  .col-container .col3 {
+    width: 39%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 1192, style.scss */
+  .col-container-2 {
+    width: 100%;
+    height: 320px;
+  }
+  /* line 1195, style.scss */
+  .col-container-2 .col1-2 {
+    width: 34%;
+    float: left;
+    padding-left: 3%;
+  }
+  /* line 1202, style.scss */
+  .col-container-2 .col2-2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    text-align: right;
+  }
+  /* line 1209, style.scss */
+  .col-container-2 .col2-3 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+
+  /* line 1216, style.scss */
+  .col-container3 {
+    width: 100%;
+    height: 350px;
+  }
+  /* line 1220, style.scss */
+  .col-container3 .col13 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1227, style.scss */
+  .col-container3 .col23 {
+    width: 58%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 1233, style.scss */
+  .col-container3 .col23 .bullet-margin {
+    margin-top: 5px;
+  }
+  /* line 1238, style.scss */
+  .col-container3 .col33 {
+    width: 24%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 1248, style.scss */
+  .who-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -90px;
+    margin-top: 80px;
+    font-size: 2.9em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1272, style.scss */
+  .do-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 2em;
+    text-align: left;
+    position: absolute;
+    /* determines spacing of headers*/
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1296, style.scss */
+  .how-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -130px;
+    margin-top: 127px;
+    font-size: 3.9em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1322, style.scss */
+  p.padded-p {
+    padding-top: 5%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 1328, style.scss */
+  p {
+    font-size: 1.2em;
+  }
+
+  /* line 1332, style.scss */
   h1.index-header {
     margin-top: 34.5%;
   }
+
+  /* line 1334, style.scss */
+  .col-container {
+    width: 100%;
+    height: 300px;
+  }
+  /* line 1338, style.scss */
+  .col-container .col1 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1345, style.scss */
+  .col-container .col2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 1353, style.scss */
+  .col-container .col3 {
+    width: 39%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 1362, style.scss */
+  .col-container-2 {
+    width: 100%;
+    height: 320px;
+  }
+  /* line 1365, style.scss */
+  .col-container-2 .col1-2 {
+    width: 34%;
+    float: left;
+    padding-left: 3%;
+  }
+  /* line 1372, style.scss */
+  .col-container-2 .col2-2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    text-align: right;
+  }
+  /* line 1379, style.scss */
+  .col-container-2 .col2-3 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+
+  /* line 1386, style.scss */
+  .col-container3 {
+    width: 100%;
+    height: 400px;
+  }
+  /* line 1390, style.scss */
+  .col-container3 .col13 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1397, style.scss */
+  .col-container3 .col23 {
+    width: 58%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 1403, style.scss */
+  .col-container3 .col23 .bullet-margin {
+    margin-top: 5px;
+  }
+  /* line 1408, style.scss */
+  .col-container3 .col33 {
+    width: 24%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 1418, style.scss */
+  .who-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -130px;
+    margin-top: 100px;
+    font-size: 3.7em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1442, style.scss */
+  .do-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 2em;
+    text-align: left;
+    position: absolute;
+    /* determines spacing of headers*/
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1466, style.scss */
+  .how-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -130px;
+    margin-top: 127px;
+    font-size: 4.1em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1492, style.scss */
+  p.padded-p {
+    padding-top: 5%;
+  }
 }
 @media screen and (min-width: 1680px) {
-  /* line 690, style.scss */
+  /* line 1498, style.scss */
   p {
     font-size: 1.5em;
   }
 
-  /* line 694, style.scss */
+  /* line 1502, style.scss */
   h1.index-header {
     margin-top: 33.9%;
   }
+
+  /* line 1504, style.scss */
+  .col-container {
+    width: 100%;
+    height: 350px;
+  }
+  /* line 1508, style.scss */
+  .col-container .col1 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1515, style.scss */
+  .col-container .col2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 1523, style.scss */
+  .col-container .col3 {
+    width: 39%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 1532, style.scss */
+  .col-container-2 {
+    width: 100%;
+    height: 400px;
+  }
+  /* line 1535, style.scss */
+  .col-container-2 .col1-2 {
+    width: 34%;
+    float: left;
+    padding-left: 3%;
+  }
+  /* line 1542, style.scss */
+  .col-container-2 .col2-2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    text-align: right;
+  }
+  /* line 1549, style.scss */
+  .col-container-2 .col2-3 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+
+  /* line 1556, style.scss */
+  .col-container3 {
+    width: 100%;
+    height: 500px;
+  }
+  /* line 1560, style.scss */
+  .col-container3 .col13 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1567, style.scss */
+  .col-container3 .col23 {
+    width: 58%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 1573, style.scss */
+  .col-container3 .col23 .bullet-margin {
+    margin-top: 5px;
+  }
+  /* line 1578, style.scss */
+  .col-container3 .col33 {
+    width: 24%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 1588, style.scss */
+  .who-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 4em;
+    margin-left: -160px;
+    margin-top: 110px;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1612, style.scss */
+  .do-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 4em;
+    text-align: left;
+    position: absolute;
+    /* determines spacing of headers*/
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1636, style.scss */
+  .how-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -170px;
+    margin-top: 160px;
+    font-size: 5em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1662, style.scss */
+  p.padded-p {
+    padding-top: 5%;
+  }
 }
+/* line 1668, style.scss */
+.placeholder-left img {
+  width: 8%;
+  height: auto;
+  margin-left: 4%;
+}
+
+/* line 1672, style.scss */
+.bottom-placeholder img {
+  width: 100%;
+  height: auto;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
  * Image replacement
  */
-/* line 709, style.scss */
+/* line 1684, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -765,7 +1561,7 @@ header h1.journal-header {
   *text-indent: -9999px;
 }
 
-/* line 717, style.scss */
+/* line 1692, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -776,7 +1572,7 @@ header h1.journal-header {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 728, style.scss */
+/* line 1703, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -785,7 +1581,7 @@ header h1.journal-header {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 737, style.scss */
+/* line 1712, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -801,7 +1597,7 @@ header h1.journal-header {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 754, style.scss */
+/* line 1729, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -815,7 +1611,7 @@ header h1.journal-header {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 767, style.scss */
+/* line 1742, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -831,7 +1627,7 @@ header h1.journal-header {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 784, style.scss */
+/* line 1759, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -840,7 +1636,7 @@ header h1.journal-header {
   /* 2 */
 }
 
-/* line 789, style.scss */
+/* line 1764, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -849,7 +1645,7 @@ header h1.journal-header {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 798, style.scss */
+/* line 1773, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -870,7 +1666,7 @@ header h1.journal-header {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 825, style.scss */
+  /* line 1800, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -879,18 +1675,18 @@ header h1.journal-header {
     text-shadow: none !important;
   }
 
-  /* line 833, style.scss */
+  /* line 1808, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 837, style.scss */
+  /* line 1812, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 841, style.scss */
+  /* line 1816, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -898,33 +1694,33 @@ header h1.journal-header {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 851, style.scss */
+  /* line 1826, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 856, style.scss */
+  /* line 1831, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 861, style.scss */
+  /* line 1836, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 866, style.scss */
+  /* line 1841, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 870, style.scss */
+  /* line 1845, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -933,7 +1729,7 @@ header h1.journal-header {
     margin: 0.5cm;
 }
 
-  /* line 880, style.scss */
+  /* line 1855, style.scss */
   p,
   h2,
   h3 {
@@ -941,7 +1737,7 @@ header h1.journal-header {
     widows: 3;
   }
 
-  /* line 886, style.scss */
+  /* line 1861, style.scss */
   h2,
   h3 {
     page-break-after: avoid;
