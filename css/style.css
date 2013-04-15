@@ -579,7 +579,7 @@ header h1.journal-header {
   padding-top: 20px;
   background-color: #FFFFFF;
   width: 75.13%;
-  height: 400px;
+  height: 250px;
   position: relative;
 }
 
@@ -596,7 +596,7 @@ header h1.journal-header {
   padding-top: 20px;
   background-color: #20CE55;
   width: 75.13%;
-  height: 400px;
+  height: 250px;
 }
 
 /* line 576, style.scss */
