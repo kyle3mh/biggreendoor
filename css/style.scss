@@ -197,11 +197,11 @@ textarea {
    ========================================================================== */
 
 
-#logo {
-    width:472px;
-    height:462px;
-    background-image:url(/img/logo.png);
-}
+//#logo {
+//    width:472px;
+//    height:462px;
+//    background-image:url(/img/logo.png);
+//}
 
 .sidebar {
     width: 25%;
@@ -237,10 +237,6 @@ textarea {
     a {
         color:#20CE55;
         text-decoration: none;
-        :hover {
-            color:#000;
-            opacity: 0.8;;
-        }
     }
     h4 {
         font-size: 1em;    
@@ -509,10 +505,13 @@ margin: 5px;
     float: left;
     height: 500px;
     left: 0;
-//    padding-top: 200px;
+    padding-top: 200px;
     position: relative;
     width: 23%;
     font-family: 'LatinModernMono10Regular';
+    ul {
+        list-style: none;
+    }
 }
 
 header {
