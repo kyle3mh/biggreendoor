@@ -20,9 +20,47 @@
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript">
 
+            // function initialize()
+            // {
+            //     var latlng = new google.maps.LatLng(18.520266,73.856406);
+            //     var latlng2 = new google.maps.LatLng(28.579943,77.330006);
+            //     var myOptions =
+            //     {
+            //         zoom: 15,
+            //         center: latlng,
+            //         mapTypeId: google.maps.MapTypeId.ROADMAP
+            //     };
+
+            //     var myOptions2 =
+            //     {
+            //         zoom: 15,
+            //         center: latlng2,
+            //         mapTypeId: google.maps.MapTypeId.SATELLITE
+            //     };
+
+            //     var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+                
+            //     var map2 = new google.maps.Map(document.getElementById("map_canvas_2"), myOptions2);
+
+            //     var myMarker = new google.maps.Marker(
+            //     {
+            //         position: latlng,
+            //         map: map,
+            //         title:"Pune"
+            //    });
+
+            //     var myMarker2 = new google.maps.Marker(
+            //     {
+            //         position: latlng2,
+            //         map: map2,
+            //         title:"Noida"
+            //     });
+            // }
+
             function initialize(){
 
                 var point = new google.maps.LatLng(51.523227,-0.173218);
+                var point2 = new google.maps.LatLng(51.523227,-0.173218);
 
                 var myMapOptions = {
                     zoom: 15,
@@ -30,8 +68,14 @@
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
 
-                var map1 = new google.maps.Map(document.getElementById("left-map-canvas"),myMapOptions);
-                var map2 = new google.maps.Map(document.getElementById("right-map-canvas"),myMapOptions);
+                var myMapOptions2 = {
+                    zoom: 15,
+                    center: point,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                var map = new google.maps.Map(document.getElementById("left-map-canvas"),myMapOptions);
+                var map2 = new google.maps.Map(document.getElementById("right-map-canvas"),myMapOptions2);
 
                 var image = new google.maps.MarkerImage(
                     'img/pin.png',
@@ -53,7 +97,7 @@
                 };
 
                 var contentString = 
-                    '<h3>Big Green Door</h3>';
+                    '<h3 style="color: #20CE55;">Big Green Door</h3>';
 
                 var infowindow = new google.maps.InfoWindow({
                     content: contentString
@@ -66,6 +110,16 @@
                     shadow: shadow,
                     shape: shape,
                     map: map,
+                    position: point
+                });
+
+                var marker2 = new google.maps.Marker({
+                    draggable: true,
+                    raiseOnDrag: false,
+                    icon: image,
+                    shadow: shadow,
+                    shape: shape,
+                    map: map2,
                     position: point
                 });
 
@@ -88,7 +142,7 @@
             <ul>
                 <li class="journalfont"><a href="journal.html">JOURNAL</a></li>
                 <li class="communityfont"><a href="community.html">COMMUNITY</a></li>
-                <li class="aboutfont"><a href="about.html">ABOUT BGD</a></li>
+                <li class="aboutfont"><a href="about.html">ABOUT US</a></li>
                 <li class="contactfont"><a href="contact.html">CONTACT</a></li>
             </ul>
             <h4  id="poem-link">“THE DOOR” - MIROSLAV HOLUB</h4>
@@ -195,7 +249,7 @@
             $(".contact-header").fitText(0.63);
             $(".journalfont").fitText(0.4);
             $(".communityfont").fitText(0.52);
-            $(".aboutfont").fitText(0.55);
+            $(".aboutfont").fitText(0.47);
             $(".contactfont").fitText(0.39);
             $("#poem-link").fitText(1.5);
             
