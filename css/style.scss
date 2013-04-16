@@ -452,6 +452,7 @@ header {
             line-height: 0.9;
             margin-top: 0; 
             margin-bottom:8px;
+            overflow:hidden;
         }
         &.index-header{
             font-size: 49px; 
@@ -515,6 +516,11 @@ header {
     overflow: hidden;
 }
 
+.footer-details {
+    float:left;
+    width:380px;
+}
+
 .footer-image {
     float: left;
     padding: 0 7%;
@@ -522,7 +528,6 @@ header {
 
 .footer-address {
     float: left;
-    padding-right: 10%;
     p {
         margin: 0;
         font-size: 25px;
@@ -722,7 +727,9 @@ header {
 }
 
 .footer-posts {
-    float: right;   
+    position:relative;
+    float:left;
+    margin-left:30px;  
     ul {
         list-style: none;
         li {
