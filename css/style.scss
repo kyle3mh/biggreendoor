@@ -207,7 +207,6 @@ textarea {
     p {
         color: #FFF;
         font-family: Avenir;
-        margin: 0 0 2% 0; 
     }
 }
 
@@ -545,6 +544,50 @@ header {
     } 
 }
 
+/* COMMUNITY PAGE STYLES */
+.people-grid {
+    overflow: hidden;
+    width: 100%;
+    margin:0;
+    padding:0;
+    li {
+        display: block;
+        position:relative;
+        float: left;
+        list-style: none outside none;
+        margin: 0 2% 1% 0;
+        width: 23.5%;
+        z-index:1;
+        * {
+            transition: opacity .25s ease-in-out;
+            -moz-transition: opacity .25s ease-in-out;
+            -webkit-transition: opacity .25s ease-in-out;
+        }
+        img {
+            width:100%; height:100%;
+        }
+        p {display:table-cell; position:absolute; width:100%; height:110px; top:50%; left:0; margin:-55px 0 0 0; text-align: center; vertical-align:bottom; z-index:100; opacity:1; font-size:20px;}
+        &:nth-child(4n){margin-right:0;}
+        &:hover img {
+            opacity: 0.5;
+        }
+        &:hover p {
+            opacity: 1;
+        }
+    }
+}
+
+.fadeIn {
+   opacity: 0;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fadeIn:hover {
+    opacity: 1;
+}
+
 /*CONTACT PAGE STYLES*/
 
 .top-image{
@@ -800,25 +843,6 @@ header {
         float:left;
     }
 
-    .people-grid {
-        margin: 0 0 34px;
-        overflow: hidden;
-        padding: 0;
-        width: 100%;
-        margin-left: 7%;
-        li {
-            display: block;
-            float: left;
-            list-style: none outside none;
-            margin: 0 5% 5% 0;
-            width: 40%;
-            img {
-                width:100%; height:100%;
-            }
-            p {text-align: left;}
-
-        }
-    }
     ///// CONTACT PAGE //////
     .inner-content {
         margin-left:0;
@@ -1055,25 +1079,7 @@ header {
     float:left;
 }
 
-.people-grid {
-    margin: 0 0 34px;
-    overflow: hidden;
-    padding: 0;
-    width: 89%;
-    margin-left: 5%;
-    li {
-        display: block;
-        float: left;
-        list-style: none outside none;
-        margin: 0 12.5% 1% 0;
-        width: 25%;
-        img {
-            width:100%; height:100%;
-        }
-        p {text-align: left;}
-        &.right {margin-right: 0;}
-    }
-}
+
 }
 
 
@@ -1210,7 +1216,6 @@ header {
     }
 }
 
-
 .who-header {
     line-height: 0.9;
     overflow: visible;
@@ -1296,25 +1301,7 @@ header {
     float:left;
 }
 
-.people-grid {
-    margin: 0 0 34px;
-    overflow: hidden;
-    padding: 0;
-    width: 89%;
-    margin-left: 5%;
-    li {
-        display: block;
-        float: left;
-        list-style: none outside none;
-        margin: 0 12.5% 1% 0;
-        width: 25%;
-        img {
-            width:100%; height:100%;
-        }
-        p {text-align: left;}
-        &.right {margin-right: 0;}
-    }
-}
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -1535,25 +1522,6 @@ header {
     float:left;
 }
 
-.people-grid {
-    margin: 0 0 34px;
-    overflow: hidden;
-    padding: 0;
-    width: 89%;
-    margin-left: 5%;
-    li {
-        display: block;
-        float: left;
-        list-style: none outside none;
-        margin: 0 12.5% 1% 0;
-        width: 25%;
-        img {
-            width:100%; height:100%;
-        }
-        p {text-align: left;}
-        &.right {margin-right: 0;}
-    }
-}
 
 }
 
@@ -1776,25 +1744,7 @@ header {
     float:left;
 }
 
-.people-grid {
-    margin: 0 0 34px;
-    overflow: hidden;
-    padding: 0;
-    width: 89%;
-    margin-left: 5%;
-    li {
-        display: block;
-        float: left;
-        list-style: none outside none;
-        margin: 0 12.5% 1% 0;
-        width: 25%;
-        img {
-            width:100%; height:100%;
-        }
-        p {text-align: left;}
-        &.right {margin-right: 0;}
-    }
-}
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -2016,25 +1966,6 @@ header {
     float:left;
 }
 
-.people-grid {
-    margin: 0 0 34px;
-    overflow: hidden;
-    padding: 0;
-    width: 89%;
-    margin-left: 5%;
-    li {
-        display: block;
-        float: left;
-        list-style: none outside none;
-        margin: 0 12.5% 1% 0;
-        width: 25%;
-        img {
-            width:100%; height:100%;
-        }
-        p {text-align: left;}
-        &.right {margin-right: 0;}
-    }
-}
 
 }
 
@@ -2255,26 +2186,6 @@ header {
     background-color: green;
     display:block;
     float:left;
-}
-
-.people-grid {
-    margin: 0 0 34px;
-    overflow: hidden;
-    padding: 0;
-    width: 100%;
-    margin-left: 5%;
-    li {
-        display: block;
-        float: left;
-        list-style: none outside none;
-        margin: 0 2% 1% 0;
-        width: 21%;
-        img {
-            width:100%; height:100%;
-        }
-        p {text-align: left;}
-        &.right {margin-right: 2%;}
-    }
 }
 
 .contacts {
