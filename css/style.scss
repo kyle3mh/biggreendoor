@@ -680,6 +680,66 @@ header {
     h1{
         &.index-header{margin-top:44%;}
     }
+    /*FOOTER styles*/
+
+.site-footer {
+    padding-top: 20px;
+    background-color: #FFFFFF;
+    width:100%;
+    height:250px;
+    position:relative;
+}
+.site-footer h3,p {
+    color: #20CE55;
+}
+
+.journal-site-footer {
+
+    padding-top: 20px;
+    background-color: #20CE55;
+    width:100%;
+    height:250px;
+}
+.journal-site-footer p,h3 {
+    color: #FFFFFF;
+}
+
+.footer-container {
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 0;
+    top: 7px;
+    position: relative;
+}
+
+.footer-content {
+    float: left;
+    overflow: hidden;
+}
+
+.footer-image {
+    float: left;
+    padding: 0 7%;
+}
+
+.footer-address {
+    float: left;
+    padding-right: 10%;
+    p {
+        margin: 0;
+        font-size: 25px;
+    }
+}
+
+.footer-posts {
+    float: left;   
+    ul {
+        list-style: none;
+        li {
+
+        }
+    } 
+}
 
     .index-header-mobile {
         font-size: 2em;
