@@ -567,7 +567,7 @@ header h1.journal-header {
   margin-right: 2%;
   width: 49%;
   height: 50%;
-  padding-bottom: 220px;
+  padding-bottom: 205px;
 }
 /* line 571, style.scss */
 .maps.right {
@@ -865,7 +865,7 @@ header h1.journal-header {
   /* line 815, style.scss */
   .maps {
     width: 100%;
-    height: 450px;
+    padding-bottom: 150px;
   }
 }
 @media screen and (min-width: 600px) {
@@ -2361,15 +2361,20 @@ header h1.journal-header {
   .people-grid li.right {
     margin-right: 0;
   }
+
+  /* line 2263, style.scss */
+  .contacts.contacts-right {
+    float: right;
+  }
 }
-/* line 2266, style.scss */
+/* line 2271, style.scss */
 .placeholder-left img {
   width: 8%;
   height: auto;
   margin-left: 4%;
 }
 
-/* line 2270, style.scss */
+/* line 2275, style.scss */
 .bottom-placeholder img {
   width: 100%;
   height: auto;
@@ -2381,7 +2386,7 @@ header h1.journal-header {
 /*
  * Image replacement
  */
-/* line 2282, style.scss */
+/* line 2287, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -2390,7 +2395,7 @@ header h1.journal-header {
   *text-indent: -9999px;
 }
 
-/* line 2290, style.scss */
+/* line 2295, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -2401,7 +2406,7 @@ header h1.journal-header {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 2301, style.scss */
+/* line 2306, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -2410,7 +2415,7 @@ header h1.journal-header {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 2310, style.scss */
+/* line 2315, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2426,7 +2431,7 @@ header h1.journal-header {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 2327, style.scss */
+/* line 2332, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -2440,7 +2445,7 @@ header h1.journal-header {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 2340, style.scss */
+/* line 2345, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -2456,7 +2461,7 @@ header h1.journal-header {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 2357, style.scss */
+/* line 2362, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -2465,7 +2470,7 @@ header h1.journal-header {
   /* 2 */
 }
 
-/* line 2362, style.scss */
+/* line 2367, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -2474,7 +2479,7 @@ header h1.journal-header {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 2371, style.scss */
+/* line 2376, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -2495,7 +2500,7 @@ header h1.journal-header {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 2398, style.scss */
+  /* line 2403, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -2504,18 +2509,18 @@ header h1.journal-header {
     text-shadow: none !important;
   }
 
-  /* line 2406, style.scss */
+  /* line 2411, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 2410, style.scss */
+  /* line 2415, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 2414, style.scss */
+  /* line 2419, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -2523,33 +2528,33 @@ header h1.journal-header {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 2424, style.scss */
+  /* line 2429, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 2429, style.scss */
+  /* line 2434, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 2434, style.scss */
+  /* line 2439, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 2439, style.scss */
+  /* line 2444, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 2443, style.scss */
+  /* line 2448, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -2558,7 +2563,7 @@ header h1.journal-header {
     margin: 0.5cm;
 }
 
-  /* line 2453, style.scss */
+  /* line 2458, style.scss */
   p,
   h2,
   h3 {
@@ -2566,7 +2571,7 @@ header h1.journal-header {
     widows: 3;
   }
 
-  /* line 2459, style.scss */
+  /* line 2464, style.scss */
   h2,
   h3 {
     page-break-after: avoid;
