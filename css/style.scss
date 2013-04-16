@@ -451,6 +451,7 @@ header {
             font-size: 10em;
             line-height: 0.9;
             margin-top: 0; 
+            margin-bottom:8px;
         }
         &.index-header{
             font-size: 49px; 
@@ -529,7 +530,8 @@ header {
 }
 
 .footer-posts {
-    float: left;   
+    float: right;   
+    padding-right:30px;
     ul {
         list-style: none;
         li {
@@ -574,9 +576,9 @@ header {
     .contacts {
     list-style: none;
     float: left;
-    width: 215px;
+    width: 280px;
     height:auto;
-    padding: 0 40px 10px 0; 
+    padding: 0 0 10px 0; 
     p {
         font-family: Avenir;
         a {
@@ -589,15 +591,11 @@ header {
     }
 }
 }
-#left-map-canvas {
+#left-map-canvas, #right-map-canvas {
     float: left;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-#right-map-canvas {
-    float: left;
-    margin-bottom: 20px;
-}
 
 /* ==========================================================================
    MEDIA QUERIES
@@ -676,6 +674,7 @@ header {
     width:100%;
     height:auto;
     position:relative;
+    overflow:hidden;
 }
 .site-footer h3,p {
     color: #20CE55;
@@ -714,6 +713,7 @@ header {
 
 .footer-address {
     float: left;
+    padding-right:0;
 
     p {
         margin: 0;
@@ -722,7 +722,7 @@ header {
 }
 
 .footer-posts {
-    float: left;   
+    float: right;   
     ul {
         list-style: none;
         li {
@@ -812,9 +812,20 @@ header {
 
         }
     }
+    ///// CONTACT PAGE //////
+    .inner-content {
+        margin-left:0;
+        margin-right:0;
+    }
     .maps {
         width:100%;
         padding-bottom:150px;
+    }
+    .contacts {
+        margin-left:20px;
+    }
+    .images div:not(.top-image) {   // all divs inside .images class except for .top-image
+        display:none;
     }
 }
 
