@@ -1,0 +1,16 @@
+FIXES
+
+- Side bar menu glitch caused by fit text.
+
+		1. Media queries for all.
+		2. The font size may currently be 1em or 0em.
+
+- Community page --> 4 images per row on big screen desktop. (mike)
+
+- Community page margins
+
+- Contact page mobile --> Design mobile_11_04_13 (mike)
+
+- Tidy up community margins for mobile. 
+
+- Mobile footer

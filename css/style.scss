@@ -599,16 +599,13 @@ header {
     margin-bottom: 20px;
 }
 
-
-
-
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
 
 
 
-@media screen and (min-width: 100px) and (max-width:599px) {
+@media screen and (min-width: 0px) and (max-width:599px) {
 #content {
     display:block;
     background-color: #20CE55;
