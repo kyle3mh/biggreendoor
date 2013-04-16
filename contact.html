@@ -13,8 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" media='screen and (min-width: 601px)' href="css/style.css">
-        <link rel='stylesheet' media='screen and (max-width: 600px)' href='css/mobile.css' />
+        <link rel="stylesheet" media='screen and (min-width: 0px)' href="css/style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -138,14 +137,24 @@
         
         <div class='sidebar'>
 
-            <a href='index.html'><img width='69%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a>
-            <ul>
+            <div class="screen-only"><a href='index.html'><img width='69%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a></div>
+            <div class="mobile-logo mobile-only"><a href='index.html'><img width='100%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a></div>
+            <ul class="screen-only">
                 <li class="journalfont"><a href="journal.html">JOURNAL</a></li>
                 <li class="communityfont"><a href="community.html">COMMUNITY</a></li>
                 <li class="aboutfont"><a href="about.html">ABOUT US</a></li>
                 <li class="contactfont"><a href="contact.html">CONTACT</a></li>
             </ul>
-            <h4  id="poem-link">“THE DOOR” - MIROSLAV HOLUB</h4>
+            <div class="mobile-menu">
+                <ul class="mobile-only">
+                    <li class="journalfont"><a href="journal.html">JOURNAL</a></li>
+                    <li class="communityfont"><a href="community.html">COMMUNITY</a></li>
+                    <li class="aboutfont"><a href="about.html">ABOUT US</a></li>
+                    <li class="contactfont"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <h4 id="poem-link" class="screen-only">“THE DOOR” - MIROSLAV HOLUB</h4>
         </div>
         <div id="content">
             <div class="inner-content contact">
