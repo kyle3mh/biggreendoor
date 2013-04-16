@@ -2326,7 +2326,7 @@ header h1.journal-header {
   .com-table-person {
     width: 25%;
     height: 200px;
-    margin: 3.12%;
+    margin: 1%;
     background-color: green;
     display: block;
     float: left;
@@ -2337,7 +2337,7 @@ header h1.journal-header {
     margin: 0 0 34px;
     overflow: hidden;
     padding: 0;
-    width: 89%;
+    width: 100%;
     margin-left: 5%;
   }
   /* line 2248, style.scss */
@@ -2345,8 +2345,8 @@ header h1.journal-header {
     display: block;
     float: left;
     list-style: none outside none;
-    margin: 0 12.5% 1% 0;
-    width: 25%;
+    margin: 0 2% 1% 0;
+    width: 21%;
   }
   /* line 2254, style.scss */
   .people-grid li img {
@@ -2359,7 +2359,7 @@ header h1.journal-header {
   }
   /* line 2258, style.scss */
   .people-grid li.right {
-    margin-right: 0;
+    margin-right: 2%;
   }
 
   /* line 2263, style.scss */
