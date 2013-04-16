@@ -335,15 +335,15 @@ textarea {
     .col1-3 {
         width: 52%;
         float: left;
-        padding-left:3%;
+        padding-left:3%;  
     
     }
     
     .col2-3 {
-        width: 42%;
+        width: 42%; 
         float: left;
         padding-right:3%;
-        text-align:right; 
+        text-align:right;  
     
     }
 }
@@ -576,7 +576,7 @@ header {
     float: left;
     width: 215px;
     height:auto;
-    padding: 0 40px 20px 0; 
+    padding: 0 40px 10px 0; 
     p {
         font-family: Avenir;
         a {
@@ -606,77 +606,64 @@ header {
 
 
 @media screen and (min-width: 0px) and (max-width:599px) {
-#content {
-    display:block;
-    background-color: #20CE55;
-    height:auto;
-    width: 100%;
+    #content {
+        display:block;
+        background-color: #20CE55;
+        height:auto;
+        width: 100%;
 
-}
-.com-table-person {
-    width:40%;
-    height:200px;
-    margin:0%;
-    background-color: green;
-    display:block;
-    float:left;
-}
-.sidebar {
-    width: 100%;
-    background-color: white;
-    font-family: 'dk_pisangregular';
-    color: #20CE55;
-    text-align: center;
-    padding-bottom: 3%;
-    ul {
+    }
+    .com-table-person {
+        width:40%;
+        height:200px;
+        margin:0%;
+        background-color: green;
+        display:block;
+        float:left;
+    }
+    .sidebar {
+        width: 100%;
+        background-color: white;
+        font-family: 'dk_pisangregular';
+        color: #20CE55;
+        text-align: center;
+        padding-bottom: 3%;
+        ul {
 
-        li {
-            font-size: 4em;
-            list-style-type: none;
+            li {
+                font-size: 4em;
+                list-style-type: none;
+                text-align: center;
+                line-height:1;
+                &.journalfont {font-size: 60px;}
+                &.communityfont {font-size: 70px;}
+                &.contactfont {font-size: 80px;}
+                &.aboutfont {font-size: 60px;}
+                a:hover { opacity: 0.8; color: #20CE55;}
+            }
+        }
+        img {
+            display: block;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a {
+            color:#20CE55;
+            text-decoration: none;
+        }
+        h4 {
+            font-size: 1em;    
+            line-height:1.5;
             text-align: center;
-            line-height:1;
-            &.journalfont {font-size: 60px;}
-            &.communityfont {font-size: 70px;}
-            &.contactfont {font-size: 80px;}
-            &.aboutfont {font-size: 60px;}
-            a:hover { opacity: 0.8; color: #20CE55;}
+            margin: 5%;
         }
     }
-    img {
-        display: block;
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    a {
-        color:#20CE55;
-        text-decoration: none;
-    }
-    h4 {
-        font-size: 1em;    
-        line-height:1.5;
-        text-align: center;
-        margin: 5%;
-    }
-}
-    p{  
-    font-size: 0.8em;
-    }
+        p{  
+        font-size: 0.8em;
+        }
 
-    .mobile-logo{
-        width:40%;
-        float:left;
-        padding-left: 5%;
-        background-color: white;
-    }
-
-    .mobile-menu{
-        width:55%;
-        float:left;
-        background-color: white;
-        margin-top: -7%;
-    }
-
+<<<<<<< HEAD
     h1{
         &.index-header{margin-top:44%;}
     }
@@ -741,69 +728,92 @@ header {
     } 
 }
 
-    .index-header-mobile {
-        font-size: 2em;
-        text-align: center;
-        padding : 10%;
-    }
-
-    .sidebar { 
-        ul {padding-top:20%;}
-    }
-    .col-container {
-    width:100%;
-    .col1 {
-        width: 100%;
-        float: none;
-        padding-left:3%;
-    
-    }
-    
-    .col2 {
-        width: 100%;
-        float: none;
-        padding-right:3%;
-    
-    }
-}
-
-     .screen-only
-     {
-         display: none;
-     }
-
-     .mobile-only
-     {
-         display: block;
-     }
-
-.com-table-person {
-    width:25%;
-    height:200px;
-    background-color: green;
-    display:block;
-    float:left;
-}
-
-.people-grid {
-    margin: 0 0 34px;
-    overflow: hidden;
-    padding: 0;
-    width: 100%;
-    margin-left: 7%;
-    li {
-        display: block;
-        float: left;
-        list-style: none outside none;
-        margin: 0 5% 5% 0;
-        width: 40%;
-        img {
-            width:100%; height:100%;
+        .mobile-logo{
+            width:40%;
+            float:left;
+            padding-left: 5%;
+            background-color: white;
         }
-        p {text-align: left;}
 
+
+        .mobile-menu{
+            width:55%;
+            float:left;
+            background-color: white;
+            margin-top: -7%;
+        }
+
+        h1{
+            &.index-header{margin-top:44%;}
+        }
+
+        .index-header-mobile {
+            font-size: 2em;
+            text-align: center;
+            padding : 10%;
+        }
+
+        .sidebar { 
+            ul {padding-top:20%;}
+        }
+        .col-container {
+        width:100%;
+        .col1 {
+            width: 100%;
+            float: none;
+            padding-left:3%;
+        
+        }
+        
+        .col2 {
+            width: 100%;
+            float: none;
+            padding-right:3%;
+        
+        }
     }
-}
+
+         .screen-only
+         {
+             display: none;
+         }
+
+         .mobile-only
+         {
+             display: block;
+         }
+
+    .com-table-person {
+        width:25%;
+        height:200px;
+        background-color: green;
+        display:block;
+        float:left;
+    }
+
+    .people-grid {
+        margin: 0 0 34px;
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+        margin-left: 7%;
+        li {
+            display: block;
+            float: left;
+            list-style: none outside none;
+            margin: 0 5% 5% 0;
+            width: 40%;
+            img {
+                width:100%; height:100%;
+            }
+            p {text-align: left;}
+
+        }
+    }
+    .maps {
+        width:100%;
+        height:450px;
+    }
 }
 
 @media screen and (min-width: 600px) {
