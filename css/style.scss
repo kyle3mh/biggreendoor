@@ -566,7 +566,7 @@ header {
     margin-right: 2%;
     width: 49%;
     height:50%;
-    padding-bottom: 220px;
+    padding-bottom: 205px;
 
     &.right {
         margin-right: 0;
@@ -618,7 +618,7 @@ header {
         height:200px;
         margin:0%;
         background-color: green;
-        display:block;
+        display:block;  
         float:left;
     }
     .sidebar {
@@ -663,7 +663,7 @@ header {
         font-size: 0.8em;
         }
 
-<<<<<<< HEAD
+
     h1{
         &.index-header{margin-top:44%;}
     }
@@ -812,7 +812,7 @@ header {
     }
     .maps {
         width:100%;
-        height:450px;
+        padding-bottom:150px;
     }
 }
 
@@ -2255,6 +2255,10 @@ header {
         p {text-align: left;}
         &.right {margin-right: 0;}
     }
+}
+
+.contacts-right {
+    float:right;
 }
 
 

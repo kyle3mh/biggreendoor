@@ -1,61 +1,2577 @@
+@import url("//hello.myfonts.net/count/269b38");
 /*
-Syntax error: Invalid CSS after "        }": expected "}", was "<<<<<<< HEAD"
-        on line 666 of /Users/tomhowe/Documents/repos/biggreendoor/css/style.scss
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* -- Fonts -- */
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/269B38_0_0.eot");
+  src: url("../fonts/269B38_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/269B38_0_0.woff") format("woff"), url("../fonts/269B38_0_0.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-Backtrace:
-/Users/tomhowe/Documents/repos/biggreendoor/css/style.scss:666
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1129:in `expected'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1061:in `tok!'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:519:in `block'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:332:in `media_directive'
-org/jruby/RubyKernel.java:2092:in `send'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:163:in `special_directive'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:135:in `directive'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:536:in `block_child'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:529:in `block_contents'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:70:in `stylesheet'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:27:in `parse'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:342:in `_to_tree'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-org/jruby/RubyMethod.java:133:in `call'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyKernel.java:1419:in `loop'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Applications/Scout.app/Contents/Resources/bin/compass:12:in `(root)'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"        }\": expected \"}\", was \"<<<<<<< HEAD\"\A         on line 666 of /Users/tomhowe/Documents/repos/biggreendoor/css/style.scss"; }
+@font-face {
+  font-family: 'dk_pisangregular';
+  src: url("../fonts/dk_pisang-webfont.eot");
+  src: url("../fonts/dk_pisang-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/dk_pisang-webfont.woff") format("woff"), url("../fonts/dk_pisang-webfont.ttf") format("truetype"), url("../fonts/dk_pisang-webfont.svg#dk_pisangregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatinModernMono10Regular';
+  src: url("../fonts/lmmono10-regular-webfont.eot");
+  src: url("../fonts/lmmono10-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lmmono10-regular-webfont.woff") format("woff"), url("../fonts/lmmono10-regular-webfont.ttf") format("truetype"), url("../fonts/lmmono10-regular-webfont.svg#LatinModernMono10Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 63, style.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+  background-color: #20CE55;
+}
+
+/* line 68, style.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'dk_pisangregular';
+}
+
+/* -- Headings -- */
+/* line 75, style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  text-align: left;
+  margin: 0 0 25px;
+}
+
+/* line 81, style.scss */
+h1, .h1 {
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+  font-family: 'dk_pisangregular';
+}
+
+/* line 88, style.scss */
+h2, .h2 {
+  font-size: 24px;
+  color: #666666;
+}
+
+/* line 92, style.scss */
+h3, .h3 {
+  font-size: 20px;
+}
+
+/* line 96, style.scss */
+h4, .h4 {
+  font-size: 16px;
+}
+
+/* line 99, style.scss */
+h5, .h5 {
+  font-size: 14px;
+}
+
+/* -- Generic Elements -- */
+/* line 106, style.scss */
+p {
+  color: #20CE55;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 117, style.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 122, style.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 131, style.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* 
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 144, style.scss */
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 152, style.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 162, style.scss */
+textarea {
+  resize: vertical;
+}
+
+/*
+ * MOBILE HIDE AND SHOW
+ */
+/* line 171, style.scss */
+.mobile-only {
+  display: none;
+}
+
+/* line 175, style.scss */
+.screen-only {
+  display: block;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 183, style.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+Standard layout styles
+========================================================================== */
+/* line 200, style.scss */
+#content {
+  display: block;
+  background-color: #20CE55;
+  height: auto;
+  float: right;
+  width: 75%;
+}
+/* line 206, style.scss */
+#content.journal {
+  background-color: #FFFFFF;
+}
+/* line 207, style.scss */
+#content p {
+  color: #FFF;
+  font-family: Avenir;
+  margin: 0 0 2% 0;
+}
+
+/* line 214, style.scss */
+.inner-content {
+  margin: 4%;
+  width: auto;
+  height: auto;
+}
+/* line 218, style.scss */
+.inner-content.contact {
+  height: 600px;
+}
+
+/* COMMUNITY PAGE CLASSES */
+/* ABOUT PAGE CLASSES */
+/* line 226, style.scss */
+.seperator {
+  width: 100%;
+}
+/* line 228, style.scss */
+.seperator img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 231, style.scss */
+.clear {
+  clear: both;
+}
+
+/* line 235, style.scss */
+.about-slanted-text-right-col {
+  font-size: 2em;
+  text-align: right;
+  /* Safari */
+  -webkit-transform: rotate(5deg);
+  /* Firefox */
+  -moz-transform: rotate(5deg);
+  /* IE */
+  -ms-transform: rotate(5deg);
+  /* Opera */
+  -o-transform: rotate(5deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* line 255, style.scss */
+.about-slanted-text-left-col.first {
+  font-size: 3.1em;
+  -webkit-transform: rotate(1deg);
+  /* Firefox */
+  -moz-transform: rotate(1deg);
+  /* IE */
+  -ms-transform: rotate(1deg);
+  /* Opera */
+  -o-transform: rotate(1deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+/* line 274, style.scss */
+.about-slanted-text-left-col.second {
+  font-size: 3.7em;
+  -webkit-transform: rotate(-1deg);
+  /* Firefox */
+  -moz-transform: rotate(-1deg);
+  /* IE */
+  -ms-transform: rotate(-1deg);
+  /* Opera */
+  -o-transform: rotate(-1deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+/* line 293, style.scss */
+.about-slanted-text-left-col.third {
+  font-size: 3.8em;
+  -webkit-transform: rotate(1deg);
+  /* Firefox */
+  -moz-transform: rotate(1deg);
+  /* IE */
+  -ms-transform: rotate(1deg);
+  /* Opera */
+  -o-transform: rotate(1deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* line 314, style.scss */
+.about-slanted-text-right-col-centered {
+  font-size: 4em;
+  text-align: center;
+  line-height: 1;
+  -webkit-transform: rotate(1deg);
+  /* Firefox */
+  -moz-transform: rotate(1deg);
+  /* IE */
+  -ms-transform: rotate(1deg);
+  /* Opera */
+  -o-transform: rotate(1deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* line 333, style.scss */
+.col-container-3 {
+  width: 100%;
+}
+/* line 335, style.scss */
+.col-container-3 .col1-3 {
+  width: 52%;
+  float: left;
+  padding-left: 3%;
+}
+/* line 342, style.scss */
+.col-container-3 .col2-3 {
+  width: 42%;
+  float: left;
+  padding-right: 3%;
+  text-align: right;
+}
+
+/* line 352, style.scss */
+p.center-paragraph {
+  padding-left: 3%;
+}
+
+/* line 355, style.scss */
+.how-header, .what-header, .work-header {
+  line-height: 0.9;
+  margin-top: 3%;
+  /* determines spacing of headers*/
+}
+
+/* line 362, style.scss */
+.client-list img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3%;
+}
+
+/* Journal PAGE CLASSES */
+/* line 368, style.scss */
+#title {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 13em;
+}
+
+/* line 373, style.scss */
+#para1, #para2 {
+  color: white;
+  margin: 5%;
+  margin-top: 0;
+}
+
+/* line 378, style.scss */
+.community-table {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Journal Page Classes */
+/* line 387, style.scss */
+.left-col {
+  float: left;
+  margin: 3%;
+  width: 68%;
+  font-family: 'LatinModernMono10Regular';
+}
+
+/* line 394, style.scss */
+.navi {
+  text-align: center;
+}
+
+/* line 397, style.scss */
+.navi ul.pages {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 401, style.scss */
+.navi ul.pages li {
+  display: inline;
+  margin: 5px;
+}
+
+/* line 406, style.scss */
+.post-title {
+  color: #20CE55;
+  margin: 10px 0 0;
+}
+
+/* line 411, style.scss */
+.post {
+  color: #808080;
+  font-family: 'LatinModernMono10Regular';
+}
+/* line 415, style.scss */
+.post a {
+  color: #808080;
+  text-decoration: none;
+}
+/* line 419, style.scss */
+.post p {
+  color: #808080 !important;
+  font-family: 'LatinModernMono10Regular' !important;
+  padding-top: 20px;
+}
+
+/* line 427, style.scss */
+#journal-widget {
+  background-color: #20CE55;
+  display: block;
+  float: left;
+  height: 500px;
+  left: 0;
+  padding-top: 200px;
+  position: relative;
+  width: 23%;
+  font-family: 'LatinModernMono10Regular';
+}
+/* line 437, style.scss */
+#journal-widget ul {
+  list-style: none;
+}
+
+/* line 442, style.scss */
+header {
+  margin: 0 0 0;
+}
+/* line 445, style.scss */
+header h1.community-header {
+  font-size: 10em;
+  line-height: 0.9;
+  margin-top: 3%;
+}
+/* line 450, style.scss */
+header h1.contact-header {
+  font-size: 10em;
+  line-height: 0.9;
+  margin-top: 0;
+}
+/* line 455, style.scss */
+header h1.index-header {
+  font-size: 49px;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+/* line 461, style.scss */
+header h1.journal-header {
+  font-size: 10em;
+  line-height: 0.9;
+  margin-top: 0;
+  color: #20CE55;
+}
+
+/* line 470, style.scss */
+#journal-widget h3, li {
+  text-align: center;
+}
+
+/*FOOTER styles*/
+/* line 478, style.scss */
+.site-footer {
+  display: block;
+  float: right;
+  padding-top: 20px;
+  background-color: #FFFFFF;
+  width: 75.13%;
+  height: 250px;
+  position: relative;
+}
+
+/* line 487, style.scss */
+.site-footer h3, p {
+  color: #20CE55;
+}
+
+/* line 491, style.scss */
+.journal-site-footer {
+  display: block;
+  clear: both;
+  float: right;
+  padding-top: 20px;
+  background-color: #20CE55;
+  width: 75.13%;
+  height: 250px;
+}
+
+/* line 500, style.scss */
+.journal-site-footer p, h3 {
+  color: #FFFFFF;
+}
+
+/* line 504, style.scss */
+.footer-container {
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 0;
+  top: 7px;
+  position: relative;
+}
+
+/* line 512, style.scss */
+.footer-content {
+  float: left;
+  overflow: hidden;
+}
+
+/* line 517, style.scss */
+.footer-image {
+  float: left;
+  padding: 0 7%;
+}
+
+/* line 522, style.scss */
+.footer-address {
+  float: left;
+  padding-right: 10%;
+}
+/* line 525, style.scss */
+.footer-address p {
+  margin: 0;
+  font-size: 25px;
+}
+
+/* line 531, style.scss */
+.footer-posts {
+  float: left;
+}
+/* line 533, style.scss */
+.footer-posts ul {
+  list-style: none;
+}
+
+/*CONTACT PAGE STYLES*/
+/* line 543, style.scss */
+.top-image {
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* line 548, style.scss */
+.middle-image {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 2%;
+  width: 49%;
+}
+/* line 553, style.scss */
+.middle-image.right {
+  margin-right: 0;
+}
+
+/* line 558, style.scss */
+.bottom-image {
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* line 563, style.scss */
+.maps {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 2%;
+  width: 49%;
+  height: 50%;
+  padding-bottom: 205px;
+}
+/* line 571, style.scss */
+.maps.right {
+  margin-right: 0;
+}
+/* line 574, style.scss */
+.maps .contacts {
+  list-style: none;
+  float: left;
+  width: 215px;
+  height: auto;
+  padding: 0 40px 10px 0;
+}
+/* line 580, style.scss */
+.maps .contacts p {
+  font-family: Avenir;
+}
+/* line 582, style.scss */
+.maps .contacts p a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 585, style.scss */
+.maps .contacts p a:hover {
+  opacity: 0.8;
+}
+
+/* line 592, style.scss */
+#left-map-canvas {
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* line 597, style.scss */
+#right-map-canvas {
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+@media screen and (min-width: 0px) and (max-width: 599px) {
+  /* line 609, style.scss */
+  #content {
+    display: block;
+    background-color: #20CE55;
+    height: auto;
+    width: 100%;
+  }
+
+  /* line 616, style.scss */
+  .com-table-person {
+    width: 40%;
+    height: 200px;
+    margin: 0%;
+    background-color: green;
+    display: block;
+    float: left;
+  }
+
+  /* line 624, style.scss */
+  .sidebar {
+    width: 100%;
+    background-color: white;
+    font-family: 'dk_pisangregular';
+    color: #20CE55;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  /* line 633, style.scss */
+  .sidebar ul li {
+    font-size: 4em;
+    list-style-type: none;
+    text-align: center;
+    line-height: 1;
+  }
+  /* line 638, style.scss */
+  .sidebar ul li.journalfont {
+    font-size: 60px;
+  }
+  /* line 639, style.scss */
+  .sidebar ul li.communityfont {
+    font-size: 70px;
+  }
+  /* line 640, style.scss */
+  .sidebar ul li.contactfont {
+    font-size: 80px;
+  }
+  /* line 641, style.scss */
+  .sidebar ul li.aboutfont {
+    font-size: 60px;
+  }
+  /* line 642, style.scss */
+  .sidebar ul li a:hover {
+    opacity: 0.8;
+    color: #20CE55;
+  }
+  /* line 645, style.scss */
+  .sidebar img {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 651, style.scss */
+  .sidebar a {
+    color: #20CE55;
+    text-decoration: none;
+  }
+  /* line 655, style.scss */
+  .sidebar h4 {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 5%;
+  }
+
+  /* line 662, style.scss */
+  p {
+    font-size: 0.8em;
+  }
+
+  /* line 668, style.scss */
+  h1.index-header {
+    margin-top: 44%;
+  }
+
+  /*FOOTER styles*/
+  /* line 672, style.scss */
+  .site-footer {
+    padding-top: 20px;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 250px;
+    position: relative;
+  }
+
+  /* line 679, style.scss */
+  .site-footer h3, p {
+    color: #20CE55;
+  }
+
+  /* line 683, style.scss */
+  .journal-site-footer {
+    padding-top: 20px;
+    background-color: #20CE55;
+    width: 100%;
+    height: 250px;
+  }
+
+  /* line 690, style.scss */
+  .journal-site-footer p, h3 {
+    color: #FFFFFF;
+  }
+
+  /* line 694, style.scss */
+  .footer-container {
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 0;
+    top: 7px;
+    position: relative;
+  }
+
+  /* line 702, style.scss */
+  .footer-content {
+    float: left;
+    overflow: hidden;
+  }
+
+  /* line 707, style.scss */
+  .footer-image {
+    float: left;
+    padding: 0 7%;
+  }
+
+  /* line 712, style.scss */
+  .footer-address {
+    float: left;
+    padding-right: 10%;
+  }
+  /* line 715, style.scss */
+  .footer-address p {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  /* line 721, style.scss */
+  .footer-posts {
+    float: left;
+  }
+  /* line 723, style.scss */
+  .footer-posts ul {
+    list-style: none;
+  }
+
+  /* line 731, style.scss */
+  .mobile-logo {
+    width: 40%;
+    float: left;
+    padding-left: 5%;
+    background-color: white;
+  }
+
+  /* line 739, style.scss */
+  .mobile-menu {
+    width: 55%;
+    float: left;
+    background-color: white;
+    margin-top: -7%;
+  }
+
+  /* line 747, style.scss */
+  h1.index-header {
+    margin-top: 44%;
+  }
+
+  /* line 750, style.scss */
+  .index-header-mobile {
+    font-size: 2em;
+    text-align: center;
+    padding: 10%;
+  }
+
+  /* line 757, style.scss */
+  .sidebar ul {
+    padding-top: 20%;
+  }
+
+  /* line 759, style.scss */
+  .col-container {
+    width: 100%;
+  }
+  /* line 761, style.scss */
+  .col-container .col1 {
+    width: 100%;
+    float: none;
+    padding-left: 3%;
+  }
+  /* line 768, style.scss */
+  .col-container .col2 {
+    width: 100%;
+    float: none;
+    padding-right: 3%;
+  }
+
+  /* line 777, style.scss */
+  .screen-only {
+    display: none;
+  }
+
+  /* line 782, style.scss */
+  .mobile-only {
+    display: block;
+  }
+
+  /* line 786, style.scss */
+  .com-table-person {
+    width: 25%;
+    height: 200px;
+    background-color: green;
+    display: block;
+    float: left;
+  }
+
+  /* line 794, style.scss */
+  .people-grid {
+    margin: 0 0 34px;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    margin-left: 7%;
+  }
+  /* line 800, style.scss */
+  .people-grid li {
+    display: block;
+    float: left;
+    list-style: none outside none;
+    margin: 0 5% 5% 0;
+    width: 40%;
+  }
+  /* line 806, style.scss */
+  .people-grid li img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 809, style.scss */
+  .people-grid li p {
+    text-align: left;
+  }
+
+  /* line 813, style.scss */
+  .maps {
+    width: 100%;
+    padding-bottom: 150px;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 822, style.scss */
+  .sidebar {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: white;
+    font-family: 'dk_pisangregular';
+    color: #20CE55;
+    text-align: center;
+  }
+  /* line 831, style.scss */
+  .sidebar ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+  }
+  /* line 835, style.scss */
+  .sidebar ul li {
+    font-size: 4em;
+    list-style-type: none;
+    text-align: center;
+    line-height: 1;
+  }
+  /* line 840, style.scss */
+  .sidebar ul li.journalfont {
+    font-size: 60px;
+  }
+  /* line 841, style.scss */
+  .sidebar ul li.communityfont {
+    font-size: 70px;
+  }
+  /* line 842, style.scss */
+  .sidebar ul li.contactfont {
+    font-size: 80px;
+  }
+  /* line 843, style.scss */
+  .sidebar ul li.aboutfont {
+    font-size: 60px;
+  }
+  /* line 844, style.scss */
+  .sidebar ul li a:hover {
+    opacity: 0.8;
+    color: #20CE55;
+  }
+  /* line 847, style.scss */
+  .sidebar img {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 853, style.scss */
+  .sidebar a {
+    color: #20CE55;
+    text-decoration: none;
+  }
+  /* line 857, style.scss */
+  .sidebar h4 {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 5%;
+  }
+
+  /* line 864, style.scss */
+  p {
+    font-size: 0.9em;
+    color: #20CE55;
+  }
+
+  /* line 869, style.scss */
+  h1.index-header {
+    margin-top: 37%;
+  }
+
+  /* line 871, style.scss */
+  .col-container {
+    width: 100%;
+    height: 260px;
+  }
+  /* line 874, style.scss */
+  .col-container .col1 {
+    float: left;
+    width: 10%;
+    padding-left: 3%;
+    font-size: 1em;
+  }
+  /* line 883, style.scss */
+  .col-container .col2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+  }
+  /* line 890, style.scss */
+  .col-container .col3 {
+    width: 39%;
+    float: left;
+    padding-right: 3%;
+  }
+
+  /* line 898, style.scss */
+  .col-container-2 {
+    width: 100%;
+    height: 280px;
+  }
+  /* line 901, style.scss */
+  .col-container-2 .col1-2 {
+    width: 34%;
+    float: left;
+    padding-left: 3%;
+  }
+  /* line 908, style.scss */
+  .col-container-2 .col2-2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    text-align: right;
+  }
+  /* line 915, style.scss */
+  .col-container-2 .col2-3 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+
+  /* line 922, style.scss */
+  .col-container3 {
+    width: 100%;
+    height: 350px;
+  }
+  /* line 926, style.scss */
+  .col-container3 .col13 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 933, style.scss */
+  .col-container3 .col23 {
+    width: 58%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+  }
+  /* line 939, style.scss */
+  .col-container3 .col23 .bullet-margin {
+    margin-top: 5px;
+  }
+  /* line 944, style.scss */
+  .col-container3 .col33 {
+    width: 24%;
+    float: left;
+    padding-right: 3%;
+  }
+
+  /* line 953, style.scss */
+  .who-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -90px;
+    margin-top: 72px;
+    font-size: 2.7em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 977, style.scss */
+  .do-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 2em;
+    text-align: left;
+    position: absolute;
+    /* determines spacing of headers*/
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1001, style.scss */
+  .how-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -110px;
+    margin-top: 110px;
+    font-size: 3.3em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1027, style.scss */
+  p.padded-p {
+    padding-top: 5%;
+  }
+
+  /* line 1029, style.scss */
+  .com-table-person {
+    width: 25%;
+    height: 200px;
+    margin: 3.12%;
+    background-color: green;
+    display: block;
+    float: left;
+  }
+
+  /* line 1038, style.scss */
+  .people-grid {
+    margin: 0 0 34px;
+    overflow: hidden;
+    padding: 0;
+    width: 89%;
+    margin-left: 5%;
+  }
+  /* line 1044, style.scss */
+  .people-grid li {
+    display: block;
+    float: left;
+    list-style: none outside none;
+    margin: 0 12.5% 1% 0;
+    width: 25%;
+  }
+  /* line 1050, style.scss */
+  .people-grid li img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 1053, style.scss */
+  .people-grid li p {
+    text-align: left;
+  }
+  /* line 1054, style.scss */
+  .people-grid li.right {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1100px) {
+  /* line 1063, style.scss */
+  .sidebar {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: white;
+    font-family: 'dk_pisangregular';
+    color: #20CE55;
+    text-align: center;
+  }
+  /* line 1072, style.scss */
+  .sidebar ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+  }
+  /* line 1076, style.scss */
+  .sidebar ul li {
+    font-size: 4em;
+    list-style-type: none;
+    text-align: center;
+    line-height: 1;
+  }
+  /* line 1081, style.scss */
+  .sidebar ul li.journalfont {
+    font-size: 60px;
+  }
+  /* line 1082, style.scss */
+  .sidebar ul li.communityfont {
+    font-size: 70px;
+  }
+  /* line 1083, style.scss */
+  .sidebar ul li.contactfont {
+    font-size: 80px;
+  }
+  /* line 1084, style.scss */
+  .sidebar ul li.aboutfont {
+    font-size: 60px;
+  }
+  /* line 1085, style.scss */
+  .sidebar ul li a:hover {
+    opacity: 0.8;
+    color: #20CE55;
+  }
+  /* line 1088, style.scss */
+  .sidebar img {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 1094, style.scss */
+  .sidebar a {
+    color: #20CE55;
+    text-decoration: none;
+  }
+  /* line 1098, style.scss */
+  .sidebar h4 {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 5%;
+  }
+
+  /* line 1105, style.scss */
+  p {
+    font-size: 1em;
+    color: #20CE55;
+  }
+
+  /* line 1110, style.scss */
+  h1.index-header {
+    margin-top: 35%;
+  }
+
+  /* line 1112, style.scss */
+  .col-container {
+    width: 100%;
+    height: 280px;
+  }
+  /* line 1115, style.scss */
+  .col-container .col1 {
+    float: left;
+    width: 10%;
+    padding-left: 3%;
+    font-size: 1em;
+  }
+  /* line 1124, style.scss */
+  .col-container .col2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+  }
+  /* line 1131, style.scss */
+  .col-container .col3 {
+    width: 39%;
+    float: left;
+    padding-right: 3%;
+  }
+
+  /* line 1139, style.scss */
+  .col-container-2 {
+    width: 100%;
+    height: 300px;
+  }
+  /* line 1142, style.scss */
+  .col-container-2 .col1-2 {
+    width: 34%;
+    float: left;
+    padding-left: 3%;
+  }
+  /* line 1149, style.scss */
+  .col-container-2 .col2-2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    text-align: right;
+  }
+  /* line 1156, style.scss */
+  .col-container-2 .col2-3 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+
+  /* line 1163, style.scss */
+  .col-container3 {
+    width: 100%;
+    height: 330px;
+  }
+  /* line 1167, style.scss */
+  .col-container3 .col13 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1174, style.scss */
+  .col-container3 .col23 {
+    width: 58%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+  }
+  /* line 1180, style.scss */
+  .col-container3 .col23 .bullet-margin {
+    margin-top: 5px;
+  }
+  /* line 1185, style.scss */
+  .col-container3 .col33 {
+    width: 24%;
+    float: left;
+    padding-right: 3%;
+  }
+
+  /* line 1194, style.scss */
+  .who-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -90px;
+    margin-top: 80px;
+    font-size: 2.7em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1218, style.scss */
+  .do-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 2em;
+    text-align: left;
+    position: absolute;
+    /* determines spacing of headers*/
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1242, style.scss */
+  .how-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -110px;
+    margin-top: 110px;
+    font-size: 3.3em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1268, style.scss */
+  p.padded-p {
+    padding-top: 5%;
+  }
+
+  /* line 1270, style.scss */
+  .com-table-person {
+    width: 25%;
+    height: 200px;
+    margin: 3.12%;
+    background-color: green;
+    display: block;
+    float: left;
+  }
+
+  /* line 1279, style.scss */
+  .people-grid {
+    margin: 0 0 34px;
+    overflow: hidden;
+    padding: 0;
+    width: 89%;
+    margin-left: 5%;
+  }
+  /* line 1285, style.scss */
+  .people-grid li {
+    display: block;
+    float: left;
+    list-style: none outside none;
+    margin: 0 12.5% 1% 0;
+    width: 25%;
+  }
+  /* line 1291, style.scss */
+  .people-grid li img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 1294, style.scss */
+  .people-grid li p {
+    text-align: left;
+  }
+  /* line 1295, style.scss */
+  .people-grid li.right {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 1302, style.scss */
+  .sidebar {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: white;
+    font-family: 'dk_pisangregular';
+    color: #20CE55;
+    text-align: center;
+  }
+  /* line 1311, style.scss */
+  .sidebar ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+  }
+  /* line 1315, style.scss */
+  .sidebar ul li {
+    font-size: 4em;
+    list-style-type: none;
+    text-align: center;
+    line-height: 1;
+  }
+  /* line 1320, style.scss */
+  .sidebar ul li.journalfont {
+    font-size: 60px;
+  }
+  /* line 1321, style.scss */
+  .sidebar ul li.communityfont {
+    font-size: 70px;
+  }
+  /* line 1322, style.scss */
+  .sidebar ul li.contactfont {
+    font-size: 80px;
+  }
+  /* line 1323, style.scss */
+  .sidebar ul li.aboutfont {
+    font-size: 60px;
+  }
+  /* line 1324, style.scss */
+  .sidebar ul li a:hover {
+    opacity: 0.8;
+    color: #20CE55;
+  }
+  /* line 1327, style.scss */
+  .sidebar img {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 1333, style.scss */
+  .sidebar a {
+    color: #20CE55;
+    text-decoration: none;
+  }
+  /* line 1337, style.scss */
+  .sidebar h4 {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 5%;
+  }
+
+  /* line 1344, style.scss */
+  p {
+    font-size: 1.2em;
+  }
+
+  /* line 1348, style.scss */
+  h1.index-header {
+    margin-top: 34.5%;
+  }
+
+  /* line 1350, style.scss */
+  .col-container {
+    width: 100%;
+    height: 300px;
+  }
+  /* line 1354, style.scss */
+  .col-container .col1 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1361, style.scss */
+  .col-container .col2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+  }
+  /* line 1369, style.scss */
+  .col-container .col3 {
+    width: 39%;
+    float: left;
+    padding-right: 3%;
+  }
+
+  /* line 1377, style.scss */
+  .col-container-2 {
+    width: 100%;
+    height: 320px;
+  }
+  /* line 1380, style.scss */
+  .col-container-2 .col1-2 {
+    width: 34%;
+    float: left;
+    padding-left: 3%;
+  }
+  /* line 1387, style.scss */
+  .col-container-2 .col2-2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    text-align: right;
+  }
+  /* line 1394, style.scss */
+  .col-container-2 .col2-3 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+
+  /* line 1401, style.scss */
+  .col-container3 {
+    width: 100%;
+    height: 400px;
+  }
+  /* line 1405, style.scss */
+  .col-container3 .col13 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1412, style.scss */
+  .col-container3 .col23 {
+    width: 58%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 1418, style.scss */
+  .col-container3 .col23 .bullet-margin {
+    margin-top: 5px;
+  }
+  /* line 1423, style.scss */
+  .col-container3 .col33 {
+    width: 24%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 1433, style.scss */
+  .who-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -130px;
+    margin-top: 100px;
+    font-size: 3.7em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1457, style.scss */
+  .do-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 2em;
+    text-align: left;
+    position: absolute;
+    /* determines spacing of headers*/
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1481, style.scss */
+  .how-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -120px;
+    margin-top: 127px;
+    font-size: 4.1em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1507, style.scss */
+  p.padded-p {
+    padding-top: 5%;
+  }
+
+  /* line 1509, style.scss */
+  .com-table-person {
+    width: 25%;
+    height: 200px;
+    margin: 3.12%;
+    background-color: green;
+    display: block;
+    float: left;
+  }
+
+  /* line 1518, style.scss */
+  .people-grid {
+    margin: 0 0 34px;
+    overflow: hidden;
+    padding: 0;
+    width: 89%;
+    margin-left: 5%;
+  }
+  /* line 1524, style.scss */
+  .people-grid li {
+    display: block;
+    float: left;
+    list-style: none outside none;
+    margin: 0 12.5% 1% 0;
+    width: 25%;
+  }
+  /* line 1530, style.scss */
+  .people-grid li img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 1533, style.scss */
+  .people-grid li p {
+    text-align: left;
+  }
+  /* line 1534, style.scss */
+  .people-grid li.right {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  /* line 1542, style.scss */
+  .sidebar {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: white;
+    font-family: 'dk_pisangregular';
+    color: #20CE55;
+    text-align: center;
+  }
+  /* line 1551, style.scss */
+  .sidebar ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+  }
+  /* line 1555, style.scss */
+  .sidebar ul li {
+    font-size: 4em;
+    list-style-type: none;
+    text-align: center;
+    line-height: 1;
+  }
+  /* line 1560, style.scss */
+  .sidebar ul li.journalfont {
+    font-size: 60px;
+  }
+  /* line 1561, style.scss */
+  .sidebar ul li.communityfont {
+    font-size: 70px;
+  }
+  /* line 1562, style.scss */
+  .sidebar ul li.contactfont {
+    font-size: 80px;
+  }
+  /* line 1563, style.scss */
+  .sidebar ul li.aboutfont {
+    font-size: 60px;
+  }
+  /* line 1564, style.scss */
+  .sidebar ul li a:hover {
+    opacity: 0.8;
+    color: #20CE55;
+  }
+  /* line 1567, style.scss */
+  .sidebar img {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 1573, style.scss */
+  .sidebar a {
+    color: #20CE55;
+    text-decoration: none;
+  }
+  /* line 1577, style.scss */
+  .sidebar h4 {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 5%;
+  }
+
+  /* line 1584, style.scss */
+  p {
+    font-size: 1.1em;
+  }
+
+  /* line 1588, style.scss */
+  h1.index-header {
+    margin-top: 35%;
+  }
+
+  /* line 1590, style.scss */
+  .col-container {
+    width: 100%;
+    height: 300px;
+  }
+  /* line 1594, style.scss */
+  .col-container .col1 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1601, style.scss */
+  .col-container .col2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 1609, style.scss */
+  .col-container .col3 {
+    width: 39%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 1618, style.scss */
+  .col-container-2 {
+    width: 100%;
+    height: 320px;
+  }
+  /* line 1621, style.scss */
+  .col-container-2 .col1-2 {
+    width: 34%;
+    float: left;
+    padding-left: 3%;
+  }
+  /* line 1628, style.scss */
+  .col-container-2 .col2-2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    text-align: right;
+  }
+  /* line 1635, style.scss */
+  .col-container-2 .col2-3 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+
+  /* line 1642, style.scss */
+  .col-container3 {
+    width: 100%;
+    height: 350px;
+  }
+  /* line 1646, style.scss */
+  .col-container3 .col13 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1653, style.scss */
+  .col-container3 .col23 {
+    width: 58%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 1659, style.scss */
+  .col-container3 .col23 .bullet-margin {
+    margin-top: 5px;
+  }
+  /* line 1664, style.scss */
+  .col-container3 .col33 {
+    width: 24%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 1674, style.scss */
+  .who-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -90px;
+    margin-top: 80px;
+    font-size: 2.9em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1698, style.scss */
+  .do-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 2em;
+    text-align: left;
+    position: absolute;
+    /* determines spacing of headers*/
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1722, style.scss */
+  .how-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -130px;
+    margin-top: 127px;
+    font-size: 3.9em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1748, style.scss */
+  p.padded-p {
+    padding-top: 5%;
+  }
+
+  /* line 1750, style.scss */
+  .com-table-person {
+    width: 25%;
+    height: 200px;
+    margin: 3.12%;
+    background-color: green;
+    display: block;
+    float: left;
+  }
+
+  /* line 1759, style.scss */
+  .people-grid {
+    margin: 0 0 34px;
+    overflow: hidden;
+    padding: 0;
+    width: 89%;
+    margin-left: 5%;
+  }
+  /* line 1765, style.scss */
+  .people-grid li {
+    display: block;
+    float: left;
+    list-style: none outside none;
+    margin: 0 12.5% 1% 0;
+    width: 25%;
+  }
+  /* line 1771, style.scss */
+  .people-grid li img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 1774, style.scss */
+  .people-grid li p {
+    text-align: left;
+  }
+  /* line 1775, style.scss */
+  .people-grid li.right {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 1782, style.scss */
+  .sidebar {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: white;
+    font-family: 'dk_pisangregular';
+    color: #20CE55;
+    text-align: center;
+  }
+  /* line 1791, style.scss */
+  .sidebar ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+  }
+  /* line 1795, style.scss */
+  .sidebar ul li {
+    font-size: 4em;
+    list-style-type: none;
+    text-align: center;
+    line-height: 1;
+  }
+  /* line 1800, style.scss */
+  .sidebar ul li.journalfont {
+    font-size: 60px;
+  }
+  /* line 1801, style.scss */
+  .sidebar ul li.communityfont {
+    font-size: 70px;
+  }
+  /* line 1802, style.scss */
+  .sidebar ul li.contactfont {
+    font-size: 80px;
+  }
+  /* line 1803, style.scss */
+  .sidebar ul li.aboutfont {
+    font-size: 60px;
+  }
+  /* line 1804, style.scss */
+  .sidebar ul li a:hover {
+    opacity: 0.8;
+    color: #20CE55;
+  }
+  /* line 1807, style.scss */
+  .sidebar img {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 1813, style.scss */
+  .sidebar a {
+    color: #20CE55;
+    text-decoration: none;
+  }
+  /* line 1817, style.scss */
+  .sidebar h4 {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 5%;
+  }
+
+  /* line 1824, style.scss */
+  p {
+    font-size: 1.2em;
+  }
+
+  /* line 1828, style.scss */
+  h1.index-header {
+    margin-top: 34.5%;
+  }
+
+  /* line 1830, style.scss */
+  .col-container {
+    width: 100%;
+    height: 300px;
+  }
+  /* line 1834, style.scss */
+  .col-container .col1 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1841, style.scss */
+  .col-container .col2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 1849, style.scss */
+  .col-container .col3 {
+    width: 39%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 1858, style.scss */
+  .col-container-2 {
+    width: 100%;
+    height: 320px;
+  }
+  /* line 1861, style.scss */
+  .col-container-2 .col1-2 {
+    width: 34%;
+    float: left;
+    padding-left: 3%;
+  }
+  /* line 1868, style.scss */
+  .col-container-2 .col2-2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    text-align: right;
+  }
+  /* line 1875, style.scss */
+  .col-container-2 .col2-3 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+
+  /* line 1882, style.scss */
+  .col-container3 {
+    width: 100%;
+    height: 400px;
+  }
+  /* line 1886, style.scss */
+  .col-container3 .col13 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 1893, style.scss */
+  .col-container3 .col23 {
+    width: 58%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 1899, style.scss */
+  .col-container3 .col23 .bullet-margin {
+    margin-top: 5px;
+  }
+  /* line 1904, style.scss */
+  .col-container3 .col33 {
+    width: 24%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 1914, style.scss */
+  .who-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -130px;
+    margin-top: 100px;
+    font-size: 3.7em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1938, style.scss */
+  .do-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 2em;
+    text-align: left;
+    position: absolute;
+    /* determines spacing of headers*/
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1962, style.scss */
+  .how-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -130px;
+    margin-top: 127px;
+    font-size: 4.1em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 1988, style.scss */
+  p.padded-p {
+    padding-top: 5%;
+  }
+
+  /* line 1990, style.scss */
+  .com-table-person {
+    width: 25%;
+    height: 200px;
+    margin: 3.12%;
+    background-color: green;
+    display: block;
+    float: left;
+  }
+
+  /* line 1999, style.scss */
+  .people-grid {
+    margin: 0 0 34px;
+    overflow: hidden;
+    padding: 0;
+    width: 89%;
+    margin-left: 5%;
+  }
+  /* line 2005, style.scss */
+  .people-grid li {
+    display: block;
+    float: left;
+    list-style: none outside none;
+    margin: 0 12.5% 1% 0;
+    width: 25%;
+  }
+  /* line 2011, style.scss */
+  .people-grid li img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 2014, style.scss */
+  .people-grid li p {
+    text-align: left;
+  }
+  /* line 2015, style.scss */
+  .people-grid li.right {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1680px) {
+  /* line 2023, style.scss */
+  .sidebar {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: white;
+    font-family: 'dk_pisangregular';
+    color: #20CE55;
+    text-align: center;
+  }
+  /* line 2032, style.scss */
+  .sidebar ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+  }
+  /* line 2036, style.scss */
+  .sidebar ul li {
+    font-size: 4em;
+    list-style-type: none;
+    text-align: center;
+    line-height: 1;
+  }
+  /* line 2041, style.scss */
+  .sidebar ul li.journalfont {
+    font-size: 60px;
+  }
+  /* line 2042, style.scss */
+  .sidebar ul li.communityfont {
+    font-size: 70px;
+  }
+  /* line 2043, style.scss */
+  .sidebar ul li.contactfont {
+    font-size: 80px;
+  }
+  /* line 2044, style.scss */
+  .sidebar ul li.aboutfont {
+    font-size: 60px;
+  }
+  /* line 2045, style.scss */
+  .sidebar ul li a:hover {
+    opacity: 0.8;
+    color: #20CE55;
+  }
+  /* line 2048, style.scss */
+  .sidebar img {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 2054, style.scss */
+  .sidebar a {
+    color: #20CE55;
+    text-decoration: none;
+  }
+  /* line 2058, style.scss */
+  .sidebar h4 {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 5%;
+  }
+
+  /* line 2065, style.scss */
+  p {
+    font-size: 1.5em;
+  }
+
+  /* line 2069, style.scss */
+  h1.index-header {
+    margin-top: 33.9%;
+  }
+
+  /* line 2071, style.scss */
+  .col-container {
+    width: 100%;
+    height: 350px;
+  }
+  /* line 2075, style.scss */
+  .col-container .col1 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 2082, style.scss */
+  .col-container .col2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 2090, style.scss */
+  .col-container .col3 {
+    width: 39%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 2099, style.scss */
+  .col-container-2 {
+    width: 100%;
+    height: 400px;
+  }
+  /* line 2102, style.scss */
+  .col-container-2 .col1-2 {
+    width: 34%;
+    float: left;
+    padding-left: 3%;
+  }
+  /* line 2109, style.scss */
+  .col-container-2 .col2-2 {
+    width: 43%;
+    float: left;
+    padding-right: 3%;
+    text-align: right;
+  }
+  /* line 2116, style.scss */
+  .col-container-2 .col2-3 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+
+  /* line 2123, style.scss */
+  .col-container3 {
+    width: 100%;
+    height: 500px;
+  }
+  /* line 2127, style.scss */
+  .col-container3 .col13 {
+    width: 10%;
+    float: left;
+    font-size: 1em;
+  }
+  /* line 2134, style.scss */
+  .col-container3 .col23 {
+    width: 58%;
+    float: left;
+    padding-right: 3%;
+    margin-left: 12%;
+    color: #000;
+  }
+  /* line 2140, style.scss */
+  .col-container3 .col23 .bullet-margin {
+    margin-top: 5px;
+  }
+  /* line 2145, style.scss */
+  .col-container3 .col33 {
+    width: 24%;
+    float: left;
+    padding-right: 3%;
+    color: #000;
+  }
+
+  /* line 2154, style.scss */
+  .who-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 4em;
+    margin-left: -160px;
+    margin-top: 110px;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 2178, style.scss */
+  .do-header {
+    line-height: 0.9;
+    overflow: visible;
+    font-size: 4em;
+    text-align: left;
+    position: absolute;
+    /* determines spacing of headers*/
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 2202, style.scss */
+  .how-header {
+    line-height: 0.9;
+    overflow: visible;
+    margin-left: -170px;
+    margin-top: 160px;
+    font-size: 5em;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  /* line 2228, style.scss */
+  p.padded-p {
+    padding-top: 5%;
+  }
+
+  /* line 2231, style.scss */
+  .com-table-person {
+    width: 25%;
+    height: 200px;
+    margin: 3.12%;
+    background-color: green;
+    display: block;
+    float: left;
+  }
+
+  /* line 2240, style.scss */
+  .people-grid {
+    margin: 0 0 34px;
+    overflow: hidden;
+    padding: 0;
+    width: 89%;
+    margin-left: 5%;
+  }
+  /* line 2246, style.scss */
+  .people-grid li {
+    display: block;
+    float: left;
+    list-style: none outside none;
+    margin: 0 12.5% 1% 0;
+    width: 25%;
+  }
+  /* line 2252, style.scss */
+  .people-grid li img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 2255, style.scss */
+  .people-grid li p {
+    text-align: left;
+  }
+  /* line 2256, style.scss */
+  .people-grid li.right {
+    margin-right: 0;
+  }
+
+  /* line 2260, style.scss */
+  .contacts-right {
+    float: right;
+  }
+}
+/* line 2268, style.scss */
+.placeholder-left img {
+  width: 8%;
+  height: auto;
+  margin-left: 4%;
+}
+
+/* line 2272, style.scss */
+.bottom-placeholder img {
+  width: 100%;
+  height: auto;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 2284, style.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 2292, style.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 2303, style.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 2312, style.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 2329, style.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 2342, style.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 2359, style.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 2364, style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 2373, style.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 2400, style.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 2408, style.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 2412, style.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 2416, style.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 2426, style.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 2431, style.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 2436, style.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 2441, style.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 2445, style.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 2455, style.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 2461, style.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
