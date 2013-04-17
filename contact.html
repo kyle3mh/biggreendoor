@@ -59,7 +59,7 @@
             function initialize(){
 
                 var point = new google.maps.LatLng(51.523227,-0.173218);
-                var point2 = new google.maps.LatLng(51.523227,-0.173218);
+                // var point2 = new google.maps.LatLng(51.523227,-0.173218);
 
                 var myMapOptions = {
                     zoom: 15,
@@ -68,14 +68,14 @@
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
 
-                var myMapOptions2 = {
-                    zoom: 15,
-                    center: point,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
+                // var myMapOptions2 = {
+                //     zoom: 15,
+                //     center: point,
+                //     mapTypeId: google.maps.MapTypeId.ROADMAP
+                // };
 
                 var map = new google.maps.Map(document.getElementById("left-map-canvas"),myMapOptions);
-                var map2 = new google.maps.Map(document.getElementById("right-map-canvas"),myMapOptions2);
+                // var map2 = new google.maps.Map(document.getElementById("right-map-canvas"),myMapOptions2);
 
                 var image = new google.maps.MarkerImage(
                     'img/pin.png',
@@ -113,15 +113,15 @@
                     position: point
                 });
 
-                var marker2 = new google.maps.Marker({
-                    draggable: true,
-                    raiseOnDrag: false,
-                    icon: image,
-                    shadow: shadow,
-                    shape: shape,
-                    map: map2,
-                    position: point
-                });
+                // var marker2 = new google.maps.Marker({
+                //     draggable: true,
+                //     raiseOnDrag: false,
+                //     icon: image,
+                //     shadow: shadow,
+                //     shape: shape,
+                //     map: map2,
+                //     position: point
+                // });
 
                 google.maps.event.addListener(marker, 'click', function() {
                     infowindow.open(map,marker);
