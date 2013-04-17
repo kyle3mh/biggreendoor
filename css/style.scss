@@ -711,49 +711,32 @@ header {
     /*COMMUNITY PAGE*/
 
     .people-grid {
-    overflow: hidden;
-    width: 100%;
-    margin:0;
-    padding:0;
-    li {
-        display: block;
-        position:relative;
-        float: left;
-        list-style: none outside none;
-        margin: 0 2% 1% 0;
-        width: 32%;
-        z-index:1;
-        * { // all children have transitions
-            transition: opacity .25s ease-in-out;
-            -moz-transition: opacity .25s ease-in-out;
-            -webkit-transition: opacity .25s ease-in-out;
-        }
-        img {
-            width:100%; height:100%;
-        }
-        p {
-            position:absolute; 
-            width:100%; 
-            height:110px; 
-            top:50%; 
-            left:0; 
-            margin:-55px 0 0 0; 
-            text-align: center; 
-            vertical-align:bottom; 
-            z-index:100; 
-            opacity:0; 
-            font-size:20px;
-        }
-        &:nth-child(4n){margin-right:2%;}    // every fourth list element to be flush against right side
-        &:nth-child(3n){margin-right:0;}    // every fourth list element to be flush against right side
-        &:hover img {                       // on hover of list element fade out child image
-            opacity: 0.5;   
-        }
-        &:hover p {                         // on hover of list element fade in child paragraph
-            opacity: 1;
+        li {
+            width: 48%;
+            p {
+                position:absolute; 
+                width:100%; 
+                height:110px; 
+                top:50%; 
+                left:0; 
+                margin:-55px 0 0 0; 
+                text-align: center; 
+                vertical-align:bottom; 
+                z-index:100; 
+                opacity:0; 
+                font-size:12px;
+            }
+            &:nth-child(4n){margin-right:2%;}    // reset old nth-child
+            &:nth-child(3n){margin-right:2%;}    // reset old nth-child
+            &:nth-child(2n){margin-right:0;}    // every second list element to be flush against right side
+            &:hover img {                       // on hover of list element fade out child image
+                opacity: 0.5;   
+            }
+            &:hover p {                         // on hover of list element fade in child paragraph
+                opacity: 1;
+            }
         }
     }
-}
 
     /*FOOTER styles*/
 
@@ -883,10 +866,7 @@ header {
     }
 
     ///// CONTACT PAGE //////
-    .inner-content {
-        margin-left:0;
-        margin-right:0;
-    }
+
     .maps {
         width:100%;
         padding-bottom:150px;
