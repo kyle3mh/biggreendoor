@@ -233,38 +233,92 @@ textarea {
         width: 23.5%;
         z-index:1;
         * { // all children have transitions
-            transition: opacity .25s ease-in-out;
-            -moz-transition: opacity .25s ease-in-out;
-            -webkit-transition: opacity .25s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
         }
         .white-label {
             background-color:white;
+                    border-radius: 5px;
+
         }
         img {
             width:100%; height:100%; z-index:10;
+            border-radius: 5px;
+            box-shadow: 0 1px 4px #797;
+
         }
-        p {
+        .details {
             position:absolute; 
             width:100%; 
-            height:110px; 
+            height:100px; 
             top:50%; 
             left:0; 
-            margin:-55px 0 0 0; 
+            margin:-50px 0 0 0; 
             text-align: center; 
             color:green;
             z-index:100; 
-            opacity:0; 
             font-size:20px;
+
+            .name {
+                font-size:22px;
+                -webkit-transform: translateY(-500%);
+                -moz-transform: translateY(-500%);
+                -o-transform: translateY(-500%);
+                -ms-transform: translateY(-500%);
+                transform: translateY(-500%);
+                -moz-opacity: 0.00;
+                opacity: 0.00;
+            }
+            .job {
+                -webkit-transform: translateY(500%);
+                -moz-transform: translateY(500%);
+                -o-transform: translateY(500%);
+                -ms-transform: translateY(500%);
+                transform: translateY(500%);
+                -moz-opacity: 0.00;
+                opacity: 0.00;
+                transition-delay: 0.1s;
+                -webkit-transition-delay: 0.1s; /* Safari */
+            }
+            .job, .social {
+                font-size:18px;
+            }
+            .social {
+                -moz-opacity: 0.00;
+                opacity: 0.00;
+                transition: opacity 0.1s 0.02s ease;  /* Mouse leave: immediate */
+                margin-top:20px;
+            }
         }
+
+
         &:nth-child(4n){margin-right:0;}    // every fourth list element to be flush against right side
         &:hover img {                       // on hover of list element fade out child image
-            opacity: 0.5;   
+            opacity: 0.2;   
         }
-        &:hover p {                         // on hover of list element fade in child paragraph
-            opacity: 1;
+        &:hover .details {                         // on hover of list element fade in child paragraph
+            .name, .job {
+                -webkit-transform: translateY(0);
+                -moz-transform: translateY(0);
+                -o-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+                -moz-opacity: 1.00;
+                opacity: 1.00;
+            }
+            .social {
+                transition: opacity 0.3s 0.3s ease; /* Mouse enter: delay */
+                -moz-opacity: 1.00;
+                opacity: 1.00; 
+            }
         }
     }
 }
+
+
 
 /* ABOUT PAGE CLASSES */
 
@@ -518,6 +572,11 @@ header {
 
 /*CONTACT PAGE CLASSES*/
 
+    .images img {
+            border-radius: 5px;
+            box-shadow: 0 1px 4px #797;
+    }
+
 .top-image{
     float:left;
     margin-bottom: 20px;
@@ -570,6 +629,8 @@ header {
 #left-map-canvas, #right-map-canvas {
     float: left;
     margin-bottom: 15px;
+        border-radius: 5px;
+    box-shadow: 0 1px 4px #797;
 }
 
 
@@ -715,7 +776,7 @@ header {
 
     .people-grid {
         li {
-            margin: 0 4% 0% 0;
+            margin: 0 4% 4% 0;
             width: 48%;
             p {
                 position:relative; 
