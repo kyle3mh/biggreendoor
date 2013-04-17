@@ -491,7 +491,7 @@ header {
             font-size: 10em;
             line-height: 0.9;
             margin-top: 0; 
-            margin-bottom:8px;
+            margin-bottom:20px;
             overflow:hidden;
         }
         &.index-header{
@@ -539,30 +539,30 @@ header {
     float:left;
     margin-bottom: 20px;
     margin-right: 2%;
-    width: 49%;
-    height:50%;
+    width: 100%;
+    height:100%;
     padding-bottom: 205px;
 
     &.right {
-        margin-right: 0;
+        margin-right:0;
     }
     .contacts {
-    list-style: none;
-    float: left;
-    width: 280px;
-    height:auto;
-    padding: 0 0 10px 0; 
-    p {
-        font-family: Avenir;
-        a {
-            color: #FFFFFF;
-            text-decoration:none;
-            &:hover {
-                opacity: 0.8;
+        list-style: none;
+        float: left;
+        width: 50%;
+        height:auto;
+        padding: 0 0 10px 0; 
+        p {
+            font-family: Avenir;
+            a {
+                color: #FFFFFF;
+                text-decoration:none;
+                &:hover {
+                    opacity: 0.8;
+                }
             }
         }
     }
-}
 }
 #left-map-canvas, #right-map-canvas {
     float: left;
@@ -735,6 +735,61 @@ header {
         }
     }
 
+        ///// CONTACT PAGE //////
+
+    header {
+            h1 {
+            &.contact-header{
+                margin-top: 10px; 
+                margin-bottom:10px;
+            }
+        }
+    }
+
+    .inner-content.contact {
+        margin: 0%;
+        width: auto;
+        height: auto;
+        &.contact {height: 600px;}
+    }
+
+    .maps {
+        float:left;
+        margin-bottom: 20px;
+        margin-right: 2%;
+        width: 100%;
+        height:40%;
+        padding-bottom: 205px;
+
+        &.right {
+            margin-right:0;
+        }
+        .contacts {
+            list-style: none;
+            float: left;
+            width: 50%;
+            height:auto;
+            padding: 0 0 10px 0; 
+            p {
+                font-family: Avenir;
+                a {
+                    color: #FFFFFF;
+                    text-decoration:none;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+
+    .contacts {
+        margin-left:20px;
+    }
+    .images div:not(.top-image) {   // all divs inside .images class except for .top-image
+        display:none;
+    }
+
     /*FOOTER styles*/
 
     .site-footer {
@@ -860,19 +915,6 @@ header {
         background-color: green;
         display:block;
         float:left;
-    }
-
-    ///// CONTACT PAGE //////
-
-    .maps {
-        width:100%;
-        padding-bottom:150px;
-    }
-    .contacts {
-        margin-left:20px;
-    }
-    .images div:not(.top-image) {   // all divs inside .images class except for .top-image
-        display:none;
     }
 }
 
@@ -1006,7 +1048,6 @@ header {
     
         }
     }
-
 
     .who-header {
         line-height: 0.9;
@@ -1804,7 +1845,7 @@ header {
     }
 }
     p{  
-    font-size: 1.2em;
+    //font-size: 1.2em;
     }
     h1{
         &.index-header{margin-top:34.5%;}
@@ -2025,6 +2066,8 @@ header {
         margin: 5%;
     }
 }
+
+
     p{  
     font-size: 1.5em;
     }
@@ -2204,13 +2247,6 @@ header {
 p {
         &.community-p {padding-top:5%;}
 }
-
-
-.contacts {
-    &.contacts-right { float: right;}
-
-}
-
 
 }
 
