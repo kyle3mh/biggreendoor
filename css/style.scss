@@ -237,8 +237,11 @@ textarea {
             -moz-transition: opacity .25s ease-in-out;
             -webkit-transition: opacity .25s ease-in-out;
         }
+        .white-label {
+            background-color:white;
+        }
         img {
-            width:100%; height:100%;
+            width:100%; height:100%; z-index:10;
         }
         p {
             position:absolute; 
@@ -248,7 +251,7 @@ textarea {
             left:0; 
             margin:-55px 0 0 0; 
             text-align: center; 
-            vertical-align:bottom; 
+            color:green;
             z-index:100; 
             opacity:0; 
             font-size:20px;
@@ -541,7 +544,7 @@ header {
     margin-right: 2%;
     width: 100%;
     height:100%;
-    padding-bottom: 205px;
+    padding-bottom: 230px;
 
     &.right {
         margin-right:0;
@@ -759,7 +762,7 @@ header {
         margin-right: 2%;
         width: 100%;
         height:40%;
-        padding-bottom: 205px;
+        padding-bottom: 170px;
 
         &.right {
             margin-right:0;
@@ -769,7 +772,11 @@ header {
             float: left;
             width: 50%;
             height:auto;
+            margin-left:20px;
             padding: 0 0 10px 0; 
+            &.contacts-right {
+                display:none;
+            }
             p {
                 font-family: Avenir;
                 a {
@@ -783,9 +790,6 @@ header {
         }
     }
 
-    .contacts {
-        margin-left:20px;
-    }
     .images div:not(.top-image) {   // all divs inside .images class except for .top-image
         display:none;
     }
@@ -1711,7 +1715,6 @@ header {
     }
 }
 
-
 .who-header {
     line-height: 0.9;
     overflow: visible;
@@ -2243,6 +2246,9 @@ header {
     float:left;
 }
 
+.maps {
+    padding-bottom: 300px;
+}
 
 p {
         &.community-p {padding-top:5%;}
