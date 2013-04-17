@@ -238,15 +238,12 @@ Standard layout styles
 /* line 242, style.scss */
 .people-grid li .white-label {
   background-color: white;
-  border-radius: 5px;
 }
 /* line 247, style.scss */
 .people-grid li img {
   width: 100%;
   height: 100%;
   z-index: 10;
-  border-radius: 5px;
-  box-shadow: 0 1px 4px #797;
 }
 /* line 253, style.scss */
 .people-grid li .details {
@@ -575,12 +572,6 @@ header h1.journal-header {
 }
 
 /*CONTACT PAGE CLASSES*/
-/* line 575, style.scss */
-.images img {
-  border-radius: 5px;
-  box-shadow: 0 1px 4px #797;
-}
-
 /* line 580, style.scss */
 .top-image {
   float: left;
@@ -644,8 +635,6 @@ header h1.journal-header {
 #left-map-canvas, #right-map-canvas {
   float: left;
   margin-bottom: 15px;
-  border-radius: 5px;
-  box-shadow: 0 1px 4px #797;
 }
 
 /*FOOTER styles*/
