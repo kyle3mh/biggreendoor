@@ -468,11 +468,46 @@ p {
     .box {
         height:100%;
         float: left;
+        position:relative;
         line-height:1;
         text-align:center;
         overflow: visible;
         cursor:pointer;
+        img {
+            width:95%;
+            height:auto;
+        }
     }
+    .speech:hover:before {
+          display: block;
+          position: absolute; 
+          content: attr(title);
+          min-width: 120px;
+          text-align: center;
+          width: auto;
+          height: auto;
+          top:-60%;    
+          white-space: nowrap;
+          background: rgba(0,0,0,.8);
+          -moz-border-radius:10px;
+          -webkit-border-radius:10px;
+          border-radius:10px;    
+          color: #fff;
+          font-size: .5em;
+    }
+    .speech:hover:after {
+          position: relative;
+          display: block;
+          content: "";  
+          border-color: rgba(0,0,0,.8) transparent transparent transparent;
+          border-style: solid;
+          border-width: 10px;
+          height:0;
+          width:0;
+          position:absolute;
+          top: -10%;
+          left:1em;
+        }
     .row {
         top:0;
         left:0;
