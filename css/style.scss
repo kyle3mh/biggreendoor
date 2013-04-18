@@ -241,13 +241,13 @@ textarea {
         }
         .white-label {
             background-color:white;
-                    border-radius: 5px;
+//            border-radius: 5px;
 
         }
         img {
             width:100%; height:100%; z-index:10;
-            border-radius: 5px;
-            box-shadow: 0 1px 4px #797;
+//            border-radius: 5px;
+//            box-shadow: 0 1px 4px #797;
 
         }
         .details {
@@ -572,10 +572,10 @@ header {
 
 /*CONTACT PAGE CLASSES*/
 
-    .images img {
-            border-radius: 5px;
-            box-shadow: 0 1px 4px #797;
-    }
+.images img {
+//        border-radius: 5px;
+//        box-shadow: 0 1px 4px #797;
+}
 
 .top-image{
     float:left;
@@ -629,8 +629,8 @@ header {
 #left-map-canvas, #right-map-canvas {
     float: left;
     margin-bottom: 15px;
-        border-radius: 5px;
-    box-shadow: 0 1px 4px #797;
+//    border-radius: 5px;
+//    box-shadow: 0 1px 4px #797;
 }
 
 
