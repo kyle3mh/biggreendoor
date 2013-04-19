@@ -24,12 +24,13 @@
     return this.each(function(){
 
       // Store the object
-      var $this = $(this); 
-      var $text = $this.clone()    //clone the element
-        .children() //select all the children
-        .remove()   //remove all the children
-        .end()  //again go back to selected element
-        .text();
+      var $this = $(this);
+      var $text = $this.children('span').text();
+      // var $text = $this.clone()    //clone the element
+      //   .children() //select all the children
+      //   .remove()   //remove all the children
+      //   .end()  //again go back to selected element
+      //   .text();
 
         console.log($text)
       

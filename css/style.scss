@@ -477,14 +477,14 @@ p {
             width:95%;
             height:auto;
         }
-        &:hover .speech {
-            opacity:1;
+        span:hover + .speech {
+            display:block;
         }
     }
     .speech {
         position:absolute;
-        opacity:0;
-        top:-70%;
+        display:none;
+        top:-50%;
         left:40%;
         padding:15px;
         color:#20CE55;
@@ -510,6 +510,9 @@ p {
        border-style:solid;
        border-color:white transparent;
     }
+    .speech:hover {     // speech bubble can be accessed after it is revealed but is not triggered directly
+        display:block;
+    }
     .row {
         top:0;
         left:0;
@@ -525,7 +528,7 @@ p {
     }
     .row1 {
         margin-top:55px;
-        div {
+        > div {
             &:nth-child(1) {
                 width:4%;
             }
@@ -545,7 +548,7 @@ p {
     }
     .row2 {
         height: 80px;
-        div {
+        > div {
             &:nth-child(1) {
                 width:93.5%;
             }
@@ -555,7 +558,7 @@ p {
         }
     }
     .row3 {
-        div {
+        > div {
             &:nth-child(1) {
                 width:38%;
             }
@@ -575,7 +578,7 @@ p {
     }
     .row4 {
         height: 80px;
-        div {
+        > div {
             &:nth-child(1) {
                 width:46%;
             }
@@ -591,7 +594,7 @@ p {
         }
     }
     .row5 {
-        div {
+        > div {
             &:nth-child(1) {
                 width:25%;
             }
