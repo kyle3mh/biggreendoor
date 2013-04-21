@@ -64,7 +64,7 @@
                         <div class="job">Job Title</div>
                         
                         
-                        <div class="social facebook"></div>
+                        <div class="social">Social Link</div>
                     </div>
                   </li>
                   <li>
@@ -77,7 +77,7 @@
                         <div class="job">Job Title</div>
                         
                         
-                        <div class="social twitter"></div>
+                        <div class="social">Social Link</div>
                     </div>
                   </li>
                   <li>

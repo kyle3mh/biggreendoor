@@ -287,10 +287,18 @@ textarea {
                 font-size:18px;
             }
             .social {
+                width:32px;
+                height:32px;
                 -moz-opacity: 0.00;
                 opacity: 0.00;
                 transition: opacity 0.1s 0.02s ease;  /* Mouse leave: immediate */
-                margin-top:20px;
+                margin:20px auto 0 auto;
+                &.facebook {
+                    background:url('../img/social_links_32.png') no-repeat 0 0;
+                }
+                &.twitter {
+                    background:url('../img/social_links_32.png') no-repeat -32px 0;
+                }
             }
         }
 
