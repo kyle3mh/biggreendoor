@@ -990,11 +990,6 @@ p.center-paragraph {
     margin: 5%;
   }
 
-  /* line 909, style.scss */
-  p {
-    font-size: 0.8em;
-  }
-
   /* line 915, style.scss */
   h1.index-header {
     margin-top: 44%;
@@ -1299,7 +1294,7 @@ p.center-paragraph {
   /* line 1175, style.scss */
   .col-container3 .col23 {
     width: 50%;
-    margin: 0 25% -10px 25%;
+    margin: 8% 25% 0 25%;
     text-align: center;
   }
   /* line 1181, style.scss */
