@@ -691,6 +691,13 @@ margin: 5px;
     font-family: 'LatinModernMono10Regular';
     ul {
         list-style: none;
+        padding: 0;
+        li {
+            text-align: left;
+            a {
+                color: #FFFFFF;
+            }
+        }
     }
 }
 
@@ -724,7 +731,7 @@ header {
     }
 }
 
-#journal-widget h3,li { 
+#journal-widget h3 { 
     text-align: center;
 }
 
@@ -852,13 +859,10 @@ header {
 }
 
 .footer-posts {
-    float: right;   
-    padding-right:30px;
+    float: left;   
+    padding-left:100px;
     ul {
         list-style: none;
-        li {
-
-        }
     } 
 }
 
@@ -2197,7 +2201,7 @@ header {
             /* Safari */
         -webkit-transform: rotate(90deg);
             
-        ////    /* Firefox */
+        ////    /* Firefox */ 
         -moz-transform: rotate(90deg);
             
         ////    /* IE */
