@@ -1154,7 +1154,7 @@ h1 {
         }
         
         .col2-2 {
-            width: 60%;
+            width: 100%;
             float: none;
             margin: 0;
 
@@ -1173,8 +1173,9 @@ h1 {
         }
         
         .col23 {
-            width: 85%;
-            margin: 5% 0 0 15%;
+            width: 50%;
+            margin : 0 25% -10px 25%;
+
             text-align: center;  
          
             .bullet-margin {
