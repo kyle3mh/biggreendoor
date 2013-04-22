@@ -849,6 +849,208 @@ p {
     }
 }
 
+/* JOURNAL PAGE CLASSES */
+
+
+#title {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 13em;
+}
+#para1, #para2 {
+    color:white;
+    margin:5%;
+    margin-top: 0;
+}
+.community-table {
+    margin:0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-col {
+    float: left;
+    margin: 3%;
+    width: 68%; 
+
+    font-family: 'LatinModernMono10Regular';
+}
+.navi {
+    text-align: center;
+}
+.navi ul.pages{
+margin: 0; padding: 0;
+}
+
+.navi ul.pages li{
+display: inline;
+margin: 5px;
+}
+
+
+
+.post {
+    color: #808080;
+
+    font-family: 'LatinModernMono10Regular';
+    a {
+        color: #808080;
+        text-decoration:none;
+    }
+    p {
+        color: #808080 !important;
+
+    font-family: 'LatinModernMono10Regular' !important;
+    padding-top: 20px;
+    }
+    h2 {
+    color: #20CE55;
+    margin: 10px 0 0;
+    }
+}
+
+#journal-widget {
+    background-color: #20CE55;
+    display: block;
+    float: left;
+    height: 500px;
+    left: 0;
+    padding-top: 200px;
+    position: relative;
+    width: 23%;
+    font-family: 'LatinModernMono10Regular';
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            text-align: left;
+            a {
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+header {
+    margin: 0 0 0;
+        h1 {
+        &.community-header{
+            font-size: 10em;
+            line-height: 0.9;
+            margin-top: 3%; 
+        }
+        &.contact-header{
+            font-size: 10em;
+            line-height: 0.9;
+            margin-top: 0; 
+            margin-bottom:20px;
+            overflow:hidden;
+        }
+        &.index-header{
+            font-size: 49px; 
+            line-height: 1.2;
+            text-align: left;
+            text-transform: uppercase; 
+        }
+        &.journal-header{
+            font-size: 10em;
+            line-height: 0.9;
+            margin-top: 0; 
+            color: #20CE55;
+        }
+    }
+}
+
+#journal-widget h3 { 
+    text-align: center;
+}
+
+/*CONTACT PAGE CLASSES*/
+
+.images img {
+//        border-radius: 5px;
+//        box-shadow: 0 1px 4px #797;
+}
+
+.top-image{
+    float:left;
+    margin-bottom: 20px;
+}
+
+.middle-image{
+    float:left;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    width: 49%;
+    &.right {
+        margin-right: 0;
+    }
+    .row2 {
+        height: 80px;
+        > div {
+            &:nth-child(1) {
+                width:93.5%;
+            }
+            &:nth-child(2) {
+                width:6.5%;
+            }
+        }
+    }
+    .row3 {
+        > div {
+            &:nth-child(1) {
+                width:38%;
+            }
+            &:nth-child(2) {
+                width:14%;
+            }
+            &:nth-child(3) {
+                width:14%;
+            }
+            &:nth-child(4) {
+                width:16.5%;
+            }
+            &:nth-child(5) {
+                width:17.5%;
+            }
+        }
+    }
+    .row4 {
+        height: 80px;
+        > div {
+            &:nth-child(1) {
+                width:46%;
+            }
+            &:nth-child(2) {
+                width:13%;
+            }
+            &:nth-child(3) {
+                width:25%;
+            }
+            &:nth-child(4) {
+                width:16%;
+            }
+        }
+    }
+    .row5 {
+        > div {
+            &:nth-child(1) {
+                width:25%;
+            }
+            &:nth-child(2) {
+                width:53%;
+            }
+            &:nth-child(3) {
+                width:17%;
+            }
+            &:nth-child(4) {
+                width:5%;
+            }
+        }
+    }
+}
+
 
 /* ==========================================================================
    MEDIA QUERIES
@@ -1604,7 +1806,7 @@ h3 {
     color: #20CE55;
     text-align: center;
     ul {
-        margin: 0;
+        margin: 0; 
         padding:0;
         margin-top: 10%;
         li {
