@@ -75,7 +75,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     text-align: left;
-    margin: 0 0 25px; 
+    margin: 0; 
 }
 
 h1, .h1 { 
@@ -201,7 +201,8 @@ textarea {
     display:block;
     background-color: #20CE55;
     height:auto;
-    float:right;
+    float:left;
+    margin-left:25%;
     width: 75%;
     &.journal {background-color: #FFFFFF}
     p {
@@ -211,9 +212,11 @@ textarea {
 }
 
 .inner-content {
-    margin: 4%;
     width: auto;
+    max-width:1400px;
     height: auto;
+    margin: 4% auto 4% auto;
+    padding: 0 4%;
     &.contact {height: 600px;}
 }
 
@@ -436,7 +439,7 @@ header {
 }
 
 #journal-widget h3,li { 
-    text-align: center;
+    //text-align: center;
 }
 
 /*CONTACT PAGE CLASSES*/
@@ -601,9 +604,8 @@ h1 {
         float: left;
         padding-left:3%;
         font-size: 1em;
-        line-height: 0.8;
+        line-height: 1;
         margin-top: 2%;
-    
     }
     
     .col2-2 {
@@ -618,7 +620,7 @@ h1 {
     width:100%;
     height: 350px;
     .col13 {
-        width: 55%;
+        width: 66%;
         float: left;
         padding-left:3%;
         font-size: 1em;
@@ -627,8 +629,9 @@ h1 {
     
     .col23 {
         width: 28%;
-        float: left;
-        margin: 2% 0 0 11%;
+        float: right;
+        margin-right:3%;
+        //margin: 2% 0 0 11%;
             .bullet-margin {
                 margin-top: 5px;
             }
@@ -692,7 +695,7 @@ p {
 
 .how-header, .what-header, .work-header {
     line-height: 0.9;
-    margin-top: 3%; /* determines spacing of headers*/
+    margin-top: 0; /* determines spacing of headers*/
     white-space:nowrap;
 }
 
@@ -858,7 +861,7 @@ p {
         background-color: #20CE55;
         height:auto;
         width: 100%;
-
+        margin-left:0;
     }
     .com-table-person {
         width:40%;
@@ -1055,10 +1058,10 @@ p {
     .footer-address {
         float: left;
         padding-right:0;
-
+        margin-top:25px;
         p {
             margin: 0;
-            font-size: 25px;
+            font-size: 22px;
         }
     }
 
@@ -1066,6 +1069,7 @@ p {
         position:relative;
         float:left;
         margin-left:30px;  
+        width:100%;
         ul {
             list-style: none;
             li {
@@ -1174,8 +1178,8 @@ h1 {
         
         .col23 {
             width: 50%;
-            margin : 8% 25% 0 25%;
-
+            //margin : 8% 25% 0 25%;
+            margin: 0 24% 0 26%;
             text-align: center;  
          
             .bullet-margin {
@@ -1279,7 +1283,7 @@ h3 {
 }
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1100px) {
 
     .sidebar {
         width: 25%;
@@ -1329,6 +1333,23 @@ h3 {
     }
     h1 { 
         &.index-header{margin-top:37%;}
+    }
+
+    .site-footer {
+        height:360px;
+    }
+
+        .footer-posts {
+        position:relative;
+        float:left;
+        margin-left:30px;  
+        width:100%;
+        ul {
+            list-style: none;
+            li {
+
+            }
+        } 
     }
 
     .col-container{
@@ -1710,15 +1731,26 @@ h3 {
 }
 
 
-    p{  
+    .col1 p{  
     font-size: 1.5em;
+    }
+
+    .col2-2 p{  
+    font-size: 1.6em;
+    }
+    .col13 {
+        margin-top:20px;
+    }
+    .col13 p{  
+    font-size: 1.9em;
+    margin:10px 0;
     }
     h1{
         &.index-header{margin-top:33.9%;}
     }
     .col-container {
 
-        height: 350px;
+        height: 460px;
 
         .col1 {
 
