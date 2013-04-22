@@ -64,7 +64,7 @@
                         <div class="job">Job Title</div>
                         
                         
-                        <div class="social facebook"></div>
+                        <div class="social">Social Link</div>
                     </div>
                   </li>
                   <li>
@@ -77,7 +77,7 @@
                         <div class="job">Job Title</div>
                         
                         
-                        <div class="social twitter"></div>
+                        <div class="social">Social Link</div>
                     </div>
                   </li>
                   <li>
@@ -372,14 +372,6 @@
 
         <footer class="site-footer">
             <div class="footer-container">
-                    <div class="footer-image screen-only"><img src="img/small_logo.png" width="125px"></div>
-                    <div class="footer-address screen-only"><p>Big Green Door Ltd
-                            <br>
-                            15 Hatton Street
-                            <br>
-                            London
-                            <br>
-                            NW8 8PL<p></div>
                     <div class="footer-posts">
                         <h3>Latest From Our journal</h3>
                         <ul>
@@ -390,6 +382,16 @@
                             <li>fgfdgs</li>
                             <li>fgfdgs</li>
                         </ul>
+                    </div>
+                    <div class="footer-image screen-only"><img src="img/small_logo.png" width="125px"></div>
+                    <div class="footer-address screen-only"><p>Big Green Door Ltd
+                            <br>
+                            15 Hatton Street
+                            <br>
+                            London
+                            <br>
+                            NW8 8PL<p></div>
+
 
                     <div class="footer-image mobile-only"><img src="img/small_logo.png" width="100%"></div>
                     <div class="footer-address mobile-only"><p>Big Green Door Ltd
@@ -399,20 +401,9 @@
                             London
                             <br>
                             NW8 8PL<p></div>
-                    <div class="footer-posts">
-                    </div>
                
             </div>
         </footer>
-
-        <script type='text/javascript'>
-        window.addEventListener("resize", function(e) {
-          var elements = document.getElementsByClassName("com-table-person");
-          for (var i = 0; i < elements.length; i++) {
-            elements[i].style.height = elements[i].offsetWidth + "px";
-          }
-        },false);
-        </script>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>

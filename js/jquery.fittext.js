@@ -1,5 +1,5 @@
 /*global jQuery */
-/*!	
+/*! 
 * FitText.js 1.1
 *
 * Copyright 2011, Dave Rupert http://daverupert.com
@@ -10,9 +10,9 @@
 */
 
 (function( $ ){
-	
+  
   $.fn.fitText = function( kompressor, options ) {
-	   
+     
     // Setup options
     var compressor = kompressor || 1,
         settings = $.extend({
@@ -20,7 +20,7 @@
           'minFontSize' : Number.NEGATIVE_INFINITY,
           'maxFontSize' : Number.POSITIVE_INFINITY
         }, options);
-	
+  
     return this.each(function(){
 
       // Store the object
@@ -64,10 +64,10 @@
 
       // Call once to set.
       resizer();
-				
+        
       // Call on resize. Opera debounces their resize by default. 
       $(window).on('resize', resizer);
-      	
+        
     });
 
   };

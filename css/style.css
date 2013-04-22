@@ -288,21 +288,31 @@ Standard layout styles
 }
 /* line 289, style.scss */
 .people-grid li .details .social {
+  width: 32px;
+  height: 32px;
   -moz-opacity: 0.00;
   opacity: 0.00;
   transition: opacity 0.1s 0.02s ease;
   /* Mouse leave: immediate */
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
 }
-/* line 298, style.scss */
+/* line 296, style.scss */
+.people-grid li .details .social.facebook {
+  background: url("../img/social_links_32.png") no-repeat 0 0;
+}
+/* line 299, style.scss */
+.people-grid li .details .social.twitter {
+  background: url("../img/social_links_32.png") no-repeat -32px 0;
+}
+/* line 305, style.scss */
 .people-grid li:nth-child(4n) {
   margin-right: 0;
 }
-/* line 299, style.scss */
+/* line 306, style.scss */
 .people-grid li:hover img {
   opacity: 0.2;
 }
-/* line 303, style.scss */
+/* line 310, style.scss */
 .people-grid li:hover .details .name, .people-grid li:hover .details .job {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -312,7 +322,7 @@ Standard layout styles
   -moz-opacity: 1.00;
   opacity: 1.00;
 }
-/* line 312, style.scss */
+/* line 319, style.scss */
 .people-grid li:hover .details .social {
   transition: opacity 0.3s 0.3s ease;
   /* Mouse enter: delay */
@@ -320,23 +330,374 @@ Standard layout styles
   opacity: 1.00;
 }
 
-/* ABOUT PAGE CLASSES */
-/* line 325, style.scss */
+/* line 330, style.scss */
+.client-list img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3%;
+}
+
+/* JOURNAL PAGE CLASSES */
+/* line 336, style.scss */
+#title {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 13em;
+}
+
+/* line 341, style.scss */
+#para1, #para2 {
+  color: white;
+  margin: 5%;
+  margin-top: 0;
+}
+
+/* line 346, style.scss */
+.community-table {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 353, style.scss */
+.left-col {
+  float: left;
+  margin: 3%;
+  width: 68%;
+  font-family: 'LatinModernMono10Regular';
+}
+
+/* line 360, style.scss */
+.navi {
+  text-align: center;
+}
+
+/* line 363, style.scss */
+.navi ul.pages {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 367, style.scss */
+.navi ul.pages li {
+  display: inline;
+  margin: 5px;
+}
+
+/* line 372, style.scss */
+.post-title {
+  color: #20CE55;
+  margin: 10px 0 0;
+}
+
+/* line 377, style.scss */
+.post {
+  color: #808080;
+  font-family: 'LatinModernMono10Regular';
+}
+/* line 381, style.scss */
+.post a {
+  color: #808080;
+  text-decoration: none;
+}
+/* line 385, style.scss */
+.post p {
+  color: #808080 !important;
+  font-family: 'LatinModernMono10Regular' !important;
+  padding-top: 20px;
+}
+
+/* line 393, style.scss */
+#journal-widget {
+  background-color: #20CE55;
+  display: block;
+  float: left;
+  height: 500px;
+  left: 0;
+  padding-top: 200px;
+  position: relative;
+  width: 23%;
+  font-family: 'LatinModernMono10Regular';
+}
+/* line 403, style.scss */
+#journal-widget ul {
+  list-style: none;
+}
+
+/* line 408, style.scss */
+header {
+  margin: 0 0 0;
+}
+/* line 411, style.scss */
+header h1.community-header {
+  font-size: 10em;
+  line-height: 0.9;
+  margin-top: 3%;
+}
+/* line 416, style.scss */
+header h1.contact-header {
+  font-size: 10em;
+  line-height: 0.9;
+  margin-top: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+/* line 423, style.scss */
+header h1.index-header {
+  font-size: 49px;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+/* line 429, style.scss */
+header h1.journal-header {
+  font-size: 10em;
+  line-height: 0.9;
+  margin-top: 0;
+  color: #20CE55;
+}
+
+/* line 438, style.scss */
+#journal-widget h3, li {
+  text-align: center;
+}
+
+/*CONTACT PAGE CLASSES*/
+/* line 444, style.scss */
+.top-image {
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* line 449, style.scss */
+.middle-image {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 2%;
+  width: 49%;
+}
+/* line 454, style.scss */
+.middle-image.right {
+  margin-right: 0;
+}
+
+/* line 459, style.scss */
+.bottom-image {
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* line 464, style.scss */
+.maps {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 2%;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 230px;
+}
+/* line 472, style.scss */
+.maps.right {
+  margin-right: 0;
+}
+/* line 475, style.scss */
+.maps .contacts {
+  list-style: none;
+  float: left;
+  width: 50%;
+  height: auto;
+  padding: 0 0 10px 0;
+}
+/* line 481, style.scss */
+.maps .contacts p {
+  font-family: Avenir;
+}
+/* line 483, style.scss */
+.maps .contacts p a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 486, style.scss */
+.maps .contacts p a:hover {
+  opacity: 0.8;
+}
+
+/* line 493, style.scss */
+#left-map-canvas, #right-map-canvas {
+  float: left;
+  margin-bottom: 15px;
+}
+
+/*FOOTER styles*/
+/* line 501, style.scss */
+.site-footer {
+  display: block;
+  float: right;
+  padding-top: 20px;
+  background-color: #FFFFFF;
+  width: 75.13%;
+  height: 250px;
+  position: relative;
+}
+
+/* line 510, style.scss */
+.site-footer h3, p {
+  color: #20CE55;
+}
+
+/* line 514, style.scss */
+.journal-site-footer {
+  display: block;
+  clear: both;
+  float: right;
+  padding-top: 20px;
+  background-color: #20CE55;
+  width: 75.13%;
+  height: 250px;
+}
+
+/* line 523, style.scss */
+.journal-site-footer p, h3 {
+  color: #FFFFFF;
+}
+
+/* line 527, style.scss */
+.footer-container {
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 0;
+  top: 7px;
+  position: relative;
+}
+
+/* line 535, style.scss */
+.footer-content {
+  float: left;
+  overflow: hidden;
+}
+
+/* line 540, style.scss */
+.footer-details {
+  float: left;
+  width: 380px;
+}
+
+/* line 545, style.scss */
+.footer-image {
+  float: left;
+  padding: 0 7%;
+}
+
+/* line 550, style.scss */
+.footer-address {
+  float: left;
+}
+/* line 552, style.scss */
+.footer-address p {
+  margin: 0;
+  font-size: 25px;
+}
+
+/* line 558, style.scss */
+.footer-posts {
+  float: right;
+  padding-right: 30px;
+}
+/* line 561, style.scss */
+.footer-posts ul {
+  list-style: none;
+}
+
+/* ==========================================================================
+   ABOUT PAGE CLASSES
+   ========================================================================== */
+/* line 574, style.scss */
+h1.who-header {
+  line-height: 0.9;
+  letter-spacing: 0.2em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* line 579, style.scss */
+.col-container {
+  width: 100%;
+}
+/* line 582, style.scss */
+.col-container .col1 {
+  width: 42%;
+  float: left;
+  padding-left: 3%;
+  font-size: 1em;
+}
+/* line 590, style.scss */
+.col-container .col2 {
+  width: 44%;
+  float: left;
+  margin: 2% 0 0 6%;
+}
+
+/* line 597, style.scss */
+.col-container-2 {
+  width: 100%;
+}
+/* line 599, style.scss */
+.col-container-2 .col1-2 {
+  width: 41%;
+  float: left;
+  padding-left: 3%;
+  font-size: 1em;
+  line-height: 0.8;
+  margin-top: 2%;
+}
+/* line 609, style.scss */
+.col-container-2 .col2-2 {
+  width: 45%;
+  float: left;
+  margin: 0 0 0 6%;
+  text-align: right;
+}
+
+/* line 617, style.scss */
+.col-container3 {
+  width: 100%;
+  height: 350px;
+}
+/* line 620, style.scss */
+.col-container3 .col13 {
+  width: 55%;
+  float: left;
+  padding-left: 3%;
+  font-size: 1em;
+}
+/* line 628, style.scss */
+.col-container3 .col23 {
+  width: 28%;
+  float: left;
+  margin: 2% 0 0 11%;
+}
+/* line 632, style.scss */
+.col-container3 .col23 .bullet-margin {
+  margin-top: 5px;
+}
+
+/* line 639, style.scss */
 .seperator {
   width: 100%;
 }
-/* line 327, style.scss */
+/* line 641, style.scss */
 .seperator img {
   width: 100%;
   height: auto;
 }
 
-/* line 330, style.scss */
+/* line 644, style.scss */
 .clear {
   clear: both;
 }
 
-/* line 334, style.scss */
+/* line 648, style.scss */
 .about-slanted-text-right-col {
   font-size: 2em;
   text-align: right;
@@ -352,47 +713,7 @@ Standard layout styles
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-/* line 354, style.scss */
-.about-slanted-text-left-col.first {
-  font-size: 3.1em;
-  -webkit-transform: rotate(1deg);
-  /* Firefox */
-  -moz-transform: rotate(1deg);
-  /* IE */
-  -ms-transform: rotate(1deg);
-  /* Opera */
-  -o-transform: rotate(1deg);
-  /* Internet Explorer */
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-/* line 373, style.scss */
-.about-slanted-text-left-col.second {
-  font-size: 3.7em;
-  -webkit-transform: rotate(-1deg);
-  /* Firefox */
-  -moz-transform: rotate(-1deg);
-  /* IE */
-  -ms-transform: rotate(-1deg);
-  /* Opera */
-  -o-transform: rotate(-1deg);
-  /* Internet Explorer */
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-/* line 392, style.scss */
-.about-slanted-text-left-col.third {
-  font-size: 3.8em;
-  -webkit-transform: rotate(1deg);
-  /* Firefox */
-  -moz-transform: rotate(1deg);
-  /* IE */
-  -ms-transform: rotate(1deg);
-  /* Opera */
-  -o-transform: rotate(1deg);
-  /* Internet Explorer */
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-
-/* line 413, style.scss */
+/* line 669, style.scss */
 .about-slanted-text-right-col-centered {
   font-size: 4em;
   text-align: center;
@@ -408,51 +729,27 @@ Standard layout styles
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-/* line 432, style.scss */
-.col-container-3 {
-  width: 100%;
-}
-/* line 434, style.scss */
-.col-container-3 .col1-3 {
-  width: 52%;
-  float: left;
-  padding-left: 3%;
-}
-/* line 441, style.scss */
-.col-container-3 .col2-3 {
-  width: 42%;
-  float: left;
-  padding-right: 3%;
-  text-align: right;
-}
-
-/* line 451, style.scss */
+/* line 690, style.scss */
 p.center-paragraph {
   padding-left: 3%;
 }
 
-/* line 454, style.scss */
+/* line 693, style.scss */
 .how-header, .what-header, .work-header {
   line-height: 0.9;
   margin-top: 3%;
   /* determines spacing of headers*/
+  white-space: nowrap;
 }
 
-/* line 461, style.scss */
-.client-list img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 3%;
-}
-
-/* line 464, style.scss */
+/* line 699, style.scss */
 #word-cloud {
   position: relative;
   width: 100%;
   color: white;
   /* creates triangle */
 }
-/* line 468, style.scss */
+/* line 703, style.scss */
 #word-cloud .box {
   height: 100%;
   float: left;
@@ -462,16 +759,16 @@ p.center-paragraph {
   overflow: visible;
   cursor: pointer;
 }
-/* line 476, style.scss */
+/* line 711, style.scss */
 #word-cloud .box img {
   width: 95%;
   height: auto;
 }
-/* line 480, style.scss */
+/* line 715, style.scss */
 #word-cloud .box span:hover + .speech {
   display: block;
 }
-/* line 484, style.scss */
+/* line 719, style.scss */
 #word-cloud .speech {
   position: absolute;
   display: none;
@@ -488,7 +785,7 @@ p.center-paragraph {
   background: -moz-linear-gradient(top, #333333, black);
   background: linear-gradient(top, #333333, #000000);
 }
-/* line 502, style.scss */
+/* line 737, style.scss */
 #word-cloud .speech:after {
   content: "";
   display: block;
@@ -501,11 +798,11 @@ p.center-paragraph {
   border-style: solid;
   border-color: white transparent;
 }
-/* line 513, style.scss */
+/* line 748, style.scss */
 #word-cloud .speech:hover {
   display: block;
 }
-/* line 516, style.scss */
+/* line 751, style.scss */
 #word-cloud .row {
   top: 0;
   left: 0;
@@ -513,123 +810,123 @@ p.center-paragraph {
   width: 100%;
   height: 90px;
 }
-/* line 522, style.scss */
+/* line 757, style.scss */
 #word-cloud .row .fitLine {
   white-space: nowrap;
 }
-/* line 525, style.scss */
+/* line 760, style.scss */
 #word-cloud .row .fitSmaller {
   white-space: nowrap;
 }
-/* line 529, style.scss */
+/* line 764, style.scss */
 #word-cloud .row1 {
   margin-top: 55px;
 }
-/* line 532, style.scss */
+/* line 767, style.scss */
 #word-cloud .row1 > div:nth-child(1) {
   width: 4%;
 }
-/* line 535, style.scss */
+/* line 770, style.scss */
 #word-cloud .row1 > div:nth-child(2) {
   width: 38%;
 }
-/* line 538, style.scss */
+/* line 773, style.scss */
 #word-cloud .row1 > div:nth-child(3) {
   width: 23%;
 }
-/* line 541, style.scss */
+/* line 776, style.scss */
 #word-cloud .row1 > div:nth-child(4) {
   width: 10%;
 }
-/* line 544, style.scss */
+/* line 779, style.scss */
 #word-cloud .row1 > div:nth-child(5) {
   width: 25%;
 }
-/* line 549, style.scss */
+/* line 784, style.scss */
 #word-cloud .row2 {
   height: 80px;
 }
-/* line 552, style.scss */
+/* line 787, style.scss */
 #word-cloud .row2 > div:nth-child(1) {
   width: 93.5%;
 }
-/* line 555, style.scss */
+/* line 790, style.scss */
 #word-cloud .row2 > div:nth-child(2) {
   width: 6.5%;
 }
-/* line 562, style.scss */
+/* line 797, style.scss */
 #word-cloud .row3 > div:nth-child(1) {
   width: 38%;
 }
-/* line 565, style.scss */
+/* line 800, style.scss */
 #word-cloud .row3 > div:nth-child(2) {
   width: 14%;
 }
-/* line 568, style.scss */
+/* line 803, style.scss */
 #word-cloud .row3 > div:nth-child(3) {
   width: 14%;
 }
-/* line 571, style.scss */
+/* line 806, style.scss */
 #word-cloud .row3 > div:nth-child(4) {
   width: 16.5%;
 }
-/* line 574, style.scss */
+/* line 809, style.scss */
 #word-cloud .row3 > div:nth-child(5) {
   width: 17.5%;
 }
-/* line 579, style.scss */
+/* line 814, style.scss */
 #word-cloud .row4 {
   height: 80px;
 }
-/* line 582, style.scss */
+/* line 817, style.scss */
 #word-cloud .row4 > div:nth-child(1) {
   width: 46%;
 }
-/* line 585, style.scss */
+/* line 820, style.scss */
 #word-cloud .row4 > div:nth-child(2) {
   width: 13%;
 }
-/* line 588, style.scss */
+/* line 823, style.scss */
 #word-cloud .row4 > div:nth-child(3) {
   width: 25%;
 }
-/* line 591, style.scss */
+/* line 826, style.scss */
 #word-cloud .row4 > div:nth-child(4) {
   width: 16%;
 }
-/* line 598, style.scss */
+/* line 833, style.scss */
 #word-cloud .row5 > div:nth-child(1) {
   width: 25%;
 }
-/* line 601, style.scss */
+/* line 836, style.scss */
 #word-cloud .row5 > div:nth-child(2) {
   width: 53%;
 }
-/* line 604, style.scss */
+/* line 839, style.scss */
 #word-cloud .row5 > div:nth-child(3) {
   width: 17%;
 }
-/* line 607, style.scss */
+/* line 842, style.scss */
 #word-cloud .row5 > div:nth-child(4) {
   width: 5%;
 }
 
 /* JOURNAL PAGE CLASSES */
-/* line 617, style.scss */
+/* line 852, style.scss */
 #title {
   text-align: center;
   margin-bottom: 0;
   font-size: 13em;
 }
 
-/* line 622, style.scss */
+/* line 857, style.scss */
 #para1, #para2 {
   color: white;
   margin: 5%;
   margin-top: 0;
 }
 
-/* line 627, style.scss */
+/* line 862, style.scss */
 .community-table {
   margin: 0;
   padding: 0;
@@ -637,7 +934,7 @@ p.center-paragraph {
   margin-right: auto;
 }
 
-/* line 634, style.scss */
+/* line 869, style.scss */
 .left-col {
   float: left;
   margin: 3%;
@@ -645,46 +942,46 @@ p.center-paragraph {
   font-family: 'LatinModernMono10Regular';
 }
 
-/* line 641, style.scss */
+/* line 876, style.scss */
 .navi {
   text-align: center;
 }
 
-/* line 644, style.scss */
+/* line 879, style.scss */
 .navi ul.pages {
   margin: 0;
   padding: 0;
 }
 
-/* line 648, style.scss */
+/* line 883, style.scss */
 .navi ul.pages li {
   display: inline;
   margin: 5px;
 }
 
-/* line 655, style.scss */
+/* line 890, style.scss */
 .post {
   color: #808080;
   font-family: 'LatinModernMono10Regular';
 }
-/* line 659, style.scss */
+/* line 894, style.scss */
 .post a {
   color: #808080;
   text-decoration: none;
 }
-/* line 663, style.scss */
+/* line 898, style.scss */
 .post p {
   color: #808080 !important;
   font-family: 'LatinModernMono10Regular' !important;
   padding-top: 20px;
 }
-/* line 669, style.scss */
+/* line 904, style.scss */
 .post h2 {
   color: #20CE55;
   margin: 10px 0 0;
 }
 
-/* line 675, style.scss */
+/* line 910, style.scss */
 #journal-widget {
   background-color: #20CE55;
   display: block;
@@ -696,31 +993,31 @@ p.center-paragraph {
   width: 23%;
   font-family: 'LatinModernMono10Regular';
 }
-/* line 685, style.scss */
+/* line 920, style.scss */
 #journal-widget ul {
   list-style: none;
   padding: 0;
 }
-/* line 688, style.scss */
+/* line 923, style.scss */
 #journal-widget ul li {
   text-align: left;
 }
-/* line 690, style.scss */
+/* line 925, style.scss */
 #journal-widget ul li a {
   color: #FFFFFF;
 }
 
-/* line 697, style.scss */
+/* line 932, style.scss */
 header {
   margin: 0 0 0;
 }
-/* line 700, style.scss */
+/* line 935, style.scss */
 header h1.community-header {
   font-size: 10em;
   line-height: 0.9;
   margin-top: 3%;
 }
-/* line 705, style.scss */
+/* line 940, style.scss */
 header h1.contact-header {
   font-size: 10em;
   line-height: 0.9;
@@ -728,14 +1025,14 @@ header h1.contact-header {
   margin-bottom: 20px;
   overflow: hidden;
 }
-/* line 712, style.scss */
+/* line 947, style.scss */
 header h1.index-header {
   font-size: 49px;
   line-height: 1.2;
   text-align: left;
   text-transform: uppercase;
 }
-/* line 718, style.scss */
+/* line 953, style.scss */
 header h1.journal-header {
   font-size: 10em;
   line-height: 0.9;
@@ -743,162 +1040,103 @@ header h1.journal-header {
   color: #20CE55;
 }
 
-/* line 727, style.scss */
+/* line 962, style.scss */
 #journal-widget h3 {
   text-align: center;
 }
 
 /*CONTACT PAGE CLASSES*/
-/* line 738, style.scss */
+/* line 973, style.scss */
 .top-image {
   float: left;
   margin-bottom: 20px;
 }
 
-/* line 743, style.scss */
+/* line 978, style.scss */
 .middle-image {
   float: left;
   margin-bottom: 20px;
   margin-right: 2%;
   width: 49%;
 }
-/* line 748, style.scss */
+/* line 983, style.scss */
 .middle-image.right {
   margin-right: 0;
 }
-
-/* line 753, style.scss */
-.bottom-image {
-  float: left;
-  margin-bottom: 20px;
+/* line 986, style.scss */
+.middle-image .row2 {
+  height: 80px;
 }
-
-/* line 758, style.scss */
-.maps {
-  float: left;
-  margin-bottom: 20px;
-  margin-right: 2%;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 230px;
+/* line 989, style.scss */
+.middle-image .row2 > div:nth-child(1) {
+  width: 93.5%;
 }
-/* line 766, style.scss */
-.maps.right {
-  margin-right: 0;
+/* line 992, style.scss */
+.middle-image .row2 > div:nth-child(2) {
+  width: 6.5%;
 }
-/* line 769, style.scss */
-.maps .contacts {
-  list-style: none;
-  float: left;
-  width: 50%;
-  height: auto;
-  padding: 0 0 10px 0;
+/* line 999, style.scss */
+.middle-image .row3 > div:nth-child(1) {
+  width: 38%;
 }
-/* line 775, style.scss */
-.maps .contacts p {
-  font-family: Avenir;
+/* line 1002, style.scss */
+.middle-image .row3 > div:nth-child(2) {
+  width: 14%;
 }
-/* line 777, style.scss */
-.maps .contacts p a {
-  color: #FFFFFF;
-  text-decoration: none;
+/* line 1005, style.scss */
+.middle-image .row3 > div:nth-child(3) {
+  width: 14%;
 }
-/* line 780, style.scss */
-.maps .contacts p a:hover {
-  opacity: 0.8;
+/* line 1008, style.scss */
+.middle-image .row3 > div:nth-child(4) {
+  width: 16.5%;
 }
-
-/* line 787, style.scss */
-#left-map-canvas, #right-map-canvas {
-  float: left;
-  margin-bottom: 15px;
+/* line 1011, style.scss */
+.middle-image .row3 > div:nth-child(5) {
+  width: 17.5%;
 }
-
-/*FOOTER styles*/
-/* line 797, style.scss */
-.site-footer {
-  display: block;
-  float: right;
-  padding-top: 20px;
-  background-color: #FFFFFF;
-  width: 75.13%;
-  height: 250px;
-  position: relative;
+/* line 1016, style.scss */
+.middle-image .row4 {
+  height: 80px;
 }
-
-/* line 806, style.scss */
-.site-footer h3, p {
-  color: #20CE55;
+/* line 1019, style.scss */
+.middle-image .row4 > div:nth-child(1) {
+  width: 46%;
 }
-
-/* line 810, style.scss */
-.journal-site-footer {
-  display: block;
-  clear: both;
-  float: right;
-  padding-top: 20px;
-  background-color: #20CE55;
-  width: 75.13%;
-  height: 250px;
+/* line 1022, style.scss */
+.middle-image .row4 > div:nth-child(2) {
+  width: 13%;
 }
-
-/* line 819, style.scss */
-.journal-site-footer p, h3 {
-  color: #FFFFFF;
+/* line 1025, style.scss */
+.middle-image .row4 > div:nth-child(3) {
+  width: 25%;
 }
-
-/* line 823, style.scss */
-.footer-container {
-  overflow: hidden;
-  margin: 0 auto;
-  padding-top: 0;
-  top: 7px;
-  position: relative;
+/* line 1028, style.scss */
+.middle-image .row4 > div:nth-child(4) {
+  width: 16%;
 }
-
-/* line 831, style.scss */
-.footer-content {
-  float: left;
-  overflow: hidden;
+/* line 1035, style.scss */
+.middle-image .row5 > div:nth-child(1) {
+  width: 25%;
 }
-
-/* line 836, style.scss */
-.footer-details {
-  float: left;
-  width: 380px;
+/* line 1038, style.scss */
+.middle-image .row5 > div:nth-child(2) {
+  width: 53%;
 }
-
-/* line 841, style.scss */
-.footer-image {
-  float: left;
-  padding: 0 7%;
+/* line 1041, style.scss */
+.middle-image .row5 > div:nth-child(3) {
+  width: 17%;
 }
-
-/* line 846, style.scss */
-.footer-address {
-  float: left;
-}
-/* line 848, style.scss */
-.footer-address p {
-  margin: 0;
-  font-size: 25px;
-}
-
-/* line 854, style.scss */
-.footer-posts {
-  float: left;
-  padding-left: 100px;
-}
-/* line 857, style.scss */
-.footer-posts ul {
-  list-style: none;
+/* line 1044, style.scss */
+.middle-image .row5 > div:nth-child(4) {
+  width: 5%;
 }
 
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
-@media screen and (min-width: 0px) and (max-width: 599px) {
-  /* line 869, style.scss */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  /* line 1058, style.scss */
   #content {
     display: block;
     background-color: #20CE55;
@@ -906,7 +1144,7 @@ header h1.journal-header {
     width: 100%;
   }
 
-  /* line 876, style.scss */
+  /* line 1065, style.scss */
   .com-table-person {
     width: 40%;
     height: 200px;
@@ -916,7 +1154,7 @@ header h1.journal-header {
     float: left;
   }
 
-  /* line 884, style.scss */
+  /* line 1073, style.scss */
   .sidebar {
     width: 100%;
     background-color: white;
@@ -925,47 +1163,47 @@ header h1.journal-header {
     text-align: center;
     padding-bottom: 3%;
   }
-  /* line 893, style.scss */
+  /* line 1082, style.scss */
   .sidebar ul li {
     font-size: 4em;
     list-style-type: none;
     text-align: center;
     line-height: 1;
   }
-  /* line 898, style.scss */
+  /* line 1087, style.scss */
   .sidebar ul li.journalfont {
     font-size: 60px;
   }
-  /* line 899, style.scss */
+  /* line 1088, style.scss */
   .sidebar ul li.communityfont {
     font-size: 70px;
   }
-  /* line 900, style.scss */
+  /* line 1089, style.scss */
   .sidebar ul li.contactfont {
     font-size: 80px;
   }
-  /* line 901, style.scss */
+  /* line 1090, style.scss */
   .sidebar ul li.aboutfont {
     font-size: 60px;
   }
-  /* line 902, style.scss */
+  /* line 1091, style.scss */
   .sidebar ul li a:hover {
     opacity: 0.8;
     color: #20CE55;
   }
-  /* line 905, style.scss */
+  /* line 1094, style.scss */
   .sidebar img {
     display: block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 911, style.scss */
+  /* line 1100, style.scss */
   .sidebar a {
     color: #20CE55;
     text-decoration: none;
   }
-  /* line 915, style.scss */
+  /* line 1104, style.scss */
   .sidebar h4 {
     font-size: 1em;
     line-height: 1.5;
@@ -973,28 +1211,28 @@ header h1.journal-header {
     margin: 5%;
   }
 
-  /* line 922, style.scss */
-  p {
-    font-size: 0.8em;
-  }
-
-  /* line 927, style.scss */
+  /* line 1117, style.scss */
   h1.index-header {
     margin-top: 44%;
   }
 
-  /* line 931, style.scss */
+  /* line 1120, style.scss */
+  h3.about-slanted-text-right-col {
+    text-align: center;
+  }
+
+  /* line 1124, style.scss */
   #word-cloud .row {
-    height: 50px;
+    height: 40px;
   }
 
   /*COMMUNITY PAGE*/
-  /* line 939, style.scss */
+  /* line 1132, style.scss */
   .people-grid li {
     margin: 0 4% 4% 0;
     width: 48%;
   }
-  /* line 942, style.scss */
+  /* line 1135, style.scss */
   .people-grid li p {
     position: relative;
     height: auto;
@@ -1004,45 +1242,45 @@ header h1.journal-header {
     opacity: 1;
     font-size: 12px;
   }
-  /* line 951, style.scss */
+  /* line 1144, style.scss */
   .people-grid li:nth-child(4n) {
     margin-right: 4%;
   }
-  /* line 952, style.scss */
+  /* line 1145, style.scss */
   .people-grid li:nth-child(3n) {
     margin-right: 4%;
   }
-  /* line 953, style.scss */
+  /* line 1146, style.scss */
   .people-grid li:nth-child(2n) {
     margin-right: 0;
   }
-  /* line 954, style.scss */
+  /* line 1147, style.scss */
   .people-grid li:hover img {
     opacity: 1;
   }
-  /* line 957, style.scss */
+  /* line 1150, style.scss */
   .people-grid li:hover p {
     opacity: 1;
   }
 
-  /* line 967, style.scss */
+  /* line 1160, style.scss */
   header h1.contact-header {
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
-  /* line 974, style.scss */
+  /* line 1167, style.scss */
   .inner-content.contact {
     margin: 0%;
     width: auto;
     height: auto;
   }
-  /* line 978, style.scss */
+  /* line 1171, style.scss */
   .inner-content.contact.contact {
     height: 600px;
   }
 
-  /* line 981, style.scss */
+  /* line 1174, style.scss */
   .maps {
     float: left;
     margin-bottom: 20px;
@@ -1051,11 +1289,11 @@ header h1.journal-header {
     height: 40%;
     padding-bottom: 170px;
   }
-  /* line 989, style.scss */
+  /* line 1182, style.scss */
   .maps.right {
     margin-right: 0;
   }
-  /* line 992, style.scss */
+  /* line 1185, style.scss */
   .maps .contacts {
     list-style: none;
     float: left;
@@ -1064,31 +1302,31 @@ header h1.journal-header {
     margin-left: 20px;
     padding: 0 0 10px 0;
   }
-  /* line 999, style.scss */
+  /* line 1192, style.scss */
   .maps .contacts.contacts-right {
     display: none;
   }
-  /* line 1002, style.scss */
+  /* line 1195, style.scss */
   .maps .contacts p {
     font-family: Avenir;
   }
-  /* line 1004, style.scss */
+  /* line 1197, style.scss */
   .maps .contacts p a {
     color: #FFFFFF;
     text-decoration: none;
   }
-  /* line 1007, style.scss */
+  /* line 1200, style.scss */
   .maps .contacts p a:hover {
     opacity: 0.8;
   }
 
-  /* line 1015, style.scss */
+  /* line 1208, style.scss */
   .images div:not(.top-image) {
     display: none;
   }
 
   /*FOOTER styles*/
-  /* line 1021, style.scss */
+  /* line 1214, style.scss */
   .site-footer {
     display: block;
     padding: 20px 0;
@@ -1099,12 +1337,12 @@ header h1.journal-header {
     overflow: hidden;
   }
 
-  /* line 1030, style.scss */
+  /* line 1223, style.scss */
   .site-footer h3, p {
     color: #20CE55;
   }
 
-  /* line 1034, style.scss */
+  /* line 1227, style.scss */
   .journal-site-footer {
     display: block;
     clear: both;
@@ -1115,12 +1353,12 @@ header h1.journal-header {
     height: 250px;
   }
 
-  /* line 1043, style.scss */
+  /* line 1236, style.scss */
   .journal-site-footer p, h3 {
     color: #FFFFFF;
   }
 
-  /* line 1047, style.scss */
+  /* line 1240, style.scss */
   .footer-container {
     overflow: hidden;
     margin: 0 auto;
@@ -1129,40 +1367,40 @@ header h1.journal-header {
     position: relative;
   }
 
-  /* line 1055, style.scss */
+  /* line 1248, style.scss */
   .footer-content {
     float: left;
     overflow: hidden;
   }
 
-  /* line 1060, style.scss */
+  /* line 1253, style.scss */
   .footer-image {
     float: left;
   }
 
-  /* line 1064, style.scss */
+  /* line 1257, style.scss */
   .footer-address {
     float: left;
     padding-right: 0;
   }
-  /* line 1068, style.scss */
+  /* line 1261, style.scss */
   .footer-address p {
     margin: 0;
     font-size: 25px;
   }
 
-  /* line 1074, style.scss */
+  /* line 1267, style.scss */
   .footer-posts {
     position: relative;
     float: left;
     margin-left: 30px;
   }
-  /* line 1078, style.scss */
+  /* line 1271, style.scss */
   .footer-posts ul {
     list-style: none;
   }
 
-  /* line 1086, style.scss */
+  /* line 1279, style.scss */
   .mobile-logo {
     width: 40%;
     float: left;
@@ -1170,7 +1408,7 @@ header h1.journal-header {
     background-color: white;
   }
 
-  /* line 1094, style.scss */
+  /* line 1287, style.scss */
   .mobile-menu {
     width: 55%;
     float: left;
@@ -1178,51 +1416,34 @@ header h1.journal-header {
     margin-top: -7%;
   }
 
-  /* line 1102, style.scss */
+  /* line 1295, style.scss */
   h1.index-header {
     margin-top: 44%;
   }
 
-  /* line 1105, style.scss */
+  /* line 1298, style.scss */
   .index-header-mobile {
     font-size: 2em;
     text-align: center;
     padding: 10%;
   }
 
-  /* line 1112, style.scss */
+  /* line 1305, style.scss */
   .sidebar ul {
     padding-top: 20%;
   }
 
-  /* line 1114, style.scss */
-  .col-container {
-    width: 100%;
-  }
-  /* line 1116, style.scss */
-  .col-container .col1 {
-    width: 100%;
-    float: none;
-    padding-left: 3%;
-  }
-  /* line 1122, style.scss */
-  .col-container .col2 {
-    width: 100%;
-    float: none;
-    padding-right: 3%;
-  }
-
-  /* line 1130, style.scss */
+  /* line 1308, style.scss */
   .screen-only {
     display: none;
   }
 
-  /* line 1134, style.scss */
+  /* line 1312, style.scss */
   .mobile-only {
     display: block;
   }
 
-  /* line 1138, style.scss */
+  /* line 1316, style.scss */
   .com-table-person {
     width: 25%;
     height: 200px;
@@ -1230,9 +1451,153 @@ header h1.journal-header {
     display: block;
     float: left;
   }
+
+  /* line 1327, style.scss */
+  h1.who-header {
+    margin-bottom: -1%;
+  }
+
+  /* line 1330, style.scss */
+  .col-container {
+    width: 100%;
+  }
+  /* line 1332, style.scss */
+  .col-container p {
+    text-align: center;
+  }
+  /* line 1333, style.scss */
+  .col-container .col1 {
+    width: 100%;
+    float: none;
+    margin-left: -3%;
+  }
+  /* line 1340, style.scss */
+  .col-container .col2 {
+    width: 80%;
+    float: none;
+    padding-right: 3%;
+  }
+
+  /* line 1348, style.scss */
+  .col-container-2 {
+    width: 100%;
+  }
+  /* line 1350, style.scss */
+  .col-container-2 p {
+    text-align: center;
+  }
+  /* line 1351, style.scss */
+  .col-container-2 .col1-2 {
+    width: 80%;
+    float: none;
+    margin-left: -3%;
+  }
+  /* line 1358, style.scss */
+  .col-container-2 .col2-2 {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+  /* line 1366, style.scss */
+  .col-container3 {
+    height: 350px;
+  }
+  /* line 1369, style.scss */
+  .col-container3 p {
+    text-align: center;
+  }
+  /* line 1371, style.scss */
+  .col-container3 .col13 {
+    width: 100%;
+    margin-left: -3%;
+  }
+  /* line 1377, style.scss */
+  .col-container3 .col23 {
+    width: 50%;
+    margin: 8% 25% 0 25%;
+    text-align: center;
+  }
+  /* line 1383, style.scss */
+  .col-container3 .col23 .bullet-margin {
+    margin-top: 5px;
+  }
+
+  /* line 1391, style.scss */
+  p {
+    font-size: 0.8em;
+  }
+
+  /* line 1393, style.scss */
+  .bullet-margin {
+    text-align: center;
+  }
+
+  /* line 1396, style.scss */
+  .about-slanted-text-right-col {
+    margin-left: 10%;
+    /* Safari */
+    -webkit-transform: rotate(0deg);
+    /* Firefox */
+    -moz-transform: rotate(0deg);
+    /* IE */
+    -ms-transform: rotate(0deg);
+    /* Opera */
+    -o-transform: rotate(0deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  }
 }
-@media screen and (min-width: 600px) {
-  /* line 1149, style.scss */
+/* line 1420, style.scss */
+h3.about-slanted-text-left-col {
+  margin-left: 20%;
+}
+/* line 1424, style.scss */
+h3.about-slanted-text-left-col.first {
+  /* Safari */
+  -webkit-transform: rotate(0deg);
+  /* Firefox */
+  -moz-transform: rotate(0deg);
+  /* IE */
+  -ms-transform: rotate(0deg);
+  /* Opera */
+  -o-transform: rotate(0deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+}
+/* line 1441, style.scss */
+h3.about-slanted-text-left-col.second {
+  /* Safari */
+  -webkit-transform: rotate(0deg);
+  /* Firefox */
+  -moz-transform: rotate(0deg);
+  /* IE */
+  -ms-transform: rotate(0deg);
+  /* Opera */
+  -o-transform: rotate(0deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+}
+/* line 1458, style.scss */
+h3.about-slanted-text-left-col.third {
+  /* Safari */
+  -webkit-transform: rotate(0deg);
+  /* Firefox */
+  -moz-transform: rotate(0deg);
+  /* IE */
+  -ms-transform: rotate(0deg);
+  /* Opera */
+  -o-transform: rotate(0deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+}
+/* line 1477, style.scss */
+h3 #word-cloud .row {
+  height: 50px;
+}
+
+@media screen and (min-width: 769px) {
+  /* line 1486, style.scss */
   .sidebar {
     width: 25%;
     height: 100%;
@@ -1243,53 +1608,53 @@ header h1.journal-header {
     color: #20CE55;
     text-align: center;
   }
-  /* line 1158, style.scss */
+  /* line 1495, style.scss */
   .sidebar ul {
     margin: 0;
     padding: 0;
     margin-top: 10%;
   }
-  /* line 1162, style.scss */
+  /* line 1499, style.scss */
   .sidebar ul li {
     font-size: 4em;
     list-style-type: none;
     text-align: center;
     line-height: 1;
   }
-  /* line 1167, style.scss */
+  /* line 1504, style.scss */
   .sidebar ul li.journalfont {
     font-size: 60px;
   }
-  /* line 1168, style.scss */
+  /* line 1505, style.scss */
   .sidebar ul li.communityfont {
     font-size: 70px;
   }
-  /* line 1169, style.scss */
+  /* line 1506, style.scss */
   .sidebar ul li.contactfont {
     font-size: 80px;
   }
-  /* line 1170, style.scss */
+  /* line 1507, style.scss */
   .sidebar ul li.aboutfont {
     font-size: 60px;
   }
-  /* line 1171, style.scss */
+  /* line 1508, style.scss */
   .sidebar ul li a:hover {
     opacity: 0.8;
     color: #20CE55;
   }
-  /* line 1174, style.scss */
+  /* line 1511, style.scss */
   .sidebar img {
     display: block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 1180, style.scss */
+  /* line 1517, style.scss */
   .sidebar a {
     color: #20CE55;
     text-decoration: none;
   }
-  /* line 1184, style.scss */
+  /* line 1521, style.scss */
   .sidebar h4 {
     font-size: 1em;
     line-height: 1.5;
@@ -1297,149 +1662,46 @@ header h1.journal-header {
     margin: 5%;
   }
 
-  /* line 1191, style.scss */
+  /* line 1528, style.scss */
   p {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #20CE55;
   }
 
-  /* line 1196, style.scss */
+  /* line 1533, style.scss */
   h1.index-header {
     margin-top: 37%;
   }
 
-  /* line 1198, style.scss */
+  /* line 1536, style.scss */
   .col-container {
-    width: 100%;
-    height: 260px;
-  }
-  /* line 1201, style.scss */
-  .col-container .col1 {
-    float: left;
-    width: 10%;
-    padding-left: 3%;
-    font-size: 1em;
-  }
-  /* line 1209, style.scss */
-  .col-container .col2 {
-    width: 43%;
-    float: left;
-    padding-right: 3%;
-    margin-left: 12%;
-  }
-  /* line 1216, style.scss */
-  .col-container .col3 {
-    width: 39%;
-    float: left;
-    padding-right: 3%;
+    height: 240px;
   }
 
-  /* line 1224, style.scss */
+  /* line 1539, style.scss */
   .col-container-2 {
-    width: 100%;
-    height: 280px;
-  }
-  /* line 1227, style.scss */
-  .col-container-2 .col1-2 {
-    width: 34%;
-    float: left;
-    padding-left: 3%;
-  }
-  /* line 1234, style.scss */
-  .col-container-2 .col2-2 {
-    width: 43%;
-    float: left;
-    padding-right: 3%;
-    text-align: right;
-  }
-  /* line 1241, style.scss */
-  .col-container-2 .col2-3 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
+    height: 200px;
   }
 
-  /* line 1248, style.scss */
+  /* line 1545, style.scss */
   .col-container3 {
-    width: 100%;
     height: 350px;
   }
-  /* line 1252, style.scss */
-  .col-container3 .col13 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
-  }
-  /* line 1259, style.scss */
+  /* line 1550, style.scss */
   .col-container3 .col23 {
-    width: 58%;
-    float: left;
-    padding-right: 3%;
-    margin-left: 12%;
+    text-align: left;
   }
-  /* line 1265, style.scss */
+  /* line 1553, style.scss */
   .col-container3 .col23 .bullet-margin {
     margin-top: 5px;
   }
-  /* line 1270, style.scss */
-  .col-container3 .col33 {
-    width: 24%;
-    float: left;
-    padding-right: 3%;
+
+  /* line 1562, style.scss */
+  h3.about-slanted-text-left-col {
+    margin-left: 0%;
   }
 
-  /* line 1278, style.scss */
-  .who-header {
-    line-height: 0.9;
-    overflow: visible;
-    margin-left: -90px;
-    margin-top: 72px;
-    font-size: 2.7em;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 1302, style.scss */
-  .do-header {
-    line-height: 0.9;
-    overflow: visible;
-    font-size: 2em;
-    text-align: left;
-    position: absolute;
-    /* determines spacing of headers*/
-    /* Safari */
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 1326, style.scss */
-  .how-header {
-    line-height: 0.9;
-    overflow: visible;
-    margin-left: -110px;
-    margin-top: 110px;
-    font-size: 3.3em;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 1352, style.scss */
-  p.padded-p {
-    padding-top: 5%;
-  }
-
-  /* line 1355, style.scss */
+  /* line 1568, style.scss */
   .com-table-person {
     width: 25%;
     height: 200px;
@@ -1450,7 +1712,7 @@ header h1.journal-header {
   }
 }
 @media screen and (min-width: 1100px) {
-  /* line 1368, style.scss */
+  /* line 1581, style.scss */
   .sidebar {
     width: 25%;
     height: 100%;
@@ -1461,53 +1723,53 @@ header h1.journal-header {
     color: #20CE55;
     text-align: center;
   }
-  /* line 1377, style.scss */
+  /* line 1590, style.scss */
   .sidebar ul {
     margin: 0;
     padding: 0;
     margin-top: 10%;
   }
-  /* line 1381, style.scss */
+  /* line 1594, style.scss */
   .sidebar ul li {
     font-size: 4em;
     list-style-type: none;
     text-align: center;
     line-height: 1;
   }
-  /* line 1386, style.scss */
+  /* line 1599, style.scss */
   .sidebar ul li.journalfont {
     font-size: 60px;
   }
-  /* line 1387, style.scss */
+  /* line 1600, style.scss */
   .sidebar ul li.communityfont {
     font-size: 70px;
   }
-  /* line 1388, style.scss */
+  /* line 1601, style.scss */
   .sidebar ul li.contactfont {
     font-size: 80px;
   }
-  /* line 1389, style.scss */
+  /* line 1602, style.scss */
   .sidebar ul li.aboutfont {
     font-size: 60px;
   }
-  /* line 1390, style.scss */
+  /* line 1603, style.scss */
   .sidebar ul li a:hover {
     opacity: 0.8;
     color: #20CE55;
   }
-  /* line 1393, style.scss */
+  /* line 1606, style.scss */
   .sidebar img {
     display: block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 1399, style.scss */
+  /* line 1612, style.scss */
   .sidebar a {
     color: #20CE55;
     text-decoration: none;
   }
-  /* line 1403, style.scss */
+  /* line 1616, style.scss */
   .sidebar h4 {
     font-size: 1em;
     line-height: 1.5;
@@ -1515,367 +1777,37 @@ header h1.journal-header {
     margin: 5%;
   }
 
-  /* line 1410, style.scss */
+  /* line 1623, style.scss */
   p {
     font-size: 1em;
     color: #20CE55;
   }
 
-  /* line 1415, style.scss */
+  /* line 1628, style.scss */
   h1.index-header {
     margin-top: 35%;
   }
 
-  /* line 1417, style.scss */
+  /* line 1630, style.scss */
   .col-container {
-    width: 100%;
     height: 280px;
   }
-  /* line 1420, style.scss */
-  .col-container .col1 {
-    float: left;
-    width: 10%;
-    padding-left: 3%;
-    font-size: 1em;
-  }
-  /* line 1429, style.scss */
-  .col-container .col2 {
-    width: 43%;
-    float: left;
-    padding-right: 3%;
-    margin-left: 12%;
-  }
-  /* line 1436, style.scss */
-  .col-container .col3 {
-    width: 39%;
-    float: left;
-    padding-right: 3%;
-  }
 
-  /* line 1444, style.scss */
+  /* line 1635, style.scss */
   .col-container-2 {
-    width: 100%;
-    height: 300px;
-  }
-  /* line 1447, style.scss */
-  .col-container-2 .col1-2 {
-    width: 34%;
-    float: left;
-    padding-left: 3%;
-  }
-  /* line 1454, style.scss */
-  .col-container-2 .col2-2 {
-    width: 43%;
-    float: left;
-    padding-right: 3%;
-    text-align: right;
-  }
-  /* line 1461, style.scss */
-  .col-container-2 .col2-3 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
+    height: 220px;
   }
 
-  /* line 1468, style.scss */
+  /* line 1642, style.scss */
   .col-container3 {
-    width: 100%;
     height: 330px;
   }
-  /* line 1472, style.scss */
-  .col-container3 .col13 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
-  }
-  /* line 1479, style.scss */
-  .col-container3 .col23 {
-    width: 58%;
-    float: left;
-    padding-right: 3%;
-    margin-left: 12%;
-  }
-  /* line 1485, style.scss */
+  /* line 1650, style.scss */
   .col-container3 .col23 .bullet-margin {
     margin-top: 5px;
   }
-  /* line 1490, style.scss */
-  .col-container3 .col33 {
-    width: 24%;
-    float: left;
-    padding-right: 3%;
-  }
 
-  /* line 1498, style.scss */
-  .who-header {
-    line-height: 0.9;
-    overflow: visible;
-    margin-left: -90px;
-    margin-top: 80px;
-    font-size: 2.7em;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 1522, style.scss */
-  .do-header {
-    line-height: 0.9;
-    overflow: visible;
-    font-size: 2em;
-    text-align: left;
-    position: absolute;
-    /* determines spacing of headers*/
-    /* Safari */
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 1546, style.scss */
-  .how-header {
-    line-height: 0.9;
-    overflow: visible;
-    margin-left: -110px;
-    margin-top: 110px;
-    font-size: 3.3em;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 1572, style.scss */
-  p.padded-p {
-    padding-top: 5%;
-  }
-
-  /* line 1574, style.scss */
-  .com-table-person {
-    width: 25%;
-    height: 200px;
-    margin: 3.12%;
-    background-color: green;
-    display: block;
-    float: left;
-  }
-}
-@media screen and (min-width: 1400px) {
-  /* line 1588, style.scss */
-  .sidebar {
-    width: 25%;
-    height: 100%;
-    position: fixed;
-    float: left;
-    background-color: white;
-    font-family: 'dk_pisangregular';
-    color: #20CE55;
-    text-align: center;
-  }
-  /* line 1597, style.scss */
-  .sidebar ul {
-    margin: 0;
-    padding: 0;
-    margin-top: 10%;
-  }
-  /* line 1601, style.scss */
-  .sidebar ul li {
-    font-size: 4em;
-    list-style-type: none;
-    text-align: center;
-    line-height: 1;
-  }
-  /* line 1606, style.scss */
-  .sidebar ul li.journalfont {
-    font-size: 60px;
-  }
-  /* line 1607, style.scss */
-  .sidebar ul li.communityfont {
-    font-size: 70px;
-  }
-  /* line 1608, style.scss */
-  .sidebar ul li.contactfont {
-    font-size: 80px;
-  }
-  /* line 1609, style.scss */
-  .sidebar ul li.aboutfont {
-    font-size: 60px;
-  }
-  /* line 1610, style.scss */
-  .sidebar ul li a:hover {
-    opacity: 0.8;
-    color: #20CE55;
-  }
-  /* line 1613, style.scss */
-  .sidebar img {
-    display: block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 1619, style.scss */
-  .sidebar a {
-    color: #20CE55;
-    text-decoration: none;
-  }
-  /* line 1623, style.scss */
-  .sidebar h4 {
-    font-size: 1em;
-    line-height: 1.5;
-    text-align: center;
-    margin: 5%;
-  }
-
-  /* line 1630, style.scss */
-  p {
-    font-size: 1.2em;
-  }
-
-  /* line 1634, style.scss */
-  h1.index-header {
-    margin-top: 34.5%;
-  }
-
-  /* line 1636, style.scss */
-  .col-container {
-    width: 100%;
-    height: 300px;
-  }
-  /* line 1640, style.scss */
-  .col-container .col1 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
-  }
-  /* line 1647, style.scss */
-  .col-container .col2 {
-    width: 43%;
-    float: left;
-    padding-right: 3%;
-    margin-left: 12%;
-  }
-  /* line 1655, style.scss */
-  .col-container .col3 {
-    width: 39%;
-    float: left;
-    padding-right: 3%;
-  }
-
-  /* line 1663, style.scss */
-  .col-container-2 {
-    width: 100%;
-    height: 320px;
-  }
-  /* line 1666, style.scss */
-  .col-container-2 .col1-2 {
-    width: 34%;
-    float: left;
-    padding-left: 3%;
-  }
-  /* line 1673, style.scss */
-  .col-container-2 .col2-2 {
-    width: 43%;
-    float: left;
-    padding-right: 3%;
-    text-align: right;
-  }
-  /* line 1680, style.scss */
-  .col-container-2 .col2-3 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
-  }
-
-  /* line 1687, style.scss */
-  .col-container3 {
-    width: 100%;
-    height: 400px;
-  }
-  /* line 1691, style.scss */
-  .col-container3 .col13 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
-  }
-  /* line 1698, style.scss */
-  .col-container3 .col23 {
-    width: 58%;
-    float: left;
-    padding-right: 3%;
-    margin-left: 12%;
-    color: #000;
-  }
-  /* line 1704, style.scss */
-  .col-container3 .col23 .bullet-margin {
-    margin-top: 5px;
-  }
-  /* line 1709, style.scss */
-  .col-container3 .col33 {
-    width: 24%;
-    float: left;
-    padding-right: 3%;
-    color: #000;
-  }
-
-  /* line 1719, style.scss */
-  .who-header {
-    line-height: 0.9;
-    overflow: visible;
-    margin-left: -130px;
-    margin-top: 100px;
-    font-size: 3.7em;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 1743, style.scss */
-  .do-header {
-    line-height: 0.9;
-    overflow: visible;
-    font-size: 2em;
-    text-align: left;
-    position: absolute;
-    /* determines spacing of headers*/
-    /* Safari */
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 1767, style.scss */
-  .how-header {
-    line-height: 0.9;
-    overflow: visible;
-    margin-left: -120px;
-    margin-top: 127px;
-    font-size: 4.1em;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 1793, style.scss */
-  p.padded-p {
-    padding-top: 5%;
-  }
-
-  /* line 1795, style.scss */
+  /* line 1659, style.scss */
   .com-table-person {
     width: 25%;
     height: 200px;
@@ -1886,7 +1818,7 @@ header h1.journal-header {
   }
 }
 @media screen and (min-width: 1280px) {
-  /* line 1809, style.scss */
+  /* line 1673, style.scss */
   .sidebar {
     width: 25%;
     height: 100%;
@@ -1897,53 +1829,53 @@ header h1.journal-header {
     color: #20CE55;
     text-align: center;
   }
-  /* line 1818, style.scss */
+  /* line 1682, style.scss */
   .sidebar ul {
     margin: 0;
     padding: 0;
     margin-top: 10%;
   }
-  /* line 1822, style.scss */
+  /* line 1686, style.scss */
   .sidebar ul li {
     font-size: 4em;
     list-style-type: none;
     text-align: center;
     line-height: 1;
   }
-  /* line 1827, style.scss */
+  /* line 1691, style.scss */
   .sidebar ul li.journalfont {
     font-size: 60px;
   }
-  /* line 1828, style.scss */
+  /* line 1692, style.scss */
   .sidebar ul li.communityfont {
     font-size: 70px;
   }
-  /* line 1829, style.scss */
+  /* line 1693, style.scss */
   .sidebar ul li.contactfont {
     font-size: 80px;
   }
-  /* line 1830, style.scss */
+  /* line 1694, style.scss */
   .sidebar ul li.aboutfont {
     font-size: 60px;
   }
-  /* line 1831, style.scss */
+  /* line 1695, style.scss */
   .sidebar ul li a:hover {
     opacity: 0.8;
     color: #20CE55;
   }
-  /* line 1834, style.scss */
+  /* line 1698, style.scss */
   .sidebar img {
     display: block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 1840, style.scss */
+  /* line 1704, style.scss */
   .sidebar a {
     color: #20CE55;
     text-decoration: none;
   }
-  /* line 1844, style.scss */
+  /* line 1708, style.scss */
   .sidebar h4 {
     font-size: 1em;
     line-height: 1.5;
@@ -1951,151 +1883,40 @@ header h1.journal-header {
     margin: 5%;
   }
 
-  /* line 1851, style.scss */
+  /* line 1715, style.scss */
   p {
-    font-size: 1.1em;
+    font-size: 1.15em;
   }
 
-  /* line 1855, style.scss */
+  /* line 1719, style.scss */
   h1.index-header {
     margin-top: 35%;
   }
 
-  /* line 1857, style.scss */
+  /* line 1721, style.scss */
   .col-container {
-    width: 100%;
     height: 300px;
   }
-  /* line 1861, style.scss */
+  /* line 1725, style.scss */
   .col-container .col1 {
-    width: 10%;
-    float: left;
     font-size: 1em;
   }
-  /* line 1868, style.scss */
-  .col-container .col2 {
-    width: 43%;
-    float: left;
-    padding-right: 3%;
-    margin-left: 12%;
-    color: #000;
-  }
-  /* line 1876, style.scss */
-  .col-container .col3 {
-    width: 39%;
-    float: left;
-    padding-right: 3%;
-    color: #000;
-  }
 
-  /* line 1885, style.scss */
+  /* line 1738, style.scss */
   .col-container-2 {
-    width: 100%;
-    height: 320px;
-  }
-  /* line 1888, style.scss */
-  .col-container-2 .col1-2 {
-    width: 34%;
-    float: left;
-    padding-left: 3%;
-  }
-  /* line 1895, style.scss */
-  .col-container-2 .col2-2 {
-    width: 43%;
-    float: left;
-    padding-right: 3%;
-    text-align: right;
-  }
-  /* line 1902, style.scss */
-  .col-container-2 .col2-3 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
+    height: 240px;
   }
 
-  /* line 1909, style.scss */
+  /* line 1745, style.scss */
   .col-container3 {
-    width: 100%;
     height: 350px;
   }
-  /* line 1913, style.scss */
-  .col-container3 .col13 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
-  }
-  /* line 1920, style.scss */
-  .col-container3 .col23 {
-    width: 58%;
-    float: left;
-    padding-right: 3%;
-    margin-left: 12%;
-    color: #000;
-  }
-  /* line 1926, style.scss */
+  /* line 1755, style.scss */
   .col-container3 .col23 .bullet-margin {
     margin-top: 5px;
   }
-  /* line 1931, style.scss */
-  .col-container3 .col33 {
-    width: 24%;
-    float: left;
-    padding-right: 3%;
-    color: #000;
-  }
 
-  /* line 1940, style.scss */
-  .who-header {
-    line-height: 0.9;
-    overflow: visible;
-    margin-left: -90px;
-    margin-top: 80px;
-    font-size: 2.9em;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 1964, style.scss */
-  .do-header {
-    line-height: 0.9;
-    overflow: visible;
-    font-size: 2em;
-    text-align: left;
-    position: absolute;
-    /* determines spacing of headers*/
-    /* Safari */
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 1988, style.scss */
-  .how-header {
-    line-height: 0.9;
-    overflow: visible;
-    margin-left: -130px;
-    margin-top: 127px;
-    font-size: 3.9em;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 2014, style.scss */
-  p.padded-p {
-    padding-top: 5%;
-  }
-
-  /* line 2016, style.scss */
+  /* line 1764, style.scss */
   .com-table-person {
     width: 25%;
     height: 200px;
@@ -2106,7 +1927,7 @@ header h1.journal-header {
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 2030, style.scss */
+  /* line 1778, style.scss */
   .sidebar {
     width: 25%;
     height: 100%;
@@ -2117,53 +1938,53 @@ header h1.journal-header {
     color: #20CE55;
     text-align: center;
   }
-  /* line 2039, style.scss */
+  /* line 1787, style.scss */
   .sidebar ul {
     margin: 0;
     padding: 0;
     margin-top: 10%;
   }
-  /* line 2043, style.scss */
+  /* line 1791, style.scss */
   .sidebar ul li {
     font-size: 4em;
     list-style-type: none;
     text-align: center;
     line-height: 1;
   }
-  /* line 2048, style.scss */
+  /* line 1796, style.scss */
   .sidebar ul li.journalfont {
     font-size: 60px;
   }
-  /* line 2049, style.scss */
+  /* line 1797, style.scss */
   .sidebar ul li.communityfont {
     font-size: 70px;
   }
-  /* line 2050, style.scss */
+  /* line 1798, style.scss */
   .sidebar ul li.contactfont {
     font-size: 80px;
   }
-  /* line 2051, style.scss */
+  /* line 1799, style.scss */
   .sidebar ul li.aboutfont {
     font-size: 60px;
   }
-  /* line 2052, style.scss */
+  /* line 1800, style.scss */
   .sidebar ul li a:hover {
     opacity: 0.8;
     color: #20CE55;
   }
-  /* line 2055, style.scss */
+  /* line 1803, style.scss */
   .sidebar img {
     display: block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 2061, style.scss */
+  /* line 1809, style.scss */
   .sidebar a {
     color: #20CE55;
     text-decoration: none;
   }
-  /* line 2065, style.scss */
+  /* line 1813, style.scss */
   .sidebar h4 {
     font-size: 1em;
     line-height: 1.5;
@@ -2171,146 +1992,37 @@ header h1.journal-header {
     margin: 5%;
   }
 
-  /* line 2076, style.scss */
+  /* line 1820, style.scss */
+  p {
+    font-size: 1.1em;
+  }
+
+  /* line 1824, style.scss */
   h1.index-header {
     margin-top: 34.5%;
   }
 
-  /* line 2078, style.scss */
+  /* line 1826, style.scss */
   .col-container {
-    width: 100%;
     height: 300px;
   }
-  /* line 2082, style.scss */
-  .col-container .col1 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
-  }
-  /* line 2089, style.scss */
-  .col-container .col2 {
-    width: 43%;
-    float: left;
-    padding-right: 3%;
-    margin-left: 12%;
-    color: #000;
-  }
-  /* line 2097, style.scss */
-  .col-container .col3 {
-    width: 39%;
-    float: left;
-    padding-right: 3%;
-    color: #000;
+
+  /* line 1834, style.scss */
+  .col-container {
+    height: 250px;
   }
 
-  /* line 2106, style.scss */
+  /* line 1837, style.scss */
   .col-container-2 {
-    width: 100%;
-    height: 320px;
-  }
-  /* line 2109, style.scss */
-  .col-container-2 .col1-2 {
-    width: 34%;
-    float: left;
-    padding-left: 3%;
-  }
-  /* line 2116, style.scss */
-  .col-container-2 .col2-2 {
-    width: 43%;
-    float: left;
-    padding-right: 3%;
-    text-align: right;
-  }
-  /* line 2123, style.scss */
-  .col-container-2 .col2-3 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
+    height: 200px;
   }
 
-  /* line 2130, style.scss */
+  /* line 1844, style.scss */
   .col-container3 {
-    width: 100%;
     height: 400px;
   }
-  /* line 2134, style.scss */
-  .col-container3 .col13 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
-  }
-  /* line 2141, style.scss */
-  .col-container3 .col23 {
-    width: 58%;
-    float: left;
-    padding-right: 3%;
-    margin-left: 12%;
-    color: #000;
-  }
-  /* line 2147, style.scss */
-  .col-container3 .col23 .bullet-margin {
-    margin-top: 5px;
-  }
-  /* line 2152, style.scss */
-  .col-container3 .col33 {
-    width: 24%;
-    float: left;
-    padding-right: 3%;
-    color: #000;
-  }
 
-  /* line 2162, style.scss */
-  .who-header {
-    line-height: 0.9;
-    overflow: visible;
-    margin-left: -130px;
-    margin-top: 100px;
-    font-size: 3.7em;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 2186, style.scss */
-  .do-header {
-    line-height: 0.9;
-    overflow: visible;
-    font-size: 2em;
-    text-align: left;
-    position: absolute;
-    /* determines spacing of headers*/
-    /* Safari */
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 2210, style.scss */
-  .how-header {
-    line-height: 0.9;
-    overflow: visible;
-    margin-left: -130px;
-    margin-top: 127px;
-    font-size: 4.1em;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 2236, style.scss */
-  p.padded-p {
-    padding-top: 5%;
-  }
-
-  /* line 2238, style.scss */
+  /* line 1853, style.scss */
   .com-table-person {
     width: 25%;
     height: 200px;
@@ -2320,13 +2032,13 @@ header h1.journal-header {
     float: left;
   }
 
-  /* line 2248, style.scss */
+  /* line 1863, style.scss */
   #word-cloud .row {
     height: 100px;
   }
 }
 @media screen and (min-width: 1680px) {
-  /* line 2258, style.scss */
+  /* line 1871, style.scss */
   .sidebar {
     width: 25%;
     height: 100%;
@@ -2337,53 +2049,53 @@ header h1.journal-header {
     color: #20CE55;
     text-align: center;
   }
-  /* line 2267, style.scss */
+  /* line 1880, style.scss */
   .sidebar ul {
     margin: 0;
     padding: 0;
     margin-top: 10%;
   }
-  /* line 2271, style.scss */
+  /* line 1884, style.scss */
   .sidebar ul li {
     font-size: 4em;
     list-style-type: none;
     text-align: center;
     line-height: 1;
   }
-  /* line 2276, style.scss */
+  /* line 1889, style.scss */
   .sidebar ul li.journalfont {
     font-size: 60px;
   }
-  /* line 2277, style.scss */
+  /* line 1890, style.scss */
   .sidebar ul li.communityfont {
     font-size: 70px;
   }
-  /* line 2278, style.scss */
+  /* line 1891, style.scss */
   .sidebar ul li.contactfont {
     font-size: 80px;
   }
-  /* line 2279, style.scss */
+  /* line 1892, style.scss */
   .sidebar ul li.aboutfont {
     font-size: 60px;
   }
-  /* line 2280, style.scss */
+  /* line 1893, style.scss */
   .sidebar ul li a:hover {
     opacity: 0.8;
     color: #20CE55;
   }
-  /* line 2283, style.scss */
+  /* line 1896, style.scss */
   .sidebar img {
     display: block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 2289, style.scss */
+  /* line 1902, style.scss */
   .sidebar a {
     color: #20CE55;
     text-decoration: none;
   }
-  /* line 2293, style.scss */
+  /* line 1906, style.scss */
   .sidebar h4 {
     font-size: 1em;
     line-height: 1.5;
@@ -2391,156 +2103,45 @@ header h1.journal-header {
     margin: 5%;
   }
 
-  /* line 2302, style.scss */
+  /* line 1915, style.scss */
   p {
     font-size: 1.5em;
   }
 
-  /* line 2306, style.scss */
+  /* line 1919, style.scss */
   h1.index-header {
     margin-top: 33.9%;
   }
 
-  /* line 2308, style.scss */
+  /* line 1921, style.scss */
   .col-container {
-    width: 100%;
     height: 350px;
   }
-  /* line 2312, style.scss */
+  /* line 1925, style.scss */
   .col-container .col1 {
-    width: 10%;
-    float: left;
     font-size: 1em;
   }
-  /* line 2319, style.scss */
-  .col-container .col2 {
-    width: 43%;
-    float: left;
-    padding-right: 3%;
-    margin-left: 12%;
-    color: #000;
-  }
-  /* line 2327, style.scss */
-  .col-container .col3 {
-    width: 39%;
-    float: left;
-    padding-right: 3%;
-    color: #000;
-  }
 
-  /* line 2336, style.scss */
+  /* line 1937, style.scss */
   .col-container-2 {
-    width: 100%;
     height: 400px;
   }
-  /* line 2339, style.scss */
-  .col-container-2 .col1-2 {
-    width: 34%;
-    float: left;
-    padding-left: 3%;
-  }
-  /* line 2346, style.scss */
-  .col-container-2 .col2-2 {
-    width: 43%;
-    float: left;
-    padding-right: 3%;
-    text-align: right;
-  }
-  /* line 2353, style.scss */
-  .col-container-2 .col2-3 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
-  }
 
-  /* line 2360, style.scss */
+  /* line 1952, style.scss */
   .col-container3 {
-    width: 100%;
     height: 500px;
   }
-  /* line 2364, style.scss */
-  .col-container3 .col13 {
-    width: 10%;
-    float: left;
-    font-size: 1em;
-  }
-  /* line 2371, style.scss */
-  .col-container3 .col23 {
-    width: 58%;
-    float: left;
-    padding-right: 3%;
-    margin-left: 12%;
-    color: #000;
-  }
-  /* line 2377, style.scss */
+  /* line 1962, style.scss */
   .col-container3 .col23 .bullet-margin {
     margin-top: 5px;
   }
-  /* line 2382, style.scss */
-  .col-container3 .col33 {
-    width: 24%;
-    float: left;
-    padding-right: 3%;
-    color: #000;
-  }
 
-  /* line 2391, style.scss */
-  .who-header {
-    line-height: 0.9;
-    overflow: visible;
-    font-size: 4em;
-    margin-left: -160px;
-    margin-top: 110px;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 2415, style.scss */
-  .do-header {
-    line-height: 0.9;
-    overflow: visible;
-    font-size: 4em;
-    text-align: left;
-    position: absolute;
-    /* determines spacing of headers*/
-    /* Safari */
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 2439, style.scss */
-  .how-header {
-    line-height: 0.9;
-    overflow: visible;
-    margin-left: -170px;
-    margin-top: 160px;
-    font-size: 5em;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-
-  /* line 2464, style.scss */
+  /* line 1971, style.scss */
   #word-cloud .row {
     height: 150px;
   }
 
-  /* line 2471, style.scss */
-  p.padded-p {
-    padding-top: 5%;
-  }
-
-  /* line 2474, style.scss */
+  /* line 1976, style.scss */
   .com-table-person {
     width: 25%;
     height: 200px;
@@ -2550,24 +2151,25 @@ header h1.journal-header {
     float: left;
   }
 
-  /* line 2483, style.scss */
+  /* line 1985, style.scss */
   .maps {
     padding-bottom: 300px;
   }
 
-  /* line 2488, style.scss */
+  /* line 1990, style.scss */
   p.community-p {
     padding-top: 5%;
+    color: green;
   }
 }
-/* line 2494, style.scss */
+/* line 1996, style.scss */
 .placeholder-left img {
   width: 8%;
   height: auto;
   margin-left: 4%;
 }
 
-/* line 2498, style.scss */
+/* line 2000, style.scss */
 .bottom-placeholder img {
   width: 100%;
   height: auto;
@@ -2579,7 +2181,7 @@ header h1.journal-header {
 /*
  * Image replacement
  */
-/* line 2510, style.scss */
+/* line 2012, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -2588,7 +2190,7 @@ header h1.journal-header {
   *text-indent: -9999px;
 }
 
-/* line 2518, style.scss */
+/* line 2020, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -2599,7 +2201,7 @@ header h1.journal-header {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 2529, style.scss */
+/* line 2031, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -2608,7 +2210,7 @@ header h1.journal-header {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 2538, style.scss */
+/* line 2040, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2624,7 +2226,7 @@ header h1.journal-header {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 2555, style.scss */
+/* line 2057, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -2638,7 +2240,7 @@ header h1.journal-header {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 2568, style.scss */
+/* line 2070, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -2654,7 +2256,7 @@ header h1.journal-header {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 2585, style.scss */
+/* line 2087, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -2663,7 +2265,7 @@ header h1.journal-header {
   /* 2 */
 }
 
-/* line 2590, style.scss */
+/* line 2092, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -2672,7 +2274,7 @@ header h1.journal-header {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 2599, style.scss */
+/* line 2101, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -2693,7 +2295,7 @@ header h1.journal-header {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 2626, style.scss */
+  /* line 2128, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -2702,18 +2304,18 @@ header h1.journal-header {
     text-shadow: none !important;
   }
 
-  /* line 2634, style.scss */
+  /* line 2136, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 2638, style.scss */
+  /* line 2140, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 2642, style.scss */
+  /* line 2144, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -2721,33 +2323,33 @@ header h1.journal-header {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 2652, style.scss */
+  /* line 2154, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 2657, style.scss */
+  /* line 2159, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 2662, style.scss */
+  /* line 2164, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 2667, style.scss */
+  /* line 2169, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 2671, style.scss */
+  /* line 2173, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -2756,7 +2358,7 @@ header h1.journal-header {
     margin: 0.5cm;
 }
 
-  /* line 2681, style.scss */
+  /* line 2183, style.scss */
   p,
   h2,
   h3 {
@@ -2764,7 +2366,7 @@ header h1.journal-header {
     widows: 3;
   }
 
-  /* line 2687, style.scss */
+  /* line 2189, style.scss */
   h2,
   h3 {
     page-break-after: avoid;
