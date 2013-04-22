@@ -1253,7 +1253,7 @@ p.center-paragraph {
   .col-container .col1 {
     width: 100%;
     float: none;
-    padding-left: 3%;
+    margin-left: -3%;
   }
   /* line 1138, style.scss */
   .col-container .col2 {
@@ -1278,48 +1278,46 @@ p.center-paragraph {
   }
   /* line 1156, style.scss */
   .col-container-2 .col2-2 {
-    width: 100%;
+    width: 60%;
     float: none;
     margin: 0;
   }
 
-  /* line 1165, style.scss */
+  /* line 1164, style.scss */
   .col-container3 {
     height: 350px;
   }
-  /* line 1168, style.scss */
+  /* line 1167, style.scss */
   .col-container3 p {
     text-align: center;
   }
-  /* line 1170, style.scss */
+  /* line 1169, style.scss */
   .col-container3 .col13 {
     width: 100%;
-    float: none;
-    padding-left: 3%;
+    margin-left: -3%;
   }
-  /* line 1177, style.scss */
+  /* line 1175, style.scss */
   .col-container3 .col23 {
-    width: 60%;
-    float: none;
-    margin: 5% 0 0 25%;
+    width: 85%;
+    margin: 5% 0 0 15%;
     text-align: center;
   }
-  /* line 1183, style.scss */
+  /* line 1180, style.scss */
   .col-container3 .col23 .bullet-margin {
     margin-top: 5px;
   }
 
-  /* line 1191, style.scss */
+  /* line 1188, style.scss */
   p {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
-  /* line 1193, style.scss */
+  /* line 1190, style.scss */
   .bullet-margin {
     text-align: center;
   }
 
-  /* line 1196, style.scss */
+  /* line 1193, style.scss */
   .about-slanted-text-right-col {
     margin-left: 10%;
     /* Safari */
@@ -1334,11 +1332,11 @@ p.center-paragraph {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
   }
 }
-/* line 1220, style.scss */
+/* line 1217, style.scss */
 h3.about-slanted-text-left-col {
   margin-left: 20%;
 }
-/* line 1224, style.scss */
+/* line 1221, style.scss */
 h3.about-slanted-text-left-col.first {
   /* Safari */
   -webkit-transform: rotate(0deg);
@@ -1351,7 +1349,7 @@ h3.about-slanted-text-left-col.first {
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
 }
-/* line 1241, style.scss */
+/* line 1238, style.scss */
 h3.about-slanted-text-left-col.second {
   /* Safari */
   -webkit-transform: rotate(0deg);
@@ -1364,7 +1362,7 @@ h3.about-slanted-text-left-col.second {
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
 }
-/* line 1258, style.scss */
+/* line 1255, style.scss */
 h3.about-slanted-text-left-col.third {
   /* Safari */
   -webkit-transform: rotate(0deg);
@@ -1377,13 +1375,13 @@ h3.about-slanted-text-left-col.third {
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
 }
-/* line 1277, style.scss */
+/* line 1274, style.scss */
 h3 #word-cloud .row {
   height: 50px;
 }
 
 @media screen and (min-width: 769px) {
-  /* line 1286, style.scss */
+  /* line 1283, style.scss */
   .sidebar {
     width: 25%;
     height: 100%;
@@ -1394,53 +1392,53 @@ h3 #word-cloud .row {
     color: #20CE55;
     text-align: center;
   }
-  /* line 1295, style.scss */
+  /* line 1292, style.scss */
   .sidebar ul {
     margin: 0;
     padding: 0;
     margin-top: 10%;
   }
-  /* line 1299, style.scss */
+  /* line 1296, style.scss */
   .sidebar ul li {
     font-size: 4em;
     list-style-type: none;
     text-align: center;
     line-height: 1;
   }
-  /* line 1304, style.scss */
+  /* line 1301, style.scss */
   .sidebar ul li.journalfont {
     font-size: 60px;
   }
-  /* line 1305, style.scss */
+  /* line 1302, style.scss */
   .sidebar ul li.communityfont {
     font-size: 70px;
   }
-  /* line 1306, style.scss */
+  /* line 1303, style.scss */
   .sidebar ul li.contactfont {
     font-size: 80px;
   }
-  /* line 1307, style.scss */
+  /* line 1304, style.scss */
   .sidebar ul li.aboutfont {
     font-size: 60px;
   }
-  /* line 1308, style.scss */
+  /* line 1305, style.scss */
   .sidebar ul li a:hover {
     opacity: 0.8;
     color: #20CE55;
   }
-  /* line 1311, style.scss */
+  /* line 1308, style.scss */
   .sidebar img {
     display: block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 1317, style.scss */
+  /* line 1314, style.scss */
   .sidebar a {
     color: #20CE55;
     text-decoration: none;
   }
-  /* line 1321, style.scss */
+  /* line 1318, style.scss */
   .sidebar h4 {
     font-size: 1em;
     line-height: 1.5;
@@ -1448,46 +1446,46 @@ h3 #word-cloud .row {
     margin: 5%;
   }
 
-  /* line 1328, style.scss */
+  /* line 1325, style.scss */
   p {
     font-size: 0.8em;
     color: #20CE55;
   }
 
-  /* line 1333, style.scss */
+  /* line 1330, style.scss */
   h1.index-header {
     margin-top: 37%;
   }
 
-  /* line 1336, style.scss */
+  /* line 1333, style.scss */
   .col-container {
     height: 240px;
   }
 
-  /* line 1339, style.scss */
+  /* line 1336, style.scss */
   .col-container-2 {
     height: 200px;
   }
 
-  /* line 1345, style.scss */
+  /* line 1342, style.scss */
   .col-container3 {
     height: 350px;
   }
-  /* line 1350, style.scss */
+  /* line 1347, style.scss */
   .col-container3 .col23 {
     text-align: left;
   }
-  /* line 1353, style.scss */
+  /* line 1350, style.scss */
   .col-container3 .col23 .bullet-margin {
     margin-top: 5px;
   }
 
-  /* line 1362, style.scss */
+  /* line 1359, style.scss */
   h3.about-slanted-text-left-col {
     margin-left: 0%;
   }
 
-  /* line 1368, style.scss */
+  /* line 1365, style.scss */
   .com-table-person {
     width: 25%;
     height: 200px;
@@ -1498,7 +1496,7 @@ h3 #word-cloud .row {
   }
 }
 @media screen and (min-width: 1100px) {
-  /* line 1381, style.scss */
+  /* line 1378, style.scss */
   .sidebar {
     width: 25%;
     height: 100%;
@@ -1509,53 +1507,53 @@ h3 #word-cloud .row {
     color: #20CE55;
     text-align: center;
   }
-  /* line 1390, style.scss */
+  /* line 1387, style.scss */
   .sidebar ul {
     margin: 0;
     padding: 0;
     margin-top: 10%;
   }
-  /* line 1394, style.scss */
+  /* line 1391, style.scss */
   .sidebar ul li {
     font-size: 4em;
     list-style-type: none;
     text-align: center;
     line-height: 1;
   }
-  /* line 1399, style.scss */
+  /* line 1396, style.scss */
   .sidebar ul li.journalfont {
     font-size: 60px;
   }
-  /* line 1400, style.scss */
+  /* line 1397, style.scss */
   .sidebar ul li.communityfont {
     font-size: 70px;
   }
-  /* line 1401, style.scss */
+  /* line 1398, style.scss */
   .sidebar ul li.contactfont {
     font-size: 80px;
   }
-  /* line 1402, style.scss */
+  /* line 1399, style.scss */
   .sidebar ul li.aboutfont {
     font-size: 60px;
   }
-  /* line 1403, style.scss */
+  /* line 1400, style.scss */
   .sidebar ul li a:hover {
     opacity: 0.8;
     color: #20CE55;
   }
-  /* line 1406, style.scss */
+  /* line 1403, style.scss */
   .sidebar img {
     display: block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 1412, style.scss */
+  /* line 1409, style.scss */
   .sidebar a {
     color: #20CE55;
     text-decoration: none;
   }
-  /* line 1416, style.scss */
+  /* line 1413, style.scss */
   .sidebar h4 {
     font-size: 1em;
     line-height: 1.5;
@@ -1563,37 +1561,37 @@ h3 #word-cloud .row {
     margin: 5%;
   }
 
-  /* line 1423, style.scss */
+  /* line 1420, style.scss */
   p {
     font-size: 1em;
     color: #20CE55;
   }
 
-  /* line 1428, style.scss */
+  /* line 1425, style.scss */
   h1.index-header {
     margin-top: 35%;
   }
 
-  /* line 1430, style.scss */
+  /* line 1427, style.scss */
   .col-container {
     height: 280px;
   }
 
-  /* line 1435, style.scss */
+  /* line 1432, style.scss */
   .col-container-2 {
     height: 220px;
   }
 
-  /* line 1442, style.scss */
+  /* line 1439, style.scss */
   .col-container3 {
     height: 330px;
   }
-  /* line 1450, style.scss */
+  /* line 1447, style.scss */
   .col-container3 .col23 .bullet-margin {
     margin-top: 5px;
   }
 
-  /* line 1459, style.scss */
+  /* line 1456, style.scss */
   .com-table-person {
     width: 25%;
     height: 200px;
@@ -1604,7 +1602,7 @@ h3 #word-cloud .row {
   }
 }
 @media screen and (min-width: 1280px) {
-  /* line 1473, style.scss */
+  /* line 1470, style.scss */
   .sidebar {
     width: 25%;
     height: 100%;
@@ -1615,53 +1613,53 @@ h3 #word-cloud .row {
     color: #20CE55;
     text-align: center;
   }
-  /* line 1482, style.scss */
+  /* line 1479, style.scss */
   .sidebar ul {
     margin: 0;
     padding: 0;
     margin-top: 10%;
   }
-  /* line 1486, style.scss */
+  /* line 1483, style.scss */
   .sidebar ul li {
     font-size: 4em;
     list-style-type: none;
     text-align: center;
     line-height: 1;
   }
-  /* line 1491, style.scss */
+  /* line 1488, style.scss */
   .sidebar ul li.journalfont {
     font-size: 60px;
   }
-  /* line 1492, style.scss */
+  /* line 1489, style.scss */
   .sidebar ul li.communityfont {
     font-size: 70px;
   }
-  /* line 1493, style.scss */
+  /* line 1490, style.scss */
   .sidebar ul li.contactfont {
     font-size: 80px;
   }
-  /* line 1494, style.scss */
+  /* line 1491, style.scss */
   .sidebar ul li.aboutfont {
     font-size: 60px;
   }
-  /* line 1495, style.scss */
+  /* line 1492, style.scss */
   .sidebar ul li a:hover {
     opacity: 0.8;
     color: #20CE55;
   }
-  /* line 1498, style.scss */
+  /* line 1495, style.scss */
   .sidebar img {
     display: block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 1504, style.scss */
+  /* line 1501, style.scss */
   .sidebar a {
     color: #20CE55;
     text-decoration: none;
   }
-  /* line 1508, style.scss */
+  /* line 1505, style.scss */
   .sidebar h4 {
     font-size: 1em;
     line-height: 1.5;
@@ -1669,40 +1667,40 @@ h3 #word-cloud .row {
     margin: 5%;
   }
 
-  /* line 1515, style.scss */
+  /* line 1512, style.scss */
   p {
     font-size: 1.15em;
   }
 
-  /* line 1519, style.scss */
+  /* line 1516, style.scss */
   h1.index-header {
     margin-top: 35%;
   }
 
-  /* line 1521, style.scss */
+  /* line 1518, style.scss */
   .col-container {
     height: 300px;
   }
-  /* line 1525, style.scss */
+  /* line 1522, style.scss */
   .col-container .col1 {
     font-size: 1em;
   }
 
-  /* line 1538, style.scss */
+  /* line 1535, style.scss */
   .col-container-2 {
     height: 240px;
   }
 
-  /* line 1545, style.scss */
+  /* line 1542, style.scss */
   .col-container3 {
     height: 350px;
   }
-  /* line 1555, style.scss */
+  /* line 1552, style.scss */
   .col-container3 .col23 .bullet-margin {
     margin-top: 5px;
   }
 
-  /* line 1564, style.scss */
+  /* line 1561, style.scss */
   .com-table-person {
     width: 25%;
     height: 200px;
@@ -1713,7 +1711,7 @@ h3 #word-cloud .row {
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 1578, style.scss */
+  /* line 1575, style.scss */
   .sidebar {
     width: 25%;
     height: 100%;
@@ -1724,53 +1722,53 @@ h3 #word-cloud .row {
     color: #20CE55;
     text-align: center;
   }
-  /* line 1587, style.scss */
+  /* line 1584, style.scss */
   .sidebar ul {
     margin: 0;
     padding: 0;
     margin-top: 10%;
   }
-  /* line 1591, style.scss */
+  /* line 1588, style.scss */
   .sidebar ul li {
     font-size: 4em;
     list-style-type: none;
     text-align: center;
     line-height: 1;
   }
-  /* line 1596, style.scss */
+  /* line 1593, style.scss */
   .sidebar ul li.journalfont {
     font-size: 60px;
   }
-  /* line 1597, style.scss */
+  /* line 1594, style.scss */
   .sidebar ul li.communityfont {
     font-size: 70px;
   }
-  /* line 1598, style.scss */
+  /* line 1595, style.scss */
   .sidebar ul li.contactfont {
     font-size: 80px;
   }
-  /* line 1599, style.scss */
+  /* line 1596, style.scss */
   .sidebar ul li.aboutfont {
     font-size: 60px;
   }
-  /* line 1600, style.scss */
+  /* line 1597, style.scss */
   .sidebar ul li a:hover {
     opacity: 0.8;
     color: #20CE55;
   }
-  /* line 1603, style.scss */
+  /* line 1600, style.scss */
   .sidebar img {
     display: block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 1609, style.scss */
+  /* line 1606, style.scss */
   .sidebar a {
     color: #20CE55;
     text-decoration: none;
   }
-  /* line 1613, style.scss */
+  /* line 1610, style.scss */
   .sidebar h4 {
     font-size: 1em;
     line-height: 1.5;
@@ -1778,37 +1776,37 @@ h3 #word-cloud .row {
     margin: 5%;
   }
 
-  /* line 1620, style.scss */
+  /* line 1617, style.scss */
   p {
     font-size: 1.1em;
   }
 
-  /* line 1624, style.scss */
+  /* line 1621, style.scss */
   h1.index-header {
     margin-top: 34.5%;
   }
 
-  /* line 1626, style.scss */
+  /* line 1623, style.scss */
   .col-container {
     height: 300px;
   }
 
-  /* line 1634, style.scss */
+  /* line 1631, style.scss */
   .col-container {
     height: 250px;
   }
 
-  /* line 1637, style.scss */
+  /* line 1634, style.scss */
   .col-container-2 {
     height: 200px;
   }
 
-  /* line 1644, style.scss */
+  /* line 1641, style.scss */
   .col-container3 {
     height: 400px;
   }
 
-  /* line 1653, style.scss */
+  /* line 1650, style.scss */
   .com-table-person {
     width: 25%;
     height: 200px;
@@ -1818,13 +1816,13 @@ h3 #word-cloud .row {
     float: left;
   }
 
-  /* line 1663, style.scss */
+  /* line 1660, style.scss */
   #word-cloud .row {
     height: 100px;
   }
 }
 @media screen and (min-width: 1680px) {
-  /* line 1671, style.scss */
+  /* line 1668, style.scss */
   .sidebar {
     width: 25%;
     height: 100%;
@@ -1835,53 +1833,53 @@ h3 #word-cloud .row {
     color: #20CE55;
     text-align: center;
   }
-  /* line 1680, style.scss */
+  /* line 1677, style.scss */
   .sidebar ul {
     margin: 0;
     padding: 0;
     margin-top: 10%;
   }
-  /* line 1684, style.scss */
+  /* line 1681, style.scss */
   .sidebar ul li {
     font-size: 4em;
     list-style-type: none;
     text-align: center;
     line-height: 1;
   }
-  /* line 1689, style.scss */
+  /* line 1686, style.scss */
   .sidebar ul li.journalfont {
     font-size: 60px;
   }
-  /* line 1690, style.scss */
+  /* line 1687, style.scss */
   .sidebar ul li.communityfont {
     font-size: 70px;
   }
-  /* line 1691, style.scss */
+  /* line 1688, style.scss */
   .sidebar ul li.contactfont {
     font-size: 80px;
   }
-  /* line 1692, style.scss */
+  /* line 1689, style.scss */
   .sidebar ul li.aboutfont {
     font-size: 60px;
   }
-  /* line 1693, style.scss */
+  /* line 1690, style.scss */
   .sidebar ul li a:hover {
     opacity: 0.8;
     color: #20CE55;
   }
-  /* line 1696, style.scss */
+  /* line 1693, style.scss */
   .sidebar img {
     display: block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 1702, style.scss */
+  /* line 1699, style.scss */
   .sidebar a {
     color: #20CE55;
     text-decoration: none;
   }
-  /* line 1706, style.scss */
+  /* line 1703, style.scss */
   .sidebar h4 {
     font-size: 1em;
     line-height: 1.5;
@@ -1889,45 +1887,45 @@ h3 #word-cloud .row {
     margin: 5%;
   }
 
-  /* line 1715, style.scss */
+  /* line 1712, style.scss */
   p {
     font-size: 1.5em;
   }
 
-  /* line 1719, style.scss */
+  /* line 1716, style.scss */
   h1.index-header {
     margin-top: 33.9%;
   }
 
-  /* line 1721, style.scss */
+  /* line 1718, style.scss */
   .col-container {
     height: 350px;
   }
-  /* line 1725, style.scss */
+  /* line 1722, style.scss */
   .col-container .col1 {
     font-size: 1em;
   }
 
-  /* line 1737, style.scss */
+  /* line 1734, style.scss */
   .col-container-2 {
     height: 400px;
   }
 
-  /* line 1752, style.scss */
+  /* line 1749, style.scss */
   .col-container3 {
     height: 500px;
   }
-  /* line 1762, style.scss */
+  /* line 1759, style.scss */
   .col-container3 .col23 .bullet-margin {
     margin-top: 5px;
   }
 
-  /* line 1771, style.scss */
+  /* line 1768, style.scss */
   #word-cloud .row {
     height: 150px;
   }
 
-  /* line 1776, style.scss */
+  /* line 1773, style.scss */
   .com-table-person {
     width: 25%;
     height: 200px;
@@ -1937,25 +1935,25 @@ h3 #word-cloud .row {
     float: left;
   }
 
-  /* line 1785, style.scss */
+  /* line 1782, style.scss */
   .maps {
     padding-bottom: 300px;
   }
 
-  /* line 1790, style.scss */
+  /* line 1787, style.scss */
   p.community-p {
     padding-top: 5%;
     color: green;
   }
 }
-/* line 1796, style.scss */
+/* line 1793, style.scss */
 .placeholder-left img {
   width: 8%;
   height: auto;
   margin-left: 4%;
 }
 
-/* line 1800, style.scss */
+/* line 1797, style.scss */
 .bottom-placeholder img {
   width: 100%;
   height: auto;
@@ -1967,7 +1965,7 @@ h3 #word-cloud .row {
 /*
  * Image replacement
  */
-/* line 1812, style.scss */
+/* line 1809, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -1976,7 +1974,7 @@ h3 #word-cloud .row {
   *text-indent: -9999px;
 }
 
-/* line 1820, style.scss */
+/* line 1817, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -1987,7 +1985,7 @@ h3 #word-cloud .row {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 1831, style.scss */
+/* line 1828, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -1996,7 +1994,7 @@ h3 #word-cloud .row {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 1840, style.scss */
+/* line 1837, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2012,7 +2010,7 @@ h3 #word-cloud .row {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 1857, style.scss */
+/* line 1854, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -2026,7 +2024,7 @@ h3 #word-cloud .row {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 1870, style.scss */
+/* line 1867, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -2042,7 +2040,7 @@ h3 #word-cloud .row {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 1887, style.scss */
+/* line 1884, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -2051,7 +2049,7 @@ h3 #word-cloud .row {
   /* 2 */
 }
 
-/* line 1892, style.scss */
+/* line 1889, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -2060,7 +2058,7 @@ h3 #word-cloud .row {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 1901, style.scss */
+/* line 1898, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -2081,7 +2079,7 @@ h3 #word-cloud .row {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 1928, style.scss */
+  /* line 1925, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -2090,18 +2088,18 @@ h3 #word-cloud .row {
     text-shadow: none !important;
   }
 
-  /* line 1936, style.scss */
+  /* line 1933, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 1940, style.scss */
+  /* line 1937, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 1944, style.scss */
+  /* line 1941, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -2109,33 +2107,33 @@ h3 #word-cloud .row {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 1954, style.scss */
+  /* line 1951, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 1959, style.scss */
+  /* line 1956, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 1964, style.scss */
+  /* line 1961, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 1969, style.scss */
+  /* line 1966, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 1973, style.scss */
+  /* line 1970, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -2144,7 +2142,7 @@ h3 #word-cloud .row {
     margin: 0.5cm;
 }
 
-  /* line 1983, style.scss */
+  /* line 1980, style.scss */
   p,
   h2,
   h3 {
@@ -2152,7 +2150,7 @@ h3 #word-cloud .row {
     widows: 3;
   }
 
-  /* line 1989, style.scss */
+  /* line 1986, style.scss */
   h2,
   h3 {
     page-break-after: avoid;

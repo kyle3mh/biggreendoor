@@ -1131,7 +1131,7 @@ h1 {
         .col1 {
             width: 100%;
             float: none;
-            padding-left:3%;
+            margin-left: -3%;
 
         }
         
@@ -1154,11 +1154,10 @@ h1 {
         }
         
         .col2-2 {
-            width: 100%;
+            width: 60%;
             float: none;
             margin: 0;
-         
-        
+
         }
     }
 
@@ -1169,26 +1168,24 @@ h1 {
 
         .col13 {
             width: 100%;
-            float: none;
-            padding-left:3%;
+            margin-left: -3%;
     
         }
         
         .col23 {
-            width: 60%;
-            float: none;
-            margin: 5% 0 0 25%;
+            width: 85%;
+            margin: 5% 0 0 15%;
             text-align: center;  
          
-                .bullet-margin {
-                    margin-top: 5px;
-                }
+            .bullet-margin {
+                margin-top: 5px;
+            }
         
         }
 
     }
 
-    p { font-size: 1em;}
+    p { font-size: 0.8em;}
 
     .bullet-margin { text-align: center;}
 
