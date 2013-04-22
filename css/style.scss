@@ -574,6 +574,8 @@ h1 {
     &.who-header{line-height: 0.9; letter-spacing: 0.2em; text-align : center; white-space:nowrap;}
 }
 
+
+
 .col-container {
     width:100%;
 
@@ -660,69 +662,7 @@ h1 {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-.about-slanted-text-left-col{
-        margin: 3% 0 0 0;
-    &.first{
 
-        font-size: 3.1em;
-        line-height: 1;
-
-
-        -webkit-transform: rotate(1deg);
- 
-         /* Firefox */
-        -moz-transform: rotate(1deg);
-         
-         /* IE */
-         -ms-transform: rotate(1deg);
-         
-         /* Opera */
-         -o-transform: rotate(1deg);
-         
-         /* Internet Explorer */
-         filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
-    }
-
-    &.second{
-        font-size: 3.7em;
-        line-height: 1;
-       -webkit-transform: rotate(-1deg);
-    
-        /* Firefox */
-       -moz-transform: rotate(-1deg);
-        
-        /* IE */
-        -ms-transform: rotate(-1deg);
-        
-        /* Opera */
-        -o-transform: rotate(-1deg);
-        
-        /* Internet Explorer */
-        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
-    }
-
-    &.third{
-        font-size: 3.8em;
-        line-height: 1;
-       -webkit-transform: rotate(1deg);
-    
-        /* Firefox */
-       -moz-transform: rotate(1deg);
-        
-        /* IE */
-        -ms-transform: rotate(1deg);
-        
-        /* Opera */
-        -o-transform: rotate(1deg);
-        
-        /* Internet Explorer */
-        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
-    }
-
-}
 
 .about-slanted-text-right-col-centered {
     font-size: 4em;
