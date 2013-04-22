@@ -601,6 +601,8 @@ h1 {
         float: left;
         padding-left:3%;
         font-size: 1em;
+        line-height: 0.8;
+        margin-top: 2%;
     
     }
     
@@ -1137,6 +1139,7 @@ h1 {
             width: 80%;
             float: none;
             padding-right:3%;
+
         
         }
     }
@@ -1146,6 +1149,7 @@ h1 {
         .col1-2 {
             width: 80%;
             float: none;
+            margin-left: -3%;
 
         }
         
@@ -1174,7 +1178,7 @@ h1 {
             width: 60%;
             float: none;
             margin: 5% 0 0 25%;
-            text-align: center;
+            text-align: center;  
          
                 .bullet-margin {
                     margin-top: 5px;
@@ -1218,6 +1222,7 @@ h3 {
         
 
         &.first {
+     
                         /* Safari */
             -webkit-transform: rotate(0deg);
              
@@ -1234,6 +1239,7 @@ h3 {
             filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
         }
         &.second {
+
                         /* Safari */
             -webkit-transform: rotate(0deg);
              
@@ -1250,7 +1256,7 @@ h3 {
             filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
         }
         &.third {
-                        /* Safari */
+            /* Safari */
             -webkit-transform: rotate(0deg);
              
             /* Firefox */
