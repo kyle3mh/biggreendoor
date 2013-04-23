@@ -75,7 +75,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     text-align: left;
-    margin: 0 0 25px; 
+    margin: 0; 
 }
 
 h1, .h1 { 
@@ -201,7 +201,8 @@ textarea {
     display:block;
     background-color: #20CE55;
     height:auto;
-    float:right;
+    float:left;
+    margin-left:25%;
     width: 75%;
     &.journal {background-color: #FFFFFF}
     p {
@@ -211,10 +212,15 @@ textarea {
 }
 
 .inner-content {
-    margin: 4%;
     width: auto;
+    max-width:1400px;
     height: auto;
-    &.contact {height: 600px;}
+    margin: 3% auto 4% auto;
+    padding: 0 4%;
+    &.contact {
+        height: 600px;
+        padding:0 4%;
+    }
 }
 
 /* COMMUNITY PAGE CLASSES */
@@ -227,11 +233,12 @@ textarea {
     li {
         display: block;
         position:relative;
-        float: left;
+        float: left;  
         list-style: none outside none;
         margin: 0 2% 2% 0;
         width: 23.5%;
         z-index:1;
+        font-family: 'Avenir';
         * { // all children have transitions
             -webkit-transition: all 0.2s ease-in-out;
             -moz-transition: all 0.2s ease-in-out;
@@ -436,7 +443,7 @@ header {
 }
 
 #journal-widget h3,li { 
-    text-align: center;
+    //text-align: center;
 }
 
 /*CONTACT PAGE CLASSES*/
@@ -504,7 +511,7 @@ header {
     padding-top: 20px;
     background-color: #FFFFFF;
     width:75.13%;
-    height:250px;
+    height:220px;
     position:relative;
 }
 .site-footer h3,p {
@@ -539,12 +546,18 @@ header {
 
 .footer-details {
     float:left;
-    width:380px;
+    width:50%;
 }
 
 .footer-image {
+    width:162px;
+    height:185px;
     float: left;
     padding: 0 7%;
+    img {
+        width:100%;
+        height:100%;
+    }
 }
 
 .footer-address {
@@ -556,8 +569,9 @@ header {
 }
 
 .footer-posts {
-    float: right;   
-    padding-right:30px;
+    float: right;  
+    width:50%; 
+    //padding-right:30px;
     ul {
         list-style: none;
         li {
@@ -571,7 +585,7 @@ header {
    ========================================================================== */
 
 h1 {
-    &.who-header{line-height: 0.9; letter-spacing: 0.2em; text-align : center; white-space:nowrap;}
+    &.who-header{line-height: 0.9;  letter-spacing: 0.25em; text-align : center; white-space:nowrap;}
 }
 
 
@@ -601,9 +615,8 @@ h1 {
         float: left;
         padding-left:3%;
         font-size: 1em;
-        line-height: 0.8;
+        line-height: 1;
         margin-top: 2%;
-    
     }
     
     .col2-2 {
@@ -617,8 +630,9 @@ h1 {
 .col-container3 {
     width:100%;
     height: 350px;
+    margin-top: 2%;
     .col13 {
-        width: 55%;
+        width: 66%;
         float: left;
         padding-left:3%;
         font-size: 1em;
@@ -627,8 +641,9 @@ h1 {
     
     .col23 {
         width: 28%;
-        float: left;
-        margin: 2% 0 0 11%;
+        float: right;
+        margin-right:3%;
+        //margin: 2% 0 0 11%;
             .bullet-margin {
                 margin-top: 5px;
             }
@@ -692,7 +707,8 @@ p {
 
 .how-header, .what-header, .work-header {
     line-height: 0.9;
-    margin-top: 3%; /* determines spacing of headers*/
+    margin-top: 0; /* determines spacing of headers*/
+    letter-spacing: 0.25em;
     white-space:nowrap;
 }
 
@@ -935,7 +951,8 @@ header {
         &.community-header{
             font-size: 10em;
             line-height: 0.9;
-            margin-top: 3%; 
+            margin-top: 3%;
+            letter-spacing: 0.25em; 
         }
         &.contact-header{
             font-size: 10em;
@@ -1060,7 +1077,7 @@ header {
         background-color: #20CE55;
         height:auto;
         width: 100%;
-
+        margin-left:0;
     }
     .com-table-person {
         width:40%;
@@ -1132,7 +1149,7 @@ header {
         li {
             margin: 0 4% 4% 0;
             width: 48%;
-            p {
+            .details {
                 position:relative; 
                 height:auto; 
                 text-align: left; 
@@ -1140,6 +1157,30 @@ header {
                 padding:0;
                 opacity:1; 
                 font-size:12px;
+                color:white;
+                .name, .job, .social {
+                    -moz-opacity: 1.00;
+                    opacity:1;
+                    -webkit-transform: translateY(0);
+                    -moz-transform: translateY(0);
+                    -o-transform: translateY(0);
+                    -ms-transform: translateY(0);
+                    transform: translateY(0);
+                }
+                .social {
+                    width:100%;
+                    height:auto;
+                    &.facebook {
+                        width: 32px;
+                        height: 32px;
+                        background:url('../img/social_links_white_32.png') no-repeat 0 0;
+                    }
+                    &.twitter {
+                        width: 32px;
+                        height: 32px;
+                        background:url('../img/social_links_white_32.png') no-repeat -32px 0;
+                    }
+                }
             }
             &:nth-child(4n){margin-right:4%;}    // reset old nth-child
             &:nth-child(3n){margin-right:4%;}    // reset old nth-child
@@ -1168,7 +1209,11 @@ header {
         margin: 0%;
         width: auto;
         height: auto;
-        &.contact {height: 600px;}
+        &.contact {
+            width:100%;
+            height: 600px;
+            padding: 0;
+        }
     }
 
     .maps {
@@ -1250,17 +1295,22 @@ header {
         overflow: hidden;
     }
 
+    .footer-details {
+        width:100%;
+    }
+
     .footer-image {
-        float: left;
+        width:75px;
+        height:90px;
     }
 
     .footer-address {
         float: left;
         padding-right:0;
-
+        margin-top:0;
         p {
             margin: 0;
-            font-size: 25px;
+            font-size: 16px;
         }
     }
 
@@ -1268,6 +1318,7 @@ header {
         position:relative;
         float:left;
         margin-left:30px;  
+        width:100%;
         ul {
             list-style: none;
             li {
@@ -1363,6 +1414,7 @@ h1 {
         }
     }
 
+  
         .col-container3 {
 
         height: 350px;
@@ -1376,8 +1428,8 @@ h1 {
         
         .col23 {
             width: 50%;
-            margin : 8% 25% 0 25%;
-
+            //margin : 8% 25% 0 25%;
+            margin: 0 24% 0 26%;
             text-align: center;  
          
             .bullet-margin {
@@ -1481,7 +1533,7 @@ h3 {
 }
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1100px) {
 
     .sidebar {
         width: 25%;
@@ -1531,6 +1583,40 @@ h3 {
     }
     h1 { 
         &.index-header{margin-top:37%;}
+    }
+
+    .site-footer {
+        height:220px;
+    }
+
+    .footer-details { 
+        width:100%;
+    }
+
+    .footer-posts {
+        position:relative;
+        float:left;
+        margin-left:30px;  
+        width:100%;
+        ul {
+            list-style: none;
+            li {
+
+            }
+        } 
+    }
+
+    .footer-address {
+        p {
+            margin: 0;
+            font-size: 22px;
+        }
+    }
+
+    .footer-image {
+        padding:0 3% 0 7%;
+        width:120px;
+        height:133px;
     }
 
     .col-container{
@@ -1785,7 +1871,7 @@ h3 {
     color: #20CE55;
     text-align: center;
     ul {
-        margin: 0;
+        margin: 0; 
         padding:0;
         margin-top: 10%;
         li {
@@ -1832,18 +1918,18 @@ h3 {
 }
 
 .col-container{
-    height: 250px;
+    height: 280px;
 }
 .col-container-2 {
 
-    height: 200px;
+    height: 240px;
 
 
 }
 
     .col-container3 {
 
-        height: 400px;
+        height: 300px;
 
         
 
@@ -1912,15 +1998,26 @@ h3 {
 }
 
 
-    p{  
+    .col1 p{  
     font-size: 1.5em;
+    }
+
+    .col2-2 p{  
+    font-size: 1.6em;
+    }
+    .col13 {
+        margin-top:20px;
+    }
+    .col13 p{  
+    font-size: 1.9em;
+    margin:10px 0;
     }
     h1{
         &.index-header{margin-top:33.9%;}
     }
     .col-container {
 
-        height: 350px;
+        height: 460px;
 
         .col1 {
 
