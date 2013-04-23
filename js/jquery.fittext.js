@@ -26,8 +26,6 @@
       // Store the object
       var $this = $(this);
       var $text = $this.children('span').text();
-
-        console.log($text)
       
       // Resizer() resizes items based on the object width divided by the compressor * 10
       var resizer = function () {
@@ -46,7 +44,6 @@
                   if($parts[i].length > $longestWord){
                       $longestWord = $parts[i].length;
                       $i = $parts[i].replace(/[^I]/gi, "").length;
-                      console.log("new i = " + $i)
                   }
               }
               $length = $longestWord;

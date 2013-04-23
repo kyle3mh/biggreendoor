@@ -1393,20 +1393,20 @@ header h1.journal-header {
 
   /* line 1278, style.scss */
   .footer-image {
-    width: 120px;
-    height: 133px;
+    width: 75px;
+    height: 90px;
   }
 
   /* line 1283, style.scss */
   .footer-address {
     float: left;
     padding-right: 0;
-    margin-top: 25px;
+    margin-top: 0;
   }
   /* line 1287, style.scss */
   .footer-address p {
     margin: 0;
-    font-size: 22px;
+    font-size: 16px;
   }
 
   /* line 1293, style.scss */
