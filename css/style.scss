@@ -233,7 +233,7 @@ textarea {
     li {
         display: block;
         position:relative;
-        float: left;
+        float: left;  
         list-style: none outside none;
         margin: 0 2% 2% 0;
         width: 23.5%;
@@ -585,7 +585,7 @@ header {
    ========================================================================== */
 
 h1 {
-    &.who-header{line-height: 0.9; letter-spacing: 0.2em; text-align : center; white-space:nowrap;}
+    &.who-header{line-height: 0.9;  letter-spacing: 0.25em; text-align : center; white-space:nowrap;}
 }
 
 
@@ -630,6 +630,7 @@ h1 {
 .col-container3 {
     width:100%;
     height: 350px;
+    margin-top: 2%;
     .col13 {
         width: 66%;
         float: left;
@@ -707,6 +708,7 @@ p {
 .how-header, .what-header, .work-header {
     line-height: 0.9;
     margin-top: 0; /* determines spacing of headers*/
+    letter-spacing: 0.25em;
     white-space:nowrap;
 }
 
@@ -949,7 +951,8 @@ header {
         &.community-header{
             font-size: 10em;
             line-height: 0.9;
-            margin-top: 3%; 
+            margin-top: 3%;
+            letter-spacing: 0.25em; 
         }
         &.contact-header{
             font-size: 10em;
@@ -1890,18 +1893,18 @@ h3 {
 }
 
 .col-container{
-    height: 250px;
+    height: 280px;
 }
 .col-container-2 {
 
-    height: 200px;
+    height: 240px;
 
 
 }
 
     .col-container3 {
 
-        height: 400px;
+        height: 300px;
 
         
 
