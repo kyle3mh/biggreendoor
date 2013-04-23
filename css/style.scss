@@ -1149,7 +1149,7 @@ header {
         li {
             margin: 0 4% 4% 0;
             width: 48%;
-            p {
+            .details {
                 position:relative; 
                 height:auto; 
                 text-align: left; 
@@ -1157,6 +1157,30 @@ header {
                 padding:0;
                 opacity:1; 
                 font-size:12px;
+                color:white;
+                .name, .job, .social {
+                    -moz-opacity: 1.00;
+                    opacity:1;
+                    -webkit-transform: translateY(0);
+                    -moz-transform: translateY(0);
+                    -o-transform: translateY(0);
+                    -ms-transform: translateY(0);
+                    transform: translateY(0);
+                }
+                .social {
+                    width:100%;
+                    height:auto;
+                    &.facebook {
+                        width: 32px;
+                        height: 32px;
+                        background:url('../img/social_links_white_32.png') no-repeat 0 0;
+                    }
+                    &.twitter {
+                        width: 32px;
+                        height: 32px;
+                        background:url('../img/social_links_white_32.png') no-repeat -32px 0;
+                    }
+                }
             }
             &:nth-child(4n){margin-right:4%;}    // reset old nth-child
             &:nth-child(3n){margin-right:4%;}    // reset old nth-child
