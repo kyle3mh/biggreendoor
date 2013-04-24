@@ -48,7 +48,7 @@
 
 }
 
-//@font-face { 
+//@font-face {
 //        font-family: "Avenir";
 //        src: url('../fonts/Avenir.ttc');
 //        font-weight: normal;
@@ -220,47 +220,6 @@ textarea {
     &.contact {
         height: 600px;
         padding:0 4%;
-    }
-}
-
-.sidebar {
-    width: 25%;
-    height: 100%;
-    position: fixed;
-    background-color: white;
-    font-family: 'dk_pisangregular';
-    color: #20CE55;
-    text-align: center;
-    ul {
-        margin: 0;
-        padding:0;
-        margin-top: 10%;
-        li {
-            font-size: 4em;
-            list-style-type: none;
-            text-align: center;
-            &.journalfont {font-size: 60px;}
-            &.communityfont {font-size: 70px;}
-            &.contactfont {font-size: 80px;}
-            &.aboutfont {font-size: 60px;}
-            a:hover { opacity: 0.8; color: #20CE55;}
-        }
-    }
-    img {
-        display: block;
-        margin-top: 30px auto 0 auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    a {
-        color:#20CE55;
-        text-decoration: none;
-    }
-    h4 {
-        font-size: 1em;    
-        line-height:1.5;
-        text-align: center;
-        margin: 5%;
     }
 }
 
@@ -1389,9 +1348,7 @@ header {
         float:left;
     }
 
-/* ==========================================================================
-   About
-   ========================================================================== */
+//about styles
 
 h1 {
     &.who-header{ margin-bottom : -1%;}
@@ -1554,7 +1511,48 @@ h3 {
 
 @media screen and (min-width: 769px) and (max-width: 1100px) {
 
-
+    .sidebar {
+        width: 25%;
+        height: 100%;
+        position: fixed;
+        float: left;
+        background-color: white;
+        font-family: 'dk_pisangregular';
+        color: #20CE55;
+        text-align: center;
+        ul {
+            margin: 0;
+            padding:0;
+            margin-top: 10%;
+            li {
+                font-size: 4em;
+                list-style-type: none;
+                text-align: center;
+                line-height:1;
+                &.journalfont {font-size: 60px;}
+                &.communityfont {font-size: 70px;}
+                &.contactfont {font-size: 80px;}
+                &.aboutfont {font-size: 60px;}
+                a:hover { opacity: 0.8; color: #20CE55;}
+            }
+        }
+        img {
+            display: block;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a {
+            color:#20CE55;
+            text-decoration: none;
+        }
+        h4 {
+            font-size: 1em;    
+            line-height:1.5;
+            text-align: center;
+            margin: 5%;
+        }
+    }
     p {  
         font-size: 0.8em;
         color:#20CE55;
@@ -1642,7 +1640,48 @@ h3 {
 
 @media screen and (min-width: 1100px) {
 
-
+.sidebar {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: white;
+    font-family: 'dk_pisangregular';
+    color: #20CE55;
+    text-align: center;
+    ul {
+        margin: 0;
+        padding:0;
+        margin-top: 10%;
+        li {
+            font-size: 4em;
+            list-style-type: none;
+            text-align: center;
+            line-height:1;
+            &.journalfont {font-size: 60px;}
+            &.communityfont {font-size: 70px;}
+            &.contactfont {font-size: 80px;}
+            &.aboutfont {font-size: 60px;}
+            a:hover { opacity: 0.8; color: #20CE55;}
+        }
+    }
+    img {
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a {
+        color:#20CE55;
+        text-decoration: none;
+    }
+    h4 {
+        font-size: 1em;    
+        line-height:1.5;
+        text-align: center;
+        margin: 5%;
+    }
+}
     p{  
     font-size: 1em;
     color:#20CE55;
@@ -1693,7 +1732,48 @@ h3 {
 
 @media screen and (min-width: 1280px) {
 
-
+.sidebar {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: white;
+    font-family: 'dk_pisangregular';
+    color: #20CE55;
+    text-align: center;
+    ul {
+        margin: 0;
+        padding:0;
+        margin-top: 10%;
+        li {
+            font-size: 4em;
+            list-style-type: none;
+            text-align: center;
+            line-height:1;
+            &.journalfont {font-size: 60px;}
+            &.communityfont {font-size: 70px;}
+            &.contactfont {font-size: 80px;}
+            &.aboutfont {font-size: 60px;}
+            a:hover { opacity: 0.8; color: #20CE55;}
+        }
+    }
+    img {
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a {
+        color:#20CE55;
+        text-decoration: none;
+    }
+    h4 {
+        font-size: 1em;    
+        line-height:1.5;
+        text-align: center;
+        margin: 5%;
+    }
+}
     p{  
     font-size: 1.15em;
     }
@@ -1714,31 +1794,31 @@ h3 {
 
         
         }
-    
-    }
-    
-    .col-container-2 {
-    
-        height: 240px;
-    
-    
-    }
-    
-        .col-container3 {
-    
-            height: 350px;
-    
-            .col13 {
-    
-            }
-            
-            .col23 {
-    
-                    .bullet-margin {
-                        margin-top: 5px;
-                    }
-            
-            }
+
+}
+
+.col-container-2 {
+
+    height: 240px;
+
+
+}
+
+    .col-container3 {
+
+        height: 350px;
+
+        .col13 {
+
+        }
+        
+        .col23 {
+
+                .bullet-margin {
+                    margin-top: 5px;
+                }
+        
+        }
 
 }
 
@@ -1757,40 +1837,95 @@ h3 {
 
 @media screen and (min-width: 1400px) {
 
-    p {  
-        font-size: 1.1em;
-    }
-    h1 {
-        &.index-header{margin-top:34.5%;}
-    }
-    
-    //About
-    
-    .col-container{
-        height: 280px;
-    }
-    .col-container-2 {
-        height: 240px;
-    }
-    .col-container3 {
-        height: 300px;
-    }
-
-
-    .com-table-person {
-        width:25%;
-        height:200px;
-        margin:3.12%;
-        background-color: green;
-        display:block;
-        float:left;
-    }
-    
-    #word-cloud {
-        .row {
-            height:100px;
+.sidebar {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: white;
+    font-family: 'dk_pisangregular';
+    color: #20CE55;
+    text-align: center;
+    ul {
+        margin: 0; 
+        padding:0;
+        margin-top: 10%;
+        li {
+            font-size: 4em;
+            list-style-type: none;
+            text-align: center;
+            line-height:1;
+            &.journalfont {font-size: 60px;}
+            &.communityfont {font-size: 70px;}
+            &.contactfont {font-size: 80px;}
+            &.aboutfont {font-size: 60px;}
+            a:hover { opacity: 0.8; color: #20CE55;}
         }
     }
+    img {
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a {
+        color:#20CE55;
+        text-decoration: none;
+    }
+    h4 {
+        font-size: 1em;    
+        line-height:1.5;
+        text-align: center;
+        margin: 5%;
+    }
+}
+    p{  
+    font-size: 1.1em;
+    }
+    h1{
+        &.index-header{margin-top:34.5%;}
+    }
+    .col-container {
+
+        height: 300px;
+
+
+
+}
+
+.col-container{
+    height: 280px;
+}
+.col-container-2 {
+
+    height: 240px;
+
+
+}
+
+    .col-container3 {
+
+        height: 300px;
+
+        
+
+}
+
+
+.com-table-person {
+    width:25%;
+    height:200px;
+    margin:3.12%;
+    background-color: green;
+    display:block;
+    float:left;
+}
+
+#word-cloud {
+    .row {
+        height:100px;
+    }
+}
 }
 
 @media screen and (min-width: 1680px) {
