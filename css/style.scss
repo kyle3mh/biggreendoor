@@ -381,6 +381,10 @@ header {
    ABOUT PAGE CLASSES
    ========================================================================== */
 
+.fade-on-scroll > * {
+    opacity:0;
+}
+
 .how-header, .what-header, .work-header {
     line-height: 0.9;
     margin-top: 0; /* determines spacing of headers*/
