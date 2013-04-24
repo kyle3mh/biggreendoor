@@ -63,7 +63,6 @@ select,
 textarea {
     font-size: 1em;
     color: #222;
-    background-color: #20CE55;
 }
 
 body {
@@ -204,7 +203,9 @@ textarea {
     position: fixed;
     float: left;
     background-color: white;
-    background-color: rgba(255,255,255,0.9);
+    &.index {
+        background-color: rgba(255,255,255,0.9);
+    }
     font-family: 'dk_pisangregular';
     color: #20CE55;
     text-align: center;
@@ -248,7 +249,7 @@ textarea {
 
 #content {
     display:block;
-    //background-color: #20CE55;
+    background-color: #20CE55;
     height:auto;
     float:left;
     margin-left:25%;
@@ -269,6 +270,7 @@ textarea {
     height: auto;
     margin: 3% auto 4% auto;
     padding: 0 4%;
+    z-index:0;
     &.contact {
         height: 600px;
         padding:0 4%;
@@ -394,7 +396,7 @@ header {
     left:0;
     width:100%;
     height:100%;
-    z-index:0;
+    z-index:1;
     //overflow:hidden;
     #image-container {
         position:absolute;
@@ -416,6 +418,8 @@ header {
             -o-background-size: cover;
             background-size: cover;
             // IE Cover backgrounds
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+            -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
         }
     }
 } 
@@ -918,6 +922,10 @@ p {
 
 @media screen and (min-width: 0px) and (max-width:768px) {
 
+    html {
+        background-color: #20CE55;
+    }
+
     ///// GENERAL //////
     .screen-only {
         display: none;
@@ -932,6 +940,9 @@ p {
         width: 100%;
         padding-bottom: 3%;
         ul {padding-top:20%;}
+        &.index {
+            background-color: white;
+        }
     }
     .mobile-logo{
         width:40%;
