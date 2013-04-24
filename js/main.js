@@ -1,6 +1,6 @@
-$(window).ready(function() {
+$(document).ready(function() {
 	$('.fade-on-scroll > *').each(function () { 
-        a = $(this).offset().top + ($(this).height() / 2);
+        a = $(this).offset().top + ($(this).height() / 3);
         b = $(window).scrollTop() + $(window).height();
         if (a < b) {
         	$(this).css('opacity',1);
