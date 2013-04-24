@@ -1,9 +1,9 @@
 /*
 Syntax error: Invalid CSS after "}": expected "}", was ""
-        on line 2039 of /Users/tomhowe/Documents/repos/biggreendoor/css/style.scss
+        on line 2063 of /Users/tomhowe/Documents/repos/biggreendoor/css/style.scss
 
 Backtrace:
-/Users/tomhowe/Documents/repos/biggreendoor/css/style.scss:2039
+/Users/tomhowe/Documents/repos/biggreendoor/css/style.scss:2063
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1129:in `expected'
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1061:in `tok!'
@@ -58,4 +58,4 @@ org/jruby/RubyKernel.java:1419:in `loop'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 2039 of /Users/tomhowe/Documents/repos/biggreendoor/css/style.scss"; }
+  content: "Syntax error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 2063 of /Users/tomhowe/Documents/repos/biggreendoor/css/style.scss"; }
