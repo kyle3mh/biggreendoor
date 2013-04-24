@@ -484,7 +484,7 @@ h1 {
     .col13 {
         width: 66%;
         float: left;
-        padding-left:3%;
+        padding-left:1%;
         font-size: 1em;
     }
     .col23 {
@@ -1220,15 +1220,17 @@ p {
         width:120px;
         height:133px;
     }
-    
+
 
     ////// ABOUT : 768 - 1024 ///////
 
     .col-container{
-        height: 240px;
+        height: 220px;
+        margin-top:20px;
     }
     .col-container-2 {
-        height: 200px;
+        height: 180px;
+        margin-top:20px;
     }
     .col-container3 {
         height: 350px;        
@@ -1308,7 +1310,7 @@ p {
         margin:10px 0;
     }
     .col-container {
-        height: 460px;
+        height: 400px;
     }
     .col-container-2 {
         height: 400px;
@@ -1328,10 +1330,55 @@ p {
     .maps {
         padding-bottom: 300px;
     }
-    p {
-            &.community-p {padding-top:5%; color:green;}
+}
+
+/* ==========================================================================
+   Desktops and laptops : Minimum 2200px
+   ========================================================================== */
+
+@media screen and (min-width: 2200px) {
+    
+    /////// ABOUT ////////
+
+    .col1 p{  
+        font-size: 2em;
+    }
+    .col2-2 p{  
+        font-size: 2em;
+    }
+    .col13 {
+        margin-top:20px;
+    }
+    .col13 p{  
+        font-size: 2em;
+        margin:10px 0;
+    }
+    .col-container {
+        height: 520px;
+        margin-top:30px;
+    }
+    .col-container-2 {
+        height: 430px;
+        margin-top:30px;
+    }
+    .col-container3 {
+        height: 550px;
+        margin-top:50px;
+    }
+
+    #word-cloud {
+        .row {
+            height:160px;
+        }
+    }
+
+    /////// CONTACT ////////
+
+    .maps {
+        padding-bottom: 250px;
     }
 }
+
 
 /* ==========================================================================
    Helper classes

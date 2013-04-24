@@ -533,7 +533,7 @@ h1.who-header {
 .col-container3 .col13 {
   width: 66%;
   float: left;
-  padding-left: 3%;
+  padding-left: 1%;
   font-size: 1em;
 }
 /* line 490, style.scss */
@@ -1407,20 +1407,22 @@ p.center-paragraph {
 
   /* line 1227, style.scss */
   .col-container {
-    height: 240px;
+    height: 220px;
+    margin-top: 20px;
   }
 
-  /* line 1230, style.scss */
+  /* line 1231, style.scss */
   .col-container-2 {
-    height: 200px;
+    height: 180px;
+    margin-top: 20px;
   }
 
-  /* line 1233, style.scss */
+  /* line 1235, style.scss */
   .col-container3 {
     height: 350px;
   }
 
-  /* line 1237, style.scss */
+  /* line 1239, style.scss */
   h3.about-slanted-text-left-col {
     margin-left: 0%;
   }
@@ -1429,27 +1431,27 @@ p.center-paragraph {
    Desktops and laptops : Minimum 1224px
    ========================================================================== */
 @media screen and (min-width: 1224px) {
-  /* line 1251, style.scss */
+  /* line 1253, style.scss */
   p {
     font-size: 1.15em;
   }
 
-  /* line 1255, style.scss */
+  /* line 1257, style.scss */
   h1.index-header {
     margin-top: 35%;
   }
 
-  /* line 1260, style.scss */
+  /* line 1262, style.scss */
   .col-container {
     height: 280px;
   }
 
-  /* line 1263, style.scss */
+  /* line 1265, style.scss */
   .col-container-2 {
     height: 220px;
   }
 
-  /* line 1266, style.scss */
+  /* line 1268, style.scss */
   .col-container3 {
     height: 330px;
   }
@@ -1458,12 +1460,12 @@ p.center-paragraph {
    Desktops and laptops : Minimum 1440px
    ========================================================================== */
 @media screen and (min-width: 1400px) {
-  /* line 1279, style.scss */
+  /* line 1281, style.scss */
   .col-container-2 {
     height: 240px;
   }
 
-  /* line 1283, style.scss */
+  /* line 1285, style.scss */
   #word-cloud .row {
     height: 100px;
   }
@@ -1472,56 +1474,103 @@ p.center-paragraph {
    Desktops and laptops : Minimum 1680px
    ========================================================================== */
 @media screen and (min-width: 1680px) {
-  /* line 1297, style.scss */
+  /* line 1299, style.scss */
   .col1 p {
     font-size: 1.5em;
   }
 
-  /* line 1300, style.scss */
+  /* line 1302, style.scss */
   .col2-2 p {
     font-size: 1.6em;
   }
 
-  /* line 1303, style.scss */
+  /* line 1305, style.scss */
   .col13 {
     margin-top: 20px;
   }
 
-  /* line 1306, style.scss */
+  /* line 1308, style.scss */
   .col13 p {
     font-size: 1.9em;
     margin: 10px 0;
   }
 
-  /* line 1310, style.scss */
+  /* line 1312, style.scss */
   .col-container {
-    height: 460px;
+    height: 400px;
   }
 
-  /* line 1313, style.scss */
+  /* line 1315, style.scss */
   .col-container-2 {
     height: 400px;
   }
 
-  /* line 1316, style.scss */
+  /* line 1318, style.scss */
   .col-container3 {
     height: 500px;
   }
 
-  /* line 1321, style.scss */
+  /* line 1323, style.scss */
   #word-cloud .row {
     height: 150px;
   }
 
-  /* line 1328, style.scss */
+  /* line 1330, style.scss */
   .maps {
     padding-bottom: 300px;
   }
+}
+/* ==========================================================================
+   Desktops and laptops : Minimum 2200px
+   ========================================================================== */
+@media screen and (min-width: 2200px) {
+  /* line 1343, style.scss */
+  .col1 p {
+    font-size: 2em;
+  }
 
-  /* line 1332, style.scss */
-  p.community-p {
-    padding-top: 5%;
-    color: green;
+  /* line 1346, style.scss */
+  .col2-2 p {
+    font-size: 2em;
+  }
+
+  /* line 1349, style.scss */
+  .col13 {
+    margin-top: 20px;
+  }
+
+  /* line 1352, style.scss */
+  .col13 p {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+
+  /* line 1356, style.scss */
+  .col-container {
+    height: 520px;
+    margin-top: 30px;
+  }
+
+  /* line 1360, style.scss */
+  .col-container-2 {
+    height: 430px;
+    margin-top: 30px;
+  }
+
+  /* line 1364, style.scss */
+  .col-container3 {
+    height: 550px;
+    margin-top: 50px;
+  }
+
+  /* line 1370, style.scss */
+  #word-cloud .row {
+    height: 160px;
+  }
+
+  /* line 1377, style.scss */
+  .maps {
+    padding-bottom: 250px;
   }
 }
 /* ==========================================================================
@@ -1530,7 +1579,7 @@ p.center-paragraph {
 /*
  * Image replacement
  */
-/* line 1344, style.scss */
+/* line 1391, style.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -1539,7 +1588,7 @@ p.center-paragraph {
   *text-indent: -9999px;
 }
 
-/* line 1352, style.scss */
+/* line 1399, style.scss */
 .ir:before {
   content: "";
   display: block;
@@ -1550,7 +1599,7 @@ p.center-paragraph {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 1363, style.scss */
+/* line 1410, style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -1559,7 +1608,7 @@ p.center-paragraph {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 1372, style.scss */
+/* line 1419, style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1575,7 +1624,7 @@ p.center-paragraph {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 1389, style.scss */
+/* line 1436, style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1589,7 +1638,7 @@ p.center-paragraph {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 1402, style.scss */
+/* line 1449, style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -1605,7 +1654,7 @@ p.center-paragraph {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 1419, style.scss */
+/* line 1466, style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1614,7 +1663,7 @@ p.center-paragraph {
   /* 2 */
 }
 
-/* line 1424, style.scss */
+/* line 1471, style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -1623,7 +1672,7 @@ p.center-paragraph {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 1433, style.scss */
+/* line 1480, style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -1644,7 +1693,7 @@ p.center-paragraph {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 1460, style.scss */
+  /* line 1507, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1653,18 +1702,18 @@ p.center-paragraph {
     text-shadow: none !important;
   }
 
-  /* line 1468, style.scss */
+  /* line 1515, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 1472, style.scss */
+  /* line 1519, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 1476, style.scss */
+  /* line 1523, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1672,33 +1721,33 @@ p.center-paragraph {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 1486, style.scss */
+  /* line 1533, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 1491, style.scss */
+  /* line 1538, style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 1496, style.scss */
+  /* line 1543, style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 1501, style.scss */
+  /* line 1548, style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 1505, style.scss */
+  /* line 1552, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -1707,7 +1756,7 @@ p.center-paragraph {
     margin: 0.5cm;
 }
 
-  /* line 1515, style.scss */
+  /* line 1562, style.scss */
   p,
   h2,
   h3 {
@@ -1715,7 +1764,7 @@ p.center-paragraph {
     widows: 3;
   }
 
-  /* line 1521, style.scss */
+  /* line 1568, style.scss */
   h2,
   h3 {
     page-break-after: avoid;

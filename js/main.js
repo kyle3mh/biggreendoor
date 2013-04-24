@@ -1,7 +1,7 @@
 ////// ON LOAD //////
 
 $(document).ready(function() {
-	$('.fade-on-scroll > :not(.seperator)').each(function () { 
+	$('.fade-on-scroll > *').each(function () { 
         a = $(this).offset().top;
         b = $(window).scrollTop() + $(window).height() + 110; // plus a bit extra so there's no gaps
         if (a < b) {
@@ -17,7 +17,7 @@ $(document).ready(function() {
 ////// ON SCROLL //////
 
 $(window).scroll(function(d,h) {
-	$('.fade-on-scroll > :not(.seperator)').each(function () { 
+	$('.fade-on-scroll > *').each(function () { 
         a = $(this).offset().top + 100;	// fade in once we get 100 pixels past the top of the element
         b = $(window).scrollTop() + $(window).height();
         if (a < b) {
