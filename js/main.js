@@ -1,7 +1,9 @@
 $(document).ready(function() {
-	$('.fade-on-scroll > *').each(function () { 
+	$('.fade-on-scroll > :not(.seperator)').each(function () { 
         a = $(this).offset().top + ($(this).height() / 3);
-        b = $(window).scrollTop() + $(window).height();
+        console.log(a)
+        b = $(window).scrollTop() + $(window).height() + 150;
+        console.log(b)
         if (a < b) {
         	$(this).css('opacity',1);
         }
