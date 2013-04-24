@@ -164,18 +164,6 @@ textarea {
     resize: vertical;
 }
 
-/*
- * MOBILE HIDE AND SHOW
- */
-
-
- .mobile-only {
-    display: none;
- }
-
- .screen-only{
-    display:block;
- }
 
 /* ==========================================================================
    Chrome Frame prompt
@@ -266,7 +254,7 @@ textarea {
 
 .inner-content {
     width: auto;
-    max-width:1400px;
+    //max-width:1400px;
     height: auto;
     margin: 3% auto 4% auto;
     padding: 0 4%;
@@ -275,7 +263,20 @@ textarea {
         height: 600px;
         padding:0 4%;
     }
-}  
+}
+
+/*
+ * MOBILE HIDE AND SHOW
+ */
+
+
+ .mobile-only {
+    display: none;
+ }
+
+ .screen-only{
+    display:block;
+ }  
 
 /*HEADER styles*/
 header {
@@ -1219,6 +1220,7 @@ p {
         width:120px;
         height:133px;
     }
+    
 
     ////// ABOUT : 768 - 1024 ///////
 
