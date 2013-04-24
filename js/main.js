@@ -9,7 +9,7 @@ $(window).ready(function() {
 });
 
 $(window).scroll(function(d,h) {
-	$('.fade-on-scroll > *').each(function () { 
+	$('.fade-on-scroll > :not(.seperator)').each(function () { 
         a = $(this).offset().top + ($(this).height() / 2);
         b = $(window).scrollTop() + $(window).height();
         if (a < b) {
