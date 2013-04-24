@@ -1149,7 +1149,7 @@ header {
         li {
             margin: 0 4% 4% 0;
             width: 48%;
-            .details {
+            p {
                 position:relative; 
                 height:auto; 
                 text-align: left; 
@@ -1157,30 +1157,6 @@ header {
                 padding:0;
                 opacity:1; 
                 font-size:12px;
-                color:white;
-                .name, .job, .social {
-                    -moz-opacity: 1.00;
-                    opacity:1;
-                    -webkit-transform: translateY(0);
-                    -moz-transform: translateY(0);
-                    -o-transform: translateY(0);
-                    -ms-transform: translateY(0);
-                    transform: translateY(0);
-                }
-                .social {
-                    width:100%;
-                    height:auto;
-                    &.facebook {
-                        width: 32px;
-                        height: 32px;
-                        background:url('../img/social_links_white_32.png') no-repeat 0 0;
-                    }
-                    &.twitter {
-                        width: 32px;
-                        height: 32px;
-                        background:url('../img/social_links_white_32.png') no-repeat -32px 0;
-                    }
-                }
             }
             &:nth-child(4n){margin-right:4%;}    // reset old nth-child
             &:nth-child(3n){margin-right:4%;}    // reset old nth-child
@@ -1300,17 +1276,17 @@ header {
     }
 
     .footer-image {
-        width:75px;
-        height:90px;
+        width:120px;
+        height:133px;
     }
 
     .footer-address {
         float: left;
         padding-right:0;
-        margin-top:0;
+        margin-top:25px;
         p {
             margin: 0;
-            font-size: 16px;
+            font-size: 22px;
         }
     }
 
@@ -1664,6 +1640,7 @@ h3 {
 
 @media screen and (min-width: 1100px) {
 
+<<<<<<< HEAD
 .sidebar {
     width: 25%;
     height: 100%;
@@ -1706,6 +1683,9 @@ h3 {
         margin: 5%;
     }
 }
+=======
+
+>>>>>>> ef3faa6ca0db31e1d79950838ab15fa2db44a347
     p{  
     font-size: 1em;
     color:#20CE55;
@@ -1818,6 +1798,7 @@ h3 {
 
         
         }
+<<<<<<< HEAD
 
 }
 
@@ -1847,6 +1828,37 @@ h3 {
 }
 
 
+=======
+    
+    }
+    
+    .col-container-2 {
+    
+        height: 240px;
+    
+    
+    }
+    
+        .col-container3 {
+    
+            height: 350px;
+    
+            .col13 {
+    
+            }
+            
+            .col23 {
+    
+                    .bullet-margin {
+                        margin-top: 5px;
+                    }
+            
+            }
+
+}
+
+
+>>>>>>> ef3faa6ca0db31e1d79950838ab15fa2db44a347
 .com-table-person {
     width:25%;
     height:200px;
@@ -1953,6 +1965,50 @@ h3 {
 }
 
 @media screen and (min-width: 1680px) {
+
+.sidebar {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: white;
+    font-family: 'dk_pisangregular';
+    color: #20CE55;
+    text-align: center;
+    ul {
+        margin: 0;
+        padding:0;
+        margin-top: 10%;
+        li {
+            font-size: 4em;
+            list-style-type: none;
+            text-align: center;
+            line-height:1;
+            &.journalfont {font-size: 60px;}
+            &.communityfont {font-size: 70px;}
+            &.contactfont {font-size: 80px;}
+            &.aboutfont {font-size: 60px;}
+            a:hover { opacity: 0.8; color: #20CE55;}
+        }
+    }
+    img {
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a {
+        color:#20CE55;
+        text-decoration: none;
+    }
+    h4 {
+        font-size: 1em;    
+        line-height:1.5;
+        text-align: center;
+        margin: 5%;
+    }
+}
+
 
 .sidebar {
     width: 25%;
