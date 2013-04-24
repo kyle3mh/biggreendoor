@@ -1644,40 +1644,40 @@ h3 {
 
 
     p{  
-        font-size: 1em;
-        color:#20CE55;
+    font-size: 1em;
+    color:#20CE55;
     }
     h1{
         &.index-header{margin-top:35%;}
     }
     .col-container {
-        height: 280px;
+    height: 280px;
 
-    }
-    
-    .col-container-2 {
-    
-        height: 220px;
-    
-    
-    }
-    
-        .col-container3 {
-    
-            height: 330px;
-    
-    
-            .col23 {
-    
-    
-                    .bullet-margin {
-                        margin-top: 5px;
-                    }
-            
-            }
-    
-    }
-    
+}
+
+.col-container-2 {
+
+    height: 220px;
+
+
+}
+
+    .col-container3 {
+
+        height: 330px;
+
+
+        .col23 {
+
+
+                .bullet-margin {
+                    margin-top: 5px;
+                }
+        
+        }
+
+}
+
 
     .com-table-person {
         width:25%;
@@ -1710,6 +1710,10 @@ h3 {
     
         }
         
+        .col2 {
+
+        
+        }
     
     }
     
@@ -1736,17 +1740,17 @@ h3 {
             
             }
 
-    }
-    
-    
-    .com-table-person {
-        width:25%;
-        height:200px;
-        margin:3.12%;
-        background-color: green;
-        display:block;
-        float:left;
-    }
+}
+
+
+.com-table-person {
+    width:25%;
+    height:200px;
+    margin:3.12%;
+    background-color: green;
+    display:block;
+    float:left;
+}
 
 
 }
@@ -1791,63 +1795,63 @@ h3 {
 
 @media screen and (min-width: 1680px) {
 
-    `.sidebar {
-    `    width: 25%;
-    `    height: 100%;
-    `    position: fixed;
-    `    float: left;
-    `    background-color: white;
-    `    font-family: 'dk_pisangregular';
-    `    color: #20CE55;
-    `    text-align: center;
-    `    ul {
-    `        margin: 0;
-    `        padding:0;
-    `        margin-top: 10%;
-    `        li {
-    `            font-size: 4em;
-    `            list-style-type: none;
-    `            text-align: center;
-    `            line-height:1;
-    `            &.journalfont {font-size: 60px;}
-    `            &.communityfont {font-size: 70px;}
-    `            &.contactfont {font-size: 80px;}
-    `            &.aboutfont {font-size: 60px;}
-    `            a:hover { opacity: 0.8; color: #20CE55;}
-    `        }
-    `    }
-    `    img {
-    `        display: block;
-    `        margin-top: 30px;
-    `        margin-left: auto;
-    `        margin-right: auto;
-    `    }
-    `    a {
-    `        color:#20CE55;
-    `        text-decoration: none;
-    `    }
-    `    h4 {
-    `        font-size: 1em;    
-    `        line-height:1.5;
-    `        text-align: center;
-    `        margin: 5%;
-    `    }
-    `}
+.sidebar {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: white;
+    font-family: 'dk_pisangregular';
+    color: #20CE55;
+    text-align: center;
+    ul {
+        margin: 0;
+        padding:0;
+        margin-top: 10%;
+        li {
+            font-size: 4em;
+            list-style-type: none;
+            text-align: center;
+            line-height:1;
+            &.journalfont {font-size: 60px;}
+            &.communityfont {font-size: 70px;}
+            &.contactfont {font-size: 80px;}
+            &.aboutfont {font-size: 60px;}
+            a:hover { opacity: 0.8; color: #20CE55;}
+        }
+    }
+    img {
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a {
+        color:#20CE55;
+        text-decoration: none;
+    }
+    h4 {
+        font-size: 1em;    
+        line-height:1.5;
+        text-align: center;
+        margin: 5%;
+    }
+}
 
 
     .col1 p{  
-        font-size: 1.5em;
+    font-size: 1.5em;
     }
 
     .col2-2 p{  
-        font-size: 1.6em;
+    font-size: 1.6em;
     }
     .col13 {
         margin-top:20px;
     }
     .col13 p{  
-        font-size: 1.9em;
-        margin:10px 0;
+    font-size: 1.9em;
+    margin:10px 0;
     }
     h1{
         &.index-header{margin-top:33.9%;}
@@ -1866,38 +1870,38 @@ h3 {
 
         
         }
-    }
-    
-    .col-container-2 {
-    
-        height: 400px;
-        .col1-2 {
-    
-        
-        }
-        
-        .col2-2 {
-    
-        
-        }
+}
+
+.col-container-2 {
+
+    height: 400px;
+    .col1-2 {
+
     
     }
     
-        .col-container3 {
+    .col2-2 {
+
     
-            height: 500px;
-    
-            .col13 {
-    
-            }
-            
-            .col23 {
-    
-                    .bullet-margin {
-                        margin-top: 5px;
-                    }
-            
-            }
+    }
+
+}
+
+    .col-container3 {
+
+        height: 500px;
+
+        .col13 {
+
+        }
+        
+        .col23 {
+
+                .bullet-margin {
+                    margin-top: 5px;
+                }
+        
+        }
 
 }
 
