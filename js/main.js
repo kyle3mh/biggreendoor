@@ -21,7 +21,9 @@ $(window).scroll(function(d,h) {
         a = $(this).offset().top + 100;	// fade in once we get 100 pixels past the top of the element
         b = $(window).scrollTop() + $(window).height();
         if (a < b) {
-        	$(this).fadeTo(500,1);
+        	$(this).stop().animate({	// fadeTo add 'display:block' inline, so opacity is animated to get round this
+				opacity: 1
+			}, 500);
         }
 	});
 
