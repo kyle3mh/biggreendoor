@@ -23,8 +23,7 @@
 
         <!-- Add your site or application content here -->
         
-        <div class='sidebar'>
-
+        <div class='sidebar index'>
             <div class="screen-only"><a href='index.html'><img width='69%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a></div>
             <div class="mobile-logo mobile-only"><a href='index.html'><img width='100%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a></div>
             <ul class="screen-only">
@@ -46,9 +45,21 @@
         </div>
 
         <div id='content'>
-            <div class="inner-content">
+            <div id="poem">foo</div>
+
+            <div id="image-carousel" class="screen-only">
+                <div id="image-container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+
+            <div class="inner-content mobile-only">
                 <header> 
-                    <h1 class="index-header screen-only">We provide creative brand strategy for some of the world’s leading consumer brands, and have done for over 20 years.</h1>
                     <h1 class="index-header-mobile mobile-only">We provide creative brand strategy for some of the world’s leading consumer brands, and have done for over 20 years.</h1>
                 </header>
             </div>
@@ -58,6 +69,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src='js/jquery.typer.js'></script>
         <script src="js/jquery.fittext.js"></script>
 
         <script type="text/javascript">
