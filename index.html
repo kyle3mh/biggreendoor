@@ -24,14 +24,57 @@
         <!-- Add your site or application content here -->
         
         <div class='sidebar index'>
-            <div class="screen-only"><a href='index.html'><img width='69%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a></div>
-            <div class="mobile-logo mobile-only"><a href='index.html'><img width='100%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a></div>
-            <ul class="screen-only">
-                <li class="aboutfont"><a href="about.html">ABOUT US</a></li>
-                <li class="journalfont"><a href="journal.html">JOURNAL</a></li>
-                <li class="communityfont"><a href="community.html">COMMUNITY</a></li>
-                <li class="contactfont"><a href="contact.html">CONTACT</a></li>
-            </ul>
+            <div class="screen-only"><a href='index.html'><img width='69%' src='img/logo1.png'></a></div>
+            <div class="mobile-logo mobile-only"><a href='index.html'><img width='100%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" ></a></div>
+            <div id="cssmenu" class="screen-only">
+                <ul>
+                    <li class='has-sub aboutfont'><a href="about.html">ABOUT US</a>
+                            <ul>
+                                <li class='last'><a href="#"><span>FIND OUT WHAT WE DO AND HOW WE DO IT</span></a></li>
+                            </ul>
+                    </li>
+                    <li class='has-sub journalfont'><a href="journal.html">JOURNAL</a>
+                            <ul>
+                                <li class='last'><a href="#"><span>READ SOME INSIGHTS AND ANALYSIS FROM OUR WORK</span></a></li>
+                            </ul>
+                    </li>
+                    <li class='has-sub communityfont'><a href="community.html">COMMUNITY</a>
+                            <ul>
+                                <li class='last'><a href="#"><span>MEET THE TEAM</span></a></li>
+                            </ul>
+                    </li>
+                    <li class='has-sub contactfont'><a href="contact.html">CONTACT</a>
+                            <ul>
+                                <li class='last'><a href="#"><span>HOW TO FIND US</span></a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+
+<!--             <div id='cssmenu'>
+                <ul>
+                   <li class='has-sub'><a href='index.html'><span>ABOUT US</span></a>
+                        <ul>
+                            <li class='last'><a href='#'><span>text1</span></a></li>
+                        </ul>
+                    </li>
+                   <li class='has-sub'><a href='#'><span>JOURNAL</span></a>
+                      <ul>
+                         <li class='last'><a href='#'><span>text 2</span></a></li>
+                      </ul>
+                   </li>
+                   <li class='has-sub'><a href='#'><span>COMMUNITY</span></a>
+                      <ul>
+                         <li class='last'><a href='#'><span>tesxt3</span></a></li>
+                      </ul>
+                   </li>
+                   <li class='has-sub last'><a href='#'><span>text3</span></a>
+                      <ul>
+                         <li class='last'><a href='#'><span>text3</span></a></li>
+                      </ul>
+                   </li>
+                </ul>
+            </div> -->
             <div class="mobile-menu">
                 <ul class="mobile-only">
                     <li class="aboutfont"><a href="about.html">ABOUT US</a></li>
@@ -45,7 +88,7 @@
         </div>
 
         <div id='content'>
-            <div id="poem">foo</div>
+            <!-- <div id="poem">foo</div> -->
 
             <div id="image-carousel" class="screen-only">
                 <div id="image-container">
