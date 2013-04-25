@@ -25,104 +25,126 @@
         <!-- Add your site or application content here -->
         
         <div class='sidebar'>
-            <a href='index.html'><img width='69%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a>
-            <ul>
+
+            <div class="screen-only"><a href='index.html'><img width='69%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a></div>
+            <div class="mobile-logo mobile-only"><a href='index.html'><img width='100%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a></div>
+            <ul class="screen-only">
                 <li class="aboutfont"><a href="about.html">ABOUT US</a></li>
                 <li class="journalfont"><a href="journal.html">JOURNAL</a></li>
                 <li class="communityfont"><a href="community.html">COMMUNITY</a></li>
                 <li class="contactfont"><a href="contact.html">CONTACT</a></li>
             </ul>
-            <h4 id="poem-link">“THE DOOR” - MIROSLAV HOLUB</h4>
+            <div class="mobile-menu">
+                <ul class="mobile-only">
+                    <li class="aboutfont"><a href="about.html">ABOUT US</a></li>
+                    <li class="journalfont"><a href="journal.html">JOURNAL</a></li>
+                    <li class="communityfont"><a href="community.html">COMMUNITY</a></li>
+                    <li class="contactfont"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <h4 id="poem-link" class="screen-only">“THE DOOR” - MIROSLAV HOLUB</h4>
         </div>
+
         <div id="content" class="journal">
-                <div id="blog" class="left-col">
+            <div class="left-col">
 
-                    <div class="post">
-                        <h2 class="post-title">What makes Big Green Door Better?</h2>
-                        <div class="byline">Posted on <a href="#">April, 5, 2013</a> by <a href="#">admin</a></div>
-                        <div class="img-holder">
-                            <img src="img/journal1.jpg" width="100%" height="auto">
-                        </div>
-                        <p>Management consultancies do a lot of what we do, but are achingly analytic in their approach. Would you trust them to unlock fresh insights? Research agencies cover some of the same territory but are rarely creative enough in their thinking. Would you trust a research agency with your innovation strategy? Design agencies have the visual panache, but would you trust them with your brand strategy?</p>
+                <div class="post">
+                    <h2 class="post-title">What makes Big Green Door Better?</h2>
+                    <div class="byline">Posted on <a href="#">April, 5, 2013</a> by <a href="#">admin</a></div>
+                    <div class="img-holder">
+                        <img src="img/journal1.jpg" width="100%" height="auto">
                     </div>
-                    
-                    <div class="post">
-                        <h2 class="post-title">Why working hard makes a difference.</h2>
-                        <div class="byline">Posted on <a href="#">April, 5, 2013</a> by <a href="#">admin</a></div>
-                        <div class="img-holder">
-                            <img src="img/journal2.jpg" width="100%" height="auto">
-                        </div>
-
-                        <p>BIG GREEN DOOR is all about unlocking the future success of your business, your brands and your products and services. Because we believe that success comes from enquiry and not just a moment of good fortune, we use a wide range of insight tools to find the “keys” that will uniquely unlock the future success of your business. In a nutshell, that’s what BIG GREEN DOOR does and has been doing for many years. And if that’s a cliché, well so be it.</p>
-                    </div>
-
-                    <div class="post">
-                        <h2 class="post-title">People own brands.</h2>
-                        <div class="byline">Posted on <a href="#">April, 5, 2013</a> by <a href="#">admin</a></div>
-                        <div class="img-holder">
-                            <img src="img/journal3.jpg" width="100%" height="auto">
-                        </div>
-
-                        <p>Brands don’t exist in isolation. They are constructed by people and affect the way people behave. Sometimes we call these people consumers, sometimes we call them employees but importantly they are real people not respondents.</p>
-                    </div>
-                    
-                    <!-- <div class="navi">
-                        <div class="right">
-                            <a href="#">Previous</a> / <a href="#">Next</a>
-                        </div>
-                        
-                        <ul class="pages">
-                            <li>Page</li>
-                            <li><a href="#">1</a></li>
-                            <li>2</li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">6</a></li>
-                            <li><a href="#">7</a></li>
-                        </ul>
-                    </div> -->
+                    <p>Management consultancies do a lot of what we do, but are achingly analytic in their approach. Would you trust them to unlock fresh insights? Research agencies cover some of the same territory but are rarely creative enough in their thinking. Would you trust a research agency with your innovation strategy? Design agencies have the visual panache, but would you trust them with your brand strategy?</p>
                 </div>
-                <div id="journal-widget">
-                    <!-- <img src="img/journal_sidebar.png" width="100%" height="auto"> -->
-                    <h3>RECENT POSTS</h3><br>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul><br>
-                    <h3>ARCHIVES</h3><br>
-                    <h3>CATEGORIES</h3><br> 
-                    <h3>KEY WORDS</h3><br>
+                
+                <div class="post">
+                    <h2 class="post-title">Why working hard makes a difference.</h2>
+                    <div class="byline">Posted on <a href="#">April, 5, 2013</a> by <a href="#">admin</a></div>
+                    <div class="img-holder">
+                        <img src="img/journal2.jpg" width="100%" height="auto">
+                    </div>
+
+                    <p>BIG GREEN DOOR is all about unlocking the future success of your business, your brands and your products and services. Because we believe that success comes from enquiry and not just a moment of good fortune, we use a wide range of insight tools to find the “keys” that will uniquely unlock the future success of your business. In a nutshell, that’s what BIG GREEN DOOR does and has been doing for many years. And if that’s a cliché, well so be it.</p>
                 </div>
 
+                <div class="post">
+                    <h2 class="post-title">People own brands.</h2>
+                    <div class="byline">Posted on <a href="#">April, 5, 2013</a> by <a href="#">admin</a></div>
+                    <div class="img-holder">
+                        <img src="img/journal3.jpg" width="100%" height="auto">
+                    </div>
 
-
-            
+                    <p>Brands don’t exist in isolation. They are constructed by people and affect the way people behave. Sometimes we call these people consumers, sometimes we call them employees but importantly they are real people not respondents.</p>
+                </div>
+                
+                <div class="navi">
+                    <div class="right">
+                        <a href="#">Previous</a> / <a href="#">Next</a>
+                    </div>
+                    
+                    <!-- <ul class="pages">
+                        <li>Page</li>
+                        <li><a href="#">1</a></li>
+                        <li>2</li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                    </ul> -->
+                </div>
+            </div>
+            <div class="journal-widget screen-only">
+                <!-- <img src="img/journal_sidebar.png" width="100%" height="auto"> -->
+                <h3>RECENT POSTS</h3><br>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul><br>
+                <h3>ARCHIVES</h3><br>
+                <h3>CATEGORIES</h3><br> 
+                <h3>KEY WORDS</h3><br>
+            </div>
+            <div class="journal-widget-mobile mobile-only">
+                <!-- <img src="img/journal_sidebar.png" width="100%" height="auto"> -->
+                <h3>RECENT POSTS</h3><br>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul><br>
+                <h3>ARCHIVES</h3><br>
+                <h3>CATEGORIES</h3><br> 
+                <h3>KEY WORDS</h3><br>
+            </div>
         </div>
 
         <footer class="journal-site-footer">
             <div class="journal-footer-container">
-                    <div class="footer-image"><img src="img/logo_white.png" width="125px"></div>
-                    <div class="footer-address"><p>Big Green Door Ltd
+                    <div class="footer-posts">
+                        <h3>Latest From Our journal</h3>
+                        <ul>
+                        </ul>
+                    </div>
+                    <div class="footer-image screen-only"><img src="img/small_logo.png" width="125px"></div>
+                    <div class="footer-address screen-only"><p>Big Green Door Ltd
                             <br>
                             15 Hatton Street
                             <br>
                             London
                             <br>
                             NW8 8PL<p></div>
-                    <div class="footer-posts">
-                        <h3>Latest From Our journal</h3>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-               
+                    <div class="footer-image mobile-only"><img src="img/small_logo.png" width="100%"></div>
+                    <div class="footer-address mobile-only"><p>Big Green Door Ltd
+                            <br>
+                            15 Hatton Street
+                            <br>
+                            London
+                            <br>
+                            NW8 8PL<p>
+                    </div>       
             </div>
         </footer>
 
@@ -134,7 +156,7 @@
         <script type="text/javascript" src="js/jquery.sticky.js"></script>
           <script>
             $(window).load(function(){
-              $("#journal-widget").sticky({ topSpacing: 0 });
+              $(".journal-widget").sticky({ topSpacing: 0 });
             });
           </script>
 

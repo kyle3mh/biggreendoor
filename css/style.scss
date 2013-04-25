@@ -398,13 +398,15 @@ header {
 
 .journal-site-footer {
     display: block;
-    clear:both;
     float: right;
     padding-top: 20px;
     background-color: #20CE55;
     width:75.13%;
     height:250px;
-    p,h3 {
+    overflow:hidden;
+
+    position:relative;
+    h3,p {
         color: #FFFFFF;
     }
 }
@@ -802,6 +804,10 @@ p {
 }
 .navi {
     text-align: center;
+    a {
+        color: #20CE55;
+        text-decoration:none;
+    }
 }
 .navi ul.pages{
     margin: 0; padding: 0;
@@ -834,7 +840,7 @@ p {
     }
 }
 
-#journal-widget {
+.journal-widget {
     background-color: #20CE55;
     display: block;
     float: left;
@@ -1304,10 +1310,9 @@ p {
     ///// JOURNAL PAGE : 0 - 768 //////
 
     .left-col {
-        float: left;
-        margin: 2%;
+        margin: 0;
         width: 100%; 
-        font-family: 'LatinModernMono10Regular';
+        height: auto;
     }
     .navi {
         text-align: center;
@@ -1319,31 +1324,25 @@ p {
         display: inline;
         margin: 5px;
     }
-
-    .post-title {
-        color: #20CE55;
-        margin: 10px 0 0;
-    }
-
     .post {
-        color: #808080;
-        font-family: 'LatinModernMono10Regular';
-        a {
-            color: #808080;
-            text-decoration:none;
+        .byline {
+            margin:1%;
+        }
+        .post-title {
+        margin: 1%;
         }
         p {
             color: #808080 !important;
             font-family: 'LatinModernMono10Regular' !important;
             padding-top: 20px;
+            margin: 1%;
         }
         h2 {
-            color: #20CE55;
-            margin: 10px 0 0;
+            margin: 1%;
         }
     }
 
-     #journal-widget {
+     .journal-widget-mobile {
         background-color: #20CE55;
         display: block;
         float: left;
