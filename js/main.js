@@ -32,6 +32,7 @@ $(window).scroll(function() {
 	});
 });
 
+/////// HOMEPAGE SCROLL /////////
 $('#cssmenu').children('ul').children('li').mouseover(function() {
 	console.log($(this).index());
 
