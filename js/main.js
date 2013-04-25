@@ -32,7 +32,7 @@ $(window).scroll(function(d,h) {
 	});
 });
 
-$('.sidebar').children('ul').children('li').mouseover(function() {
+$('#cssmenu').children('ul').children('li').mouseover(function() {
 	console.log($(this).index());
 
 	$('#image-container').stop().animate({
