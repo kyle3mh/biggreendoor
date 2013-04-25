@@ -12,7 +12,7 @@
             char: '',
             delay: 700,
             duration: 500,
-            endless: true,
+            endless: false,
             onType: $.noop,
             afterAll: $.noop,
             afterPhrase: $.noop
@@ -29,31 +29,33 @@
                 c = 0;
 
             (function typetext(i) {
-                var e = ({string:1, number:1}[typeof text] ? text : text[i]) + '',
-                    char = e.substr(c++, 1);
+                if (play) {
+                    var e = ({string:1, number:1}[typeof text] ? text : text[i]) + '',
+                        char = e.substr(c++, 1);
 
-                if( char === '<' ){ isTag = true; }
-                if( char === '>' ){ isTag = false; }
-                elem[isVal ? "val" : "html"](e.substr(0, c) + ($.isFunction(options.char) ? options.char() : options.char || ' '));
-                if(c <= e.length){
-                    if( isTag ){
-                        typetext(i);
+                    if( char === '<' ){ isTag = true; }
+                    if( char === '>' ){ isTag = false; }
+                    elem[isVal ? "val" : "html"](e.substr(0, c) + ($.isFunction(options.char) ? options.char() : options.char || ' '));
+                    if(c <= e.length){
+                        if( isTag ){
+                            typetext(i);
+                        } else {
+                            timer = setTimeout(typetext, options.duration/10, i);
+                        }
+                        options.onType(timer);
                     } else {
-                        timer = setTimeout(typetext, options.duration/10, i);
-                    }
-                    options.onType(timer);
-                } else {
-                    c = 0;
-                    i++;
+                        c = 0;
+                        i++;
 
-                    if (i === text.length && !options.endless) {
-                        return;
-                    } else if (i === text.length) {
-                        i = 0;
+                        if (i === text.length && !options.endless) {
+                            return;
+                        } else if (i === text.length) {
+                            i = 0;
+                        }
+                        timer = setTimeout(typetext, options.delay, i);
+                        if(i === text.length - 1) options.afterAll(timer);
+                        options.afterPhrase(timer);
                     }
-                    timer = setTimeout(typetext, options.delay, i);
-                    if(i === text.length - 1) options.afterAll(timer);
-                    options.afterPhrase(timer);
                 }
             })(0);
         });
