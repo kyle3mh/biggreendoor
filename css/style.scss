@@ -312,7 +312,6 @@ textarea {
     float:left;
     margin-left:25%;
     width: 75%;
-    position: relative;
     &.journal {background-color: #FFFFFF}
     p {
         color: #FFF;
@@ -796,7 +795,7 @@ p {
 
 .left-col {
     float: left;
-    margin: 4%;
+    margin: 3%;
     width: 68%; 
     font-family: 'LatinModernMono10Regular';
 }
@@ -838,11 +837,11 @@ p {
     background-color: #20CE55;
     display: block;
     float: left;
-    height: 100%;
-    right: 0;
+    height: 500px;
+    left: 0;
     padding-top: 200px;
-    position: fixed;
-    width: 18%;
+    position: relative;
+    width: 23%;
     font-family: 'LatinModernMono10Regular';
     ul {
         list-style: none;
@@ -855,7 +854,7 @@ p {
         }
     }
     h3,li { 
-        text-align: center;
+        //text-align: center;
     }
 }
 
@@ -937,6 +936,15 @@ p {
                 }
                 &.twitter {
                     background:url('../img/social_links_32.png') no-repeat -32px 0;
+                }
+                &.linkedin {
+                    background:url('../img/social_links_32.png') no-repeat -64px 0;
+                }
+                &.pinterest {
+                    background:url('../img/social_links_32.png') no-repeat -96px 0;
+                }
+                &.personal {
+                    background:url('../img/social_links_32.png') no-repeat -128px 0;
                 }
             }
         }
@@ -1255,7 +1263,7 @@ p {
             }
             &:hover p {                         // on hover of list element fade in child paragraph
                 opacity: 1;
-            } 
+            }
         }
     }
 
@@ -1300,75 +1308,7 @@ p {
     .images div:not(.top-image) {   // all divs inside .images class except for .top-image
         display:none;
     }
-
-    ///// JOURNAL PAGE : 0 - 768 //////
-
-    .left-col {
-        float: left;
-        margin: 2%;
-        width: 100%; 
-        font-family: 'LatinModernMono10Regular';
-    }
-    .navi {
-        text-align: center;
-    }
-    .navi ul.pages{
-        margin: 0; padding: 0;
-    }
-    .navi ul.pages li{
-        display: inline;
-        margin: 5px;
-    }
-
-    .post-title {
-        color: #20CE55;
-        margin: 10px 0 0;
-    }
-
-    .post {
-        color: #808080;
-        font-family: 'LatinModernMono10Regular';
-        a {
-            color: #808080;
-            text-decoration:none;
-        }
-        p {
-            color: #808080 !important;
-            font-family: 'LatinModernMono10Regular' !important;
-            padding-top: 20px;
-        }
-        h2 {
-            color: #20CE55;
-            margin: 10px 0 0;
-        }
-    }
-
-     #journal-widget {
-        background-color: #20CE55;
-        display: block;
-        float: left;
-        height: 300px;
-        padding-top: 10px;
-        width: 100%;
-        font-family: 'LatinModernMono10Regular';
-        ul {
-            list-style: none;
-            padding: 0;
-            li {
-                text-align: left;
-                a {
-                    color: #FFFFFF;
-                }
-            }
-        }
-        h3,li { 
-            text-align: center;
-        }
-    }
 }
-
- 
-
 
 /* ==========================================================================
    iPads (portrait and landscape)

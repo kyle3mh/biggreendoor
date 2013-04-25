@@ -32,11 +32,12 @@ $(window).scroll(function() {
 	});
 });
 
+/////// HOMEPAGE SCROLL /////////
 $('#cssmenu').children('ul').children('li').mouseover(function() {
 	console.log($(this).index());
 
 	$('#image-container').stop().animate({
-		'<p>left': $(this).index() * 100 + '%'
+		'left': $(this).index() * 100 + '%'
 	}, 500);
 });
 
