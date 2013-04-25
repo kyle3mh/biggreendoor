@@ -16,14 +16,14 @@ $(document).ready(function() {
 
 ////// ON SCROLL //////
 
-$(window).scroll(function(d,h) {
+$(window).scroll(function() {	
 	$('.fade-on-scroll > *').each(function () { 
         a = $(this).offset().top + 100;	// fade in once we get 100 pixels past the top of the element
         b = $(window).scrollTop() + $(window).height();
         if (a < b) {
         	$(this).stop().animate({	// fadeTo add 'display:block' inline, so opacity is animated to get round this
 				opacity: 1
-			}, 500);
+			}, 300);
         }
 	});
 
@@ -41,50 +41,99 @@ $('#cssmenu').children('ul').children('li').mouseover(function() {
 });
 
 //////// POEM TYPEWRITER /////////
-$(function() {	// document ready
-	var win = $(window),
-	    foo = $('#poem');
 
-	foo.typer([	'THE DOOR',
-				'Go and open the door.',
-				'Maybe outside there’s a tree', 
-				'or a wood,',
-				'a garden,',
-				'or a magic city.',
+var play = false;
 
-				'Go and open the door.',
-				'Maybe a dog’s rummaging.',
-				'Maybe you’ll see a face,',
-				'or an eye,',
-				'or a picture',
-				'of a picture.',
+$('#poem-link').click(function() {
 
-				'Go and open the door.',
-				'If there’s a fog',
-				'it will clear.',
+	if (play == false) {
+		play = true;
+		$('#window').show('slow', function() {
+	  	
+		var win = $(window),
+		    poem = $('#poem');
 
-				'Go and open the door.',
-				'Even if there’s only',
-				'the darkness ticking,',
-				'even if there’s only',
-				'the hollow wind,',
-				'even if',
-				'nothing',
-				'is there,',
+		poem.typer(['<p><span style ="font-family: dk_pisangregular"; text-align:center;">THE DOOR</span></p>',
+					'Go and open the door. <br>' +
+					'<span class="indent"> Maybe outside there’s a tree <br> </span>' +
+					'<span class="indent"> or a wood, <br> </span>' +
+					'<span class="indent"> a garden, <br> </span>' +
+					'<span class="indent"> or a magic city. <br>',
 
-				'Go and open the door.',
+					'Go and open the door. <br> </span>' +
+					'<span class="indent"> Maybe a dog’s rummaging. <br> </span>' +
+					'<span class="indent"> Maybe you’ll see a face, <br> </span>' +
+					'<span class="indent"> or an eye, <br> </span>' +
+					'<span class="indent"> or a picture <br> </span>' +
+					'<span class="indent"><span class="indent"></span> of a picture. </span>',
 
-				'At least <br>' +
-				'there’ll be <br>' +
-				'a draught.'
-				]);
+					'Go and open the door. <br> </span>' +
+					'<span class="indent"> If there’s a fog <br> </span>' +
+					'<span class="indent"> it will clear.',
 
-	// unneeded...
-	win.resize(function(){
-	    var fontSize = Math.max(Math.min(win.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+					'Go and open the door. <br> </span>' +
+					'<span class="indent"> Even if there’s only <br> </span>' +
+					'<span class="indent"> the darkness ticking, <br> </span>' +
+					'<span class="indent"> even if there’s only <br> </span>' +
+					'<span class="indent"> the hollow wind, <br> </span>' +
+					'<span class="indent"> even if <br> </span>' +
+					'<span class="indent"><span class="indent"></span> nothing <br> </span>' +
+					'<span class="indent"><span class="indent"></span> is there,',
 
-	    foo.css({
-	        fontSize: fontSize * .5 + 'px'
-	    });
-	}).resize();
+					'Go and open the door.',
+
+					'<span style="margin-top:400px;"> At least <br>' +
+					'there’ll be <br>' +
+					'a draught.','',
+
+					'<p><span style ="font-family: dk_pisangregular"; text-align:center;">By MIROSLAV HOLUB</span></p>',''
+					]);
+
+			win.resize(function(){
+			    var fontSize = Math.max(Math.min(win.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+
+			    poem.css({
+			        fontSize: fontSize * .25 + 'px'
+			    });
+			}).resize();
+		});
+	}	
+	else {
+		hidePoem();
+	}
 });
+
+// Click outside the poem to hide it
+$(document).mouseup(function (e)
+{
+    var container = $("#window");
+    if (container.has(e.target).length === 0)
+    {
+        hidePoem();
+    }
+});
+
+// click the close button to hide poem
+$('#close').click(function() {
+	hidePoem();
+});
+
+// click escape to hide poem
+$(document).keyup(function(e) {
+  if (e.keyCode == 27) { 
+  	hidePoem();
+  }   
+});
+
+// hide poem function
+function hidePoem() {
+	$('#window').hide('slow', function() { 
+		play = false; 	// global variable to control the 'type-writer' plugin
+		$('#poem').empty();
+	});	// esc
+}
+
+
+
+
+
