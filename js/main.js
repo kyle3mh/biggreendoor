@@ -46,7 +46,6 @@ $('#cssmenu').children('ul').children('li').mouseover(function() {
 var play = false;
 
 $('#poem-link').click(function() {
-
 	if (play == false) {
 		play = true;
 		$('#window').show('slow', function() {
