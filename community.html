@@ -23,9 +23,9 @@
 
         <!-- Add your site or application content here -->
         
-        <div class='sidebar'>
+        <div class='sidebar'> <!-- begin side bar -->
 
-            <div class="logo screen-only"><a href='index.html'><img width='69%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a></div>
+            <div class="screen-only"><a href='index.html'><img width='69%' src="img/logo1.png"></a></div>
             <div class="mobile-logo mobile-only"><a href='index.html'><img width='100%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a></div>
             <ul class="screen-only">
                 <li class="aboutfont"><a href="about.html">ABOUT US</a></li>
@@ -43,7 +43,12 @@
             </div>
             <div class="clear"></div>
             <h4 id="poem-link" class="screen-only">“THE DOOR” - MIROSLAV HOLUB</h4>
-        </div>
+        </div> 
+
+        <div id="window">
+            <div id="close"><img src="img/close.png" /></div>
+            <div id="poem"></div>
+        </div><!-- end sidebar -->
         <div id='content'>
             <div class="inner-content">
                 <p class="screen-only">The BIG GREEN DOOR working community is a diverse group of people with a combined wealth of experience, youthful vitality and specialist knowledge. Most of the team are BIG GREEN DOOR to the core, but from time to time our Associates need time and space to pursue other interests or simply catch up on their lives. We see this as something positive, enriching the community and adding to the vibrancy of the their work.</p>
@@ -408,6 +413,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src='js/jquery.typer.js'></script>
         <script src="js/jquery.fittext.js"></script>
     
         <script type="text/javascript">

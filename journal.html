@@ -24,16 +24,33 @@
 
         <!-- Add your site or application content here -->
         
-        <div class='sidebar'>
-            <a href='index.html'><img width='69%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a>
-            <ul>
+         <div class='sidebar'> <!-- begin side bar -->
+
+            <div class="screen-only"><a href='index.html'><img width='69%' src="img/logo1.png"></a></div>
+            <div class="mobile-logo mobile-only"><a href='index.html'><img width='100%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a></div>
+            <ul class="screen-only">
                 <li class="aboutfont"><a href="about.html">ABOUT US</a></li>
                 <li class="journalfont"><a href="journal.html">JOURNAL</a></li>
                 <li class="communityfont"><a href="community.html">COMMUNITY</a></li>
                 <li class="contactfont"><a href="contact.html">CONTACT</a></li>
             </ul>
-            <h4 id="poem-link">“THE DOOR” - MIROSLAV HOLUB</h4>
-        </div>
+            <div class="mobile-menu">
+                <ul class="mobile-only">
+                    <li class="aboutfont"><a href="about.html">ABOUT US</a></li>
+                    <li class="journalfont"><a href="journal.html">JOURNAL</a></li>
+                    <li class="communityfont"><a href="community.html">COMMUNITY</a></li>
+                    <li class="contactfont"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <h4 id="poem-link" class="screen-only">“THE DOOR” - MIROSLAV HOLUB</h4>
+        </div> 
+
+        <div id="window">
+            <div id="close"><img src="img/close.png" /></div>
+            <div id="poem"></div>
+        </div><!-- end sidebar -->
+
         <div id="content" class="journal">
                 <div id="blog" class="left-col">
 
@@ -131,6 +148,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src='js/jquery.typer.js'></script>
         <script type="text/javascript" src="js/jquery.sticky.js"></script>
           <script>
             $(window).load(function(){
