@@ -39,3 +39,52 @@ $('.sidebar').children('ul').children('li').mouseover(function() {
 		'left': $(this).index() * 100 + '%'
 	}, 500);
 });
+
+//////// POEM TYPEWRITER /////////
+$(function() {	// document ready
+	var win = $(window),
+	    foo = $('#poem');
+
+	foo.typer([	'THE DOOR',
+				'Go and open the door.',
+				'Maybe outside there’s a tree', 
+				'or a wood,',
+				'a garden,',
+				'or a magic city.',
+
+				'Go and open the door.',
+				'Maybe a dog’s rummaging.',
+				'Maybe you’ll see a face,',
+				'or an eye,',
+				'or a picture',
+				'of a picture.',
+
+				'Go and open the door.',
+				'If there’s a fog',
+				'it will clear.',
+
+				'Go and open the door.',
+				'Even if there’s only',
+				'the darkness ticking,',
+				'even if there’s only',
+				'the hollow wind,',
+				'even if',
+				'nothing',
+				'is there,',
+
+				'Go and open the door.',
+
+				'At least <br>' +
+				'there’ll be <br>' +
+				'a draught.'
+				]);
+
+	// unneeded...
+	win.resize(function(){
+	    var fontSize = Math.max(Math.min(win.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+
+	    foo.css({
+	        fontSize: fontSize * .5 + 'px'
+	    });
+	}).resize();
+});
