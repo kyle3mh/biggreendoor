@@ -390,13 +390,15 @@ header {
 
 .journal-site-footer {
     display: block;
-    clear:both;
     float: right;
     padding-top: 20px;
     background-color: #20CE55;
     width:75.13%;
     height:250px;
-    p,h3 {
+    overflow:hidden;
+
+    position:relative;
+    h3,p {
         color: #FFFFFF;
     }
 }
@@ -812,12 +814,16 @@ p {
 
 .left-col {
     float: left;
-    margin: 3%;
+    margin: 4%;
     width: 68%; 
     font-family: 'LatinModernMono10Regular';
 }
 .navi {
     text-align: center;
+    a {
+        color: #20CE55;
+        text-decoration:none;
+    }
 }
 .navi ul.pages{
     margin: 0; padding: 0;
@@ -850,15 +856,15 @@ p {
     }
 }
 
-#journal-widget {
+.journal-widget {
     background-color: #20CE55;
     display: block;
     float: left;
-    height: 500px;
-    left: 0;
+    height: 100%;
+    right: 0;
     padding-top: 200px;
-    position: relative;
-    width: 23%;
+    position: fixed;
+    width: 18%;
     font-family: 'LatinModernMono10Regular';
     ul {
         list-style: none;
@@ -871,7 +877,7 @@ p {
         }
     }
     h3,li { 
-        //text-align: center;
+        text-align: center;
     }
 }
 
@@ -1321,6 +1327,65 @@ p {
     .images div:not(.top-image) {   // all divs inside .images class except for .top-image
         display:none;
     }
+
+
+    ///// JOURNAL PAGE : 0 - 768 //////
+
+    .left-col {
+        margin: 0;
+        width: 100%; 
+        height: auto;
+    }
+    .navi {
+        text-align: center;
+    }
+    .navi ul.pages{
+        margin: 0; padding: 0;
+    }
+    .navi ul.pages li{
+        display: inline;
+        margin: 5px;
+    }
+    .post {
+        .byline {
+            margin:1%;
+        }
+        .post-title {
+        margin: 1%;
+        }
+        p {
+            color: #808080 !important;
+            font-family: 'LatinModernMono10Regular' !important;
+            padding-top: 20px;
+            margin: 1%;
+        }
+        h2 {
+            margin: 1%;
+        }
+    }
+
+     .journal-widget-mobile {
+        background-color: #20CE55;
+        display: block;
+        float: left;
+        height: 300px;
+        padding-top: 10px;
+        width: 100%;
+        font-family: 'LatinModernMono10Regular';
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                text-align: left;
+                a {
+                    color: #FFFFFF;
+                }
+            }
+        }
+        h3,li { 
+            text-align: center;
+        }
+    }
 }
 
 /* ==========================================================================
@@ -1668,7 +1733,7 @@ p {
     }
 
     pre,
-    blockquote {
+    blockquote { 
         border: 1px solid #999;
         page-break-inside: avoid; 
     }
