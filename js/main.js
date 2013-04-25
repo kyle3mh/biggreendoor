@@ -89,8 +89,6 @@ $('#poem-link').click(function() {
 					'<p><span style ="font-family: dk_pisangregular"; text-align:center;">By MIROSLAV HOLUB</span></p>',''
 					]);
 
-
-			// unneeded...
 			win.resize(function(){
 			    var fontSize = Math.max(Math.min(win.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
 
@@ -105,19 +103,32 @@ $('#poem-link').click(function() {
 	}
 });
 
+// Click outside the poem to hide it
+$(document).mouseup(function (e)
+{
+    var container = $("#window");
+    if (container.has(e.target).length === 0)
+    {
+        hidePoem();
+    }
+});
+
+// click the close button to hide poem
 $('#close').click(function() {
 	hidePoem();
 });
 
+// click escape to hide poem
 $(document).keyup(function(e) {
   if (e.keyCode == 27) { 
   	hidePoem();
   }   
 });
 
+// hide poem function
 function hidePoem() {
 	$('#window').hide('slow', function() { 
-		play = false; 
+		play = false; 	// global variable to control the 'type-writer' plugin
 		$('#poem').empty();
 	});	// esc
 }
