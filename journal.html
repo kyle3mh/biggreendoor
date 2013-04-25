@@ -13,9 +13,9 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" media='screen and (min-width: 601px)' href="css/style.css">
-        <link rel='stylesheet' media='screen and (max-width: 600px)' href='css/mobile.css' />
+        <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -83,7 +83,7 @@
                         </ul>
                     </div> -->
                 </div>
-                <div id='journal-widget'>
+                <div id="journal-widget">
                     <!-- <img src="img/journal_sidebar.png" width="100%" height="auto"> -->
                     <h3>RECENT POSTS</h3><br>
                     <ul>
@@ -95,6 +95,9 @@
                     <h3>CATEGORIES</h3><br> 
                     <h3>KEY WORDS</h3><br>
                 </div>
+
+
+
             
         </div>
 
@@ -128,6 +131,12 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
+          <script>
+            $(window).load(function(){
+              $("#journal-widget").sticky({ topSpacing: 0 });
+            });
+          </script>
 
         <script src="js/jquery.fittext.js"></script>
                 <script type="text/javascript">
