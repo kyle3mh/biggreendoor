@@ -16,14 +16,14 @@ $(document).ready(function() {
 
 ////// ON SCROLL //////
 
-$(window).scroll(function(d,h) {
+$(window).scroll(function() {	
 	$('.fade-on-scroll > *').each(function () { 
         a = $(this).offset().top + 100;	// fade in once we get 100 pixels past the top of the element
         b = $(window).scrollTop() + $(window).height();
         if (a < b) {
         	$(this).stop().animate({	// fadeTo add 'display:block' inline, so opacity is animated to get round this
 				opacity: 1
-			}, 500);
+			}, 300);
         }
 	});
 
@@ -32,11 +32,12 @@ $(window).scroll(function(d,h) {
 	});
 });
 
+/////// HOMEPAGE SCROLL /////////
 $('#cssmenu').children('ul').children('li').mouseover(function() {
 	console.log($(this).index());
 
 	$('#image-container').stop().animate({
-		'<p>left': $(this).index() * 100 + '%'
+		'left': $(this).index() * 100 + '%'
 	}, 500);
 });
 
@@ -45,7 +46,6 @@ $('#cssmenu').children('ul').children('li').mouseover(function() {
 var play = false;
 
 $('#poem-link').click(function() {
-
 	if (play == false) {
 		play = true;
 		$('#window').show('slow', function() {
