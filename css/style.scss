@@ -232,6 +232,7 @@ textarea {
     }
     #poem-link {
         color: #20CE55;
+        cursor:pointer;
     }
 }
 
@@ -265,11 +266,7 @@ textarea {
     }
 }
 
-/*
- * MOBILE HIDE AND SHOW
- */
-
-
+/* MOBILE HIDE AND SHOW */
  .mobile-only {
     display: none;
  }
@@ -425,15 +422,44 @@ header {
     }
 } 
 
-#poem {
+#window {
     position:absolute;
-    width:65%;
+    width:80%;
     height:90%;
-    margin: 2.5% 0 0 5%;
+    margin-left: 10%; // margin sizes relative to parent's WIDTH
+    top:5%;         // top (left, bottom, right) sizes relative to parent's HEIGHT
     background-color:rgb(255,255,255);
-    background-color:rgba(255,255,255,0.9);
+    background-color:rgba(255,255,255,0.98);
     z-index:100;
+    display:none;
+}
+#close {
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:40px;
+    height:40px;
+}
+#poem {
+    position:relative;
+    width:40%;
+    height:60%;
+    margin-left: 30%; 
+    top:20%;         
     font-family:Avenir;
+    display:table;
+    color:#20CE55;
+    white-space:nowrap;
+}
+
+#poem .indent {
+    margin-left:2em;
+}
+
+#poem p {
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center; 
     color:#20CE55;
 }
 
