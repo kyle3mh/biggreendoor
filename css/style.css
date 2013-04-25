@@ -1081,7 +1081,7 @@ p.center-paragraph {
 }
 /* line 953, style.scss */
 .people-grid li:hover img {
-  opacity: 0.2;
+  opacity: 0.05;
 }
 /* line 957, style.scss */
 .people-grid li:hover .details .name, .people-grid li:hover .details .job {

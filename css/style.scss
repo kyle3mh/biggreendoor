@@ -951,7 +951,7 @@ p {
 
         &:nth-child(4n){margin-right:0;}    // every fourth list element to be flush against right side
         &:hover img {                       // on hover of list element fade out child image
-            opacity: 0.2;   
+            opacity: 0.05;   
         }
         &:hover .details {                         // on hover of list element fade in child paragraph
             .name, .job {
