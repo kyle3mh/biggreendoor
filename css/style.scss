@@ -398,7 +398,7 @@ header {
     width:100%;
     height:100%;
     z-index:1;
-    //overflow:hidden;
+    overflow-x: hidden;
     #image-container {
         position:absolute;
         width:500%;
@@ -424,6 +424,18 @@ header {
         }
     }
 } 
+
+#poem {
+    position:absolute;
+    width:65%;
+    height:90%;
+    margin: 2.5% 0 0 5%;
+    background-color:rgb(255,255,255);
+    background-color:rgba(255,255,255,0.9);
+    z-index:100;
+    font-family:Avenir;
+    color:#20CE55;
+}
 
 /* ==========================================================================
    ABOUT PAGE CLASSES
