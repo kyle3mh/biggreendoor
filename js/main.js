@@ -16,14 +16,14 @@ $(document).ready(function() {
 
 ////// ON SCROLL //////
 
-$(window).scroll(function(d,h) {
+$(window).scroll(function() {	
 	$('.fade-on-scroll > *').each(function () { 
         a = $(this).offset().top + 100;	// fade in once we get 100 pixels past the top of the element
         b = $(window).scrollTop() + $(window).height();
         if (a < b) {
         	$(this).stop().animate({	// fadeTo add 'display:block' inline, so opacity is animated to get round this
 				opacity: 1
-			}, 500);
+			}, 300);
         }
 	});
 
