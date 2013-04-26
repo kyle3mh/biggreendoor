@@ -486,7 +486,7 @@ header {
 } 
 
 #window {
-    position:absolute;
+    position:fixed;
     width:80%;
     height:90%;
     margin-left: 10%; // margin sizes relative to parent's WIDTH
@@ -1073,6 +1073,11 @@ p {
 @media screen and (min-width: 0px) and (max-width:768px) {
 
     ///// GENERAL //////
+
+    .copy {
+        margin: 0 2% 2% 2%;
+    }
+
     .screen-only {
         display: none;
     }
@@ -1610,6 +1615,10 @@ p {
    ========================================================================== */
 
 @media screen and (min-width: 1680px) {
+
+    .copy {
+        font-size:1.5em;
+    }
     
     /////// ABOUT ////////
 
@@ -1674,6 +1683,10 @@ p {
    ========================================================================== */
 
 @media screen and (min-width: 2200px) {
+
+    .copy {
+        font-size:2em;
+    }
     
     /////// ABOUT ////////
 
