@@ -923,29 +923,29 @@ p {
             z-index:100; 
             font-size:20px;
             background-color:white;
-//            opacity:0;
+            opacity:0;
             .name {
                 margin-top:3%;
                 font-size:16px;
                 line-height:1em;
-//                -webkit-transform: translateY(-500%);
-//                -moz-transform: translateY(-500%);
-//                -o-transform: translateY(-500%);
-//                -ms-transform: translateY(-500%);
-//                transform: translateY(-500%);
-//                -moz-opacity: 0.00;
-//                opacity: 0.00;
+                -webkit-transform: translateY(-500%);
+                -moz-transform: translateY(-500%);
+                -o-transform: translateY(-500%);
+                -ms-transform: translateY(-500%);
+                transform: translateY(-500%);
+                -moz-opacity: 0.00;
+                opacity: 0.00;
             }
             .job {
                 font-size:12px;
                 line-height:1em;
-//                -webkit-transform: translateY(500%);
-//                -moz-transform: translateY(500%);
-//                -o-transform: translateY(500%);
-//                -ms-transform: translateY(500%);
-//                transform: translateY(500%);
-//                -moz-opacity: 0.00;
-//                opacity: 0.00;
+                -webkit-transform: translateY(500%);
+                -moz-transform: translateY(500%);
+                -o-transform: translateY(500%);
+                -ms-transform: translateY(500%);
+                transform: translateY(500%);
+                -moz-opacity: 0.00;
+                opacity: 0.00;
                 transition-delay: 0.1s;
                 -webkit-transition-delay: 0.1s; /* Safari */
             }
@@ -957,11 +957,10 @@ p {
                 height:22px;
                 margin-left:-12px;
                 overflow-x:hidden;
-//                -moz-opacity: 0.00;
-//                opacity: 0.00;
+                -moz-opacity: 0.00;
+                opacity: 0.00;
                 transition: opacity 0.1s 0.02s ease;  /* Mouse leave: immediate */
                 img {
-                    //display: block;
                     height:100%;
                     width:auto;
                 }
@@ -1248,8 +1247,8 @@ p {
 
     .people-grid {
         li {
-            margin: 0 4% 1% 0;
-            width: 48%;
+            margin: 0 3% 2% 0;
+            width: 31%;
             .details {
                 position:relative; 
                 height:auto; 
@@ -1269,18 +1268,21 @@ p {
                     -ms-transform: translateY(0);
                     transform: translateY(0);
                 }
-
+                .name {
+                    font-size:12px;
+                }
+                .job {
+                    font-size:10px;
+                }
                 .social {
                     position:relative;
                     bottom:auto;
                     left:0;
-                    width:22px;
-                    height:22px;
+                    width:18px;
+                    height:18px;
                     margin-left:0;
-                    margin-top:5px;
+                    margin-top:3px;
                     overflow-x:hidden;
-    //                -moz-opacity: 0.00;
-    //                opacity: 0.00;
                     transition: opacity 0.1s 0.02s ease;  /* Mouse leave: immediate */
                     img {
                         display: auto;
@@ -1302,8 +1304,8 @@ p {
                 }
             }
             &:nth-child(4n){margin-right:4%;}    // reset old nth-child
-            &:nth-child(3n){margin-right:4%;}    // reset old nth-child
-            &:nth-child(2n){margin-right:0;}    // every second list element to be flush against right side
+            &:nth-child(2n){margin-right:4%;}    // every second list element to be flush against right side            
+            &:nth-child(3n){margin-right:0;}    // reset old nth-child
             &:hover img {                       // on hover of list element fade out child image
                 opacity: 1;   
             }
