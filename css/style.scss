@@ -530,7 +530,7 @@ header {
 } 
 
 #window {
-    position:absolute;
+    position:fixed;
     width:80%;
     height:90%;
     margin-left: 10%; // margin sizes relative to parent's WIDTH
@@ -1118,11 +1118,16 @@ p {
 
     ///// GENERAL //////
 
+
     html {
 //        background-color #20CE55;
     }
 
-    .screen-only { 
+    .copy {
+        margin: 0 2% 2% 2%;
+    }
+
+    .screen-only {
         display: none;
     }
 
@@ -1580,9 +1585,11 @@ p {
 
     .col-container {
         height: 280px;
+        margin-top:20px;
     }
     .col-container-2 {
         height: 220px;
+        margin-top:20px;
     }
     .col-container3 {
         height: 330px;
@@ -1663,6 +1670,10 @@ p {
    ========================================================================== */
 
 @media screen and (min-width: 1680px) {
+
+    .copy {
+        font-size:1.5em;
+    }
     
     /////// ABOUT ////////
 
@@ -1727,6 +1738,10 @@ p {
    ========================================================================== */
 
 @media screen and (min-width: 2200px) {
+
+    .copy {
+        font-size:2em;
+    }
     
     /////// ABOUT ////////
 

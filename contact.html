@@ -19,43 +19,6 @@
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript">
 
-            // function initialize()
-            // {
-            //     var latlng = new google.maps.LatLng(18.520266,73.856406);
-            //     var latlng2 = new google.maps.LatLng(28.579943,77.330006);
-            //     var myOptions =
-            //     {
-            //         zoom: 15,
-            //         center: latlng,
-            //         mapTypeId: google.maps.MapTypeId.ROADMAP
-            //     };
-
-            //     var myOptions2 =
-            //     {
-            //         zoom: 15,
-            //         center: latlng2,
-            //         mapTypeId: google.maps.MapTypeId.SATELLITE
-            //     };
-
-            //     var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-                
-            //     var map2 = new google.maps.Map(document.getElementById("map_canvas_2"), myOptions2);
-
-            //     var myMarker = new google.maps.Marker(
-            //     {
-            //         position: latlng,
-            //         map: map,
-            //         title:"Pune"
-            //    });
-
-            //     var myMarker2 = new google.maps.Marker(
-            //     {
-            //         position: latlng2,
-            //         map: map2,
-            //         title:"Noida"
-            //     });
-            // }
-
             function initialize(){
 
                 var point = new google.maps.LatLng(51.523227,-0.173218);
@@ -68,14 +31,7 @@
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
 
-                // var myMapOptions2 = {
-                //     zoom: 15,
-                //     center: point,
-                //     mapTypeId: google.maps.MapTypeId.ROADMAP
-                // };
-
                 var map = new google.maps.Map(document.getElementById("left-map-canvas"),myMapOptions);
-                // var map2 = new google.maps.Map(document.getElementById("right-map-canvas"),myMapOptions2);
 
                 var image = new google.maps.MarkerImage(
                     'img/pin.png',
@@ -113,16 +69,6 @@
                     position: point
                 });
 
-                // var marker2 = new google.maps.Marker({
-                //     draggable: true,
-                //     raiseOnDrag: false,
-                //     icon: image,
-                //     shadow: shadow,
-                //     shape: shape,
-                //     map: map2,
-                //     position: point
-                // });
-
                 google.maps.event.addListener(marker, 'click', function() {
                     infowindow.open(map,marker);
                 });
@@ -139,7 +85,7 @@
         <div class='sidebar'> <!-- begin side bar -->
 
             <div class="screen-only"><a href='index.html'><img width='69%' src="img/logo1.png"></a></div>
-            <div class="mobile-logo mobile-only"><a href='index.html'><img width='100%' src='img/logo1.png' onmousedown="this.src='img/logo2.png'" onmouseup="this.src='img/logo1.png'"></a></div>
+            <div class="mobile-logo mobile-only"><a href='index.html'><img width='100%' src="img/logo1.png"></a></div>
             <ul class="screen-only">
                 <li class="aboutfont"><a href="about.html">ABOUT US</a></li>
                 <li class="journalfont"><a href="journal.html">JOURNAL</a></li>
@@ -168,7 +114,7 @@
 
                 <header> <h1 class="contact-header">How To Find Us</h1></header>
 
-                <p>Based in a former aeroworks, Big Green Door's creative workspace resides in the heart of London's multicultural Hatton Village, just 2 taxi minutes from Paddington Station or 15 from the Heathrow Express.</p>
+                <p class="copy">Based in a former aeroworks, Big Green Door's creative workspace resides in the heart of London's multicultural Hatton Village, just 2 taxi minutes from Paddington Station or 15 from the Heathrow Express.</p>
 
                 <div class="images">
                     <div class="top-image">
@@ -210,9 +156,8 @@
                             <br>
                             Big Apple
                             <br>
-                            I <3 NY
+                            I 
                         </p>
-
                     </div>
                 </div>     
             </div>
