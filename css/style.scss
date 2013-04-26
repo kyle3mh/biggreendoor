@@ -680,19 +680,33 @@ p {
     .speech {
         position:absolute;
         display:none;
-        top:-50%;
-        left:40%;
+        bottom: 115%;
+        left:0;
         padding:15px;
         color:#20CE55;
         background:white;
-        font-size:0.5em;
+        font-size:20px;
 
         /* css3 */
         -moz-border-radius:10px;
         -webkit-border-radius:10px;
         border-radius:10px;
-        background:-moz-linear-gradient(top, #333, #000);
-        background:linear-gradient(top, #333, #000);
+        &.right {
+            right: 0;
+            margin-left:-200px;
+        }
+        &.right:after {
+           content:"";
+           display:block; /* reduce the damage in FF3.0 */
+           position:absolute;
+           bottom:-15px;
+           left:75%;
+           width:0;
+           border-width:15px 15px 0;
+           border-style:solid;
+           border-color:white transparent;
+           
+        }
     }
     /* creates triangle */
     .speech:after {
@@ -700,12 +714,27 @@ p {
        display:block; /* reduce the damage in FF3.0 */
        position:absolute;
        bottom:-15px;
-       left:20%;
+       left:35%;
        width:0;
        border-width:15px 15px 0;
        border-style:solid;
-       border-color:white transparent; 
+       border-color:white transparent;
+       
     }
+
+  
+//        /* creates triangle */
+//    .speech.right:after {
+//       content:"";
+//       display:block; /* reduce the damage in FF3.0 */
+//       position:absolute;
+//       bottom:-15px;
+//       right:7%;
+//       width:0;
+//       border-width:15px 15px 0;
+//       border-style:solid;
+//       border-color:white transparent;
+//    }
     .speech:hover {     // speech bubble can be accessed after it is revealed but is not triggered directly
         display:block;
     }
@@ -1491,6 +1520,18 @@ p {
             margin-left: 0%;
         }
     }
+
+    #word-cloud {
+        .speech {
+            font-size:15px;
+            bottom: 140%;
+            max-width: 300px;
+            white-space:normal;
+            &.right:after {
+               left:82%;
+            }
+        }
+    }
 }
 
 /* ==========================================================================
@@ -1519,6 +1560,16 @@ p {
     .col-container3 {
         height: 330px;
     }
+
+    #word-cloud {
+        .speech {
+            font-size:20px;
+            bottom: 125%;
+            &.right:after {
+               left:80%;
+            }
+        }
+    }
 }
 
 /* ==========================================================================
@@ -1535,6 +1586,13 @@ p {
     #word-cloud {
         .row {
             height:100px;
+        }
+        .speech {
+            font-size:25px;
+            bottom: 120%;
+            &.right:after {
+                left:78%;
+            }
         }
     }
 }
@@ -1573,6 +1631,12 @@ p {
     #word-cloud {
         .row {
             height:150px;
+        }
+        .speech {
+            font-size:30px;
+             &.right:after {
+               left:75%;
+            }
         }
     }
 
