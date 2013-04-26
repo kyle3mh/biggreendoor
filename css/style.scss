@@ -422,7 +422,7 @@ header {
 
 .footer-image {
     width:162px;
-    height:185px;
+    height:161px;
     float: left;
     padding: 0 7%;
     img {
@@ -486,7 +486,7 @@ header {
                 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
             }
             &:nth-child(2) {
-                background: url('../img/street.jpg') no-repeat;
+                background: url('../img/street_s.jpg') no-repeat;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -496,7 +496,7 @@ header {
                 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
             }
             &:nth-child(3) {
-                background: url('../img/garden.jpg') no-repeat;
+                background: url('../img/garden_s.jpg') no-repeat;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -506,7 +506,7 @@ header {
                 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
             }
             &:nth-child(4) {
-                background: url('../img/door.jpg') no-repeat;
+                background: url('../img/door_s.jpg') no-repeat;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
