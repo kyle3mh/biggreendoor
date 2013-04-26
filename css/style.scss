@@ -473,14 +473,58 @@ header {
             width:20%;
             overflow:hidden;
             height:100%;
-            background: url('../img/contact.jpg') no-repeat; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            // IE Cover backgrounds
-            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-            -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+//            background: url('../img/contact.jpg') no-repeat; 
+
+            &:nth-child(1) {
+                background: url('../img/outside.jpg') no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                // IE Cover backgrounds
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
+            }
+            &:nth-child(2) {
+                background: url('../img/street.jpg') no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                // IE Cover backgrounds
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
+            }
+            &:nth-child(3) {
+                background: url('../img/garden.jpg') no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                // IE Cover backgrounds
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
+            }
+            &:nth-child(4) {
+                background: url('../img/door.jpg') no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                // IE Cover backgrounds
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
+            }
+            &:nth-child(5) {
+                background: url('../img/other-door.jpg') no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                // IE Cover backgrounds
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+            }
         }
     }
 } 
@@ -532,7 +576,7 @@ header {
 
 .index-content {
     margin-left: 27%;
-    width: 300px;
+    width: 350px;
     padding: 1%;
     background-color: rgba(255,255,255,0.9);
 
@@ -545,10 +589,10 @@ header {
     font-weight: 300;
     font-size: 52px;
 
-    &.about {margin-top: 18%;}
+    &.about {margin-top: 14%;}
     &.journal {margin-top: 20%;}
-    &.community {margin-top: 32%;}
-    &.contact {margin-top: 38%;}
+    &.community {margin-top: 30%;}
+    &.contact {margin-top: 31%;}
 }
 
 
@@ -1071,9 +1115,14 @@ p {
    Smart Phone
    ========================================================================== */
 
-@media screen and (min-width: 0px) and (max-width:768px) {
+@media screen and (min-width: 0px) and (max-width:480px) {
 
     ///// GENERAL //////
+
+    html {
+//        background-color #20CE55;
+    }
+
     .screen-only {
         display: none;
     }
@@ -1169,6 +1218,10 @@ p {
     }
 
     ///// ABOUT : 0 - 768 //////
+
+    .fade-on-scroll > * {
+        opacity:1;
+    }
 
     h1 {
         &.who-header{ margin-bottom : -1%;}
@@ -1431,7 +1484,9 @@ p {
    iPads (portrait and landscape)
    ========================================================================== */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
 
     ////// GENERAL : 768 - 1024 ///////
 
@@ -1461,16 +1516,13 @@ p {
     ////// HOME : 768 - 1024 ///////
 
     .index-content {
-        width: 300px;
-    
+        width: 280px;
         /* Typography */
-        font-weight: 300;
         font-size: 38px;
-    
-        &.about {margin-top: 18%;}
-        &.journal {margin-top: 20%;}
-        &.community {margin-top: 33%;}
-        &.contact {margin-top: 38%;}
+        &.about {margin-top: 14%;}
+        &.journal {margin-top: 18%;}
+        &.community {margin-top: 30%;}
+        &.contact {margin-top: 33%;}
     }
 
     ////// ABOUT : 768 - 1024 ///////
@@ -1492,6 +1544,7 @@ p {
         }
     }
 }
+
 
 /* ==========================================================================
    Desktops and laptops : Minimum 1224px
