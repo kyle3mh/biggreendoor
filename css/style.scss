@@ -933,11 +933,11 @@ p {
     width: 100%;
     margin:0;
     padding:0;
-    li {
+    li { 
         display: block;
         position:relative;
         float: left;  
-        list-style: none outside none;
+        list-style: none outside none; 
         margin: 0 2% 2% 0;
         width: 23.5%;
         z-index:1;
@@ -967,29 +967,29 @@ p {
             z-index:100; 
             font-size:20px;
             background-color:white;
-//            opacity:0;
+            opacity:0;
             .name {
                 margin-top:3%;
-                font-size:20px;
+                font-size:16px;
                 line-height:1em;
-//                -webkit-transform: translateY(-500%);
-//                -moz-transform: translateY(-500%);
-//                -o-transform: translateY(-500%);
-//                -ms-transform: translateY(-500%);
-//                transform: translateY(-500%);
-//                -moz-opacity: 0.00;
-//                opacity: 0.00;
+                -webkit-transform: translateY(-500%);
+                -moz-transform: translateY(-500%);
+                -o-transform: translateY(-500%);
+                -ms-transform: translateY(-500%);
+                transform: translateY(-500%);
+                -moz-opacity: 0.00;
+                opacity: 0.00;
             }
             .job {
-                font-size:14px;
+                font-size:12px;
                 line-height:1em;
-//                -webkit-transform: translateY(500%);
-//                -moz-transform: translateY(500%);
-//                -o-transform: translateY(500%);
-//                -ms-transform: translateY(500%);
-//                transform: translateY(500%);
-//                -moz-opacity: 0.00;
-//                opacity: 0.00;
+                -webkit-transform: translateY(500%);
+                -moz-transform: translateY(500%);
+                -o-transform: translateY(500%);
+                -ms-transform: translateY(500%);
+                transform: translateY(500%);
+                -moz-opacity: 0.00;
+                opacity: 0.00;
                 transition-delay: 0.1s;
                 -webkit-transition-delay: 0.1s; /* Safari */
             }
@@ -1001,11 +1001,10 @@ p {
                 height:22px;
                 margin-left:-12px;
                 overflow-x:hidden;
-//                -moz-opacity: 0.00;
-//                opacity: 0.00;
+                -moz-opacity: 0.00;
+                opacity: 0.00;
                 transition: opacity 0.1s 0.02s ease;  /* Mouse leave: immediate */
                 img {
-                    display: block;
                     height:100%;
                     width:auto;
                 }
@@ -1123,7 +1122,7 @@ p {
 //        background-color #20CE55;
     }
 
-    .screen-only {
+    .screen-only { 
         display: none;
     }
 
@@ -1301,13 +1300,13 @@ p {
 
     .people-grid {
         li {
-            margin: 0 4% 4% 0;
-            width: 48%;
+            margin: 0 3% 2% 0;
+            width: 31%;
             .details {
                 position:relative; 
                 height:auto; 
                 text-align: left; 
-                margin:7px 0;
+                margin:7px 0 0 0;
                 padding:0;
                 opacity:1; 
                 font-size:12px;
@@ -1322,17 +1321,21 @@ p {
                     -ms-transform: translateY(0);
                     transform: translateY(0);
                 }
-
+                .name {
+                    font-size:12px;
+                }
+                .job {
+                    font-size:10px;
+                }
                 .social {
                     position:relative;
                     bottom:auto;
                     left:0;
-                    width:22px;
-                    height:22px;
-                    margin-left:-11px;
+                    width:18px;
+                    height:18px;
+                    margin-left:0;
+                    margin-top:3px;
                     overflow-x:hidden;
-    //                -moz-opacity: 0.00;
-    //                opacity: 0.00;
                     transition: opacity 0.1s 0.02s ease;  /* Mouse leave: immediate */
                     img {
                         display: auto;
@@ -1352,23 +1355,10 @@ p {
                         margin-left:-400%;
                     }
                 }
-                .social {
-                    height:20px;
-                    &.facebook {
-                        width: 32px;
-                        height: 32px;
-                        background:url('../img/social_links_white_32.png') no-repeat 0 0;
-                    }
-                    &.twitter {
-                        width: 32px;
-                        height: 32px;
-                        background:url('../img/social_links_white_32.png') no-repeat -32px 0;
-                    }
-                }
             }
             &:nth-child(4n){margin-right:4%;}    // reset old nth-child
-            &:nth-child(3n){margin-right:4%;}    // reset old nth-child
-            &:nth-child(2n){margin-right:0;}    // every second list element to be flush against right side
+            &:nth-child(2n){margin-right:4%;}    // every second list element to be flush against right side            
+            &:nth-child(3n){margin-right:0;}    // reset old nth-child
             &:hover img {                       // on hover of list element fade out child image
                 opacity: 1;   
             }
@@ -1543,6 +1533,31 @@ p {
             margin-left: 0%;
         }
     }
+
+    ///// COMMUNITY PAGE : 768 - 1024 //////
+
+    .people-grid {
+        li {
+            .details {
+                .name {
+                    margin-top:2%;
+                    font-size:14px;
+                }
+                .job {
+                    font-size:8px;
+                }
+                .social {
+                    width:16px;
+                    height:16px;
+                    margin-left:-8px;
+                    img {
+                        height:100%;
+                        width:auto;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -1572,6 +1587,31 @@ p {
     .col-container3 {
         height: 330px;
     }
+
+    ///// COMMUNITY PAGE : > 1224 //////
+
+    .people-grid {
+        li {
+            .details {
+                .name {
+                    margin-top:2%;
+                    font-size:18px;
+                }
+                .job {
+                    font-size:14px;
+                }
+                .social {
+                    width:24px;
+                    height:24px;
+                    margin-left:-12px;
+                    img {
+                        height:100%;
+                        width:auto;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* ==========================================================================
@@ -1588,6 +1628,32 @@ p {
     #word-cloud {
         .row {
             height:100px;
+        }
+    }
+
+    ///// COMMUNITY PAGE : > 1224 //////
+
+    .people-grid {
+        li {
+            .details {
+                .name {
+                    margin-top:3%;
+                    font-size:20px;
+                }
+                .job {
+                    font-size:16px;
+                }
+                .social {
+                    width:24px;
+                    height:24px;
+                    margin-left:-12px;
+                    bottom:10%;
+                    img {
+                        height:100%;
+                        width:auto;
+                    }
+                }
+            }
         }
     }
 }
@@ -1634,6 +1700,26 @@ p {
     .maps {
         padding-bottom: 300px;
     }
+
+    ///// COMMUNITY PAGE : > 1680 //////
+
+    .people-grid {
+        li {
+            .details {
+                .name {
+                    margin-top:5%;
+                    font-size:20px;
+                }
+                .social {
+                    bottom:15%;
+                    img {
+                        height:100%;
+                        width:auto;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* ==========================================================================
@@ -1673,6 +1759,33 @@ p {
     #word-cloud {
         .row {
             height:160px;
+        }
+    }
+
+    ///// COMMUNITY PAGE : > 2200 //////
+
+    .people-grid {
+        li {
+            .details {
+                .name {
+                    line-height:1.3em;
+                    margin-top:5%;
+                    font-size:20px;
+                }
+                .job {
+                    line-height:1.3em;
+                }
+                .social {
+                    width:28px;
+                    height:28px;
+                    margin-left:-14px;
+                    bottom:20%;
+                    img {
+                        height:100%;
+                        width:auto;
+                    }
+                }
+            }
         }
     }
 
