@@ -907,7 +907,7 @@ p {
             transition: all 0.2s ease-in-out;
         }
         .white-label {
-            background-color:white;
+            //background-color:white;
         }
         img {
             width:100%; height:auto; z-index:10;
@@ -915,68 +915,78 @@ p {
         .details {
             position:absolute; 
             width:100%; 
-            height:100px; 
-            top:50%; 
+            height:33%; 
+            bottom:0;
             left:0; 
             margin:-50px 0 0 0; 
             text-align: center; 
             color:green; 
             z-index:100; 
             font-size:20px;
+            background-color:white;
+//            opacity:0;
             .name {
-                font-size:22px;
-                -webkit-transform: translateY(-500%);
-                -moz-transform: translateY(-500%);
-                -o-transform: translateY(-500%);
-                -ms-transform: translateY(-500%);
-                transform: translateY(-500%);
-                -moz-opacity: 0.00;
-                opacity: 0.00;
+                margin-top:3%;
+                font-size:20px;
+                line-height:1em;
+//                -webkit-transform: translateY(-500%);
+//                -moz-transform: translateY(-500%);
+//                -o-transform: translateY(-500%);
+//                -ms-transform: translateY(-500%);
+//                transform: translateY(-500%);
+//                -moz-opacity: 0.00;
+//                opacity: 0.00;
             }
             .job {
-                -webkit-transform: translateY(500%);
-                -moz-transform: translateY(500%);
-                -o-transform: translateY(500%);
-                -ms-transform: translateY(500%);
-                transform: translateY(500%);
-                -moz-opacity: 0.00;
-                opacity: 0.00;
+                font-size:14px;
+                line-height:1em;
+//                -webkit-transform: translateY(500%);
+//                -moz-transform: translateY(500%);
+//                -o-transform: translateY(500%);
+//                -ms-transform: translateY(500%);
+//                transform: translateY(500%);
+//                -moz-opacity: 0.00;
+//                opacity: 0.00;
                 transition-delay: 0.1s;
                 -webkit-transition-delay: 0.1s; /* Safari */
             }
-            .job, .social {
-                font-size:18px;
-            }
             .social {
-                width:32px;
-                height:32px;
-                -moz-opacity: 0.00;
-                opacity: 0.00;
+                position:absolute;
+                bottom:5%;
+                left:50%;
+                width:22px;
+                height:22px;
+                margin-left:-12px;
+                overflow-x:hidden;
+//                -moz-opacity: 0.00;
+//                opacity: 0.00;
                 transition: opacity 0.1s 0.02s ease;  /* Mouse leave: immediate */
-                margin:20px auto 0 auto;
-                &.facebook {
-                    background:url('../img/social_links_32.png') no-repeat 0 0;
+                img {
+                    display: block;
+                    height:100%;
+                    width:auto;
                 }
-                &.twitter {
-                    background:url('../img/social_links_32.png') no-repeat -32px 0;
+                .twitter {
+                    margin-left:-100%;
                 }
-                &.linkedin {
-                    background:url('../img/social_links_32.png') no-repeat -64px 0;
+                .linkedin {
+                    margin-left:-200%;
                 }
-                &.pinterest {
-                    background:url('../img/social_links_32.png') no-repeat -96px 0;
+                .pinterest {
+                    margin-left:-300%;
                 }
-                &.personal {
-                    background:url('../img/social_links_32.png') no-repeat -128px 0;
+                .personal {
+                    margin-left:-400%;
                 }
             }
         }
 
         &:nth-child(4n){margin-right:0;}    // every fourth list element to be flush against right side
         &:hover img {                       // on hover of list element fade out child image
-            opacity: 0.05;   
+            //opacity: 0.05;   
         }
         &:hover .details {                         // on hover of list element fade in child paragraph
+            opacity:0.8;
             .name, .job {
                 -webkit-transform: translateY(0);
                 -moz-transform: translateY(0);
