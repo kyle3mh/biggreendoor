@@ -1260,6 +1260,7 @@ p {
                 opacity:1; 
                 font-size:12px;
                 color:white;
+                background-color:transparent;
                 .name, .job, .social {
                     -moz-opacity: 1.00;
                     opacity:1;
@@ -1269,9 +1270,38 @@ p {
                     -ms-transform: translateY(0);
                     transform: translateY(0);
                 }
+
                 .social {
-                    width:100%;
-                    height:auto;
+                    position:relative;
+                    bottom:auto;
+                    left:0;
+                    width:22px;
+                    height:22px;
+                    margin-left:-11px;
+                    overflow-x:hidden;
+    //                -moz-opacity: 0.00;
+    //                opacity: 0.00;
+                    transition: opacity 0.1s 0.02s ease;  /* Mouse leave: immediate */
+                    img {
+                        display: auto;
+                        height:100%;
+                        width:auto;
+                    }
+                    .twitter {
+                        margin-left:-100%;
+                    }
+                    .linkedin {
+                        margin-left:-200%;
+                    }
+                    .pinterest {
+                        margin-left:-300%;
+                    }
+                    .personal {
+                        margin-left:-400%;
+                    }
+                }
+                .social {
+                    height:20px;
                     &.facebook {
                         width: 32px;
                         height: 32px;
