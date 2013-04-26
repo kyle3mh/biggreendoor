@@ -621,7 +621,7 @@ h1 {
         width: 42%;
         float: left;
         padding-left:3%;
-        font-size: 1em;
+        font-size: 1em; 
     }
     .col2 {
         width: 44%;
@@ -716,6 +716,7 @@ p {
         img {
             width:95%;
             height:auto;
+            cursor:auto;
         }
         span:hover + .speech {
             display:block;
