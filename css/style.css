@@ -541,7 +541,7 @@ header h1.journal-header {
   bottom: 0;
   right: 3%;
   width: 350px;
-  padding: 1%;
+  padding: 1.5%;
   background-color: rgba(255, 255, 255, 0.9);
   /* Typography */
   color: #20CE55;
@@ -550,7 +550,7 @@ header h1.journal-header {
   text-transform: uppercase;
   text-shadow: none;
   font-weight: 300;
-  font-size: 52px;
+  font-size: 35px;
 }
 
 /* ==========================================================================
@@ -1660,7 +1660,7 @@ p.center-paragraph {
   .index-content {
     width: 280px;
     /* Typography */
-    font-size: 38px;
+    font-size: 32px;
   }
   /* line 1564, style.scss */
   .index-content.about {
