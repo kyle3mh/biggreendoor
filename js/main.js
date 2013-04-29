@@ -12,10 +12,23 @@ $(document).ready(function() {
 	$('#word-cloud').attr('style', function(i, style) {		// the mobile media query sets display to none, so we have to remove the 'display:block' inline-style set by the jquery fade function
 	    return style.replace(/display[^;]+;?/g, '');
 	});
+
+	$(document).on('init.slides', function() {
+		$('.loading-container').fadeOut(function() {
+			$(this).remove();
+		});
+	});
+
+	$('#slides').superslides({
+		slide_easing: 'easeInOutCubic',
+		slide_speed: 800,
+		pagination: true,
+		hashchange: false,
+		scrollable: true
+	});
 });
 
 ////// ON SCROLL //////
-
 $(window).scroll(function() {	
 	$('.fade-on-scroll > *').each(function () { 
         a = $(this).offset().top + 100;	// fade in once we get 100 pixels past the top of the element
@@ -34,11 +47,16 @@ $(window).scroll(function() {
 
 /////// HOMEPAGE SCROLL /////////
 $('#cssmenu').children('ul').children('li').mouseover(function() {
+	var index = $(this).index() + 1;
+
+	//$('#slides').superslides('animate' , index)
 	console.log($(this).index());
 
-	$('#image-container').stop().animate({
-		'left': $(this).index() * 100 + '%'
-	}, 500);
+	window.location = $('.slides-pagination a:nth-child(' + index + ')').attr('href');
+
+	// $('#image-container').stop().animate({
+	// 	'left': $(this).index() * 100 + '%'
+	// }, 500);
 });
 
 //////// POEM TYPEWRITER /////////
