@@ -91,7 +91,7 @@ $('#poem-link').click(function() {
 		    poem = $('#poem');
 
 		poem.typer(['<p><span text-align:center;">THE DOOR <br> </span></p>',
-			'<p><span style ="font-family: dk_pisangregular"; text-align:center;">By MIROSLAV HOLUB</span></p>',
+			'<p><span style ="text-align:center;">By Miroslav Holub</span></p>',
 					'Go and open the door. <br>' +
 					'<span class="indent"> Maybe outside there’s a tree <br> </span>' +
 					'<span class="indent"> or a wood, <br> </span>' +
