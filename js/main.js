@@ -45,19 +45,38 @@ $(window).scroll(function() {
 	});
 });
 
+var image_index = 0;
+var new_slide = 0;
+var t;
+
 /////// HOMEPAGE SCROLL /////////
 $('#cssmenu').children('ul').children('li').children('a').mouseover(function() {
 	var index = $(this).parent().index();
+		
+	if (image_index != index) {	
+		image_index = index;
 
-	$('#slides').stop().superslides('animate' , index)
-	console.log($(this).parent().index());
+		clearTimeout(t);
+		t = setTimeout(function (){
+			hover_debounce(index);
+		}, 300)
+	}
 
 	//window.location = $('.slides-pagination a:nth-child(' + (index + 1) + ')').attr('href');
 
 	// $('#image-container').stop().animate({
 	// 	'left': $(this).index() * 100 + '%'
 	// }, 500);
+
 });
+
+function hover_debounce(index) {
+	if (image_index == index && new_slide != index) {
+		new_slide = index;
+		$('#slides').superslides('animate' , index)
+		console.log(index)
+	}
+}
 
 //////// POEM TYPEWRITER /////////
 
