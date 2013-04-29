@@ -21,8 +21,8 @@ $(document).ready(function() {
 
 	$('#slides').superslides({
 		slide_easing: 'easeInOutCubic',
-		slide_speed: 500,
-		pagination: true,
+		slide_speed: 800,
+		pagination: false,
 		hashchange: false,
 		scrollable: true
 	});
@@ -45,38 +45,41 @@ $(window).scroll(function() {
 	});
 });
 
-var image_index = 0;
+var prevIndex = 0;
+var t;
 
 /////// HOMEPAGE SCROLL /////////
 $('#cssmenu').children('ul').children('li').children('a').mouseover(function() {
-	var index = $(this).parent().index();
+	var curIndex = $(this).parent().index();
 
-	if (index != image_index) {
-		image_index = index;
+	slideImages(curIndex);
 
-		clearTimeout(t);
-		var t = setTimeout(function (){
-			hover_debounce(index);
-		}, 300)
-	}
-
-	//window.location = $('.slides-pagination a:nth-child(' + (index + 1) + ')').attr('href');
-
-	// $('#image-container').stop().animate({
-	// 	'left': $(this).index() * 100 + '%'
-	// }, 500);
-
+	clearTimeout(t);
+	t = setTimeout(function () {
+			hover_debounce(curIndex);
+	}, 810)
 });
 
-function hover_debounce(index) {
-	if (image_index == index) {
-		$('#slides').superslides('animate' , index)
-		console.log(index)
+function slideImages(curIndex) {
+	var count = 0;
+
+	$('.slides-container').children('div').each(function() {
+		if ($(this).css('display') == 'block') {
+			count++;
+		}
+	})
+
+	if (count <= 1 && curIndex != prevIndex) {
+		prevIndex = curIndex;
+		$('#slides').superslides('animate' , curIndex)
 	}
 }
 
-//////// POEM TYPEWRITER /////////
+function hover_debounce(curIndex) {
+	slideImages(curIndex);
+}
 
+//////// POEM TYPEWRITER /////////
 var play = false;
 
 $('#poem-link').click(function() {
