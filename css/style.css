@@ -536,7 +536,9 @@ header h1.journal-header {
 
 /* line 577, style.scss */
 .index-content {
-  margin-left: 27%;
+  position: absolute;
+  bottom: 0;
+  right: 3%;
   width: 350px;
   padding: 1%;
   background-color: rgba(255, 255, 255, 0.9);
@@ -548,22 +550,6 @@ header h1.journal-header {
   text-shadow: none;
   font-weight: 300;
   font-size: 52px;
-}
-/* line 595, style.scss */
-.index-content.about {
-  margin-top: 17%;
-}
-/* line 596, style.scss */
-.index-content.journal {
-  margin-top: 20%;
-}
-/* line 597, style.scss */
-.index-content.community {
-  margin-top: 30%;
-}
-/* line 598, style.scss */
-.index-content.contact {
-  margin-top: 31%;
 }
 
 /* ==========================================================================
