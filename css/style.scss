@@ -422,7 +422,7 @@ header {
 
 .footer-image {
     width:162px;
-    height:185px;
+    height:161px;
     float: left;
     padding: 0 7%;
     img {
@@ -450,84 +450,6 @@ header {
 /* ==========================================================================
    HOME PAGE CLASSES
    ========================================================================== */
-
-#image-carousel {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:1;
-    overflow-x: hidden;
-    #image-container {
-        position:absolute;
-        width:500%;
-        height:100%;
-        margin:0;
-        margin-left:-400%;
-        padding:0;
-        list-style-type: none;
-        overflow:visible;
-        > div {
-            float:left;
-            width:20%;
-            overflow:hidden;
-            height:100%;
-//            background: url('../img/contact.jpg') no-repeat; 
-
-            &:nth-child(1) {
-                background: url('../img/outside.jpg') no-repeat;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                // IE Cover backgrounds
-                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
-            }
-            &:nth-child(2) {
-                background: url('../img/street.jpg') no-repeat;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                // IE Cover backgrounds
-                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
-            }
-            &:nth-child(3) {
-                background: url('../img/garden.jpg') no-repeat;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                // IE Cover backgrounds
-                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
-            }
-            &:nth-child(4) {
-                background: url('../img/door.jpg') no-repeat;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                // IE Cover backgrounds
-                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
-            }
-            &:nth-child(5) {
-                background: url('../img/other-door.jpg') no-repeat;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                // IE Cover backgrounds
-                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-            }
-        }
-    }
-} 
 
 #window {
     position:fixed;
@@ -575,7 +497,11 @@ header {
 
 
 .index-content {
-    margin-left: 27%;
+    position:absolute;
+    bottom:0;
+    right:3%;
+//    margin-right:3%;
+//    margin-left: 27%;
     width: 350px;
     padding: 1%;
     background-color: rgba(255,255,255,0.9);
@@ -589,10 +515,10 @@ header {
     font-weight: 300;
     font-size: 52px;
 
-    &.about {margin-top: 14%;}
-    &.journal {margin-top: 20%;}
-    &.community {margin-top: 30%;}
-    &.contact {margin-top: 31%;}
+//    &.about {margin-top: 17%;}
+//    &.journal {margin-top: 20%;}
+//    &.community {margin-top: 30%;}
+//    &.contact {margin-top: 31%;}
 }
 
 
@@ -1244,7 +1170,7 @@ p {
 
     .footer-image {
         width:75px;
-        height:90px;
+        height:76px;
     }
 
     .footer-address {
@@ -1546,7 +1472,7 @@ p {
     .footer-image {
         padding:0 3% 0 7%;
         width:120px;
-        height:133px;
+        height:121px;
     }
 
     ////// HOME : 768 - 1024 ///////
