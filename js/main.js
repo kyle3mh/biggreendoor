@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 	$('#slides').superslides({
 		slide_easing: 'easeInOutCubic',
-		slide_speed: 800,
+		slide_speed: 500,
 		pagination: true,
 		hashchange: false,
 		scrollable: true
@@ -45,20 +45,35 @@ $(window).scroll(function() {
 	});
 });
 
+var image_index = 0;
+
 /////// HOMEPAGE SCROLL /////////
-$('#cssmenu').children('ul').children('li').mouseover(function() {
-	var index = $(this).index() + 1;
+$('#cssmenu').children('ul').children('li').children('a').mouseover(function() {
+	var index = $(this).parent().index();
 
-	//$('#slides').superslides('animate' , index)
-	console.log($(this).index());
+	if (index != image_index) {
+		image_index = index;
 
-	window.location = $('.slides-pagination a:nth-child(' + index + ')').attr('href');
+		clearTimeout(t);
+		var t = setTimeout(function (){
+			hover_debounce(index);
+		}, 300)
+	}
+
+	//window.location = $('.slides-pagination a:nth-child(' + (index + 1) + ')').attr('href');
 
 	// $('#image-container').stop().animate({
 	// 	'left': $(this).index() * 100 + '%'
 	// }, 500);
 
 });
+
+function hover_debounce(index) {
+	if (image_index == index) {
+		$('#slides').superslides('animate' , index)
+		console.log(index)
+	}
+}
 
 //////// POEM TYPEWRITER /////////
 
