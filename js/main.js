@@ -34,11 +34,15 @@ $(window).scroll(function() {
 
 /////// HOMEPAGE SCROLL /////////
 $('#cssmenu').children('ul').children('li').mouseover(function() {
+	var $this = $(this).attr('class'); 
 	console.log($(this).index());
 
 	$('#image-container').stop().animate({
-		'left': $(this).index() * 100 + '%'
-	}, 500);
+		'left': $(this).index() * 100 + '%',
+		duration: 500
+	}, function() {
+		$('#image-container :not($this)').css('display','none');
+	});
 });
 
 //////// POEM TYPEWRITER /////////
