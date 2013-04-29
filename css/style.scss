@@ -417,7 +417,7 @@ header {
 
 .footer-details {
     float:left;
-    width:50%;
+    width:50%;  
 }
 
 .footer-image {
@@ -451,6 +451,83 @@ header {
 /* ==========================================================================
    HOME PAGE CLASSES
    ========================================================================== */
+
+//#image-carousel {
+//    position:absolute;
+//    top:0;
+//    left:0;
+//    width:100%;
+//    height:100%;
+//    z-index:1;
+//    overflow-x: hidden;
+//    #image-container {
+//        position:absolute;
+//        width:500%;
+//        height:100%;
+//        margin:0;
+//        margin-left:-400%;
+//        padding:0;
+//        list-style-type: none;
+//        overflow:visible;
+//        > div {
+//            float:left;
+//            width:20%;
+//            overflow:hidden;
+//            height:100%;
+
+//            &:nth-child(1) {
+//                background: url('../img/outside.jpg') no-repeat;
+//                -webkit-background-size: cover;
+//                -moz-background-size: cover;
+//                -o-background-size: cover;
+//                background-size: cover;
+//                // IE Cover backgrounds
+//                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+//                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
+//            }
+//            &:nth-child(2) {
+//                background: url('../img/street_s.jpg') no-repeat;
+//                -webkit-background-size: cover;
+//                -moz-background-size: cover;
+//                -o-background-size: cover;
+//                background-size: cover;
+//                // IE Cover backgrounds
+//                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+//                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
+//            }
+//            &:nth-child(3) {
+//                background: url('../img/garden_s.jpg') no-repeat;
+//                -webkit-background-size: cover;
+//                -moz-background-size: cover;
+//                -o-background-size: cover;
+//                background-size: cover;
+//                // IE Cover backgrounds
+//                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+//                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
+//            }
+//            &:nth-child(4) {
+//                background: url('../img/door_s.jpg') no-repeat;
+//                -webkit-background-size: cover;
+//                -moz-background-size: cover;
+//                -o-background-size: cover;
+//                background-size: cover;
+//                // IE Cover backgrounds
+//                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+//                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
+//            }
+//            &:nth-child(5) {
+//                background: url('../img/other-door.jpg') no-repeat;
+//                -webkit-background-size: cover;
+//                -moz-background-size: cover;
+//                -o-background-size: cover;
+//                background-size: cover;
+//                // IE Cover backgrounds
+//                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+//                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+//            }
+//        }
+//    }
+//} 
 
 #window {
     position:fixed;
@@ -498,11 +575,10 @@ header {
 
 
 .index-content {
-    position:absolute;
-    bottom:0;
-    right:3%;
-//    margin-right:3%;
-//    margin-left: 27%;
+//    position:absolute;
+//    bottom:0;
+//    right:3%;
+    margin-left: 27%;
     width: 350px;
     padding: 1%;
     background-color: rgba(255,255,255,0.9);
@@ -516,10 +592,10 @@ header {
     font-weight: 300;
     font-size: 52px;
 
-//    &.about {margin-top: 17%;}
-//    &.journal {margin-top: 20%;}
-//    &.community {margin-top: 30%;}
-//    &.contact {margin-top: 31%;}
+    &.about {margin-top: 17%;}
+    &.journal {margin-top: 20%;}
+    &.community {margin-top: 30%;}
+    &.contact {margin-top: 31%;}
 }
 
 
