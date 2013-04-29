@@ -46,13 +46,13 @@ $(window).scroll(function() {
 });
 
 /////// HOMEPAGE SCROLL /////////
-$('#cssmenu').children('ul').children('li').mouseover(function() {
-	var index = $(this).index() + 1;
+$('#cssmenu').children('ul').children('li').children('a').mouseover(function() {
+	var index = $(this).parent().index();
 
-	//$('#slides').superslides('animate' , index)
-	console.log($(this).index());
+	$('#slides').stop().superslides('animate' , index)
+	console.log($(this).parent().index());
 
-	window.location = $('.slides-pagination a:nth-child(' + index + ')').attr('href');
+	//window.location = $('.slides-pagination a:nth-child(' + (index + 1) + ')').attr('href');
 
 	// $('#image-container').stop().animate({
 	// 	'left': $(this).index() * 100 + '%'
@@ -71,7 +71,8 @@ $('#poem-link').click(function() {
 		var win = $(window),
 		    poem = $('#poem');
 
-		poem.typer(['<p><span style ="font-family: dk_pisangregular"; text-align:center;">THE DOOR</span></p>',
+		poem.typer(['<p><span text-align:center;">THE DOOR <br> </span></p>',
+			'<p><span style ="font-family: dk_pisangregular"; text-align:center;">By MIROSLAV HOLUB</span></p>',
 					'Go and open the door. <br>' +
 					'<span class="indent"> Maybe outside there’s a tree <br> </span>' +
 					'<span class="indent"> or a wood, <br> </span>' +
@@ -102,9 +103,7 @@ $('#poem-link').click(function() {
 
 					'<span style="margin-top:400px;"> At least <br>' +
 					'there’ll be <br>' +
-					'a draught.','',
-
-					'<p><span style ="font-family: dk_pisangregular"; text-align:center;">By MIROSLAV HOLUB</span></p>',''
+					'a draught.','',''
 					]);
 
 			win.resize(function(){
