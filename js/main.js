@@ -46,23 +46,28 @@ $(window).scroll(function() {
 });
 
 var prevIndex = 0;
-var t;
+var t, t2;
 
 /////// HOMEPAGE SCROLL /////////
 $('#cssmenu').children('ul').children('li').children('a').mouseover(function() {
 	var curIndex = $(this).parent().index();
 
-	slideImages(curIndex);
+	// slideImages(curIndex);
 
-	clearTimeout(t);
+	clearTimeout(t);	
+	clearTimeout(t2);
 	t = setTimeout(function () {
-			hover_debounce(curIndex);
+			slideImages(curIndex);
+	}, 300)
+	t2 = setTimeout(function () {
+			slideImages(curIndex);
 	}, 810)
-});
+}).mouseleave(function() {
+	clearTimeout(t);
+})
 
 function slideImages(curIndex) {
 	var count = 0;
-
 	$('.slides-container').children('div').each(function() {
 		if ($(this).css('display') == 'block') {
 			count++;
@@ -71,12 +76,12 @@ function slideImages(curIndex) {
 
 	if (count <= 1 && curIndex != prevIndex) {
 		prevIndex = curIndex;
-		$('#slides').superslides('animate' , curIndex)
+		$('#slides').superslides('animate', curIndex)
 	}
 }
 
-function hover_debounce(curIndex) {
-	slideImages(curIndex);
+function callthis() {
+	console.log('finished');
 }
 
 //////// POEM TYPEWRITER /////////
